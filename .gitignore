@@ -1,43 +1,127 @@
-# Dependencies
+# ==========================================================================
+# .gitignore — UTF-8，请勿保存为 GBK 或带 BOM
+#
+# 约定：
+#   - 尽量用「根锚定」写法（/xxx/）忽略仓库根目录下的生成物，避免误伤
+#     任意层级同名的真实源码目录（例如嵌套的 lib/、static/、var/）。
+#   - 本文件末尾的「项目特定忽略」是刻意的，不要当成模板垃圾删掉。
+# ==========================================================================
+
+# --------------------------------------------------------------------------
+# 依赖与包管理器缓存
+# --------------------------------------------------------------------------
 node_modules/
+.npm/
+# npm 的 _cacache（曾误提交 ~30MB，见 002-sunlit-museum）
+.npm-cache/
+.pnpm-store/
+.pnpm-debug.log
+.yarn/
+.pnp.*
+.yarn-integrity
+.eslintcache
+.node_repl_history
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+# npm pack 产物
+*.tgz
 
-# Build outputs
-docs/diagrams/*.visual-check.*
+# --------------------------------------------------------------------------
+# 构建产物
+# --------------------------------------------------------------------------
 dist/
 build/
-*.local
+/out/
+.next/
+.nuxt/
+.output/
+.svelte-kit/
+.vite/
+.turbo/
+.parcel-cache/
+.cache/
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.storybook-out/
+*.tsbuildinfo
+.vitepress/cache/
+.vitepress/dist/
 
-# Environment variables - 不提交实际环境配置
+# --------------------------------------------------------------------------
+# 部署平台本地状态
+# --------------------------------------------------------------------------
+.vercel/
+.netlify/
+.wrangler/
+
+# --------------------------------------------------------------------------
+# 测试与覆盖率
+# --------------------------------------------------------------------------
+coverage/
+htmlcov/
+.nyc_output/
+.tox/
+.nox/
+.pytest_cache/
+.hypothesis/
+*.cover
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+docs/diagrams/*.visual-check.*
+
+# --------------------------------------------------------------------------
+# 环境变量
+#   .env.production 刻意保留，可作为生产环境配置模板提交
+# --------------------------------------------------------------------------
 .env
 .env.local
 .env.*.local
 .env.development
-.env.test
 .env.development.local
+.env.test
 .env.test.local
-# .env.production 可以提交作为生产环境配置模板
+*.local
 
-# IDE and editor files
+# --------------------------------------------------------------------------
+# 日志与临时文件
+# --------------------------------------------------------------------------
+logs/
+*.log
+tmp/
+temp/
+.codex-temp/
+*.pid
+*.pid.lock
+*.seed
+
+# --------------------------------------------------------------------------
+# 备份
+# --------------------------------------------------------------------------
+*.bak
+*.backup
+
+# --------------------------------------------------------------------------
+# IDE / 编辑器
+# --------------------------------------------------------------------------
 .vscode/
 .idea/
+.fleet/
 *.swp
 *.swo
 *~
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
 
-.gitnexus/
-
-# 项目说明文件
-自动@机器人.md
-
-# rsa 密钥
-*.pem
-*.pub
-
-# OS generated files
+# --------------------------------------------------------------------------
+# 操作系统
+# --------------------------------------------------------------------------
 .DS_Store
 .DS_Store?
 ._*
@@ -45,260 +129,131 @@ build/
 .Trashes
 ehthumbs.db
 Thumbs.db
+desktop.ini
 
-# Claude Code/Codex session data and index
+# --------------------------------------------------------------------------
+# 密钥与凭据
+# --------------------------------------------------------------------------
+*.pem
+*.pub
+/credentials/
+provider-credentials.json
+# token 缓存
+dsakjflsdlfmasdmf.json
+
+# --------------------------------------------------------------------------
+# 审计目录与 AI 会话数据
+# --------------------------------------------------------------------------
+# 第三方包审计时解压出来的源码，不入库
+.audit/
 .claude/
 .codex/
+.gitnexus/
 
-REFACTOR_CORP_WECHAT_CONFIG.md
+# --------------------------------------------------------------------------
+# Python
+# --------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.mo
+*.pot
+*.egg
+*.egg-info/
+.Python
+.installed.cfg
+cython_debug/
+pip-log.txt
+pip-delete-this-directory.txt
+pip-wheel-metadata/
 
-# Virtual environments
+# 打包生成物：只忽略仓库根目录，嵌套的 lib/ 等是真实源码
+/lib/
+/lib64/
+/var/
+/parts/
+/eggs/
+/.eggs/
+/wheels/
+/sdist/
+/downloads/
+/develop-eggs/
+/target/
+
+# --------------------------------------------------------------------------
+# 虚拟环境
+# --------------------------------------------------------------------------
 .venv/
 .venv-monitoring/
+venv/
+venv.bak/
 env/
 env.bak/
 pythonenv*/
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
+# --------------------------------------------------------------------------
+# 类型检查与 Lint 缓存
+# --------------------------------------------------------------------------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.spyderproject
+.spyproject
+.ropeproject
 
-# Django
-*.log
-local_settings.py
-settings_local.py
-
-# Django 设置文件
-# 只提交 settings_prod.py 作为生产环境配置模板
-# settings.py（测试环境配置）不提交
-**/services/*/settings.py
-
-# Database
+# --------------------------------------------------------------------------
+# 数据库
+# --------------------------------------------------------------------------
 *.db
 *.sqlite3
 *.sqlite3-journal
 
-# Testing
-coverage/
-.tox/
-.nox/
-.pytest_cache/
-# 正式测试源码属于项目资产，不应在此忽略；这里只忽略测试生成物。
-
-# Logs
-logs/
-*.log
-
-# 环境变量
-.env
-.env.test
-
-# Temporary files
-tmp/
-temp/
-
-# Machine identity credentials and one-time Provider Credential import media
-/credentials/
-provider-credentials.json
-.codex-temp/
-
-# Package files
-*.egg
-*.egg-info/
-dist/
-build/
-
-# Server files
-*.pid
-*.seed
-*.pid.lock
-
-# Backup files
-*.backup
-*.bak
-
-# Docker
-Dockerfile*
-docker-compose*
-
-# CI/CD
-.github/
-.gitlab-ci.yml
-.travis.yml
-
-# Documentation
-/docs/_build/
-
-# Other
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# Generated files
-/generated/
-
-# Compiled files
-*.pyc
-*.pyo
-*.pyd
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/test
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
+# --------------------------------------------------------------------------
+# Django / Flask / Scrapy
+# --------------------------------------------------------------------------
 local_settings.py
-
-# Flask stuff:
+settings_local.py
+# 只提交 settings_prod.py 作为模板
+**/services/*/settings.py
 instance/
 .webassets-cache
-
-# Scrapy stuff:
 .scrapy
 
-# Sphinx documentation
-docs/_build/
-
-# token 缓存
-dsakjflsdlfmasdmf.json
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
+# --------------------------------------------------------------------------
+# Jupyter / IPython / pyenv / Celery
+# --------------------------------------------------------------------------
 .ipynb_checkpoints
-
-# IPython
 profile_default/
 ipython_config.py
-
-# pyenv
 .python-version
-
-# celery beat schedule file
 celerybeat-schedule
-
-# SageMath parsed files
 *.sage.py
 
-# Environments
-.env
-AutoPickupBackend/scripts/ai_reply_analysis.local.env
-.venv
-env/
-env.bak/
-venv/
-venv.bak/
-pythonenv*
+# --------------------------------------------------------------------------
+# PyInstaller
+#   只忽略仓库根目录，避免误伤嵌套的 spec / Windows manifest
+# --------------------------------------------------------------------------
+/*.spec
+/*.manifest
 
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
+# --------------------------------------------------------------------------
+# 文档构建
+# --------------------------------------------------------------------------
+/docs/_build/
 /site
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+# --------------------------------------------------------------------------
+# 前端静态资源目录（仅仓库根目录）
+# --------------------------------------------------------------------------
+/static/
 
-# Pyre type checker
-.pyre/
-
-# Pytype static type analyzer
-.pytype/
-
-# Frontend static type file
-static/
-
-# Cython debug symbols
-cython_debug/
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Microbundle cache
-.rpt2_cache/
-.rts2_cache_cjs/
-.rts2_cache_es/
-.rts2_cache_umd/
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-.parcel-cache
-
-# Next.js build output
-.next
-
-# Nuxt.js build / generate output
-.nuxt
-dist
-
-# Storybook build outputs
-.out
-.storybook-out
-
-# Temporary folders
+# --------------------------------------------------------------------------
+# 项目特定忽略 —— 刻意保留，请勿删除
+# --------------------------------------------------------------------------
+自动@机器人.md
+REFACTOR_CORP_WECHAT_CONFIG.md
+AutoPickupBackend/scripts/ai_reply_analysis.local.env
 /standalone-monitor/
-tmp/
-temp/
