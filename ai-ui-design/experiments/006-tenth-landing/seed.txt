@@ -1,0 +1,28 @@
+006 · 种子记录
+============================================================
+
+生成命令（PowerShell）：
+
+  $chars = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'.ToCharArray()
+  $bytes = New-Object byte[] 144
+  [System.Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($bytes)
+  $s = -join ($bytes | ForEach-Object { $chars[$_ % 62] })
+
+生成日期：2026-09-19
+
+种子（144 位 base62）：
+  FZ9kKW1ZF4mONIOSybJhE3GpaHBVSnkKAo2B00CYIMHhUGB5CljTq08Dr4awnKIpDl7FBOhaqc2j1OTcLuFa2obosqMiErP48NFi6YKk2aDH9TiX5IHWsNWcT4U5f4MSlFqtKBh0rAJu4ro2
+
+⚠ 硬性约束：本字符串只用于推导设计方向。
+   四个案例的任何文件里都不得出现该字符串（或其连续 8 位以上片段）。
+   由 scripts/audit.mjs 的「种子泄漏检查」自动验证。
+
+由该字符串实测得出的事实（详见 DESIGN-ROLL.md）：
+  · 长度 144 = 12 × 12（完全平方数）
+  · 144 分钟 = 1440 分钟/天 的十分之一，恰好 0.1
+  · 一天 24 小时按 10 分钟切分 = 144 格
+  · 字符构成：67 大写 + 50 小写 = 117 字母，27 个数字（27 = 3³）
+  · 出现的字符 54 种，缺席 8 种：Q R d e g v x z
+  · 唯一重复出现的相邻字符是 "00"（索引 36–37）
+  · 正中心在索引 72，前后两半几乎共用同一套字符
+  · 镜像对称位置命中 0 / 72 —— 它完全不对称

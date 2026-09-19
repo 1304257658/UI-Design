@@ -1,0 +1,1302 @@
+{
+  "base": "http://127.0.0.1:8771",
+  "generatedAt": "2026-09-19T12:43:27.675Z",
+  "cases": {
+    "a": {
+      "viewports": {
+        "360": {
+          "deviceW": 360,
+          "vw": 360,
+          "limit": 360,
+          "docW": 360,
+          "clientW": 360,
+          "bodyW": 360,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "totalTags": 445,
+          "svg": 24,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "site-header",
+            "nav-toggle",
+            "nav-toggle-text",
+            "nav-menu",
+            "main",
+            "top",
+            "hero-title",
+            "signup",
+            "signup-title",
+            "signup-form",
+            "email",
+            "form-status",
+            "msg-error",
+            "msg-error-text",
+            "msg-ok",
+            "msg-ok-mail",
+            "capture",
+            "capture-title",
+            "proof",
+            "proof-title",
+            "features",
+            "features-title",
+            "flow",
+            "flow-title",
+            "voices",
+            "voices-title",
+            "pricing",
+            "pricing-title",
+            "pro-price",
+            "pro-billed",
+            "pro-note",
+            "faq",
+            "faq-title",
+            "wf-switch"
+          ],
+          "anchors": 14,
+          "hamburger": true,
+          "hamSmall": true,
+          "hamExpanded": "false",
+          "toggleSmall": true,
+          "ariaTargets": [
+            "nav-menu"
+          ],
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "revealFixed": 34
+        },
+        "768": {
+          "deviceW": 768,
+          "vw": 768,
+          "limit": 768,
+          "docW": 768,
+          "clientW": 768,
+          "bodyW": 768,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "totalTags": 445,
+          "svg": 24,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "site-header",
+            "nav-toggle",
+            "nav-toggle-text",
+            "nav-menu",
+            "main",
+            "top",
+            "hero-title",
+            "signup",
+            "signup-title",
+            "signup-form",
+            "email",
+            "form-status",
+            "msg-error",
+            "msg-error-text",
+            "msg-ok",
+            "msg-ok-mail",
+            "capture",
+            "capture-title",
+            "proof",
+            "proof-title",
+            "features",
+            "features-title",
+            "flow",
+            "flow-title",
+            "voices",
+            "voices-title",
+            "pricing",
+            "pricing-title",
+            "pro-price",
+            "pro-billed",
+            "pro-note",
+            "faq",
+            "faq-title",
+            "wf-switch"
+          ],
+          "anchors": 14,
+          "hamburger": true,
+          "hamSmall": true,
+          "hamExpanded": "false",
+          "toggleSmall": true,
+          "ariaTargets": [
+            "nav-menu"
+          ],
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "revealFixed": 34
+        },
+        "1024": {
+          "deviceW": 1024,
+          "vw": 1024,
+          "limit": 1024,
+          "docW": 1024,
+          "clientW": 1024,
+          "bodyW": 1024,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "totalTags": 445,
+          "svg": 24,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "site-header",
+            "nav-toggle",
+            "nav-toggle-text",
+            "nav-menu",
+            "main",
+            "top",
+            "hero-title",
+            "signup",
+            "signup-title",
+            "signup-form",
+            "email",
+            "form-status",
+            "msg-error",
+            "msg-error-text",
+            "msg-ok",
+            "msg-ok-mail",
+            "capture",
+            "capture-title",
+            "proof",
+            "proof-title",
+            "features",
+            "features-title",
+            "flow",
+            "flow-title",
+            "voices",
+            "voices-title",
+            "pricing",
+            "pricing-title",
+            "pro-price",
+            "pro-billed",
+            "pro-note",
+            "faq",
+            "faq-title",
+            "wf-switch"
+          ],
+          "anchors": 14,
+          "hamburger": true,
+          "hamSmall": false,
+          "hamExpanded": "false",
+          "toggleSmall": false,
+          "ariaTargets": [
+            "nav-menu"
+          ],
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "revealFixed": 34
+        },
+        "1440": {
+          "deviceW": 1440,
+          "vw": 1440,
+          "limit": 1440,
+          "docW": 1440,
+          "clientW": 1440,
+          "bodyW": 1440,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "totalTags": 445,
+          "svg": 24,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "site-header",
+            "nav-toggle",
+            "nav-toggle-text",
+            "nav-menu",
+            "main",
+            "top",
+            "hero-title",
+            "signup",
+            "signup-title",
+            "signup-form",
+            "email",
+            "form-status",
+            "msg-error",
+            "msg-error-text",
+            "msg-ok",
+            "msg-ok-mail",
+            "capture",
+            "capture-title",
+            "proof",
+            "proof-title",
+            "features",
+            "features-title",
+            "flow",
+            "flow-title",
+            "voices",
+            "voices-title",
+            "pricing",
+            "pricing-title",
+            "pro-price",
+            "pro-billed",
+            "pro-note",
+            "faq",
+            "faq-title",
+            "wf-switch"
+          ],
+          "anchors": 14,
+          "hamburger": true,
+          "hamSmall": false,
+          "hamExpanded": "false",
+          "toggleSmall": false,
+          "ariaTargets": [
+            "nav-menu"
+          ],
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "revealFixed": 30
+        }
+      },
+      "interactions": {
+        "360": {
+          "notes": [],
+          "invalidMsgs": [
+            "邮箱格式看起来不对，请检查后重试。"
+          ],
+          "validMsgs": [
+            "已收到 me@example.com，邀请链接已发出。"
+          ],
+          "toggleCount": 2,
+          "priceBefore": [
+            "¥0",
+            "¥38"
+          ],
+          "priceAfter": [
+            "¥0",
+            "¥29",
+            "¥348"
+          ],
+          "hamButtonVisible": true,
+          "hamTargetFound": true,
+          "hamExpandedAfter": "true",
+          "hamClosedSig": "none|visible|none|1|none|0",
+          "hamOpenSig": "flex|visible|none|1|none|166",
+          "hamChanged": true,
+          "hamRestored": true,
+          "hamInertWhenClosed": false,
+          "detailsOpened": true
+        },
+        "1440": {
+          "notes": [],
+          "invalidMsgs": [
+            "邮箱格式看起来不对，请检查后重试。"
+          ],
+          "validMsgs": [
+            "已收到 me@example.com，邀请链接已发出。"
+          ],
+          "toggleCount": 2,
+          "priceBefore": [
+            "¥0",
+            "¥38"
+          ],
+          "priceAfter": [
+            "¥0",
+            "¥29",
+            "¥348"
+          ],
+          "hamButtonVisible": false,
+          "hamTargetFound": true,
+          "hamExpandedAfter": "true",
+          "hamClosedSig": "flex|visible|none|1|none|30",
+          "hamOpenSig": "flex|visible|none|1|none|30",
+          "hamChanged": false,
+          "hamRestored": true,
+          "hamInertWhenClosed": false,
+          "detailsOpened": true
+        }
+      },
+      "consoleErrors": []
+    },
+    "b": {
+      "viewports": {
+        "360": {
+          "deviceW": 360,
+          "vw": 360,
+          "limit": 360,
+          "docW": 360,
+          "clientW": 360,
+          "bodyW": 360,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "totalTags": 288,
+          "svg": 2,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "top",
+            "navBtn",
+            "navPanel",
+            "main",
+            "heroTitle",
+            "start",
+            "signup",
+            "email",
+            "formMsg",
+            "capture",
+            "captureTitle",
+            "proofTitle",
+            "features",
+            "featuresTitle",
+            "flow",
+            "flowTitle",
+            "voices",
+            "voicesTitle",
+            "pricing",
+            "pricingTitle",
+            "tierPro",
+            "proPrice",
+            "proPer",
+            "tierSub",
+            "tierFree",
+            "faq",
+            "faqTitle",
+            "wf-switch"
+          ],
+          "anchors": 17,
+          "hamburger": true,
+          "hamSmall": true,
+          "hamExpanded": "false",
+          "toggleSmall": true,
+          "ariaTargets": [
+            "navPanel"
+          ],
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "revealFixed": 0
+        },
+        "768": {
+          "deviceW": 768,
+          "vw": 768,
+          "limit": 768,
+          "docW": 768,
+          "clientW": 768,
+          "bodyW": 768,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "totalTags": 288,
+          "svg": 2,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "top",
+            "navBtn",
+            "navPanel",
+            "main",
+            "heroTitle",
+            "start",
+            "signup",
+            "email",
+            "formMsg",
+            "capture",
+            "captureTitle",
+            "proofTitle",
+            "features",
+            "featuresTitle",
+            "flow",
+            "flowTitle",
+            "voices",
+            "voicesTitle",
+            "pricing",
+            "pricingTitle",
+            "tierPro",
+            "proPrice",
+            "proPer",
+            "tierSub",
+            "tierFree",
+            "faq",
+            "faqTitle",
+            "wf-switch"
+          ],
+          "anchors": 17,
+          "hamburger": true,
+          "hamSmall": true,
+          "hamExpanded": "false",
+          "toggleSmall": true,
+          "ariaTargets": [
+            "navPanel"
+          ],
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "revealFixed": 0
+        },
+        "1024": {
+          "deviceW": 1024,
+          "vw": 1024,
+          "limit": 1024,
+          "docW": 1024,
+          "clientW": 1024,
+          "bodyW": 1024,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "totalTags": 288,
+          "svg": 2,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "top",
+            "navBtn",
+            "navPanel",
+            "main",
+            "heroTitle",
+            "start",
+            "signup",
+            "email",
+            "formMsg",
+            "capture",
+            "captureTitle",
+            "proofTitle",
+            "features",
+            "featuresTitle",
+            "flow",
+            "flowTitle",
+            "voices",
+            "voicesTitle",
+            "pricing",
+            "pricingTitle",
+            "tierPro",
+            "proPrice",
+            "proPer",
+            "tierSub",
+            "tierFree",
+            "faq",
+            "faqTitle",
+            "wf-switch"
+          ],
+          "anchors": 17,
+          "hamburger": true,
+          "hamSmall": false,
+          "hamExpanded": "false",
+          "toggleSmall": false,
+          "ariaTargets": [
+            "navPanel"
+          ],
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "revealFixed": 0
+        },
+        "1440": {
+          "deviceW": 1440,
+          "vw": 1440,
+          "limit": 1440,
+          "docW": 1440,
+          "clientW": 1440,
+          "bodyW": 1440,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "totalTags": 288,
+          "svg": 2,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "top",
+            "navBtn",
+            "navPanel",
+            "main",
+            "heroTitle",
+            "start",
+            "signup",
+            "email",
+            "formMsg",
+            "capture",
+            "captureTitle",
+            "proofTitle",
+            "features",
+            "featuresTitle",
+            "flow",
+            "flowTitle",
+            "voices",
+            "voicesTitle",
+            "pricing",
+            "pricingTitle",
+            "tierPro",
+            "proPrice",
+            "proPer",
+            "tierSub",
+            "tierFree",
+            "faq",
+            "faqTitle",
+            "wf-switch"
+          ],
+          "anchors": 17,
+          "hamburger": true,
+          "hamSmall": false,
+          "hamExpanded": "false",
+          "toggleSmall": false,
+          "ariaTargets": [
+            "navPanel"
+          ],
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "revealFixed": 0
+        }
+      },
+      "interactions": {
+        "360": {
+          "notes": [],
+          "invalidMsgs": [
+            "邮箱格式不正确，请检查后重试：not-an-email"
+          ],
+          "validMsgs": [
+            "已收到 me@example.com，邀请链接已发送，请查收。"
+          ],
+          "toggleCount": 2,
+          "priceBefore": [
+            "¥\n38",
+            "¥\n0"
+          ],
+          "priceAfter": [
+            "¥\n29",
+            "¥\n0"
+          ],
+          "hamButtonVisible": true,
+          "hamTargetFound": true,
+          "hamExpandedAfter": "true",
+          "hamClosedSig": "none|visible|none|1|none|0",
+          "hamOpenSig": "block|visible|none|1|none|335",
+          "hamChanged": true,
+          "hamRestored": true,
+          "hamInertWhenClosed": false,
+          "detailsOpened": true
+        },
+        "1440": {
+          "notes": [],
+          "invalidMsgs": [
+            "邮箱格式不正确，请检查后重试：not-an-email"
+          ],
+          "validMsgs": [
+            "已收到 me@example.com，邀请链接已发送，请查收。"
+          ],
+          "toggleCount": 2,
+          "priceBefore": [
+            "¥\n38",
+            "¥\n0"
+          ],
+          "priceAfter": [
+            "¥\n29",
+            "¥\n0"
+          ],
+          "hamButtonVisible": false,
+          "hamTargetFound": true,
+          "hamExpandedAfter": "true",
+          "hamClosedSig": "flex|visible|none|1|none|51",
+          "hamOpenSig": "flex|visible|none|1|none|51",
+          "hamChanged": false,
+          "hamRestored": true,
+          "hamInertWhenClosed": false,
+          "detailsOpened": true
+        }
+      },
+      "consoleErrors": []
+    },
+    "c": {
+      "viewports": {
+        "360": {
+          "deviceW": 360,
+          "vw": 360,
+          "limit": 360,
+          "docW": 360,
+          "clientW": 360,
+          "bodyW": 404,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [
+            {
+              "tag": "nav",
+              "cls": "nav-list",
+              "over": 619,
+              "w": 310
+            },
+            {
+              "tag": "a",
+              "cls": "",
+              "over": 595,
+              "w": 258
+            },
+            {
+              "tag": "a",
+              "cls": "",
+              "over": 595,
+              "w": 258
+            },
+            {
+              "tag": "a",
+              "cls": "",
+              "over": 595,
+              "w": 258
+            },
+            {
+              "tag": "a",
+              "cls": "",
+              "over": 595,
+              "w": 258
+            },
+            {
+              "tag": "a",
+              "cls": "nav-cta",
+              "over": 595,
+              "w": 250
+            }
+          ],
+          "totalTags": 354,
+          "svg": 21,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "navToggle",
+            "primaryNav",
+            "main",
+            "top",
+            "dayClip",
+            "heroTitle",
+            "signup",
+            "email",
+            "formMsg",
+            "demoTitle",
+            "features",
+            "featTitle",
+            "workflow",
+            "flowTitle",
+            "quoteTitle",
+            "pricing",
+            "priceTitle",
+            "priceGrid",
+            "faq",
+            "faqTitle",
+            "wf-switch"
+          ],
+          "anchors": 13,
+          "hamburger": true,
+          "hamSmall": true,
+          "hamExpanded": "false",
+          "toggleSmall": true,
+          "ariaTargets": [
+            "primaryNav"
+          ],
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "revealFixed": 0
+        },
+        "768": {
+          "deviceW": 768,
+          "vw": 768,
+          "limit": 768,
+          "docW": 768,
+          "clientW": 768,
+          "bodyW": 768,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [
+            {
+              "tag": "nav",
+              "cls": "nav-list",
+              "over": 640,
+              "w": 320
+            },
+            {
+              "tag": "a",
+              "cls": "",
+              "over": 616,
+              "w": 268
+            },
+            {
+              "tag": "a",
+              "cls": "",
+              "over": 616,
+              "w": 268
+            },
+            {
+              "tag": "a",
+              "cls": "",
+              "over": 616,
+              "w": 268
+            },
+            {
+              "tag": "a",
+              "cls": "",
+              "over": 616,
+              "w": 268
+            },
+            {
+              "tag": "a",
+              "cls": "nav-cta",
+              "over": 616,
+              "w": 260
+            }
+          ],
+          "totalTags": 354,
+          "svg": 21,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "navToggle",
+            "primaryNav",
+            "main",
+            "top",
+            "dayClip",
+            "heroTitle",
+            "signup",
+            "email",
+            "formMsg",
+            "demoTitle",
+            "features",
+            "featTitle",
+            "workflow",
+            "flowTitle",
+            "quoteTitle",
+            "pricing",
+            "priceTitle",
+            "priceGrid",
+            "faq",
+            "faqTitle",
+            "wf-switch"
+          ],
+          "anchors": 13,
+          "hamburger": true,
+          "hamSmall": true,
+          "hamExpanded": "false",
+          "toggleSmall": true,
+          "ariaTargets": [
+            "primaryNav"
+          ],
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "revealFixed": 0
+        },
+        "1024": {
+          "deviceW": 1024,
+          "vw": 1024,
+          "limit": 1024,
+          "docW": 1024,
+          "clientW": 1024,
+          "bodyW": 1024,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "totalTags": 354,
+          "svg": 21,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "navToggle",
+            "primaryNav",
+            "main",
+            "top",
+            "dayClip",
+            "heroTitle",
+            "signup",
+            "email",
+            "formMsg",
+            "demoTitle",
+            "features",
+            "featTitle",
+            "workflow",
+            "flowTitle",
+            "quoteTitle",
+            "pricing",
+            "priceTitle",
+            "priceGrid",
+            "faq",
+            "faqTitle",
+            "wf-switch"
+          ],
+          "anchors": 13,
+          "hamburger": true,
+          "hamSmall": false,
+          "hamExpanded": "false",
+          "toggleSmall": false,
+          "ariaTargets": [
+            "primaryNav"
+          ],
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "revealFixed": 0
+        },
+        "1440": {
+          "deviceW": 1440,
+          "vw": 1440,
+          "limit": 1440,
+          "docW": 1440,
+          "clientW": 1440,
+          "bodyW": 1440,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "totalTags": 354,
+          "svg": 21,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "navToggle",
+            "primaryNav",
+            "main",
+            "top",
+            "dayClip",
+            "heroTitle",
+            "signup",
+            "email",
+            "formMsg",
+            "demoTitle",
+            "features",
+            "featTitle",
+            "workflow",
+            "flowTitle",
+            "quoteTitle",
+            "pricing",
+            "priceTitle",
+            "priceGrid",
+            "faq",
+            "faqTitle",
+            "wf-switch"
+          ],
+          "anchors": 13,
+          "hamburger": true,
+          "hamSmall": false,
+          "hamExpanded": "false",
+          "toggleSmall": false,
+          "ariaTargets": [
+            "primaryNav"
+          ],
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "revealFixed": 0
+        }
+      },
+      "interactions": {
+        "360": {
+          "notes": [],
+          "invalidMsgs": [
+            "这个邮箱看起来不太对，检查一下有没有漏掉 @ 或域名后缀。"
+          ],
+          "validMsgs": [
+            "收到了，开始链接已发往 me@example.com。去收件箱点一下就能用。"
+          ],
+          "toggleCount": 2,
+          "priceBefore": [
+            "¥\n0",
+            "¥\n38"
+          ],
+          "priceAfter": [
+            "¥\n0",
+            "¥\n29"
+          ],
+          "hamButtonVisible": true,
+          "hamTargetFound": true,
+          "hamExpandedAfter": "true",
+          "hamClosedSig": "flex|visible|none|1|matrix(1, 0, 0, 1, 619.188, 0)|900",
+          "hamOpenSig": "flex|visible|none|1|none|900",
+          "hamChanged": true,
+          "hamRestored": true,
+          "hamInertWhenClosed": false,
+          "detailsOpened": true
+        },
+        "1440": {
+          "notes": [],
+          "invalidMsgs": [
+            "这个邮箱看起来不太对，检查一下有没有漏掉 @ 或域名后缀。"
+          ],
+          "validMsgs": [
+            "收到了，开始链接已发往 me@example.com。去收件箱点一下就能用。"
+          ],
+          "toggleCount": 2,
+          "priceBefore": [
+            "¥\n0",
+            "¥\n38"
+          ],
+          "priceAfter": [
+            "¥\n0",
+            "¥\n29"
+          ],
+          "hamButtonVisible": false,
+          "hamTargetFound": true,
+          "hamExpandedAfter": "true",
+          "hamClosedSig": "flex|visible|none|1|none|49",
+          "hamOpenSig": "flex|visible|none|1|none|49",
+          "hamChanged": false,
+          "hamRestored": true,
+          "hamInertWhenClosed": false,
+          "detailsOpened": true
+        }
+      },
+      "consoleErrors": []
+    },
+    "d": {
+      "viewports": {
+        "360": {
+          "deviceW": 360,
+          "vw": 360,
+          "limit": 360,
+          "docW": 360,
+          "clientW": 360,
+          "bodyW": 360,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [
+            {
+              "tag": "ul",
+              "cls": "band__track",
+              "over": 1806,
+              "w": 1138
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 1766,
+              "w": 266
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 1460,
+              "w": 266
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 1154,
+              "w": 223
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 891,
+              "w": 223
+            },
+            {
+              "tag": "ul",
+              "cls": "band__track",
+              "over": 667,
+              "w": 1138
+            }
+          ],
+          "totalTags": 283,
+          "svg": 11,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "rail",
+            "railLabel",
+            "navToggle",
+            "siteNav",
+            "main",
+            "hero",
+            "hero-form",
+            "signup",
+            "email",
+            "formMsg",
+            "demo",
+            "proof",
+            "features",
+            "process",
+            "reviews",
+            "pricing",
+            "proNum",
+            "faq",
+            "wf-switch"
+          ],
+          "anchors": 19,
+          "hamburger": true,
+          "hamSmall": true,
+          "hamExpanded": "false",
+          "toggleSmall": true,
+          "ariaTargets": [
+            "siteNav"
+          ],
+          "h1": "想到就记下，\n        剩下的交给\n        Flowtide",
+          "revealFixed": 0
+        },
+        "768": {
+          "deviceW": 768,
+          "vw": 768,
+          "limit": 768,
+          "docW": 768,
+          "clientW": 768,
+          "bodyW": 768,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [
+            {
+              "tag": "ul",
+              "cls": "band__track",
+              "over": 1401,
+              "w": 1138
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 1361,
+              "w": 266
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 1056,
+              "w": 266
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 750,
+              "w": 223
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 487,
+              "w": 223
+            },
+            {
+              "tag": "ul",
+              "cls": "band__track",
+              "over": 263,
+              "w": 1138
+            }
+          ],
+          "totalTags": 283,
+          "svg": 11,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "rail",
+            "railLabel",
+            "navToggle",
+            "siteNav",
+            "main",
+            "hero",
+            "hero-form",
+            "signup",
+            "email",
+            "formMsg",
+            "demo",
+            "proof",
+            "features",
+            "process",
+            "reviews",
+            "pricing",
+            "proNum",
+            "faq",
+            "wf-switch"
+          ],
+          "anchors": 19,
+          "hamburger": true,
+          "hamSmall": true,
+          "hamExpanded": "false",
+          "toggleSmall": true,
+          "ariaTargets": [
+            "siteNav"
+          ],
+          "h1": "想到就记下，\n        剩下的交给\n        Flowtide",
+          "revealFixed": 0
+        },
+        "1024": {
+          "deviceW": 1024,
+          "vw": 1024,
+          "limit": 1024,
+          "docW": 1024,
+          "clientW": 1024,
+          "bodyW": 1024,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [
+            {
+              "tag": "ul",
+              "cls": "band__track",
+              "over": 1186,
+              "w": 1153
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 1146,
+              "w": 270
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 836,
+              "w": 270
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 526,
+              "w": 227
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 259,
+              "w": 227
+            },
+            {
+              "tag": "ul",
+              "cls": "band__track",
+              "over": 32,
+              "w": 1153
+            }
+          ],
+          "totalTags": 283,
+          "svg": 11,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "rail",
+            "railLabel",
+            "navToggle",
+            "siteNav",
+            "main",
+            "hero",
+            "hero-form",
+            "signup",
+            "email",
+            "formMsg",
+            "demo",
+            "proof",
+            "features",
+            "process",
+            "reviews",
+            "pricing",
+            "proNum",
+            "faq",
+            "wf-switch"
+          ],
+          "anchors": 19,
+          "hamburger": true,
+          "hamSmall": false,
+          "hamExpanded": "false",
+          "toggleSmall": false,
+          "ariaTargets": [
+            "siteNav"
+          ],
+          "h1": "想到就记下，\n        剩下的交给\n        Flowtide",
+          "revealFixed": 0
+        },
+        "1440": {
+          "deviceW": 1440,
+          "vw": 1440,
+          "limit": 1440,
+          "docW": 1440,
+          "clientW": 1440,
+          "bodyW": 1440,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [
+            {
+              "tag": "ul",
+              "cls": "band__track",
+              "over": 848,
+              "w": 1194
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 808,
+              "w": 281
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 487,
+              "w": 281
+            },
+            {
+              "tag": "li",
+              "cls": "",
+              "over": 166,
+              "w": 236
+            }
+          ],
+          "totalTags": 283,
+          "svg": 11,
+          "details": 6,
+          "detailsOpen": 0,
+          "sectionIds": [
+            "rail",
+            "railLabel",
+            "navToggle",
+            "siteNav",
+            "main",
+            "hero",
+            "hero-form",
+            "signup",
+            "email",
+            "formMsg",
+            "demo",
+            "proof",
+            "features",
+            "process",
+            "reviews",
+            "pricing",
+            "proNum",
+            "faq",
+            "wf-switch"
+          ],
+          "anchors": 19,
+          "hamburger": true,
+          "hamSmall": false,
+          "hamExpanded": "false",
+          "toggleSmall": false,
+          "ariaTargets": [
+            "siteNav"
+          ],
+          "h1": "想到就记下，\n        剩下的交给\n        Flowtide",
+          "revealFixed": 0
+        }
+      },
+      "interactions": {
+        "360": {
+          "notes": [],
+          "invalidMsgs": [
+            "邮箱格式不正确，请检查后重试。"
+          ],
+          "validMsgs": [
+            "已发送确认邮件到 me@example.com，查收后即可开始使用。"
+          ],
+          "toggleCount": 2,
+          "priceBefore": [
+            "¥\n0",
+            "¥\n38"
+          ],
+          "priceAfter": [
+            "¥\n0",
+            "¥\n29"
+          ],
+          "hamButtonVisible": true,
+          "hamTargetFound": true,
+          "hamExpandedAfter": "true",
+          "hamClosedSig": "none|visible|none|1|none|0",
+          "hamOpenSig": "flex|visible|none|1|none|359",
+          "hamChanged": true,
+          "hamRestored": true,
+          "hamInertWhenClosed": false,
+          "detailsOpened": true
+        },
+        "1440": {
+          "notes": [],
+          "invalidMsgs": [
+            "邮箱格式不正确，请检查后重试。"
+          ],
+          "validMsgs": [
+            "已发送确认邮件到 me@example.com，查收后即可开始使用。"
+          ],
+          "toggleCount": 2,
+          "priceBefore": [
+            "¥\n0",
+            "¥\n38"
+          ],
+          "priceAfter": [
+            "¥\n0",
+            "¥\n29"
+          ],
+          "hamButtonVisible": false,
+          "hamTargetFound": true,
+          "hamExpandedAfter": "true",
+          "hamClosedSig": "flex|visible|none|1|none|54",
+          "hamOpenSig": "flex|visible|none|1|none|54",
+          "hamChanged": false,
+          "hamRestored": true,
+          "hamInertWhenClosed": false,
+          "detailsOpened": true
+        }
+      },
+      "consoleErrors": []
+    }
+  }
+}

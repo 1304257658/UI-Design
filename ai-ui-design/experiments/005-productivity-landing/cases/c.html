@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Flowtide · 想到就记下，剩下的交给 Flowtide</title>
+<style>
+/* ============================================================
+   Flowtide · 施工单 C —— 亲切大众消费向（圆润高饱和）
+   指定色板 / 指定数值 / 指定字体栈 全部照用。
+   字号：比例 1.37 的等比数列表（root 固定 16px，故任意视口下相邻级差
+   恒为 1.37）。宽度用 px・间距用 8px 倍数，不使用脆弱 vw。
+   ============================================================ */
+:root{
+  /* ---- 指定色板 ---- */
+  --bg:#FDF9FA;
+  --surface:#F8DED1;
+  --raised:#CEF7DD;
+  --line:#142F3D;
+  --ink:#142F3D;
+  --muted:#475A83;
+  --accent:#F87935;
+  --accent-soft:#F8DED1;
+  --on-accent:#3A2215;
+  /* ---- 补充撞色（图形 / 插画 / 分区） ---- */
+  --second:#3FEB7B;
+  --third:#F844B9;
+  --bg2:#CEF7DD;
+
+  /* ---- 指定数值 ---- */
+  --radius:18px;          /* 圆角 */
+  --radius-2:20px;        /* 次级元素圆角 */
+  --step:8px;             /* 间距基数 */
+  --frame:1120px;         /* 内容容器宽 */
+  --stroke:4px;           /* 描边宽度 */
+  --shadow:6px;           /* 阴影偏移 */
+  --band:72px;            /* 区块上下内边距 */
+  --ls-tight:-0.017em;    /* 紧凑字距 */
+  --ls-wide:0.092em;      /* 舒展字距 */
+  --dur:260ms;            /* 动效时长 */
+  --ease:cubic-bezier(.4,0,.2,1);
+
+  /* ---- 字号：比例 1.37 的 9 级等比数列表 ----
+     16px root 下依次 8.8 / 12.0 / 16.5 / 22.6 / 30.9 / 42.4 / 58.1 / 79.5 / 108.9px
+     root 固定 16px，≥900px 升 17px、≥1200px 升 18px；全部字号都是 rem，
+     rem 只由 root 决定，因此相邻级差在任意视口恒为 1.37。 */
+  --fs-badge:.549rem;     /*  8.8px  徽章缎带（最小 UI 字） */
+  --fs-label:.752rem;     /* 12.0px  角标 / 眉标 / 最小说明 */
+  --fs-sm:1.03rem;        /* 16.5px  表单与列表正文 */
+  --fs-base:1.411rem;     /* 22.6px  主正文 */
+  --fs-lead:1.933rem;     /* 30.9px  首屏副标题 / 流程强调 */
+  --fs-h3:2.648rem;       /* 42.4px  区块标题 / 卡片名 */
+  --fs-h2:3.628rem;       /* 58.1px  价格数字 / 引号装饰 */
+  --fs-display:4.97rem;   /* 79.5px  首屏 H1 */
+  --fs-h1:6.809rem;       /* 108.9px 页脚超大品牌字标 */
+}
+@media (min-width:900px){:root{font-size:17px}}
+@media (min-width:1200px){:root{font-size:18px}}
+
+*,*::before,*::after{box-sizing:border-box}
+/* overflow-x:clip 放在根元素上：关着的抽屉是 position:fixed，
+   body 上的 overflow-x:hidden 裁不到固定定位后代，360px 下会多出 45px 横向溢出。
+   clip 不会创建滚动容器，所以不影响锚点滚动。 */
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:var(--fs-base);
+  line-height:1.75;
+  color:var(--ink);
+  background:var(--bg);
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{
+  font-family:"Helvetica Neue",Helvetica,system-ui,"PingFang SC",sans-serif;
+  letter-spacing:var(--ls-tight);
+  line-height:1.14;
+  margin:0;
+  font-weight:800;
+}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+svg{display:block;max-width:100%}
+button{font:inherit;color:inherit}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:var(--stroke) solid var(--accent);outline-offset:3px;border-radius:6px}
+::selection{background:var(--third);color:#fff}
+
+.wrap{width:100%;max-width:var(--frame);margin:0 auto;padding-left:calc(var(--step) * 3);padding-right:calc(var(--step) * 3)}
+.band{padding-top:var(--band);padding-bottom:var(--band)}
+.band--tight{padding-top:calc(var(--step) * 6);padding-bottom:var(--band)}
+
+.skip{
+  position:absolute;left:calc(var(--step) * -1);top:calc(var(--step) * -1);
+  z-index:100;background:var(--ink);color:var(--bg);
+  padding:calc(var(--step) * 1.5) calc(var(--step) * 3);border-radius:var(--radius);
+  transform:translateY(-200%);
+}
+.skip:focus{left:calc(var(--step) * 2);top:calc(var(--step) * 2);transform:none}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- 1. 导航：单行 wordmark / 链接 / 纯文字 CTA ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:var(--bg);
+  border-bottom:var(--stroke) solid var(--line);
+}
+.nav-in{display:flex;align-items:center;gap:calc(var(--step) * 3);min-height:calc(var(--step) * 10)}
+.wordmark{
+  display:flex;align-items:center;gap:var(--step);
+  font-family:"Helvetica Neue",Helvetica,system-ui,"PingFang SC",sans-serif;
+  font-weight:800;font-size:var(--fs-h3);letter-spacing:var(--ls-tight);
+}
+.wordmark svg{width:38px;height:38px;flex:none}
+.nav-list{display:flex;align-items:center;gap:calc(var(--step) * 4);margin-left:auto}
+.nav-list a{
+  font-size:var(--fs-sm);font-weight:700;color:var(--muted);
+  padding:calc(var(--step) * .5) 0;border-bottom:3px solid transparent;
+  transition:color var(--dur) var(--ease),border-color var(--dur) var(--ease);
+}
+.nav-list a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.nav-cta{display:inline-flex;align-items:center;gap:calc(var(--step) * .75);font-weight:800;color:var(--ink) !important;white-space:nowrap}
+.nav-cta span{border-bottom:var(--stroke) solid var(--accent);padding-bottom:2px}
+.nav-cta svg{width:18px;height:18px;transition:transform var(--dur) var(--ease)}
+.nav-cta:hover svg{transform:translateX(4px)}
+.burger{
+  display:none;width:48px;height:48px;flex:none;
+  background:var(--raised);border:var(--stroke) solid var(--line);
+  border-radius:var(--radius);align-items:center;justify-content:center;cursor:pointer;
+  box-shadow:var(--shadow) var(--shadow) 0 var(--line);
+  transition:transform var(--dur) var(--ease),box-shadow var(--dur) var(--ease);
+}
+.burger:active{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--line)}
+.burger span{display:block;width:20px;height:3px;background:var(--ink);border-radius:3px;position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:3px;background:var(--ink);border-radius:3px}
+.burger span::before{top:-7px}
+.burger span::after{top:7px}
+
+/* ---------- 2. 首屏：顶部整块插画 + 下方居中文案 ---------- */
+.hero{padding-top:calc(var(--step) * 5);padding-bottom:var(--step)}
+.art{
+  position:relative;
+  border:var(--stroke) solid var(--line);
+  border-radius:var(--radius);
+  background:var(--raised);
+  overflow:hidden;
+  box-shadow:var(--shadow) var(--shadow) 0 var(--line);
+}
+.art svg{width:100%;height:auto}
+.hero-copy{padding:calc(var(--step) * 6) calc(var(--step) * 2) var(--band);text-align:center}
+.hero-copy h1{font-size:var(--fs-display);max-width:20ch;margin:0 auto}
+.hero-sub{
+  font-size:var(--fs-lead);line-height:1.8;color:var(--muted);
+  max-width:34ch;margin:calc(var(--step) * 3) auto 0;
+}
+.form{max-width:34rem;margin:calc(var(--step) * 5) auto 0}
+.form-row{display:flex;gap:calc(var(--step) * 1.5);justify-content:center}
+.form-row input{
+  flex:1 1 auto;min-width:0;
+  font:inherit;font-size:var(--fs-base);color:var(--ink);
+  background:var(--bg);
+  border:var(--stroke) solid var(--line);
+  border-radius:var(--radius);
+  padding:calc(var(--step) * 1.75) calc(var(--step) * 2.5);
+  box-shadow:var(--shadow) var(--shadow) 0 var(--line);
+  transition:box-shadow var(--dur) var(--ease),transform var(--dur) var(--ease);
+}
+.form-row input::placeholder{color:var(--muted);opacity:.72}
+.form-row input:focus-visible{outline-offset:6px}
+.btn{
+  flex:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:var(--fs-base);color:var(--on-accent);
+  background:var(--accent);
+  border:var(--stroke) solid var(--line);
+  border-radius:var(--radius);
+  padding:calc(var(--step) * 1.75) calc(var(--step) * 4);
+  box-shadow:var(--shadow) var(--shadow) 0 var(--line);
+  transition:transform var(--dur) var(--ease),box-shadow var(--dur) var(--ease);
+}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:calc(var(--step) + 2px) calc(var(--step) + 2px) 0 var(--line)}
+.btn:active{transform:translate(4px,4px);box-shadow:2px 2px 0 var(--line)}
+.micro{margin-top:calc(var(--step) * 2.5);font-size:var(--fs-sm);color:var(--muted)}
+.form-msg{
+  display:none;margin:calc(var(--step) * 2.5) auto 0;
+  max-width:34rem;text-align:left;align-items:flex-start;gap:var(--step);
+  padding:calc(var(--step) * 1.5) calc(var(--step) * 2);
+  border:3px solid var(--line);border-radius:var(--radius-2);
+  font-size:var(--fs-sm);font-weight:700;line-height:1.6;
+}
+.form-msg.is-on{display:flex}
+.form-msg.is-err{background:var(--accent-soft);color:#7A2A0A}
+.form-msg.is-ok{background:var(--bg2);color:#0E5132}
+.form-msg svg{width:20px;height:20px;flex:none;margin-top:3px}
+
+/* ---------- 装饰母题：彩色小圆点 / 纸屑散落 ---------- */
+.confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.confetti i{position:absolute;border-radius:50%;display:block}
+.c-s{width:10px;height:10px}
+.c-m{width:16px;height:16px}
+.c-l{width:24px;height:24px}
+.c-second{background:var(--second)}
+.c-third{background:var(--third)}
+.c-accent{background:var(--accent)}
+.c-soft{background:var(--accent-soft)}
+.c-raised{background:var(--raised)}
+.rel{position:relative}
+.drift{animation:drift 5.2s var(--ease) infinite alternate}
+.drift.slow{animation-duration:7.4s}
+.drift.fast{animation-duration:4.1s}
+@keyframes drift{from{transform:translateY(-6px)}to{transform:translateY(6px)}}
+
+/* ---------- 区块标题（统一左对齐基线） ---------- */
+.sec-head{max-width:48ch;margin-bottom:calc(var(--step) * 6)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:var(--step);
+  font-size:var(--fs-label);font-weight:800;
+  letter-spacing:var(--ls-wide);color:var(--muted);text-transform:uppercase;
+}
+.eyebrow::before{content:"";width:20px;height:3px;background:var(--accent);border-radius:3px}
+.sec-head h2{font-size:var(--fs-h2);margin-top:calc(var(--step) * 1.5)}
+.sec-head p{margin-top:calc(var(--step) * 2);color:var(--muted);line-height:1.85;max-width:44ch}
+
+/* ---------- 3. 快速收录演示：气泡 → 标签 → 日程卡片 ---------- */
+.demo-grid{display:grid;grid-template-columns:1fr 1fr 1.05fr;gap:calc(var(--step) * 4);align-items:start}
+.demo-col{position:relative;min-width:0}
+.step-tag{
+  display:inline-flex;align-items:center;gap:var(--step);
+  font-size:var(--fs-label);font-weight:800;letter-spacing:var(--ls-wide);
+  color:var(--muted);margin-bottom:calc(var(--step) * 2);
+}
+.step-tag b{
+  display:grid;place-items:center;width:26px;height:26px;border-radius:50%;
+  background:var(--accent);color:var(--on-accent);
+  border:3px solid var(--line);font-size:var(--fs-label);letter-spacing:0;
+}
+.bubble{
+  position:relative;
+  background:var(--surface);
+  border:var(--stroke) solid var(--line);
+  border-radius:var(--radius-2);
+  padding:calc(var(--step) * 3);
+  box-shadow:var(--shadow) var(--shadow) 0 var(--line);
+}
+.bubble p{font-size:var(--fs-base);line-height:1.8}
+.bubble time{display:block;margin-top:calc(var(--step) * 2);font-size:var(--fs-label);font-weight:800;letter-spacing:var(--ls-wide);color:var(--muted)}
+.bubble::after{
+  content:"";position:absolute;left:calc(var(--step) * 4);bottom:-14px;width:22px;height:22px;
+  background:var(--surface);border-right:var(--stroke) solid var(--line);border-bottom:var(--stroke) solid var(--line);
+  transform:rotate(45deg);border-radius:4px;
+}
+.arrow-dots{display:flex;gap:calc(var(--step) * .75);justify-content:center;margin:calc(var(--step) * 1.5) 0}
+.arrow-dots i{width:8px;height:8px;border-radius:50%;background:var(--second)}
+.arrow-dots i:nth-child(2){background:var(--accent)}
+.arrow-dots i:nth-child(3){background:var(--third)}
+.chips{display:flex;flex-wrap:wrap;gap:calc(var(--step) * 1.5)}
+.chip{
+  display:inline-flex;align-items:center;gap:var(--step);
+  background:var(--bg2);border:3px solid var(--line);border-radius:999px;
+  padding:var(--step) calc(var(--step) * 2);font-size:var(--fs-sm);font-weight:700;
+}
+.chip svg{width:16px;height:16px;flex:none}
+.chip--val{background:var(--raised);font-variant-numeric:tabular-nums}
+.chip--tag{background:var(--accent-soft)}
+.chip--time{background:var(--raised)}
+.sched{
+  background:var(--bg);
+  border:var(--stroke) solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow) var(--shadow) 0 var(--line);
+  overflow:hidden;
+}
+.sched-top{display:flex;align-items:baseline;justify-content:space-between;gap:calc(var(--step) * 2);padding:calc(var(--step) * 2.5) calc(var(--step) * 3);border-bottom:3px solid var(--line);background:var(--raised);flex-wrap:wrap}
+.sched-top b{font-size:var(--fs-sm)}
+.sched-top span{font-size:var(--fs-label);font-weight:700;color:var(--muted)}
+.slot{display:flex;align-items:center;gap:calc(var(--step) * 2);padding:calc(var(--step) * 2) calc(var(--step) * 3);border-top:3px solid rgba(20,47,61,.14);font-size:var(--fs-sm);color:var(--muted)}
+.slot i{width:10px;height:10px;border-radius:50%;background:var(--muted);opacity:.35;flex:none}
+.slot--mine{
+  background:var(--accent);color:var(--on-accent);font-weight:800;
+  border-left:calc(var(--step) * 1.5) solid var(--line);
+}
+.slot--mine i{background:var(--on-accent);opacity:1}
+.slot b{font-variant-numeric:tabular-nums}
+.slot-min{border-left:calc(var(--stroke) * 1.5) solid var(--accent);padding-left:calc(var(--step) * 1.5)}
+
+/* ---------- 4. 社会证明：一句话内联 + 两侧短横线 ---------- */
+.proof{display:flex;align-items:center;gap:calc(var(--step) * 3);justify-content:center;text-align:center;flex-wrap:wrap}
+.proof::before,.proof::after{content:"";flex:1 1 40px;max-width:120px;height:3px;background:var(--line);border-radius:3px;opacity:.28}
+.proof p{font-size:var(--fs-sm);font-weight:800;letter-spacing:var(--ls-wide);color:var(--muted)}
+
+/* ---------- 5. 功能：唯一反色区块 + 整宽编号行 ---------- */
+.features{
+  position:relative;
+  background:var(--ink);color:var(--bg);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+.features .wrap{position:relative;z-index:1}
+.features .sec-head h2{color:var(--bg)}
+.features .sec-head p{color:var(--raised)}
+.features .eyebrow{color:var(--raised)}
+.frow{
+  display:grid;grid-template-columns:72px 1fr 1.15fr;gap:calc(var(--step) * 4);align-items:start;
+  padding:calc(var(--step) * 4) 0;border-top:3px solid rgba(206,247,221,.28);
+}
+.frow:last-child{border-bottom:3px solid rgba(206,247,221,.28)}
+.fnum{
+  font-family:"Helvetica Neue",Helvetica,system-ui,"PingFang SC",sans-serif;
+  font-size:var(--fs-h2);font-weight:800;letter-spacing:var(--ls-tight);
+  color:var(--raised);line-height:1;
+}
+.frow h3{font-size:var(--fs-h3);color:var(--bg)}
+.frow p{color:var(--raised);line-height:1.85}
+
+/* ---------- 6. 工作流程：纵向时间轴 ---------- */
+.timeline{position:relative;padding-left:56px}
+.timeline::before{content:"";position:absolute;left:22px;top:14px;bottom:14px;width:var(--stroke);background:var(--line);border-radius:var(--stroke)}
+.step{position:relative;padding-bottom:calc(var(--step) * 5)}
+.step:last-child{padding-bottom:0}
+.step-node{
+  position:absolute;left:calc(var(--step) * -8);top:0;
+  width:48px;height:48px;border-radius:50%;
+  display:grid;place-items:center;
+  background:var(--accent);color:var(--on-accent);
+  border:var(--stroke) solid var(--line);
+  font-weight:800;font-size:var(--fs-base);
+  box-shadow:3px 3px 0 var(--line);
+}
+.step h3{font-size:var(--fs-h3)}
+.step p{margin-top:var(--step);color:var(--muted);line-height:1.85;max-width:46ch}
+.step:nth-child(2) .step-node{background:var(--bg2)}
+.step:nth-child(3) .step-node{background:var(--surface)}
+.step:nth-child(4) .step-node{background:var(--third);color:#FDF9FA}
+
+/* ---------- 7. 用户评价：阶梯错位卡片 ---------- */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--step) * 4);align-items:start}
+.quote{
+  background:var(--bg);
+  border:var(--stroke) solid var(--line);
+  border-radius:var(--radius);
+  padding:calc(var(--step) * 3.5);
+  box-shadow:var(--shadow) var(--shadow) 0 var(--line);
+}
+.quote:nth-child(1){margin-top:0;background:var(--surface)}
+.quote:nth-child(2){margin-top:calc(var(--step) * 6);background:var(--bg2)}
+.quote:nth-child(3){margin-top:calc(var(--step) * 12)}
+.quote figure{margin:0}
+.quote blockquote{margin:0;font-size:var(--fs-base);line-height:1.85}
+.quote figcaption{margin-top:calc(var(--step) * 3);padding-top:calc(var(--step) * 2);border-top:3px solid rgba(20,47,61,.18);font-size:var(--fs-sm);color:var(--muted)}
+.quote figcaption b{display:block;color:var(--ink);font-size:var(--fs-base);font-weight:800}
+.qmark{
+  font-family:"Helvetica Neue",Helvetica,system-ui,sans-serif;
+  font-size:var(--fs-h2);line-height:.8;color:var(--third);font-weight:800;margin-bottom:var(--step);
+}
+
+/* ---------- 8. 价格：对比表装置（竖分隔 + 缎带 + 月付/年付） ---------- */
+.price-sec{position:relative}
+.seg{display:flex;gap:var(--step);margin-top:calc(var(--step) * 3);flex-wrap:wrap;align-items:center}
+.seg-btn{
+  cursor:pointer;display:inline-flex;align-items:center;gap:var(--step);
+  background:var(--bg);border:var(--stroke) solid var(--line);border-radius:var(--radius);
+  padding:calc(var(--step) * 1.25) calc(var(--step) * 2.5);font-weight:800;font-size:var(--fs-sm);
+  box-shadow:3px 3px 0 var(--line);
+  transition:background var(--dur) var(--ease),transform var(--dur) var(--ease);
+}
+.seg-btn[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+.seg-btn:active{transform:translate(2px,2px)}
+.save{
+  font-size:var(--fs-label);font-weight:800;letter-spacing:var(--ls-wide);
+  background:var(--third);color:#FDF9FA;border-radius:999px;padding:calc(var(--step) * .5) calc(var(--step) * 1.5);
+}
+.price-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:calc(var(--step) * 5);align-items:stretch;margin-top:calc(var(--step) * 6)}
+.price-rule{width:var(--stroke);background:var(--line);border-radius:var(--stroke);opacity:.35}
+.plan{
+  position:relative;display:flex;flex-direction:column;
+  background:var(--bg);border:var(--stroke) solid var(--line);
+  border-radius:var(--radius);padding:calc(var(--step) * 4);
+  box-shadow:var(--shadow) var(--shadow) 0 var(--line);
+}
+.plan--pro{background:var(--raised)}
+.plan-name{font-size:var(--fs-h3);font-weight:800;letter-spacing:var(--ls-tight)}
+.plan-for{margin-top:calc(var(--step) * .5);font-size:var(--fs-sm);color:var(--muted)}
+.plan-price{display:flex;align-items:baseline;gap:var(--step);flex-wrap:wrap;margin-top:calc(var(--step) * 3);padding-bottom:calc(var(--step) * 3);border-bottom:3px solid rgba(20,47,61,.2)}
+.cur{font-size:var(--fs-h3);font-weight:800}
+.num{
+  font-family:"Helvetica Neue",Helvetica,system-ui,"PingFang SC",sans-serif;
+  font-size:var(--fs-h2);font-weight:800;letter-spacing:var(--ls-tight);
+  font-variant-numeric:tabular-nums;line-height:1;
+}
+.per{font-size:var(--fs-sm);font-weight:700;color:var(--muted)}
+.plan-price--y{display:none}
+.price-grid[data-mode="y"] .plan-price--m{display:none}
+.price-grid[data-mode="y"] .plan-price--y{display:flex}
+.plan ul{margin-top:calc(var(--step) * 3);display:flex;flex-direction:column;gap:calc(var(--step) * 1.5)}
+.plan li{display:flex;align-items:flex-start;gap:var(--step);font-size:var(--fs-sm);line-height:1.7;color:var(--ink)}
+.plan li svg{width:18px;height:18px;flex:none;margin-top:4px;color:#0E5132}
+.plan .btn{margin-top:calc(var(--step) * 4);align-self:stretch}
+.ribbon{
+  position:absolute;top:calc(var(--step) * 2.5);right:calc(var(--step) * -2);
+  background:var(--accent);color:var(--on-accent);
+  border:3px solid var(--line);border-radius:8px;
+  padding:calc(var(--step) * .75) calc(var(--step) * 1.75);
+  font-size:var(--fs-badge);font-weight:800;letter-spacing:var(--ls-wide);
+  transform:rotate(4deg);box-shadow:3px 3px 0 var(--line);white-space:nowrap;
+}
+
+/* ---------- 9. 常见问题：单窄栏 + 横线分隔 ---------- */
+.faq{max-width:64ch;margin:0 auto}
+.faq details{border-bottom:3px solid var(--line)}
+.faq details:first-of-type{border-top:3px solid var(--line)}
+.faq summary{
+  cursor:pointer;list-style:none;
+  display:flex;align-items:center;justify-content:space-between;gap:calc(var(--step) * 2);
+  padding:calc(var(--step) * 3) 0;
+  font-family:"Helvetica Neue",Helvetica,system-ui,"PingFang SC",sans-serif;
+  font-weight:800;font-size:var(--fs-lead);letter-spacing:var(--ls-tight);
+  transition:color var(--dur) var(--ease);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:#B8480E}
+.faq .plus{
+  flex:none;width:32px;height:32px;border-radius:50%;
+  border:3px solid var(--line);background:var(--bg2);
+  display:grid;place-items:center;
+  transition:transform var(--dur) var(--ease),background var(--dur) var(--ease);
+}
+.faq .plus svg{width:16px;height:16px}
+.faq details[open] .plus{transform:rotate(45deg);background:var(--accent)}
+.faq .a-body{padding:0 0 calc(var(--step) * 3);color:var(--muted);line-height:1.9;max-width:56ch}
+
+/* ---------- 10. 页脚：超大品牌字标打底 + 链接一行 ---------- */
+.footer{border-top:var(--stroke) solid var(--line);padding-top:var(--band);padding-bottom:calc(var(--step) * 5);overflow:hidden}
+.foot-brand{
+  font-family:"Helvetica Neue",Helvetica,system-ui,"PingFang SC",sans-serif;
+  font-size:var(--fs-h1);font-weight:800;letter-spacing:var(--ls-tight);
+  line-height:.86;color:var(--ink);margin:0;
+}
+.foot-links{display:flex;align-items:center;gap:calc(var(--step) * 3);flex-wrap:wrap;margin-top:calc(var(--step) * 4);padding-top:calc(var(--step) * 3);border-top:3px solid var(--line)}
+.foot-links a{font-size:var(--fs-sm);font-weight:700;color:var(--muted);transition:color var(--dur) var(--ease)}
+.foot-links a:hover{color:var(--ink);border-bottom:3px solid var(--accent)}
+.foot-links .copy{margin-left:auto;font-size:var(--fs-sm);color:var(--muted)}
+.foot-dot{width:10px;height:10px;border-radius:50%;background:var(--accent)}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .demo-grid{grid-template-columns:1fr 1fr}
+  .demo-col--sched{grid-column:1 / -1}
+}
+@media (max-width:820px){
+  .burger{display:inline-flex;margin-left:auto}
+  .nav-list{
+    position:fixed;top:0;right:0;z-index:60;
+    width:min(20rem,86vw);height:100%;
+    flex-direction:column;align-items:stretch;gap:calc(var(--step) * 2);
+    margin-left:0;padding:calc(var(--step) * 12) calc(var(--step) * 3) calc(var(--step) * 3);
+    background:var(--raised);border-left:var(--stroke) solid var(--line);
+    transform:translateX(200%);
+    transition:transform var(--dur) var(--ease);
+  }
+  .nav-list.is-open{transform:none}
+  .nav-list a{font-size:var(--fs-lead);padding:calc(var(--step) * 1.5) 0;border-bottom:3px solid rgba(20,47,61,.16)}
+  .nav-cta{margin-left:var(--step);border-bottom:0}
+  .demo-grid{grid-template-columns:1fr}
+  .frow{grid-template-columns:40px 1fr;gap:calc(var(--step) * 2)}
+  .frow p{grid-column:2}
+  .timeline{padding-left:48px}
+  .step-node{left:-48px}
+  .quotes{grid-template-columns:1fr;gap:calc(var(--step) * 3)}
+  .quote:nth-child(2),.quote:nth-child(3){margin-top:0}
+  .price-grid{grid-template-columns:1fr;gap:calc(var(--step) * 4)}
+  .price-rule{width:auto;height:var(--stroke)}
+  .form-row{flex-direction:column}
+  .btn{width:100%}
+}
+@media (max-width:560px){
+  .timeline{padding-left:44px}
+  .step-node{left:-44px;width:40px;height:40px}
+  .timeline::before{left:18px}
+  .proof{flex-direction:column;gap:calc(var(--step) * 2)}
+  .proof::before,.proof::after{width:64px;flex:none}
+  .foot-links .copy{margin-left:0;width:100%}
+  .foot-brand{font-size:4.1rem}
+  .bubble::after{left:calc(var(--step) * 2)}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+  }
+  .drift{animation:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<!-- ======== 1. 顶部导航 ======== -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="wordmark" href="#top">
+      <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <rect x="2" y="2" width="36" height="36" rx="12" fill="#F87935" stroke="#142F3D" stroke-width="3"/>
+        <path d="M11 23c4-8 7-8 9-4s5 4 9-4" fill="none" stroke="#142F3D" stroke-width="3.4" stroke-linecap="round"/>
+      </svg>
+      Flowtide
+    </a>
+    <button class="burger" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="打开导航菜单">
+      <span aria-hidden="true"></span>
+    </button>
+    <nav class="nav-list" id="primaryNav" aria-label="主导航">
+      <a href="#features">功能</a>
+      <a href="#workflow">流程</a>
+      <a href="#pricing">价格</a>
+      <a href="#faq">常见问题</a>
+      <a class="nav-cta" href="#signup">
+        <span>免费开始</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ======== 2. 主视觉：顶部一整块插画 + 下方居中文案 ======== -->
+  <section class="hero" id="top" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <div class="art">
+        <svg viewBox="0 0 1120 460" role="img" aria-label="插画：一句随手记下的待办，经过 Flowtide 解析，自动落进日历里的具体时间段">
+          <defs>
+            <clipPath id="dayClip"><rect x="838" y="222" width="228" height="92" rx="12"/></clipPath>
+          </defs>
+          <g aria-hidden="true" opacity=".95">
+            <circle cx="92" cy="364" r="56" fill="#F87935" opacity=".34"/>
+            <circle cx="1042" cy="86" r="78" fill="#F844B9" opacity=".2"/>
+            <circle cx="702" cy="46" r="30" fill="#3FEB7B" opacity=".5"/>
+          </g>
+          <g aria-hidden="true">
+            <ellipse cx="252" cy="102" rx="86" ry="38" fill="#FDF9FA" opacity=".85"/>
+            <ellipse cx="318" cy="88" rx="54" ry="30" fill="#FDF9FA" opacity=".85"/>
+            <ellipse cx="826" cy="72" rx="66" ry="30" fill="#FDF9FA" opacity=".7"/>
+          </g>
+
+          <!-- 左：一句随手记 -->
+          <g>
+            <rect x="60" y="150" width="300" height="204" rx="34" fill="#FDF9FA" stroke="#142F3D" stroke-width="6"/>
+            <path d="M150 352 L150 406 L206 352 Z" fill="#FDF9FA" stroke="#142F3D" stroke-width="6" stroke-linejoin="round"/>
+            <rect x="60" y="150" width="300" height="60" rx="30" fill="#F87935" stroke="#142F3D" stroke-width="6"/>
+            <circle cx="98" cy="180" r="9" fill="#142F3D"/>
+            <circle cx="130" cy="180" r="9" fill="#142F3D" opacity=".55"/>
+            <circle cx="162" cy="180" r="9" fill="#142F3D" opacity=".3"/>
+            <rect x="94" y="242" width="228" height="18" rx="9" fill="#142F3D" opacity=".82"/>
+            <rect x="94" y="278" width="164" height="18" rx="9" fill="#142F3D" opacity=".5"/>
+            <rect x="94" y="314" width="96" height="18" rx="9" fill="#3FEB7B"/>
+          </g>
+
+          <!-- 中：解析流 -->
+          <path d="M378 252 C 452 252 470 148 546 148" fill="none" stroke="#142F3D" stroke-width="6" stroke-linecap="round" stroke-dasharray="1 20"/>
+          <path d="M378 252 C 452 252 470 356 546 356" fill="none" stroke="#142F3D" stroke-width="6" stroke-linecap="round" stroke-dasharray="1 20"/>
+          <circle cx="470" cy="252" r="24" fill="#3FEB7B" stroke="#142F3D" stroke-width="6"/>
+          <circle cx="470" cy="252" r="7" fill="#142F3D"/>
+          <g>
+            <rect x="546" y="112" width="216" height="72" rx="22" fill="#F844B9" stroke="#142F3D" stroke-width="6"/>
+            <path d="M600 160l14 16 26-32" fill="none" stroke="#FDF9FA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="654" y="136" width="84" height="12" rx="6" fill="#FDF9FA" opacity=".9"/>
+            <rect x="654" y="156" width="56" height="12" rx="6" fill="#FDF9FA" opacity=".6"/>
+          </g>
+          <g>
+            <rect x="546" y="320" width="216" height="72" rx="22" fill="#FDF9FA" stroke="#142F3D" stroke-width="6"/>
+            <circle cx="588" cy="356" r="16" fill="#3FEB7B" stroke="#142F3D" stroke-width="5"/>
+            <rect x="616" y="344" width="112" height="12" rx="6" fill="#142F3D" opacity=".75"/>
+            <rect x="616" y="364" width="72" height="12" rx="6" fill="#142F3D" opacity=".4"/>
+          </g>
+          <path d="M784 252 L 838 252" fill="none" stroke="#142F3D" stroke-width="6" stroke-linecap="round"/>
+          <path d="M828 240 L842 252 L828 264" fill="none" stroke="#142F3D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- 右：落进日程 -->
+          <g>
+            <rect x="846" y="94" width="212" height="264" rx="30" fill="#FDF9FA" stroke="#142F3D" stroke-width="6"/>
+            <path d="M846 124a30 30 0 0 1 30-30h152a30 30 0 0 1 30 30v26H846z" fill="#F844B9" stroke="#142F3D" stroke-width="6"/>
+            <rect x="878" y="72" width="16" height="38" rx="8" fill="#142F3D"/>
+            <rect x="1010" y="72" width="16" height="38" rx="8" fill="#142F3D"/>
+            <g fill="#142F3D" opacity=".16">
+              <rect x="870" y="182" width="40" height="30" rx="9"/>
+              <rect x="926" y="182" width="40" height="30" rx="9"/>
+              <rect x="982" y="182" width="40" height="30" rx="9"/>
+              <rect x="870" y="304" width="40" height="30" rx="9"/>
+              <rect x="926" y="304" width="40" height="30" rx="9"/>
+              <rect x="982" y="304" width="40" height="30" rx="9"/>
+            </g>
+            <rect x="838" y="222" width="228" height="92" rx="12" fill="#F87935" opacity=".7"/>
+            <g clip-path="url(#dayClip)">
+              <rect x="870" y="222" width="40" height="30" rx="8" fill="#3FEB7B" stroke="#142F3D" stroke-width="4"/>
+              <rect x="926" y="222" width="40" height="30" rx="8" fill="#3FEB7B" stroke="#142F3D" stroke-width="4"/>
+              <rect x="982" y="222" width="40" height="30" rx="8" fill="#3FEB7B" stroke="#142F3D" stroke-width="4"/>
+            </g>
+            <rect x="866" y="266" width="176" height="34" rx="12" fill="#F87935" stroke="#142F3D" stroke-width="4"/>
+            <circle cx="886" cy="283" r="6" fill="#142F3D"/>
+            <rect x="902" y="277" width="112" height="12" rx="6" fill="#142F3D" opacity=".8"/>
+          </g>
+
+          <g aria-hidden="true">
+            <circle cx="416" cy="92" r="10" fill="#F844B9"/>
+            <circle cx="672" cy="240" r="8" fill="#3FEB7B"/>
+            <circle cx="512" cy="404" r="12" fill="#F87935"/>
+            <circle cx="756" cy="418" r="9" fill="#142F3D" opacity=".5"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="hero-copy">
+        <h1 id="heroTitle">想到就记下，剩下的交给 Flowtide</h1>
+        <p class="hero-sub">把散落在聊天、便签和脑子里的待办，自动整理成一份真正执行得下去的计划。</p>
+
+        <form class="form" id="signup" novalidate>
+          <div class="form-row">
+            <label class="sr-only" for="email">邮箱地址</label>
+            <input type="email" id="email" name="email" inputmode="email" autocomplete="email" placeholder="your@email.com" aria-describedby="formMsg">
+            <button class="btn" type="submit">免费开始</button>
+          </div>
+          <p class="micro">无需信用卡，30 秒开始使用</p>
+          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 3. 快速收录演示：输入 → 解析 → 排期 ======== -->
+  <section class="band rel" aria-labelledby="demoTitle">
+    <div class="confetti" aria-hidden="true">
+      <i class="c-s c-second drift" style="left:6%;top:16%"></i>
+      <i class="c-m c-third drift slow" style="right:8%;top:24%"></i>
+      <i class="c-s c-accent drift fast" style="left:14%;bottom:12%"></i>
+    </div>
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">快速收录</span>
+        <h2 id="demoTitle">一句话进去，一个时间段出来</h2>
+        <p>不用选项目、不用填表单。写下一行字，剩下三步都是自动的。</p>
+      </div>
+      <div class="demo-grid">
+        <div class="demo-col">
+          <p class="step-tag"><b aria-hidden="true">1</b>记下</p>
+          <div class="bubble">
+            <p>周五前给陈老师发课程大纲 #课程 @30分钟</p>
+            <time>刚刚 · 手机</time>
+          </div>
+        </div>
+
+        <div class="demo-col">
+          <p class="step-tag"><b aria-hidden="true">2</b>解析</p>
+          <div class="chips">
+            <span class="chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="4"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
+              截止 4 月 18 日周五
+            </span>
+            <span class="chip chip--tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M20 12.5 12.5 20 4 11.5V4h7.5z"/><circle cx="8.5" cy="8.5" r="1.4"/></svg>
+              #课程
+            </span>
+            <span class="chip chip--time">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>
+              预计 30 分钟
+            </span>
+          </div>
+          <div class="arrow-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="demo-col demo-col--sched">
+          <p class="step-tag"><b aria-hidden="true">3</b>排期</p>
+          <div class="sched">
+            <div class="sched-top"><b>今天 15:00–15:30</b><span>与现有日程无冲突</span></div>
+            <div class="slot slot-min"><i aria-hidden="true"></i><span>15:00–15:30</span></div>
+            <div class="slot slot--mine"><i aria-hidden="true"></i><span>给陈老师发课程大纲</span></div>
+            <div class="slot"><i aria-hidden="true"></i><span>16:30–17:00 版本评审</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 4. 社会证明 ======== -->
+  <section class="band--tight" aria-label="正在使用 Flowtide 的团队">
+    <div class="wrap">
+      <div class="proof">
+        <p>明远设计 · 云栖科技 · 三木研究所 · 白鲸工作室</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 5. 功能：唯一反色区块 + 整宽编号行 ======== -->
+  <section class="band" id="features" aria-labelledby="featTitle">
+    <div class="wrap">
+      <div class="features">
+        <div class="confetti" aria-hidden="true">
+          <i class="c-s c-accent drift" style="left:8%;top:18%"></i>
+          <i class="c-m c-third drift slow" style="right:6%;top:14%"></i>
+          <i class="c-s c-second drift fast" style="right:16%;bottom:12%"></i>
+        </div>
+        <div class="wrap band">
+          <div class="sec-head">
+            <span class="eyebrow">功能</span>
+            <h2 id="featTitle">整理这件事，交给它做</h2>
+            <p>三件事本来要你自己动手，现在只剩「记一下」。</p>
+          </div>
+          <ol>
+            <li class="frow">
+              <span class="fnum" aria-hidden="true">01</span>
+              <h3>自然语言录入</h3>
+              <p>输入「明天上午联系王工确认设备清单 #项目A」，Flowtide 自动识别截止时间、项目与时长。</p>
+            </li>
+            <li class="frow">
+              <span class="fnum" aria-hidden="true">02</span>
+              <h3>自动排期</h3>
+              <p>按截止时间、优先级和你真实的工作节奏，把任务放进当天最合适的时间段。</p>
+            </li>
+            <li class="frow">
+              <span class="fnum" aria-hidden="true">03</span>
+              <h3>每周复盘</h3>
+              <p>自动生成完成率、延期项与时间去向，帮你发现哪些事情反复被推迟。</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 6. 工作流程：纵向时间轴 ======== -->
+  <section class="band" id="workflow" aria-labelledby="flowTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">流程</span>
+        <h2 id="flowTitle">从一行字到一天的计划</h2>
+        <p>四步，其中三步不用你动手。</p>
+      </div>
+      <ol class="timeline">
+        <li class="step">
+          <span class="step-node" aria-hidden="true">1</span>
+          <h3>随手记</h3>
+          <p>想到什么就打一行字，不用选项目，不用填表单。</p>
+        </li>
+        <li class="step">
+          <span class="step-node" aria-hidden="true">2</span>
+          <h3>自动整理</h3>
+          <p>Flowtide 解析时间、项目与预计时长，归到正确位置。</p>
+        </li>
+        <li class="step">
+          <span class="step-node" aria-hidden="true">3</span>
+          <h3>放进日程</h3>
+          <p>结合空闲时段和优先级，安排到具体时间段。</p>
+        </li>
+        <li class="step">
+          <span class="step-node" aria-hidden="true">4</span>
+          <h3>每周复盘</h3>
+          <p>看完成率和延期情况，调整下周节奏。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ======== 7. 用户评价：阶梯错位卡片 ======== -->
+  <section class="band rel" aria-labelledby="quoteTitle">
+    <div class="confetti" aria-hidden="true">
+      <i class="c-m c-second drift" style="left:4%;top:30%"></i>
+      <i class="c-s c-third drift slow" style="right:5%;bottom:18%"></i>
+      <i class="c-l c-soft drift fast" style="right:12%;top:10%"></i>
+    </div>
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">用户评价</span>
+        <h2 id="quoteTitle">他们只负责记，剩下的不用想</h2>
+      </div>
+      <div class="quotes">
+        <figure class="quote">
+          <p class="qmark" aria-hidden="true">“</p>
+          <blockquote>以前光整理待办就要花半小时，现在我只管记。每周复盘让我第一次看清时间到底去哪了。</blockquote>
+          <figcaption><b>林楠</b>产品设计师</figcaption>
+        </figure>
+        <figure class="quote">
+          <p class="qmark" aria-hidden="true">“</p>
+          <blockquote>手机上记一句，回到电脑前它已经排好了，不用再想'这个什么时候做'。</blockquote>
+          <figcaption><b>周凛</b>自由开发者</figcaption>
+        </figure>
+        <figure class="quote">
+          <p class="qmark" aria-hidden="true">“</p>
+          <blockquote>团队共享清单之后，跨时区交接再没丢过事情。</blockquote>
+          <figcaption><b>苏珊</b>内容负责人</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 8. 价格：对比表装置 + 月付/年付切换 ======== -->
+  <section class="band price-sec" id="pricing" aria-labelledby="priceTitle">
+    <div class="confetti" aria-hidden="true">
+      <i class="c-s c-accent drift slow" style="left:8%;bottom:14%"></i>
+      <i class="c-m c-second drift" style="right:7%;top:12%"></i>
+    </div>
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">价格</span>
+        <h2 id="priceTitle">先免费用到顺手</h2>
+        <p>两档摆在一起比：左边够用，右边给需要跨设备与团队协作的人。</p>
+        <div class="seg" role="group" aria-label="计费周期切换">
+          <button class="seg-btn" type="button" data-mode="m" aria-pressed="true">月付</button>
+          <button class="seg-btn" type="button" data-mode="y" aria-pressed="false">年付</button>
+          <span class="save">年付按钮节省 20%</span>
+        </div>
+      </div>
+
+      <div class="price-grid" data-mode="m" id="priceGrid" aria-live="polite">
+        <div class="plan">
+          <p class="plan-name">免费版</p>
+          <p class="plan-for">先把随手记这件事跑起来</p>
+          <div class="plan-price plan-price--m"><span class="cur">¥</span><span class="num">0</span><span class="per">/ 永久免费</span></div>
+          <div class="plan-price plan-price--y"><span class="cur">¥</span><span class="num">0</span><span class="per">/ 永久免费</span></div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 13l4 4L19 7"/></svg>个人使用</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 13l4 4L19 7"/></svg>无限任务</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 13l4 4L19 7"/></svg>3 个项目</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 13l4 4L19 7"/></svg>手机与网页同步</li>
+          </ul>
+          <a class="btn" href="#signup">免费开始</a>
+        </div>
+
+        <div class="price-rule" aria-hidden="true"></div>
+
+        <div class="plan plan--pro">
+          <span class="ribbon">最受欢迎</span>
+          <p class="plan-name">Pro</p>
+          <p class="plan-for">需要跨设备同步与团队协作</p>
+          <div class="plan-price plan-price--m"><span class="cur">¥</span><span class="num">38</span><span class="per">/ 月</span></div>
+          <div class="plan-price plan-price--y"><span class="cur">¥</span><span class="num">29</span><span class="per">/ 月 · 年付</span></div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 13l4 4L19 7"/></svg>无限项目</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 13l4 4L19 7"/></svg>跨设备同步</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 13l4 4L19 7"/></svg>日历双向同步</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 13l4 4L19 7"/></svg>团队共享清单</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 13l4 4L19 7"/></svg>每周复盘报告</li>
+          </ul>
+          <a class="btn" href="#signup">免费开始</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 9. 常见问题：单窄栏 + 横线分隔的 details ======== -->
+  <section class="band" id="faq" aria-labelledby="faqTitle">
+    <div class="wrap">
+      <div class="faq">
+        <div class="sec-head">
+          <span class="eyebrow">常见问题</span>
+          <h2 id="faqTitle">你可能想问的</h2>
+        </div>
+
+        <details>
+          <summary>和别的待办应用有什么不同？<span class="plus" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="a-body">多数工具让你自己整理，Flowtide 把整理变成自动的一步。</p>
+        </details>
+        <details>
+          <summary>支持哪些设备？<span class="plus" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="a-body">网页、iOS、Android，实时同步。</p>
+        </details>
+        <details>
+          <summary>数据能导出吗？<span class="plus" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="a-body">随时导出为 Markdown 或 CSV，包含全部任务与标签。</p>
+        </details>
+        <details>
+          <summary>离线能用吗？<span class="plus" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="a-body">能，恢复网络后自动合并，不丢改动。</p>
+        </details>
+        <details>
+          <summary>数据安全怎么保证？<span class="plus" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="a-body">传输与存储全程加密，不读取任务内容用于广告。</p>
+        </details>
+        <details>
+          <summary>Pro 可以退款吗？<span class="plus" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p class="a-body">14 天内无理由全额退款。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======== 10. 页脚：超大品牌字标打底 + 链接一行 ======== -->
+<footer class="footer">
+  <div class="wrap">
+    <p class="foot-brand">Flowtide</p>
+    <div class="foot-links">
+      <span class="foot-dot" aria-hidden="true"></span>
+      <a href="#features">产品</a>
+      <a href="#pricing">价格</a>
+      <a href="#top">更新日志</a>
+      <a href="#faq">隐私政策</a>
+      <span class="copy">© 2026 Flowtide</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---- 移动端导航：汉堡开关 ---- */
+  var toggle = document.getElementById('navToggle');
+  var navList = document.getElementById('primaryNav');
+
+  function setNav(open) {
+    if (!toggle || !navList) return;
+    navList.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? '关闭导航菜单' : '打开导航菜单');
+  }
+
+  if (toggle && navList) {
+    toggle.addEventListener('click', function () {
+      setNav(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+    navList.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setNav(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setNav(false);
+    });
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 820) setNav(false);
+    });
+  }
+
+  /* ---- 邮箱表单：行内校验，不使用 alert ---- */
+  var form = document.getElementById('signup');
+  var email = document.getElementById('email');
+  var msg = document.getElementById('formMsg');
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+  var ICON_OK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.6L16 9.5"/></svg>';
+  var ICON_ERR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.4v.2"/></svg>';
+
+  function say(text, kind) {
+    if (!msg) return;
+    msg.classList.remove('is-err', 'is-ok');
+    msg.classList.add('is-on', kind === 'ok' ? 'is-ok' : 'is-err');
+    msg.innerHTML = (kind === 'ok' ? ICON_OK : ICON_ERR) + '<span>' + text + '</span>';
+  }
+
+  if (form && email && msg) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var value = email.value.trim();
+      if (!value) {
+        say('请先填一个邮箱地址，我们才能把开始链接发给你。', 'err');
+        email.focus();
+        return;
+      }
+      if (!EMAIL_RE.test(value)) {
+        say('这个邮箱看起来不太对，检查一下有没有漏掉 @ 或域名后缀。', 'err');
+        email.focus();
+        return;
+      }
+      say('收到了，开始链接已发往 ' + value + '。去收件箱点一下就能用。', 'ok');
+      form.reset();
+    });
+    email.addEventListener('input', function () {
+      if (msg.classList.contains('is-err')) {
+        msg.classList.remove('is-on', 'is-err');
+        msg.innerHTML = '';
+      }
+    });
+  }
+
+  /* ---- 价格：月付 / 年付切换（切换后只留一个数字） ---- */
+  var grid = document.getElementById('priceGrid');
+  var segBtns = Array.prototype.slice.call(document.querySelectorAll('.seg-btn'));
+
+  function setMode(mode) {
+    if (!grid) return;
+    var next = mode === 'y' ? 'y' : 'm';
+    grid.setAttribute('data-mode', next);
+    segBtns.forEach(function (b) {
+      b.setAttribute('aria-pressed', b.getAttribute('data-mode') === next ? 'true' : 'false');
+    });
+  }
+
+  segBtns.forEach(function (b) {
+    b.addEventListener('click', function () { setMode(b.getAttribute('data-mode')); });
+  });
+})();
+</script>
+
+<style>
+#wf-switch{position:fixed;z-index:9999;right:16px;bottom:16px;display:flex;gap:6px;padding:6px;border-radius:999px;
+  background:rgba(16,18,22,.9);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(10px);
+  font:600 12px/1 system-ui,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+#wf-switch div{cursor:pointer;padding:7px 11px;border-radius:999px;color:rgba(255,255,255,.66);user-select:none}
+#wf-switch div[aria-current="true"]{background:#fff;color:#111}
+#wf-switch span{color:rgba(255,255,255,.5);align-self:center;padding:0 3px}
+</style>
+<div id="wf-switch" role="group" aria-label="切换设计方案">
+  <div data-case="a">A</div><div data-case="b">B</div><div data-case="c">C</div><div data-case="d">D</div>
+</div>
+<script>
+(function(){
+  var cur=(location.pathname.split('/').pop()||'a.html').replace('.html','').toLowerCase();
+  var box=document.getElementById('wf-switch');
+  Array.prototype.forEach.call(box.querySelectorAll('[data-case]'),function(b){
+    var on=b.getAttribute('data-case')===cur;
+    b.setAttribute('aria-current',on?'true':'false');
+    b.addEventListener('click',function(){ if(!on) location.href=b.getAttribute('data-case')+'.html'; });
+  });
+})();
+</script>
+</body>
+</html>

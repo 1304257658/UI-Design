@@ -1,0 +1,452 @@
+{
+  "base": "http://127.0.0.1:8773",
+  "generatedAt": "2026-09-19T12:55:46.927Z",
+  "cases": {
+    "a": {
+      "viewports": {
+        "360": {
+          "deviceW": 360,
+          "vw": 360,
+          "limit": 360,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 17,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": true,
+          "hamTargets": "mobile-menu"
+        },
+        "768": {
+          "deviceW": 768,
+          "vw": 768,
+          "limit": 768,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 17,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": true,
+          "hamTargets": "mobile-menu"
+        },
+        "1024": {
+          "deviceW": 1024,
+          "vw": 1024,
+          "limit": 1024,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 17,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": false,
+          "hamTargets": "mobile-menu"
+        },
+        "1440": {
+          "deviceW": 1440,
+          "vw": 1440,
+          "limit": 1440,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 17,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": false,
+          "hamTargets": "mobile-menu"
+        }
+      },
+      "interactions": {
+        "360": {
+          "errMsg": [
+            "邮箱格式看起来不对，例如 your@email.com。"
+          ],
+          "okMsg": [
+            "已发送确认邮件，请到 me@example.com 查收。"
+          ],
+          "priceMonthly": [
+            "¥\n0",
+            "¥\n38"
+          ],
+          "priceYearly": [
+            "¥\n0",
+            "¥\n29"
+          ],
+          "hamVisible": true,
+          "hamTargetFound": true,
+          "focusableWhenClosed": 0,
+          "hamOpenSig": "block|visible|836px|316",
+          "hamChanged": true,
+          "hamExpanded": "true",
+          "hamRestored": true,
+          "detailsOpened": true
+        },
+        "1440": {
+          "errMsg": [
+            "邮箱格式看起来不对，例如 your@email.com。"
+          ],
+          "okMsg": [
+            "已发送确认邮件，请到 me@example.com 查收。"
+          ],
+          "priceMonthly": [
+            "¥\n0",
+            "¥\n38"
+          ],
+          "priceYearly": [
+            "¥\n0",
+            "¥\n29"
+          ],
+          "hamVisible": false,
+          "hamTargetFound": true,
+          "focusableWhenClosed": 0,
+          "hamOpenSig": "none|visible|none|0",
+          "hamChanged": false,
+          "hamExpanded": "true",
+          "hamRestored": true,
+          "detailsOpened": true
+        }
+      },
+      "consoleErrors": []
+    },
+    "b": {
+      "viewports": {
+        "360": {
+          "deviceW": 360,
+          "vw": 360,
+          "limit": 360,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 16,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": true,
+          "hamTargets": "nav-menu"
+        },
+        "768": {
+          "deviceW": 768,
+          "vw": 768,
+          "limit": 768,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 16,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": true,
+          "hamTargets": "nav-menu"
+        },
+        "1024": {
+          "deviceW": 1024,
+          "vw": 1024,
+          "limit": 1024,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 16,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": false,
+          "hamTargets": "nav-menu"
+        },
+        "1440": {
+          "deviceW": 1440,
+          "vw": 1440,
+          "limit": 1440,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 16,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": false,
+          "hamTargets": "nav-menu"
+        }
+      },
+      "interactions": {
+        "360": {
+          "errMsg": [
+            "邮箱格式不正确，例如 your@email.com。"
+          ],
+          "okMsg": [
+            "提交成功，开始使用指引已发往 me@example.com。"
+          ],
+          "priceMonthly": [
+            "¥0",
+            "¥38"
+          ],
+          "priceYearly": [
+            "¥0",
+            "¥29"
+          ],
+          "hamVisible": true,
+          "hamTargetFound": true,
+          "focusableWhenClosed": 0,
+          "hamOpenSig": "flex|visible|none|334",
+          "hamChanged": true,
+          "hamExpanded": "true",
+          "hamRestored": true,
+          "detailsOpened": true
+        },
+        "1440": {
+          "errMsg": [
+            "邮箱格式不正确，例如 your@email.com。"
+          ],
+          "okMsg": [
+            "提交成功，开始使用指引已发往 me@example.com。"
+          ],
+          "priceMonthly": [
+            "¥0",
+            "¥38"
+          ],
+          "priceYearly": [
+            "¥0",
+            "¥29"
+          ],
+          "hamVisible": false,
+          "hamTargetFound": true,
+          "focusableWhenClosed": 5,
+          "hamOpenSig": "flex|visible|none|43",
+          "hamChanged": false,
+          "hamExpanded": "false",
+          "hamRestored": true,
+          "detailsOpened": true
+        }
+      },
+      "consoleErrors": []
+    },
+    "c": {
+      "viewports": {
+        "360": {
+          "deviceW": 360,
+          "vw": 360,
+          "limit": 360,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 13,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": true,
+          "hamTargets": "primary-nav"
+        },
+        "768": {
+          "deviceW": 768,
+          "vw": 768,
+          "limit": 768,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 13,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": true,
+          "hamTargets": "primary-nav"
+        },
+        "1024": {
+          "deviceW": 1024,
+          "vw": 1024,
+          "limit": 1024,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 13,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": false,
+          "hamTargets": "primary-nav"
+        },
+        "1440": {
+          "deviceW": 1440,
+          "vw": 1440,
+          "limit": 1440,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 13,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": false,
+          "hamTargets": "primary-nav"
+        }
+      },
+      "interactions": {
+        "360": {
+          "errMsg": [
+            "这个邮箱看起来不太对，请检查一下（例如 your@email.com）。"
+          ],
+          "okMsg": [
+            "搞定！开始链接已经发到 me@example.com，去收件箱看看。"
+          ],
+          "priceMonthly": [
+            "¥0",
+            "¥38"
+          ],
+          "priceYearly": [
+            "¥0",
+            "¥29",
+            "¥348"
+          ],
+          "hamVisible": true,
+          "hamTargetFound": true,
+          "focusableWhenClosed": 0,
+          "hamOpenSig": "flex|visible|none|298",
+          "hamChanged": true,
+          "hamExpanded": "true",
+          "hamRestored": true,
+          "detailsOpened": true
+        },
+        "1440": {
+          "errMsg": [
+            "这个邮箱看起来不太对，请检查一下（例如 your@email.com）。"
+          ],
+          "okMsg": [
+            "搞定！开始链接已经发到 me@example.com，去收件箱看看。"
+          ],
+          "priceMonthly": [
+            "¥0",
+            "¥38"
+          ],
+          "priceYearly": [
+            "¥0",
+            "¥29",
+            "¥348"
+          ],
+          "hamVisible": false,
+          "hamTargetFound": true,
+          "focusableWhenClosed": 5,
+          "hamOpenSig": "flex|visible|none|45",
+          "hamChanged": false,
+          "hamExpanded": "true",
+          "hamRestored": true,
+          "detailsOpened": true
+        }
+      },
+      "consoleErrors": []
+    },
+    "d": {
+      "viewports": {
+        "360": {
+          "deviceW": 360,
+          "vw": 360,
+          "limit": 360,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 11,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": true,
+          "hamTargets": "nav-menu"
+        },
+        "768": {
+          "deviceW": 768,
+          "vw": 768,
+          "limit": 768,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 11,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": true,
+          "hamTargets": "nav-menu"
+        },
+        "1024": {
+          "deviceW": 1024,
+          "vw": 1024,
+          "limit": 1024,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 11,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": false,
+          "hamTargets": "nav-menu"
+        },
+        "1440": {
+          "deviceW": 1440,
+          "vw": 1440,
+          "limit": 1440,
+          "overflow": 0,
+          "shrink": 0,
+          "offenders": [],
+          "clipped": [],
+          "details": 6,
+          "anchors": 11,
+          "h1": "想到就记下，剩下的交给 Flowtide",
+          "hamVisible": false,
+          "hamTargets": "nav-menu"
+        }
+      },
+      "interactions": {
+        "360": {
+          "errMsg": [
+            "邮箱格式好像不太对，检查一下再提交，例如 your@email.com"
+          ],
+          "okMsg": [
+            "已提交：确认邮件正在发往 me@example.com，30 秒后就能开始。"
+          ],
+          "priceMonthly": [
+            "¥0",
+            "¥38"
+          ],
+          "priceYearly": [
+            "¥0",
+            "¥29"
+          ],
+          "hamVisible": true,
+          "hamTargetFound": true,
+          "focusableWhenClosed": 0,
+          "hamOpenSig": "flex|visible|none|344",
+          "hamChanged": true,
+          "hamExpanded": "true",
+          "hamRestored": true,
+          "detailsOpened": true
+        },
+        "1440": {
+          "errMsg": [
+            "邮箱格式好像不太对，检查一下再提交，例如 your@email.com"
+          ],
+          "okMsg": [
+            "已提交：确认邮件正在发往 me@example.com，30 秒后就能开始。"
+          ],
+          "priceMonthly": [
+            "¥0",
+            "¥38"
+          ],
+          "priceYearly": [
+            "¥0",
+            "¥29"
+          ],
+          "hamVisible": false,
+          "hamTargetFound": true,
+          "focusableWhenClosed": 5,
+          "hamOpenSig": "flex|visible|none|54",
+          "hamChanged": false,
+          "hamExpanded": "true",
+          "hamRestored": true,
+          "detailsOpened": true
+        }
+      },
+      "consoleErrors": []
+    }
+  }
+}

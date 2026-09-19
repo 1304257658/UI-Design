@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Flowtide · 想到就记下，剩下的交给 Flowtide</title>
+<style>
+/* ============================================================
+   CASE B · WARM EDITORIAL —— 温暖编辑排版（浅色衬线）
+   色板 / 指定数值 / 字体栈 / 结构 全部照 briefs/b.md 抽签结果使用
+   间距基数 4px · 容器 1320px · 字号级差 1.255 · 圆角 0/2px
+   描边 2px · 阴影偏移 4px · 区块内边距 72px
+   字距 -0.028em / 0.19em · 动效 220ms cubic-bezier(.4,0,.2,1)
+   ============================================================ */
+:root{
+  --bg:#F9F7F1;
+  --surface:#EEEBE3;
+  --raised:#EEEBE3;
+  --line:#D7CFB7;
+  --ink:#27221B;
+  --muted:#76664F;
+  --accent:#B56129;
+  --on-accent:#FDFBF7;
+  --green:#346F59;
+
+  --serif:Georgia,"Songti SC",SimSun,"Noto Serif SC",serif;
+  --sans:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+
+  --step:4px;
+  --wrap:1320px;
+  --rule:2px;
+  --lift:4px;
+  --sec:72px;
+  --tracked:-0.028em;   /* 紧凑字距 */
+  --spaced:0.19em;      /* 舒展字距 */
+  --dur:220ms;
+  --ease:cubic-bezier(.4,0,.2,1);
+
+  /* 字号级差 1.255：15 / 17 / 20.7 / 19.1 / 33.9 / 42.5 / 53.4 / 67 */
+  --fs-note:clamp(13px,1.08vw,15px);
+  --fs-body:clamp(16px,1.18vw,17px);
+  --fs-small:clamp(15px,1.2vw,17px);
+  --fs-lead:clamp(19px,1.42vw,21px);
+  --fs-h3:clamp(21px,1.58vw,24px);
+  --fs-h2:clamp(27px,2.34vw,34px);
+  --fs-quote:clamp(23px,2.16vw,30px);
+  --fs-h1:clamp(34px,3.86vw,54px);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--serif);
+  font-size:var(--fs-body);
+  line-height:1.8;
+  font-kerning:normal;
+  text-rendering:optimizeLegibility;
+}
+p{margin:0 0 16px}
+p:last-child{margin-bottom:0}
+ul,ol{margin:0;padding:0;list-style:none}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:700;line-height:1.24;letter-spacing:var(--tracked);margin:0}
+
+:focus-visible{outline:var(--rule) solid var(--accent);outline-offset:3px}
+
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:80;
+  background:var(--ink);color:var(--on-accent);
+  font-family:var(--sans);font-size:var(--fs-note);font-weight:600;
+  padding:12px 20px;text-decoration:none;
+}
+.skip:focus{left:0}
+
+.wrap{
+  width:100%;max-width:var(--wrap);
+  margin:0 auto;padding:0 32px;position:relative;
+}
+
+/* ---------- 装饰母题：页边空白里的竖排小字标签 ---------- */
+.mlabel{
+  position:absolute;top:var(--sec);left:-16px;
+  writing-mode:vertical-rl;
+  font-family:var(--sans);
+  font-size:11px;font-weight:600;
+  letter-spacing:var(--spaced);
+  color:var(--muted);
+  white-space:nowrap;
+  pointer-events:none;
+  display:none;
+}
+.mlabel::before{
+  content:"";display:block;
+  width:1px;height:28px;
+  background:var(--line);
+  margin:0 auto 12px;
+}
+
+/* ---------- 导航：两段式（上行 wordmark / 下行链接 + CTA） ---------- */
+.nav{position:sticky;top:0;z-index:50;background:var(--bg)}
+.nav-inner{padding:0 32px}
+.wordmark-row{
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:16px;padding:28px 0 20px;
+  border-bottom:1px solid var(--line);
+}
+.wordmark{
+  font-family:var(--serif);font-size:var(--fs-h3);font-weight:700;
+  letter-spacing:-0.03em;text-decoration:none;
+}
+.wordmark .dot{color:var(--accent)}
+.wordmark-note{
+  font-family:var(--sans);font-size:11px;font-weight:600;
+  letter-spacing:var(--spaced);color:var(--muted);text-transform:uppercase;
+}
+.nav-row{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;padding:16px 0;position:relative;
+}
+/* 下行：左侧链接 / 右侧 CTA 同一行（≤830px 时被下面的媒体查询改成抽屉） */
+.nav-panel{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;flex:1 1 auto;min-width:0;
+}
+.nav-links{display:flex;align-items:center;gap:32px;flex-wrap:wrap}
+.nav-links a{
+  font-family:var(--sans);font-size:var(--fs-note);font-weight:500;
+  letter-spacing:.06em;text-decoration:none;color:var(--ink);
+  padding-bottom:4px;border-bottom:var(--rule) solid transparent;
+  transition:border-color var(--dur) var(--ease),color var(--dur) var(--ease);
+}
+.nav-links a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+.nav-toggle{
+  display:none;align-items:center;gap:8px;
+  background:none;border:0;cursor:pointer;
+  font-family:var(--sans);font-size:var(--fs-note);font-weight:600;
+  letter-spacing:.08em;color:var(--ink);padding:8px 0;
+}
+.nav-toggle .bars{display:block;width:22px;height:10px;position:relative}
+.nav-toggle .bars::before,.nav-toggle .bars::after{
+  content:"";position:absolute;left:0;width:22px;height:var(--rule);background:var(--ink);
+  transition:transform var(--dur) var(--ease);
+}
+.nav-toggle .bars::before{top:0}
+.nav-toggle .bars::after{bottom:0}
+.nav-toggle[aria-expanded="true"] .bars::before{transform:translateY(4px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] .bars::after{transform:translateY(-4px) rotate(-45deg)}
+
+/* ---------- 按钮 ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-family:var(--sans);font-size:var(--fs-note);font-weight:600;
+  letter-spacing:.08em;text-decoration:none;cursor:pointer;
+  border-radius:0;border:var(--rule) solid var(--ink);
+  background:transparent;color:var(--ink);
+  padding:12px 24px;
+  transition:background var(--dur) var(--ease),color var(--dur) var(--ease),
+             transform var(--dur) var(--ease);
+}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn-primary:hover{background:var(--ink);border-color:var(--ink);transform:translate(-2px,-2px)}
+.btn-ghost:hover{background:var(--ink);color:var(--on-accent)}
+.btn-sm{padding:10px 20px}
+
+/* ---------- 首屏：两栏不对称（左窄索引 / 右宽 H1 首字下沉） ---------- */
+.hero{padding:var(--sec) 0}
+.hero-grid{
+  display:grid;grid-template-columns:.62fr 2fr;
+  gap:64px;align-items:start;
+}
+.aside{padding-right:32px;position:relative}
+.aside::after{
+  content:"";position:absolute;top:0;right:0;bottom:0;width:1px;background:var(--line);
+}
+.aside h2{
+  font-family:var(--sans);font-size:11px;font-weight:700;
+  letter-spacing:var(--spaced);color:var(--muted);text-transform:uppercase;
+  margin:0 0 20px;
+}
+.index{display:flex;flex-direction:column;gap:2px}
+.index a{
+  display:flex;align-items:baseline;gap:12px;
+  font-family:var(--serif);font-size:var(--fs-small);
+  text-decoration:none;color:var(--ink);
+  padding:12px 0;border-bottom:1px solid var(--line);
+  transition:color var(--dur) var(--ease),padding-left var(--dur) var(--ease);
+}
+.index a:hover{color:var(--accent);padding-left:8px}
+.index .no{
+  font-family:var(--sans);font-size:11px;font-weight:700;
+  letter-spacing:.1em;color:var(--accent);flex:0 0 auto;
+}
+
+/* 非常规装置：版权页式小字信息块 */
+.colophon{
+  margin:32px 0 0;
+  border-top:var(--rule) solid var(--ink);
+  padding-top:16px;
+}
+.colophon dl{
+  margin:0;display:grid;
+  grid-template-columns:auto 1fr;gap:6px 16px;align-items:baseline;
+}
+.colophon dt{
+  font-family:var(--sans);font-size:11px;font-weight:700;
+  letter-spacing:var(--spaced);color:var(--accent);text-transform:uppercase;
+}
+.colophon dd{
+  margin:0;font-family:var(--sans);font-size:12px;
+  letter-spacing:.04em;color:var(--muted);
+}
+.colophon .sig{
+  margin:16px 0 0;font-family:var(--serif);font-size:14px;
+  font-style:italic;color:var(--ink);letter-spacing:.02em;
+}
+.colophon .sig span{font-style:normal;color:var(--muted)}
+
+.hgroup{margin-bottom:32px}
+.eyebrow{
+  display:flex;align-items:center;gap:12px;
+  font-family:var(--sans);font-size:11px;font-weight:700;
+  letter-spacing:var(--spaced);color:var(--accent);
+  text-transform:uppercase;margin:0 0 20px;
+}
+.eyebrow::before{content:"";width:24px;height:var(--rule);background:var(--accent);flex:0 0 auto}
+h1{
+  font-size:var(--fs-h1);line-height:1.16;
+  letter-spacing:var(--tracked);
+  max-width:17em;margin:0 0 24px;
+}
+.dropcap{
+  float:left;
+  font-family:var(--serif);
+  font-size:3.05em;
+  line-height:1;
+  font-weight:700;
+  color:var(--accent);
+  margin:0.06em 14px 0 0;
+}
+.hero-sub{
+  font-size:var(--fs-lead);line-height:1.9;
+  color:var(--muted);
+  max-width:38ch;margin:0 0 32px;
+}
+.form-row{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}
+.field{flex:1 1 260px;min-width:0}
+.field input{
+  width:100%;
+  font-family:var(--sans);font-size:var(--fs-small);
+  color:var(--ink);background:transparent;
+  border:0;border-bottom:var(--rule) solid var(--ink);
+  border-radius:0;padding:12px 4px;
+  transition:border-color var(--dur) var(--ease);
+}
+.field input::placeholder{color:var(--muted);opacity:.85}
+.field input:focus{outline:none;border-bottom-color:var(--accent)}
+.field input:focus-visible{outline:var(--rule) solid var(--accent);outline-offset:2px}
+.msg{margin:16px 0 0;font-family:var(--sans);font-size:var(--fs-note);letter-spacing:.03em}
+.msg-err{color:var(--accent)}
+.msg-ok{color:var(--green)}
+.micro{
+  margin:20px 0 0;font-family:var(--sans);font-size:var(--fs-note);
+  letter-spacing:.04em;color:var(--muted);
+}
+
+/* ---------- 区块通用：整页同底色，只用分隔线分区 ---------- */
+.sec{padding:var(--sec) 0;border-top:1px solid var(--line)}
+.sec-head{margin-bottom:48px;max-width:760px}
+.sec-head h2{font-size:var(--fs-h2);margin:0}
+.sec-head .sub{margin:16px 0 0;color:var(--muted);font-size:var(--fs-small)}
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+}
+
+/* ---------- 快速收录演示：三段纵向面板 + 折线箭头 ---------- */
+.flow{display:flex;flex-direction:column}
+.panel{
+  border:var(--rule) solid var(--line);
+  background:transparent;
+  padding:32px;
+}
+.panel-head{
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:16px;padding-bottom:16px;margin-bottom:24px;
+  border-bottom:1px solid var(--line);
+}
+.panel-no{
+  font-family:var(--sans);font-size:11px;font-weight:700;
+  letter-spacing:var(--spaced);color:var(--accent);
+}
+.panel-title{font-family:var(--serif);font-size:var(--fs-h3);margin:0}
+.panel-body{min-width:0}
+.raw{
+  font-family:var(--sans);font-size:var(--fs-small);
+  letter-spacing:.02em;line-height:1.9;
+  overflow-wrap:anywhere;margin:0;
+}
+.raw .tag{color:var(--green);font-weight:600}
+.raw .mark{color:var(--accent);font-weight:600}
+.tokens{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.tokens li{
+  font-family:var(--sans);font-size:var(--fs-note);letter-spacing:.04em;
+  border:1px solid var(--line);border-radius:2px;
+  padding:8px 12px;color:var(--ink);
+}
+.tokens .k{color:var(--muted);margin-right:8px}
+.tokens .v{font-weight:600}
+.tokens .v-accent{color:var(--accent)}
+.tokens .v-green{color:var(--green)}
+.slot{display:flex;flex-wrap:wrap;align-items:baseline;gap:16px}
+.slot .time{
+  font-family:var(--serif);font-size:var(--fs-h2);
+  letter-spacing:var(--tracked);line-height:1.2;
+  font-variant-numeric:tabular-nums;
+}
+.slot .date{font-family:var(--sans);font-size:var(--fs-note);letter-spacing:var(--spaced);color:var(--muted)}
+.slot .ok{
+  font-family:var(--sans);font-size:var(--fs-note);letter-spacing:.04em;color:var(--green);
+  border-left:var(--rule) solid var(--green);padding-left:12px;
+}
+.connector{
+  display:flex;align-items:center;gap:16px;
+  padding:12px 0 12px 32px;
+}
+.connector .rail{width:var(--rule);height:64px;background:var(--line);display:block}
+.connector .cap{
+  font-family:var(--sans);font-size:11px;font-weight:600;
+  letter-spacing:var(--spaced);color:var(--muted);
+}
+.connector svg{display:block;flex:0 0 auto}
+
+/* ---------- 社会证明：一行等距公司名，发丝竖线分隔 ---------- */
+.proof{border-top:1px solid var(--line)}
+.proof-inner{padding:24px 0}
+.proof .cap{
+  font-family:var(--sans);font-size:11px;font-weight:700;
+  letter-spacing:var(--spaced);color:var(--muted);text-transform:uppercase;
+  margin:0 0 16px;
+}
+.proof ul{display:flex;flex-wrap:wrap;align-items:center;gap:0}
+.proof li{
+  font-family:var(--sans);font-size:var(--fs-note);font-weight:600;
+  letter-spacing:var(--spaced);color:var(--muted);
+  padding:8px 32px;
+}
+.proof li + li{border-left:1px solid var(--line)}
+.proof li:first-child{padding-left:0}
+
+/* ---------- 功能：三栏等宽，每栏顶部大号序号 ---------- */
+.feats{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:48px;
+  counter-reset:feat;
+}
+.feat{counter-increment:feat;border-top:var(--rule) solid var(--ink);padding-top:24px}
+.feat::before{
+  content:counter(feat,decimal-leading-zero);
+  display:block;
+  font-family:var(--serif);font-size:64px;line-height:1;
+  letter-spacing:var(--tracked);
+  color:var(--accent);
+  margin-bottom:24px;
+  font-variant-numeric:tabular-nums;
+}
+.feat h3{font-size:var(--fs-h3);margin:0 0 16px}
+.feat p{color:var(--muted);font-size:var(--fs-small);max-width:34ch}
+
+/* ---------- 流程：2×2 网格，四格尺寸略有差异 ---------- */
+.steps{
+  display:grid;
+  grid-template-columns:1.14fr .86fr;
+  align-items:start;
+}
+.step{
+  border-top:1px solid var(--line);
+  padding:32px 32px 40px 0;
+}
+.step:nth-child(2n){border-left:1px solid var(--line);padding-left:32px;padding-right:0}
+.step:nth-child(1){padding-bottom:56px}
+.step:nth-child(2){padding-bottom:24px}
+.step:nth-child(3){padding-top:56px;padding-bottom:24px}
+.step:nth-child(4){padding-top:24px;padding-bottom:64px}
+.step-no{
+  display:block;font-family:var(--sans);font-size:11px;font-weight:700;
+  letter-spacing:var(--spaced);color:var(--accent);margin-bottom:20px;
+}
+.step h3{font-size:var(--fs-h3);margin:0 0 12px}
+.step p{color:var(--muted);font-size:var(--fs-small);max-width:32ch;margin:0}
+.step .beat{
+  display:block;width:var(--rule);height:24px;background:var(--accent);margin-bottom:20px;
+}
+
+/* ---------- 用户评价：一条大引言在上 + 两张小卡片并排 ---------- */
+.quote-lead{
+  border-left:var(--rule) solid var(--green);
+  padding:8px 0 8px 40px;
+  margin:0 0 56px;
+  max-width:900px;
+}
+.quote-lead .quote-mark{
+  display:block;font-family:var(--serif);font-size:48px;line-height:1;
+  color:var(--green);margin-bottom:16px;
+}
+.quote-lead blockquote{
+  margin:0;font-family:var(--serif);
+  font-size:var(--fs-quote);line-height:1.62;
+  letter-spacing:var(--tracked);max-width:32ch;
+}
+.quote-lead .who{
+  margin:24px 0 0;font-family:var(--sans);font-size:var(--fs-note);
+  letter-spacing:.08em;color:var(--muted);
+}
+.quote-lead .who b{color:var(--ink);font-weight:700}
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.quote-card{
+  border:var(--rule) solid var(--line);
+  border-radius:2px;padding:32px;margin:0;
+}
+.quote-card blockquote{margin:0;font-size:var(--fs-small);line-height:1.85}
+.quote-card .who{
+  margin:24px 0 0;padding-top:16px;border-top:1px solid var(--line);
+  font-family:var(--sans);font-size:var(--fs-note);letter-spacing:.08em;color:var(--muted);
+}
+.quote-card .who b{color:var(--ink);font-weight:700}
+
+/* ---------- 价格：一个宽 Pro 卡 + 一个窄免费卡 ---------- */
+.billing{
+  display:inline-flex;align-items:center;gap:0;
+  border:var(--rule) solid var(--ink);border-radius:0;
+  margin-bottom:40px;
+}
+.billing button{
+  font-family:var(--sans);font-size:var(--fs-note);font-weight:600;
+  letter-spacing:.08em;cursor:pointer;
+  background:transparent;border:0;color:var(--ink);
+  padding:12px 24px;
+  transition:background var(--dur) var(--ease),color var(--dur) var(--ease);
+}
+.billing button + button{border-left:var(--rule) solid var(--ink)}
+.billing button[aria-pressed="true"]{background:var(--ink);color:var(--on-accent)}
+.billing .save{color:var(--accent);margin-left:6px}
+.billing button[aria-pressed="true"] .save{color:var(--on-accent)}
+
+.tiers{display:flex;align-items:stretch;gap:32px}
+.tier{display:flex;flex-direction:column;border:var(--rule) solid var(--line);padding:32px}
+.tier-pro{flex:2 1 0;border-top:var(--rule) solid var(--accent)}
+.tier-free{flex:1 1 0}
+.tier-head{
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:16px;padding-bottom:16px;border-bottom:1px solid var(--line);
+}
+.tier-name{font-family:var(--serif);font-size:var(--fs-h3);margin:0}
+.tier-free .tier-name{font-size:var(--fs-lead)}
+.tier-note{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:var(--spaced);color:var(--muted)}
+.tier-price{margin:24px 0;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.tier-price .cur{font-family:var(--serif);font-size:var(--fs-h3);color:var(--muted)}
+.tier-price .num{
+  font-family:var(--serif);font-size:56px;line-height:1;
+  letter-spacing:var(--tracked);color:var(--ink);
+  font-variant-numeric:tabular-nums;
+}
+.tier-free .tier-price .num{font-size:44px}
+.tier-price .per{font-family:var(--sans);font-size:var(--fs-note);color:var(--muted);letter-spacing:.04em}
+.tier-sub{
+  margin:0 0 24px;font-family:var(--sans);font-size:var(--fs-note);
+  letter-spacing:.03em;color:var(--muted);min-height:20px;
+}
+.tier-list{display:flex;flex-direction:column;gap:0;margin:0 0 32px}
+.tier-list li{
+  font-family:var(--sans);font-size:var(--fs-small);letter-spacing:.02em;
+  padding:12px 0;border-top:1px solid var(--line);
+  display:flex;align-items:baseline;gap:12px;
+}
+.tier-list li::before{
+  content:"";flex:0 0 auto;width:8px;height:8px;
+  border-left:var(--rule) solid var(--accent);border-bottom:var(--rule) solid var(--accent);
+  transform:rotate(-45deg) translateY(-2px);
+}
+.tier .btn{margin-top:auto;width:100%}
+.tier-pro .foot{
+  margin:16px 0 0;font-family:var(--sans);font-size:11px;
+  letter-spacing:.06em;color:var(--muted);text-align:center;
+}
+
+/* ---------- 常见问题：每个问题是一张独立带边框卡片 ---------- */
+.faq{display:flex;flex-direction:column;gap:16px;max-width:980px}
+.faq details{
+  border:var(--rule) solid var(--line);
+  border-radius:0;
+  transition:border-color var(--dur) var(--ease);
+}
+.faq details[open]{border-color:var(--ink)}
+.faq summary{
+  display:flex;align-items:baseline;justify-content:space-between;gap:24px;
+  cursor:pointer;list-style:none;
+  padding:24px 32px;
+  font-family:var(--serif);font-size:var(--fs-small);font-weight:700;
+  letter-spacing:var(--tracked);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"";flex:0 0 auto;
+  width:14px;height:14px;margin-top:4px;
+  background:
+    linear-gradient(var(--accent),var(--accent)) center/14px 2px no-repeat,
+    linear-gradient(var(--accent),var(--accent)) center/2px 14px no-repeat;
+  transition:transform var(--dur) var(--ease);
+}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .ans{
+  padding:0 32px 24px;
+  color:var(--muted);font-size:var(--fs-small);line-height:1.85;
+  max-width:62ch;margin:0;
+}
+.faq .q-no{
+  font-family:var(--sans);font-size:11px;font-weight:700;
+  letter-spacing:var(--spaced);color:var(--muted);
+  flex:0 0 auto;
+}
+
+/* ---------- 页脚：居中（品牌 / 链接 / 版权） ---------- */
+.footer{border-top:var(--rule) solid var(--ink);padding:64px 0 40px;text-align:center}
+.footer .brand{
+  font-family:var(--serif);font-size:var(--fs-h2);
+  letter-spacing:var(--tracked);margin:0 0 24px;
+}
+.footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:0;margin-bottom:32px}
+.footer nav a{
+  font-family:var(--sans);font-size:var(--fs-note);font-weight:500;
+  letter-spacing:.08em;text-decoration:none;color:var(--muted);
+  padding:8px 24px;
+  transition:color var(--dur) var(--ease);
+}
+.footer nav a + a{border-left:1px solid var(--line)}
+.footer nav a:first-child{padding-left:0}
+.footer nav a:last-child{padding-right:0}
+.footer nav a:hover{color:var(--accent)}
+.footer .legal{
+  margin:0 auto;font-family:var(--sans);font-size:var(--fs-note);
+  letter-spacing:var(--spaced);color:var(--muted);
+  padding-top:24px;border-top:1px solid var(--line);max-width:420px;
+}
+
+/* ---------- 响应式 ---------- */
+@media (min-width:1400px){
+  .mlabel{display:block}
+}
+@media (max-width:1080px){
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .aside{padding-right:0;padding-bottom:32px;border-bottom:1px solid var(--line)}
+  .aside::after{display:none}
+  .colophon{max-width:440px}
+}
+@media (max-width:980px){
+  .feats{grid-template-columns:1fr;gap:40px}
+  .feat p{max-width:46ch}
+  .tiers{flex-direction:column}
+  .tier-pro,.tier-free{flex:1 1 auto}
+  .tier-free .tier-price .num{font-size:56px}
+}
+@media (max-width:900px){
+  .quotes{grid-template-columns:1fr}
+  .quote-lead{padding-left:24px}
+}
+@media (max-width:830px){
+  .wrap{padding:0 20px}
+  .nav-inner{padding:0 20px}
+  .nav-toggle{display:inline-flex}
+  .nav-panel{
+    display:none;
+    position:absolute;left:0;right:0;top:100%;
+    background:var(--bg);
+    border-bottom:var(--rule) solid var(--ink);
+    padding:16px 20px 24px;
+    box-shadow:0 var(--lift) 0 var(--line);
+  }
+  .nav-panel[data-open="true"]{display:block}
+  .nav-panel .nav-links{flex-direction:column;align-items:flex-start;gap:0;width:100%}
+  .nav-panel .nav-links a{display:block;width:100%;padding:16px 0;border-bottom:1px solid var(--line)}
+  .nav-panel .nav-links a:hover{padding-left:0}
+  .nav-panel .btn{margin-top:20px;width:100%}
+  .steps{grid-template-columns:1fr}
+  .step{border-left:0 !important;padding:24px 0 24px !important}
+  .step + .step{border-top:1px solid var(--line)}
+  .quote-lead blockquote{font-size:var(--fs-lead)}
+  .quote-lead .quote-mark{font-size:36px}
+  .faq summary{padding:20px 20px;font-size:var(--fs-note);gap:16px}
+  .faq .ans{padding:0 20px 20px}
+  .faq .q-no{display:none}
+  .sec{padding:56px 0}
+  .hero{padding:56px 0}
+  .panel{padding:24px 20px}
+  h1{font-size:clamp(30px,7.6vw,44px)}
+  .dropcap{font-size:2.5em;margin-right:10px}
+  .hero-sub{max-width:none}
+}
+@media (max-width:560px){
+  .proof li{padding:8px 20px;letter-spacing:.14em}
+  .proof li:first-child{padding-left:0}
+  .form-row .btn{width:100%}
+  .footer nav a{padding:8px 14px}
+  .tier-price .num{font-size:44px}
+  .feat::before{font-size:52px}
+  .connector{padding-left:20px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+    scroll-behavior:auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav-inner">
+    <div class="wordmark-row">
+      <a class="wordmark" href="#top">Flowtide<span class="dot">.</span></a>
+      <span class="wordmark-note">Warm Editorial / 第 05 期</span>
+    </div>
+    <div class="nav-row">
+      <button class="nav-toggle" id="navBtn" type="button" aria-expanded="false" aria-controls="navPanel">
+        <span class="bars" aria-hidden="true"></span>
+        目录
+      </button>
+      <nav class="nav-panel" id="navPanel" aria-label="主导航">
+        <ul class="nav-links">
+          <li><a href="#features">功能</a></li>
+          <li><a href="#flow">流程</a></li>
+          <li><a href="#pricing">价格</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm" href="#start">免费开始</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ 主视觉：左窄栏索引 + 竖线 / 右宽栏 H1 首字下沉 + 表单 ============ -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <span class="mlabel" aria-hidden="true">主视觉 · 二〇二六年四月</span>
+      <div class="hero-grid">
+
+        <aside class="aside">
+          <h2>本期要目</h2>
+          <ul class="index">
+            <li><a href="#features"><span class="no">01</span>功能</a></li>
+            <li><a href="#flow"><span class="no">02</span>流程</a></li>
+            <li><a href="#pricing"><span class="no">03</span>价格</a></li>
+            <li><a href="#faq"><span class="no">04</span>常见问题</a></li>
+          </ul>
+
+          <div class="colophon">
+            <dl>
+              <dt>期号</dt>
+              <dd>VOL. 05 / 2026</dd>
+              <dt>日期</dt>
+              <dd>2026 年 4 月 18 日</dd>
+              <dt>编者</dt>
+              <dd>Flowtide 编辑部</dd>
+            </dl>
+            <p class="sig">想到就记下，<span>剩下的交给 Flowtide。</span></p>
+          </div>
+        </aside>
+
+        <div class="hero-main">
+          <div class="hgroup">
+            <p class="eyebrow">效率应用 · 自然语言录入</p>
+            <h1 id="heroTitle"><span class="dropcap">想</span>到就记下，剩下的交给 Flowtide</h1>
+            <p class="hero-sub">把散落在聊天、便签和脑子里的待办，自动整理成一份真正执行得下去的计划。</p>
+          </div>
+
+          <div id="start">
+            <form class="signup" id="signup" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label class="sr-only" for="email">邮箱地址</label>
+                  <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email">
+                </div>
+                <button class="btn btn-primary" type="submit">免费开始</button>
+              </div>
+              <p class="msg" id="formMsg" role="status" aria-live="polite"></p>
+            </form>
+            <p class="micro">无需信用卡，30 秒开始使用</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 快速收录演示：三段纵向面板，折线箭头连接 ============ -->
+  <section class="sec" id="capture" aria-labelledby="captureTitle">
+    <div class="wrap">
+      <span class="mlabel" aria-hidden="true">快速收录演示 · 输入 → 解析 → 排期</span>
+      <div class="sec-head">
+        <p class="eyebrow">Quick Capture</p>
+        <h2 id="captureTitle">一行字进，一段日程出</h2>
+        <p class="sub">不用选项目，不用填表单。你只管写，Flowtide 负责把它放到该放的地方。</p>
+      </div>
+
+      <div class="flow">
+        <div class="panel">
+          <div class="panel-head">
+            <h3 class="panel-title">输入</h3>
+            <span class="panel-no">STEP 01</span>
+          </div>
+          <div class="panel-body">
+            <p class="raw">周五前给陈老师发课程大纲 <span class="tag">#课程</span> <span class="mark">@30分钟</span></p>
+          </div>
+        </div>
+
+        <div class="connector" aria-hidden="true">
+          <span class="rail"></span>
+          <svg width="16" height="18" viewBox="0 0 16 18" aria-hidden="true" focusable="false">
+            <path d="M2 1 L14 9 L2 17" fill="none" stroke="#B56129" stroke-width="2" stroke-linecap="square"></path>
+          </svg>
+          <span class="cap">解析</span>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3 class="panel-title">解析结果</h3>
+            <span class="panel-no">STEP 02</span>
+          </div>
+          <div class="panel-body">
+            <ul class="tokens">
+              <li><span class="k">截止</span><span class="v v-accent">4 月 18 日周五</span></li>
+              <li><span class="k">项目</span><span class="v v-green">#课程</span></li>
+              <li><span class="k">预计</span><span class="v">30 分钟</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="connector" aria-hidden="true">
+          <span class="rail"></span>
+          <svg width="16" height="18" viewBox="0 0 16 18" aria-hidden="true" focusable="false">
+            <path d="M2 1 L14 9 L2 17" fill="none" stroke="#B56129" stroke-width="2" stroke-linecap="square"></path>
+          </svg>
+          <span class="cap">排期</span>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3 class="panel-title">排期结果</h3>
+            <span class="panel-no">STEP 03</span>
+          </div>
+          <div class="panel-body">
+            <div class="slot">
+              <span class="date">今天</span>
+              <span class="time">15:00–15:30</span>
+              <span class="ok">与现有日程无冲突</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 社会证明：一行等距公司名，发丝竖线分隔 ============ -->
+  <section class="proof" aria-labelledby="proofTitle">
+    <div class="wrap proof-inner">
+      <p class="cap" id="proofTitle">这些团队已经在用</p>
+      <ul>
+        <li>明远设计</li>
+        <li>云栖科技</li>
+        <li>三木研究所</li>
+        <li>白鲸工作室</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 功能：三栏等宽，每栏顶部一个大号序号数字 ============ -->
+  <section class="sec" id="features" aria-labelledby="featuresTitle">
+    <div class="wrap">
+      <span class="mlabel" aria-hidden="true">功能 · 三件事</span>
+      <div class="sec-head">
+        <p class="eyebrow">Features</p>
+        <h2 id="featuresTitle">三件事，交给它就好</h2>
+        <p class="sub">录入、排期、复盘——把整理这件事从你手里拿走。</p>
+      </div>
+
+      <div class="feats">
+        <article class="feat">
+          <h3>自然语言录入</h3>
+          <p>输入「明天上午联系王工确认设备清单 #项目A」，Flowtide 自动识别截止时间、项目与时长。</p>
+        </article>
+        <article class="feat">
+          <h3>自动排期</h3>
+          <p>按截止时间、优先级和你真实的工作节奏，把任务放进当天最合适的时间段。</p>
+        </article>
+        <article class="feat">
+          <h3>每周复盘</h3>
+          <p>自动生成完成率、延期项与时间去向，帮你发现哪些事情反复被推迟。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 工作流程：2×2 网格，四格尺寸略有差异 ============ -->
+  <section class="sec" id="flow" aria-labelledby="flowTitle">
+    <div class="wrap">
+      <span class="mlabel" aria-hidden="true">工作流程 · 四步</span>
+      <div class="sec-head">
+        <p class="eyebrow">Workflow</p>
+        <h2 id="flowTitle">从一行字到一周的节奏</h2>
+        <p class="sub">四步，每一步都比你现在的做法少一点手工。</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="beat" aria-hidden="true"></span>
+          <span class="step-no">STEP 01</span>
+          <h3>随手记</h3>
+          <p>想到什么就打一行字，不用选项目，不用填表单。</p>
+        </div>
+        <div class="step">
+          <span class="beat" aria-hidden="true"></span>
+          <span class="step-no">STEP 02</span>
+          <h3>自动整理</h3>
+          <p>Flowtide 解析时间、项目与预计时长，归到正确位置。</p>
+        </div>
+        <div class="step">
+          <span class="beat" aria-hidden="true"></span>
+          <span class="step-no">STEP 03</span>
+          <h3>放进日程</h3>
+          <p>结合空闲时段和优先级，安排到具体时间段。</p>
+        </div>
+        <div class="step">
+          <span class="beat" aria-hidden="true"></span>
+          <span class="step-no">STEP 04</span>
+          <h3>每周复盘</h3>
+          <p>看完成率和延期情况，调整下周节奏。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 用户评价：一条大引言在上，下方两张小卡片并排 ============ -->
+  <section class="sec" id="voices" aria-labelledby="voicesTitle">
+    <div class="wrap">
+      <span class="mlabel" aria-hidden="true">用户评价 · 三条</span>
+      <div class="sec-head">
+        <p class="eyebrow">Voices</p>
+        <h2 id="voicesTitle">用过的人怎么说</h2>
+      </div>
+
+      <figure class="quote-lead">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <blockquote>以前光整理待办就要花半小时，现在我只管记。每周复盘让我第一次看清时间到底去哪了。</blockquote>
+        <figcaption class="who"><b>林楠</b> · 产品设计师</figcaption>
+      </figure>
+
+      <div class="quotes">
+        <figure class="quote-card">
+          <blockquote>手机上记一句，回到电脑前它已经排好了，不用再想‘这个什么时候做’。</blockquote>
+          <figcaption class="who"><b>周凛</b> · 自由开发者</figcaption>
+        </figure>
+        <figure class="quote-card">
+          <blockquote>团队共享清单之后，跨时区交接再没丢过事情。</blockquote>
+          <figcaption class="who"><b>苏珊</b> · 内容负责人</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 价格：一个宽 Pro 卡 + 一个窄免费卡，宽度不等 ============ -->
+  <section class="sec" id="pricing" aria-labelledby="pricingTitle">
+    <div class="wrap">
+      <span class="mlabel" aria-hidden="true">价格 · 两档</span>
+      <div class="sec-head">
+        <p class="eyebrow">Pricing</p>
+        <h2 id="pricingTitle">按你的节奏选一档</h2>
+        <p class="sub">先免费用，觉得顺手再升级。随时可以取消。</p>
+      </div>
+
+      <div class="billing" role="group" aria-label="计费周期">
+        <button type="button" data-period="month" aria-pressed="true">月付</button>
+        <button type="button" data-period="year" aria-pressed="false">年付<span class="save">节省 20%</span></button>
+      </div>
+
+      <div class="tiers">
+        <article class="tier tier-pro" aria-labelledby="tierPro">
+          <div class="tier-head">
+            <h3 class="tier-name" id="tierPro">Pro</h3>
+            <span class="tier-note">推荐</span>
+          </div>
+          <p class="tier-price">
+            <span class="cur">¥</span><span class="num" id="proPrice">38</span><span class="per" id="proPer">/月</span>
+          </p>
+          <p class="tier-sub" id="tierSub">按月付费，随时取消</p>
+          <ul class="tier-list">
+            <li>无限项目</li>
+            <li>跨设备同步</li>
+            <li>日历双向同步</li>
+            <li>团队共享清单</li>
+            <li>每周复盘报告</li>
+          </ul>
+          <a class="btn btn-primary" href="#start">升级到 Pro</a>
+          <p class="foot">14 天无理由退款</p>
+        </article>
+
+        <article class="tier tier-free" aria-labelledby="tierFree">
+          <div class="tier-head">
+            <h3 class="tier-name" id="tierFree">免费版</h3>
+            <span class="tier-note">永久免费</span>
+          </div>
+          <p class="tier-price">
+            <span class="cur">¥</span><span class="num">0</span><span class="per">/永久</span>
+          </p>
+          <p class="tier-sub">个人使用，不需要信用卡</p>
+          <ul class="tier-list">
+            <li>个人使用</li>
+            <li>无限任务</li>
+            <li>3 个项目</li>
+            <li>手机与网页同步</li>
+          </ul>
+          <a class="btn btn-ghost" href="#start">免费开始</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 常见问题：每个问题是一张独立带边框卡片 ============ -->
+  <section class="sec" id="faq" aria-labelledby="faqTitle">
+    <div class="wrap">
+      <span class="mlabel" aria-hidden="true">常见问题 · 六条</span>
+      <div class="sec-head">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faqTitle">常见问题</h2>
+        <p class="sub">没找到答案？在应用里直接问我们。</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary><span>和别的待办应用有什么不同？</span><span class="q-no">01</span></summary>
+          <p class="ans">多数工具让你自己整理，Flowtide 把整理变成自动的一步。</p>
+        </details>
+        <details>
+          <summary><span>支持哪些设备？</span><span class="q-no">02</span></summary>
+          <p class="ans">网页、iOS、Android，实时同步。</p>
+        </details>
+        <details>
+          <summary><span>数据能导出吗？</span><span class="q-no">03</span></summary>
+          <p class="ans">随时导出为 Markdown 或 CSV，包含全部任务与标签。</p>
+        </details>
+        <details>
+          <summary><span>离线能用吗？</span><span class="q-no">04</span></summary>
+          <p class="ans">能，恢复网络后自动合并，不丢改动。</p>
+        </details>
+        <details>
+          <summary><span>数据安全怎么保证？</span><span class="q-no">05</span></summary>
+          <p class="ans">传输与存储全程加密，不读取任务内容用于广告。</p>
+        </details>
+        <details>
+          <summary><span>Pro 可以退款吗？</span><span class="q-no">06</span></summary>
+          <p class="ans">14 天内无理由全额退款。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 页脚：居中（品牌在上 / 链接在下 / 版权最底） ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <p class="brand">Flowtide</p>
+    <nav aria-label="页脚导航">
+      <a href="#features">产品</a>
+      <a href="#pricing">价格</a>
+      <a href="#flow">更新日志</a>
+      <a href="#faq">隐私政策</a>
+    </nav>
+    <p class="legal">© 2026 Flowtide</p>
+  </div>
+</footer>
+
+<style>
+#wf-switch{position:fixed;z-index:9999;right:16px;bottom:16px;display:flex;gap:6px;padding:6px;border-radius:999px;
+  background:rgba(16,18,22,.9);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(10px);
+  font:600 12px/1 system-ui,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+#wf-switch div{cursor:pointer;padding:7px 11px;border-radius:999px;color:rgba(255,255,255,.66);user-select:none}
+#wf-switch div[aria-current="true"]{background:#fff;color:#111}
+#wf-switch span{color:rgba(255,255,255,.5);align-self:center;padding:0 3px}
+</style>
+<div id="wf-switch" role="group" aria-label="切换设计方案">
+  <div data-case="a">A</div><div data-case="b">B</div><div data-case="c">C</div><div data-case="d">D</div>
+</div>
+<script>
+(function(){
+  var cur=(location.pathname.split('/').pop()||'a.html').replace('.html','').toLowerCase();
+  var box=document.getElementById('wf-switch');
+  Array.prototype.forEach.call(box.querySelectorAll('[data-case]'),function(b){
+    var on=b.getAttribute('data-case')===cur;
+    b.setAttribute('aria-current',on?'true':'false');
+    b.addEventListener('click',function(){ if(!on) location.href=b.getAttribute('data-case')+'.html'; });
+  });
+})();
+</script>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ---------- 移动端导航：≤820px 汉堡，可展开收起 ---------- */
+  var navBtn=document.getElementById('navBtn');
+  var navPanel=document.getElementById('navPanel');
+  function setNav(open){
+    navBtn.setAttribute('aria-expanded',open?'true':'false');
+    if(open){ navPanel.setAttribute('data-open','true'); }
+    else{ navPanel.removeAttribute('data-open'); }
+  }
+  navBtn.addEventListener('click',function(){
+    setNav(navBtn.getAttribute('aria-expanded')!=='true');
+  });
+  Array.prototype.forEach.call(navPanel.querySelectorAll('a'),function(a){
+    a.addEventListener('click',function(){ setNav(false); });
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&navBtn.getAttribute('aria-expanded')==='true'){ setNav(false); navBtn.focus(); }
+  });
+
+  /* ---------- 邮箱表单：novalidate + JS 校验 + 行内提示（无 alert） ---------- */
+  var form=document.getElementById('signup');
+  var email=document.getElementById('email');
+  var msg=document.getElementById('formMsg');
+  var RE=/^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/;
+  function say(text,kind){
+    msg.textContent=text;
+    msg.className='msg '+(kind==='ok'?'msg-ok':'msg-err');
+  }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=(email.value||'').trim();
+    if(!v){ say('请输入邮箱地址，例如 your@email.com','err'); email.focus(); return; }
+    if(!RE.test(v)){ say('邮箱格式不正确，请检查后重试：'+v,'err'); email.focus(); return; }
+    say('已收到 '+v+'，邀请链接已发送，请查收。','ok');
+    form.reset();
+  });
+  email.addEventListener('input',function(){
+    if(msg.className.indexOf('msg-err')!==-1){ msg.textContent=''; msg.className='msg'; }
+  });
+
+  /* ---------- 月付 / 年付切换：Pro 同一时刻只显示一个数字 ---------- */
+  var NUM={month:'38',year:'29'};
+  var SUB={
+    month:'按月付费，随时取消',
+    year:'按年付费，节省 20%'
+  };
+  var price=document.getElementById('proPrice');
+  var per=document.getElementById('proPer');
+  var sub=document.getElementById('tierSub');
+  var buttons=document.querySelectorAll('.billing [data-period]');
+  Array.prototype.forEach.call(buttons,function(btn){
+    btn.addEventListener('click',function(){
+      var p=btn.getAttribute('data-period');
+      Array.prototype.forEach.call(buttons,function(b){
+        b.setAttribute('aria-pressed',b===btn?'true':'false');
+      });
+      price.textContent=NUM[p];
+      per.textContent='/月';
+      sub.textContent=SUB[p];
+    });
+  });
+})();
+</script>
+</body>
+</html>

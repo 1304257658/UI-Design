@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flowtide — 想到就记下，剩下的交给 Flowtide</title>
+<meta name="description" content="Flowtide 把散落在聊天、便签和脑子里的待办，自动整理成一份真正执行得下去的计划。">
+<style>
+/* =====================================================================
+   Flowtide · 方向 D —— 大胆字体海报感（高对比 / 瑞士国际主义 + 新粗野主义）
+   4 色：亮黄 #FFE14D · 纯黑 #0A0A0A · 纸白 #FFFCF2 · 电蓝 #2B4CFF
+   ===================================================================== */
+
+/* ---------- 1. 令牌 ---------- */
+:root{
+  --ink:#0A0A0A;
+  --paper:#FFFCF2;
+  --yellow:#FFE14D;
+  --blue:#2B4CFF;
+
+  --bw:3px;                 /* 描边统一定宽，全站只有 3px 一档 */
+  --bc:var(--ink);          /* 描边色（按分区换地自动反转） */
+  --shc:var(--ink);         /* 硬阴影色 */
+  --dot:var(--ink);         /* 列表方块色 */
+  --focus:var(--blue);      /* 焦点环 */
+  --bd:var(--bw) solid var(--bc);
+  --sh:6px 6px 0 var(--shc);      /* 大块：硬阴影 6px 偏移，零模糊 */
+  --sh-sm:4px 4px 0 var(--shc);   /* 小块：同方向 4px */
+  --sh-lg:9px 9px 0 var(--shc);   /* 抬起态：同方向 +3px */
+  --sh-sm-lg:7px 7px 0 var(--shc);
+
+  --lab-bg:var(--ink); --lab-fg:var(--yellow); --lab-bc:var(--ink); --lab-sh:var(--blue);
+
+  --t:90ms linear;          /* 干脆的动效：70–120ms linear */
+
+  /* 字号只在这里用 clamp() 定义，其它地方一律 var() 引用；视口单位仅用于此处字号 */
+  --fs-h1:clamp(2.15rem,1.05rem + 5.6vw,6.4rem);
+  --fs-h2:clamp(1.7rem,1.2rem + 2.2vw,3.1rem);
+  --fs-h3:clamp(1.12rem,1.02rem + .55vw,1.45rem);
+  --fs-num:clamp(2.2rem,1.5rem + 3.4vw,4.6rem);
+  --fs-price:clamp(2.1rem,1.5rem + 2.6vw,3.6rem);
+  --fs-body:clamp(1rem,.96rem + .26vw,1.14rem);
+  --fs-sm:clamp(.87rem,.84rem + .16vw,.98rem);
+  --fs-xs:clamp(.72rem,.7rem + .12vw,.8rem);
+}
+
+/* ---------- 2. 分区换底（撞色靠整块换底，不堆小面积杂色） ---------- */
+.on-dark{
+  --bc:var(--paper); --shc:var(--yellow); --dot:var(--yellow); --focus:var(--yellow);
+  --lab-bg:var(--yellow); --lab-fg:var(--ink); --lab-bc:var(--ink); --lab-sh:var(--paper);
+}
+.on-blue{
+  --bc:var(--paper); --shc:var(--ink); --dot:var(--yellow); --focus:var(--yellow);
+  --lab-bg:var(--paper); --lab-fg:var(--ink); --lab-bc:var(--ink); --lab-sh:var(--ink);
+}
+.on-yellow{
+  --bc:var(--ink); --shc:var(--ink); --dot:var(--ink); --focus:var(--blue);
+  --lab-bg:var(--ink); --lab-fg:var(--yellow); --lab-bc:var(--ink); --lab-sh:var(--blue);
+}
+
+/* ---------- 3. 基础 ---------- */
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none !important}
+html{
+  -webkit-text-size-adjust:100%;
+  scroll-padding-top:96px;
+}
+@media (prefers-reduced-motion: no-preference){
+  html{scroll-behavior:smooth}
+}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:var(--fs-body);
+  font-weight:500;
+  line-height:1.78;
+}
+h1,h2,h3{font-weight:900;letter-spacing:-0.03em;line-height:1.08;margin:0}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+a{color:inherit}
+img,svg{display:block;max-width:100%}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;border:0;clip-path:inset(50%)}
+.skip{
+  position:absolute;top:-120px;left:12px;z-index:300;
+  display:inline-block;background:var(--yellow);color:var(--ink);
+  border:var(--bd);box-shadow:var(--sh-sm);
+  padding:12px 18px;font-weight:900;text-decoration:none;
+}
+.skip:focus{top:12px}
+
+/* ---------- 4. 版心 / 分区 / 通用件 ---------- */
+.wrap{width:100%;max-width:1180px;margin-inline:auto;padding-inline:18px}
+[id]{scroll-margin-top:96px}
+.sec{padding-block:68px;scroll-margin-top:96px}
+.sec-head{margin-bottom:34px}
+.sec-head h2{margin-top:14px;font-size:var(--fs-h2)}
+
+.label{
+  display:inline-block;
+  background:var(--lab-bg);color:var(--lab-fg);
+  border:var(--bw) solid var(--lab-bc);
+  box-shadow:4px 4px 0 var(--lab-sh);
+  padding:5px 10px;
+  font-size:var(--fs-xs);font-weight:900;letter-spacing:.16em;text-transform:uppercase;line-height:1.2;
+}
+
+.btn{
+  --bc:var(--ink); --shc:var(--ink);
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  background:var(--yellow);color:var(--ink);
+  border:var(--bw) solid var(--bc);
+  box-shadow:var(--sh);
+  padding:15px 24px;border-radius:0;
+  font-size:var(--fs-sm);font-weight:900;letter-spacing:.02em;
+  text-decoration:none;cursor:pointer;
+  transition:transform var(--t),box-shadow var(--t),background-color var(--t),color var(--t);
+}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:var(--sh-lg)}
+.btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--shc)}
+.btn-sm{padding:10px 16px;box-shadow:var(--sh-sm)}
+.btn-sm:hover{transform:translate(-3px,-3px);box-shadow:var(--sh-sm-lg)}
+.btn-ghost{--bc:var(--paper);--shc:var(--paper);background:transparent;color:var(--paper)}
+.btn-ghost:hover{background:var(--paper);color:var(--ink)}
+
+.box{border:var(--bd);box-shadow:var(--sh)}
+.lift{transition:transform var(--t),box-shadow var(--t),background-color var(--t),color var(--t)}
+.lift:hover{transform:translate(-3px,-3px);box-shadow:var(--sh-lg)}
+
+/* ---------- 5. 顶部导航 ---------- */
+.nav{
+  position:sticky;top:0;z-index:100;
+  background:var(--paper);
+  border-bottom:3px solid var(--ink);
+}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.brand{
+  display:inline-block;
+  background:var(--ink);color:var(--yellow);
+  border:var(--bw) solid var(--ink);
+  box-shadow:4px 4px 0 var(--blue);
+  padding:7px 12px;
+  font-size:var(--fs-h3);font-weight:900;letter-spacing:-0.03em;line-height:1.1;
+  text-decoration:none;
+}
+.nav-menu{display:flex;align-items:center;gap:6px}
+.nav-link{
+  display:inline-block;
+  padding:9px 12px;
+  border:var(--bw) solid transparent;
+  font-size:var(--fs-sm);font-weight:800;letter-spacing:.02em;text-decoration:none;
+  transition:background-color var(--t),color var(--t),border-color var(--t);
+}
+.nav-link:hover{background:var(--ink);color:var(--yellow);border-color:var(--ink)}
+.nav-cta{margin-left:8px}
+
+.burger{
+  display:none;align-items:center;justify-content:center;
+  width:54px;height:46px;padding:0;
+  background:var(--yellow);border:var(--bd);box-shadow:var(--sh-sm);
+  cursor:pointer;border-radius:0;
+  transition:transform var(--t),box-shadow var(--t),background-color var(--t);
+}
+.burger:hover{transform:translate(-3px,-3px);box-shadow:var(--sh-sm-lg)}
+.burger:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--shc)}
+.bars{position:relative;width:24px;height:16px}
+.bars i{position:absolute;left:0;right:0;height:3px;background:var(--ink);transition:transform var(--t),opacity var(--t)}
+.bars i:nth-child(1){top:0}
+.bars i:nth-child(2){top:6px}
+.bars i:nth-child(3){top:12px}
+.burger[aria-expanded="true"] .bars i:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] .bars i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] .bars i:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* ---------- 6. 首屏：层叠海报 ---------- */
+.hero{padding-block:40px 72px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.tag{
+  display:inline-block;
+  background:var(--paper);color:var(--ink);
+  border:var(--bw) solid var(--ink);
+  box-shadow:4px 4px 0 var(--ink);
+  padding:5px 10px;
+  font-size:var(--fs-xs);font-weight:900;letter-spacing:.14em;text-transform:uppercase;line-height:1.2;
+}
+.tag-ink{background:var(--ink);color:var(--yellow);box-shadow:4px 4px 0 var(--blue)}
+
+.hero-poster{display:flex;align-items:flex-start;gap:26px}
+.poster{
+  flex:1 1 auto;min-width:0;
+  display:flex;flex-direction:column;align-items:flex-start;
+  font-size:var(--fs-h1);font-weight:900;letter-spacing:-0.03em;line-height:1.06;
+}
+.pl{
+  display:block;max-width:100%;
+  padding:.06em .16em;
+  border:var(--bw) solid var(--ink);
+  box-shadow:var(--sh);
+  overflow-wrap:break-word;
+}
+.pl1{background:var(--yellow);color:var(--ink)}
+.pl2{background:var(--paper);color:var(--ink);margin-left:4%;margin-top:-0.09em}
+.pl3{background:var(--ink);color:var(--yellow);margin-left:1.5%;margin-top:-0.09em;box-shadow:6px 6px 0 var(--blue)}
+
+.hero-stamp{
+  flex:0 0 186px;width:186px;height:186px;
+  display:grid;place-items:center;
+  background:var(--blue);
+  border:var(--bw) solid var(--ink);
+  box-shadow:6px 6px 0 var(--ink);
+  transform:rotate(6deg);
+  margin-top:6px;
+}
+.hero-stamp svg{width:124px;height:124px;fill:var(--paper)}
+
+.hero-sub{margin-top:30px;max-width:62ch;font-size:var(--fs-body);line-height:1.8;font-weight:600}
+
+.signup{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;
+  margin-top:26px;max-width:840px;
+}
+.signup input{
+  width:100%;min-width:0;
+  background:var(--paper);color:var(--ink);
+  border:var(--bw) solid var(--ink);
+  box-shadow:var(--sh);
+  padding:16px 18px;border-radius:0;
+  font-size:var(--fs-body);font-weight:700;
+  transition:transform var(--t),box-shadow var(--t);
+}
+.signup input::placeholder{color:rgba(10,10,10,.42);font-weight:600}
+.signup input:focus-visible{transform:translate(-3px,-3px);box-shadow:var(--sh-lg)}
+.signup input[aria-invalid="true"]{background:var(--yellow)}
+
+.micro{margin-top:14px;font-size:var(--fs-sm);font-weight:800;letter-spacing:.02em}
+.micro::before{content:"";display:inline-block;width:10px;height:10px;margin-right:8px;background:var(--ink);vertical-align:middle}
+
+.form-msg{font-size:var(--fs-sm);font-weight:800;line-height:1.7}
+.form-msg:not(:empty){margin-top:16px;padding:12px 14px;border:var(--bw) solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.form-msg.is-error{background:var(--yellow);color:var(--ink)}
+.form-msg.is-error::before{content:"!";display:inline-block;margin-right:8px;padding:0 6px;background:var(--ink);color:var(--yellow);font-weight:900}
+.form-msg.is-ok{background:var(--blue);color:var(--paper)}
+.form-msg.is-ok::before{content:"✓";display:inline-block;margin-right:8px;font-weight:900;color:var(--yellow)}
+
+/* ---------- 7. 快速收录演示（整块黑底） ---------- */
+.demo{background:var(--ink);color:var(--paper);border-top:3px solid var(--ink)}
+.demo .sec-head h2{color:var(--paper)}
+.receipt{
+  max-width:900px;
+  background:var(--paper);color:var(--ink);
+  border:var(--bw) solid var(--ink);
+  box-shadow:6px 6px 0 var(--yellow);
+}
+.receipt-row{display:flex;flex-wrap:wrap;gap:6px 18px;padding:20px 22px}
+.receipt-row + .receipt-row{border-top:3px solid var(--ink)}
+.receipt-row.is-final{background:var(--yellow)}
+.receipt-k{
+  flex:0 0 auto;
+  background:var(--ink);color:var(--paper);
+  padding:3px 10px;
+  font-size:var(--fs-xs);font-weight:900;letter-spacing:.14em;
+}
+.receipt-row.is-final .receipt-k{background:var(--ink);color:var(--yellow)}
+.receipt-v{flex:1 1 260px;min-width:0;font-size:var(--fs-body);font-weight:700;line-height:1.75;overflow-wrap:anywhere}
+
+/* ---------- 8. 社会证明（整块黄底条） ---------- */
+.social{background:var(--yellow);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);padding-block:44px}
+.logos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:22px}
+.logos li{
+  background:var(--paper);
+  border:var(--bw) solid var(--ink);
+  box-shadow:4px 4px 0 var(--ink);
+  padding:16px 12px;
+  font-size:var(--fs-h3);font-weight:900;letter-spacing:-0.02em;line-height:1.3;
+  text-align:center;
+}
+
+/* ---------- 9. 功能三块 ---------- */
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.fcard{
+  background:var(--paper);
+  border:var(--bd);box-shadow:var(--sh);
+  padding:22px;
+}
+.num{
+  display:inline-block;
+  background:var(--yellow);color:var(--ink);
+  border:var(--bw) solid var(--ink);
+  box-shadow:4px 4px 0 var(--ink);
+  padding:2px 10px;
+  font-size:var(--fs-num);font-weight:900;letter-spacing:-0.04em;line-height:1.1;
+}
+.fcard h3{margin-top:18px;font-size:var(--fs-h3)}
+.fcard p{margin-top:10px;font-size:var(--fs-sm);line-height:1.8}
+
+/* ---------- 10. 工作流程四步（整块电蓝底） ---------- */
+.how{background:var(--blue);color:var(--paper)}
+.how .sec-head h2{color:var(--paper)}
+.grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.step{
+  border:3px solid var(--paper);
+  padding:20px 18px;
+  background:transparent;
+}
+.step-num{
+  display:block;
+  color:var(--yellow);
+  font-size:var(--fs-num);font-weight:900;letter-spacing:-0.04em;line-height:1;
+  text-shadow:4px 4px 0 var(--ink);
+}
+.step h3{margin-top:14px;font-size:var(--fs-h3);color:var(--paper)}
+.step p{margin-top:8px;font-size:var(--fs-sm);line-height:1.8}
+.step:hover{background:var(--paper);color:var(--ink);box-shadow:var(--sh)}
+.step:hover h3{color:var(--ink)}
+.step:hover .step-num{color:var(--blue);text-shadow:4px 4px 0 var(--yellow)}
+
+/* ---------- 11. 用户评价三条 ---------- */
+.grid-3q{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.qcard{
+  display:flex;flex-direction:column;gap:14px;
+  background:var(--paper);
+  border:var(--bd);box-shadow:var(--sh);
+  padding:22px;
+}
+.qhead{display:flex;align-items:center;gap:12px}
+.avatar{
+  flex:0 0 46px;width:46px;height:46px;
+  display:grid;place-items:center;
+  background:var(--yellow);color:var(--ink);
+  border:var(--bw) solid var(--ink);
+  box-shadow:4px 4px 0 var(--ink);
+  font-size:var(--fs-h3);font-weight:900;line-height:1;
+}
+.qwho{font-size:var(--fs-sm);font-weight:900;letter-spacing:.01em}
+.qcard blockquote{margin:0}
+.qcard blockquote p{font-size:var(--fs-sm);line-height:1.85}
+
+/* ---------- 12. 价格（整块黑底） ---------- */
+.pricing{background:var(--ink);color:var(--paper)}
+.pricing .sec-head h2{color:var(--paper)}
+.toggle{
+  display:inline-flex;flex-wrap:wrap;gap:6px;
+  border:3px solid var(--paper);
+  padding:8px;margin-bottom:28px;
+}
+.tbtn{
+  background:transparent;color:var(--paper);
+  border:var(--bw) solid transparent;
+  padding:11px 16px;border-radius:0;cursor:pointer;
+  font-size:var(--fs-sm);font-weight:900;letter-spacing:.02em;
+  transition:background-color var(--t),color var(--t),border-color var(--t);
+}
+.tbtn:hover{background:var(--paper);color:var(--ink);border-color:var(--ink)}
+.tbtn.is-on{background:var(--yellow);color:var(--ink);border-color:var(--ink)}
+.tbtn.is-on:hover{background:var(--yellow);color:var(--ink)}
+.save{
+  display:inline-block;margin-left:8px;padding:2px 7px;
+  background:var(--ink);color:var(--yellow);
+  font-size:var(--fs-xs);font-weight:900;letter-spacing:.04em;
+}
+.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.plan{
+  position:relative;
+  border:3px solid var(--paper);
+  padding:24px;
+}
+.plan h3{font-size:var(--fs-h3);color:var(--paper)}
+.plan .price{display:flex;align-items:baseline;gap:6px;margin-top:16px}
+.plan .amount{font-size:var(--fs-price);font-weight:900;letter-spacing:-0.04em;line-height:1}
+.plan .per{font-size:var(--fs-sm);font-weight:900}
+.plan ul{margin-top:20px;display:grid;gap:10px}
+.plan li{display:flex;gap:10px;font-size:var(--fs-sm);font-weight:600;line-height:1.7}
+.plan li::before{content:"";flex:0 0 10px;width:10px;height:10px;margin-top:.55em;background:var(--dot)}
+.plan .btn{margin-top:22px;width:100%}
+.plan-pro{
+  background:var(--yellow);color:var(--ink);
+  border-color:var(--ink);
+  box-shadow:6px 6px 0 var(--paper);
+  --dot:var(--ink); --shc:var(--ink);
+}
+.plan-pro h3{color:var(--ink)}
+.flag{
+  position:absolute;top:-3px;right:-3px;
+  background:var(--ink);color:var(--yellow);
+  border:3px solid var(--ink);
+  padding:5px 10px;
+  font-size:var(--fs-xs);font-weight:900;letter-spacing:.16em;line-height:1.2;
+}
+
+/* ---------- 13. 常见问题 ---------- */
+.faq-list{max-width:920px}
+.qa{
+  background:var(--paper);
+  border:var(--bd);box-shadow:var(--sh);
+  margin-bottom:18px;
+}
+.qa summary{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:18px 20px;
+  cursor:pointer;list-style:none;
+  font-size:var(--fs-h3);font-weight:900;letter-spacing:-0.02em;line-height:1.4;
+  transition:background-color var(--t),color var(--t);
+}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary:hover{background:var(--yellow)}
+.qa[open] summary{background:var(--yellow)}
+.mark{
+  position:relative;flex:0 0 26px;width:26px;height:26px;
+  background:var(--paper);border:var(--bw) solid var(--ink);
+}
+.mark::before,.mark::after{
+  content:"";position:absolute;left:50%;top:50%;width:12px;height:3px;background:var(--ink);
+  transform:translate(-50%,-50%);
+  transition:transform var(--t),opacity var(--t);
+}
+.mark::after{transform:translate(-50%,-50%) rotate(90deg)}
+.qa[open] .mark::after{opacity:0}
+.qa .ans{padding:4px 20px 20px;border-top:3px solid var(--ink);margin-top:0}
+.qa .ans p{padding-top:16px;font-size:var(--fs-sm);line-height:1.85}
+
+/* ---------- 14. 页脚 ---------- */
+.foot{
+  background:var(--yellow);color:var(--ink);
+  border-top:3px solid var(--ink);
+  padding-block:52px 88px;
+}
+.foot-in{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:22px}
+.foot-brand{
+  font-size:var(--fs-h2);font-weight:900;letter-spacing:-0.03em;line-height:1;
+  background:var(--ink);color:var(--yellow);
+  border:var(--bw) solid var(--ink);
+  box-shadow:6px 6px 0 var(--blue);
+  padding:8px 16px;
+}
+.foot-links{display:flex;flex-wrap:wrap;gap:10px 18px}
+.foot-links a,.foot-links span{
+  font-size:var(--fs-sm);font-weight:900;letter-spacing:.02em;text-decoration:none;
+  border-bottom:3px solid var(--ink);
+  padding-bottom:2px;
+  transition:background-color var(--t),color var(--t);
+}
+.foot-links a:hover{background:var(--ink);color:var(--yellow)}
+.copy{margin-top:22px;font-size:var(--fs-sm);font-weight:800}
+
+/* ---------- 15. 响应式 ---------- */
+@media (max-width:960px){
+  .hero-stamp{display:none}
+}
+@media (max-width:820px){
+  .burger{display:inline-flex}
+  .nav-menu{
+    position:absolute;left:0;right:0;top:100%;
+    display:flex;flex-direction:column;align-items:stretch;gap:0;
+    background:var(--paper);
+    border:3px solid var(--ink);border-top:none;
+    padding:8px 18px 18px;
+    opacity:0;visibility:hidden;transform:translateY(-10px);
+    transition:opacity var(--t),transform var(--t),visibility 0s linear 90ms;
+  }
+  .nav-menu.is-open{
+    opacity:1;visibility:visible;transform:translateY(0);
+    transition:opacity var(--t),transform var(--t),visibility 0s linear 0s;
+  }
+  .nav-link{
+    padding:15px 4px;
+    border:none;border-bottom:3px solid var(--ink);
+    font-size:var(--fs-body);
+  }
+  .nav-link:hover{background:var(--yellow);color:var(--ink)}
+  .nav-cta{margin:16px 0 0;width:100%}
+  .grid-3,.grid-4,.grid-3q{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sec{padding-block:56px}
+}
+@media (max-width:680px){
+  .wrap{padding-inline:16px}
+  .hero{padding-block:28px 56px}
+  .poster{font-size:var(--fs-h1)}
+  .signup{grid-template-columns:minmax(0,1fr)}
+  .signup .btn{width:100%}
+  .logos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid-3,.grid-4,.grid-3q{grid-template-columns:minmax(0,1fr)}
+  .plans{grid-template-columns:minmax(0,1fr)}
+  .receipt-row{padding:18px 16px}
+  .foot-in{align-items:flex-start;flex-direction:column}
+}
+@media (min-width:821px){
+  .wrap{padding-inline:40px}
+  .sec{padding-block:84px}
+  .hero{padding-block:56px 84px}
+}
+
+/* ---------- 16. 尊重减弱动效 ---------- */
+@media (prefers-reduced-motion: reduce){
+  :root{--t:0ms}
+  *,*::before,*::after{transition:none !important;animation:none !important}
+  html{scroll-behavior:auto}
+  .lift:hover,.btn:hover,.burger:hover{transform:none}
+  .signup input:focus-visible{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">Flowtide</a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="打开导航菜单">
+      <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+    <nav class="nav-menu" id="nav-menu" aria-label="主导航">
+      <a class="nav-link" href="#features">功能</a>
+      <a class="nav-link" href="#how">流程</a>
+      <a class="nav-link" href="#pricing">价格</a>
+      <a class="nav-link" href="#faq">常见问题</a>
+      <a class="btn btn-sm nav-cta" href="#signup">免费开始</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ 首屏：层叠海报 ============ -->
+  <section class="sec hero" id="top">
+    <div class="wrap">
+      <div class="hero-meta">
+        <span class="tag" aria-hidden="true">NEW</span>
+        <span class="tag tag-ink" aria-hidden="true">效率应用 · 2026</span>
+      </div>
+
+      <div class="hero-poster">
+        <h1 class="poster"><span class="pl pl1">想到就记下，</span><span class="pl pl2">剩下的交给</span><span class="pl pl3"> Flowtide</span></h1>
+        <div class="hero-stamp" aria-hidden="true">
+          <svg viewBox="0 0 100 100" focusable="false" aria-hidden="true">
+            <polygon points="96,50 66.63,56.89 82.53,82.53 56.89,66.63 50,96 43.11,66.63 17.47,82.53 33.37,56.89 4,50 33.37,43.11 17.47,17.47 43.11,33.37 50,4 56.89,33.37 82.53,17.47 66.63,43.11"/>
+          </svg>
+        </div>
+      </div>
+
+      <p class="hero-sub">把散落在聊天、便签和脑子里的待办，自动整理成一份真正执行得下去的计划。</p>
+
+      <form class="signup" id="signup" novalidate>
+        <label class="sr-only" for="email">邮箱地址</label>
+        <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="your@email.com" aria-describedby="formMsg">
+        <button class="btn" type="submit">免费开始</button>
+      </form>
+      <p class="micro">无需信用卡，30 秒开始使用</p>
+      <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- ============ 快速收录演示 ============ -->
+  <section class="sec demo on-dark" id="demo">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label" aria-hidden="true">Live Demo</span>
+        <h2>快速收录</h2>
+      </div>
+      <div class="receipt">
+        <div class="receipt-row">
+          <span class="receipt-k">输入</span>
+          <p class="receipt-v">周五前给陈老师发课程大纲 #课程 @30分钟</p>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-k">解析</span>
+          <p class="receipt-v">截止 4 月 18 日周五 · #课程 · 预计 30 分钟</p>
+        </div>
+        <div class="receipt-row is-final">
+          <span class="receipt-k">排期</span>
+          <p class="receipt-v">今天 15:00–15:30（与现有日程无冲突）</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 社会证明 ============ -->
+  <section class="social on-yellow" id="social">
+    <div class="wrap">
+      <h2 class="sr-only">社会证明</h2>
+      <span class="label" aria-hidden="true">Trusted By</span>
+      <ul class="logos">
+        <li>明远设计</li>
+        <li>云栖科技</li>
+        <li>三木研究所</li>
+        <li>白鲸工作室</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 功能 ============ -->
+  <section class="sec features" id="features">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label" aria-hidden="true">Features</span>
+        <h2>功能</h2>
+      </div>
+      <div class="grid-3">
+        <article class="fcard lift">
+          <span class="num" aria-hidden="true">01</span>
+          <h3>自然语言录入</h3>
+          <p>输入「明天上午联系王工确认设备清单 #项目A」，Flowtide 自动识别截止时间、项目与时长。</p>
+        </article>
+        <article class="fcard lift">
+          <span class="num" aria-hidden="true">02</span>
+          <h3>自动排期</h3>
+          <p>按截止时间、优先级和你真实的工作节奏，把任务放进当天最合适的时间段。</p>
+        </article>
+        <article class="fcard lift">
+          <span class="num" aria-hidden="true">03</span>
+          <h3>每周复盘</h3>
+          <p>自动生成完成率、延期项与时间去向，帮你发现哪些事情反复被推迟。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 工作流程 ============ -->
+  <section class="sec how on-blue" id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label" aria-hidden="true">04 Steps</span>
+        <h2>工作流程</h2>
+      </div>
+      <ol class="grid-4">
+        <li class="step lift">
+          <span class="step-num" aria-hidden="true">01</span>
+          <h3>随手记</h3>
+          <p>想到什么就打一行字，不用选项目，不用填表单。</p>
+        </li>
+        <li class="step lift">
+          <span class="step-num" aria-hidden="true">02</span>
+          <h3>自动整理</h3>
+          <p>Flowtide 解析时间、项目与预计时长，归到正确位置。</p>
+        </li>
+        <li class="step lift">
+          <span class="step-num" aria-hidden="true">03</span>
+          <h3>放进日程</h3>
+          <p>结合空闲时段和优先级，安排到具体时间段。</p>
+        </li>
+        <li class="step lift">
+          <span class="step-num" aria-hidden="true">04</span>
+          <h3>每周复盘</h3>
+          <p>看完成率和延期情况，调整下周节奏。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 用户评价 ============ -->
+  <section class="sec quotes" id="quotes">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label" aria-hidden="true">Testimonials</span>
+        <h2>用户评价</h2>
+      </div>
+      <div class="grid-3q">
+        <figure class="qcard lift">
+          <figcaption class="qhead">
+            <span class="avatar" aria-hidden="true">林</span>
+            <span class="qwho">林楠 · 产品设计师</span>
+          </figcaption>
+          <blockquote><p>「以前光整理待办就要花半小时，现在我只管记。每周复盘让我第一次看清时间到底去哪了。」</p></blockquote>
+        </figure>
+        <figure class="qcard lift">
+          <figcaption class="qhead">
+            <span class="avatar" aria-hidden="true">周</span>
+            <span class="qwho">周凛 · 自由开发者</span>
+          </figcaption>
+          <blockquote><p>「手机上记一句，回到电脑前它已经排好了，不用再想『这个什么时候做』。」</p></blockquote>
+        </figure>
+        <figure class="qcard lift">
+          <figcaption class="qhead">
+            <span class="avatar" aria-hidden="true">苏</span>
+            <span class="qwho">苏珊 · 内容负责人</span>
+          </figcaption>
+          <blockquote><p>「团队共享清单之后，跨时区交接再没丢过事情。」</p></blockquote>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 价格 ============ -->
+  <section class="sec pricing on-dark" id="pricing">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label" aria-hidden="true">Pricing</span>
+        <h2>价格</h2>
+      </div>
+
+      <div class="toggle" role="group" aria-label="计费周期">
+        <button class="tbtn is-on" id="btnMonthly" type="button" aria-pressed="true">月付</button>
+        <button class="tbtn" id="btnAnnual" type="button" aria-pressed="false">年付<span class="save">节省 20%</span></button>
+      </div>
+
+      <div class="plans">
+        <article class="plan">
+          <h3>免费版</h3>
+          <p class="price"><span class="amount">¥0</span><span class="per">/月</span></p>
+          <ul>
+            <li>个人使用</li>
+            <li>无限任务</li>
+            <li>3 个项目</li>
+            <li>手机与网页同步</li>
+          </ul>
+          <a class="btn btn-ghost" href="#signup">免费开始</a>
+        </article>
+
+        <article class="plan plan-pro">
+          <span class="flag" aria-hidden="true">PRO</span>
+          <h3>Pro</h3>
+          <p class="price">
+            <span class="amount" id="priceMonthly" data-price="¥38">¥38</span>
+            <span class="amount" id="priceAnnual" data-price="¥29" hidden>¥29</span>
+            <span class="per">/月</span>
+          </p>
+          <ul>
+            <li>无限项目</li>
+            <li>跨设备同步</li>
+            <li>日历双向同步</li>
+            <li>团队共享清单</li>
+            <li>每周复盘报告</li>
+          </ul>
+          <a class="btn" href="#signup">免费开始</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 常见问题 ============ -->
+  <section class="sec faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label" aria-hidden="true">FAQ</span>
+        <h2>常见问题</h2>
+      </div>
+      <div class="faq-list">
+        <details class="qa">
+          <summary>和别的待办应用有什么不同？<span class="mark" aria-hidden="true"></span></summary>
+          <div class="ans"><p>多数工具让你自己整理，Flowtide 把整理变成自动的一步。</p></div>
+        </details>
+        <details class="qa">
+          <summary>支持哪些设备？<span class="mark" aria-hidden="true"></span></summary>
+          <div class="ans"><p>网页、iOS、Android，实时同步。</p></div>
+        </details>
+        <details class="qa">
+          <summary>数据能导出吗？<span class="mark" aria-hidden="true"></span></summary>
+          <div class="ans"><p>随时导出为 Markdown 或 CSV，包含全部任务与标签。</p></div>
+        </details>
+        <details class="qa">
+          <summary>离线能用吗？<span class="mark" aria-hidden="true"></span></summary>
+          <div class="ans"><p>能，恢复网络后自动合并，不丢改动。</p></div>
+        </details>
+        <details class="qa">
+          <summary>数据安全怎么保证？<span class="mark" aria-hidden="true"></span></summary>
+          <div class="ans"><p>传输与存储全程加密，不读取任务内容用于广告。</p></div>
+        </details>
+        <details class="qa">
+          <summary>Pro 可以退款吗？<span class="mark" aria-hidden="true"></span></summary>
+          <div class="ans"><p>14 天内无理由全额退款。</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="foot on-yellow" id="foot">
+  <div class="wrap">
+    <div class="foot-in">
+      <p class="foot-brand">Flowtide</p>
+      <ul class="foot-links">
+        <li><a href="#features">产品</a></li>
+        <li><a href="#pricing">价格</a></li>
+        <li><span>更新日志</span></li>
+        <li><span>隐私政策</span></li>
+      </ul>
+    </div>
+    <p class="copy">© 2026 Flowtide</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ---------- 移动端导航：可开可关 + 关闭态不可 Tab ---------- */
+  var mq = window.matchMedia('(max-width: 820px)');
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('nav-menu');
+
+  function setMenu(open){
+    if(open){ menu.classList.add('is-open'); } else { menu.classList.remove('is-open'); }
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? '关闭导航菜单' : '打开导航菜单');
+    /* 双保险：关闭态用 inert 彻底移出可聚焦序列（另有 visibility:hidden） */
+    if(mq.matches && !open){ menu.setAttribute('inert',''); }
+    else { menu.removeAttribute('inert'); }
+  }
+
+  burger.addEventListener('click', function(){
+    setMenu(burger.getAttribute('aria-expanded') !== 'true');
+  });
+
+  Array.prototype.forEach.call(menu.querySelectorAll('a'), function(link){
+    link.addEventListener('click', function(){ setMenu(false); });
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true'){
+      setMenu(false);
+      burger.focus();
+    }
+  });
+
+  function onMqChange(){ setMenu(false); }
+  if(mq.addEventListener){ mq.addEventListener('change', onMqChange); }
+  else if(mq.addListener){ mq.addListener(onMqChange); }
+  setMenu(false);
+
+  /* ---------- 邮箱表单：novalidate + JS 校验 + 内联提示（无 alert） ---------- */
+  var form = document.getElementById('signup');
+  var field = document.getElementById('email');
+  var msg = document.getElementById('formMsg');
+  var MAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+  function tell(kind, text){
+    msg.textContent = text;
+    msg.classList.remove('is-error','is-ok');
+    msg.classList.add(kind === 'ok' ? 'is-ok' : 'is-error');
+    if(kind === 'ok'){ field.setAttribute('aria-invalid','false'); }
+    else { field.setAttribute('aria-invalid','true'); }
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var v = field.value.trim();
+    if(!v){
+      tell('error','请先填写邮箱地址，例如 your@email.com');
+      field.focus();
+      return;
+    }
+    if(!MAIL.test(v)){
+      tell('error','邮箱格式好像不太对，检查一下再提交，例如 your@email.com');
+      field.focus();
+      return;
+    }
+    tell('ok','已提交：确认邮件正在发往 ' + v + '，30 秒后就能开始。');
+    form.reset();
+  });
+
+  field.addEventListener('input', function(){
+    if(msg.classList.contains('is-error')){
+      msg.textContent = '';
+      msg.classList.remove('is-error');
+      field.removeAttribute('aria-invalid');
+    }
+  });
+
+  /* ---------- 价格：月付 / 年付切换 ---------- */
+  var btnMonthly = document.getElementById('btnMonthly');
+  var btnAnnual = document.getElementById('btnAnnual');
+  var priceMonthly = document.getElementById('priceMonthly');
+  var priceAnnual = document.getElementById('priceAnnual');
+
+  function setCycle(annual){
+    btnMonthly.setAttribute('aria-pressed', annual ? 'false' : 'true');
+    btnAnnual.setAttribute('aria-pressed', annual ? 'true' : 'false');
+    if(annual){ btnMonthly.classList.remove('is-on'); btnAnnual.classList.add('is-on'); }
+    else { btnAnnual.classList.remove('is-on'); btnMonthly.classList.add('is-on'); }
+    priceMonthly.hidden = annual;
+    priceAnnual.hidden = !annual;
+    /* 同一时刻 DOM 里只留一个价格数字 */
+    priceMonthly.textContent = annual ? '' : priceMonthly.getAttribute('data-price');
+    priceAnnual.textContent = annual ? priceAnnual.getAttribute('data-price') : '';
+  }
+
+  btnMonthly.addEventListener('click', function(){ setCycle(false); });
+  btnAnnual.addEventListener('click', function(){ setCycle(true); });
+  setCycle(false);
+})();
+</script>
+
+<style>
+#wf-switch{position:fixed;z-index:9999;right:16px;bottom:16px;display:flex;gap:6px;padding:6px;border-radius:999px;
+  background:rgba(16,18,22,.9);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(10px);
+  font:600 12px/1 system-ui,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+/* 窄屏缩小并贴边，避免遮挡页面内容 */
+@media (max-width:620px){
+  #wf-switch{right:8px;bottom:8px;gap:2px;padding:4px;font-size:11px}
+  #wf-switch div{padding:6px 8px}
+}
+#wf-switch div{cursor:pointer;padding:7px 11px;border-radius:999px;color:rgba(255,255,255,.66);user-select:none}
+#wf-switch div[aria-current="true"]{background:#fff;color:#111}
+</style>
+<div id="wf-switch" role="group" aria-label="切换设计方案">
+  <div data-case="a">A</div><div data-case="b">B</div><div data-case="c">C</div><div data-case="d">D</div>
+</div>
+<script>
+(function(){
+  var cur=(location.pathname.split('/').pop()||'a.html').replace('.html','').toLowerCase();
+  var box=document.getElementById('wf-switch');
+  Array.prototype.forEach.call(box.querySelectorAll('[data-case]'),function(b){
+    var on=b.getAttribute('data-case')===cur;
+    b.setAttribute('aria-current',on?'true':'false');
+    b.addEventListener('click',function(){ if(!on) location.href=b.getAttribute('data-case')+'.html'; });
+  });
+})();
+</script>
+</body>
+</html>

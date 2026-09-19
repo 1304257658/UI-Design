@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0F1112">
+<meta name="description" content="Flowtide 把散落在聊天、便签和脑子里的待办，自动整理成一份真正执行得下去的计划。">
+<title>Flowtide · 想到就记下，剩下的交给 Flowtide</title>
+<style>
+/* ============================================================
+   Flowtide — 方向 A · 安静的技术极简（深色）
+   单文件自包含：系统字体栈 + 内联 SVG + CSS 图形，无任何外部请求
+   间距基数 4px · 圆角 2px · 描边 1px · 容器 1120px · 字号比例 1.21
+   ============================================================ */
+
+:root{
+  /* 指定色板 */
+  --bg:#0F1112;
+  --surface:#161C22;
+  --raised:#1D242A;
+  --line:#30373E;
+  --ink:#EEF0F1;
+  --muted:#93A4B4;
+  --accent:#71D7E7;
+  --accent-soft:#1F8FA1;
+  --on-accent:#102123;
+
+  /* 指定数值 */
+  --radius:2px;
+  --container:1120px;
+  --gutter:40px;
+  --block:64px;          /* 区块上下内边距 */
+  --rail:44px;           /* 粘性侧标轨道 */
+  --blockgap:40px;
+  --trk:-0.025em;        /* 紧凑字距 */
+  --spread:0.19em;       /* 舒展字距 */
+  --dur:220ms;           /* 动效时长 */
+  --ease:cubic-bezier(.25,.8,.25,1);
+  --shadow:0 4px 12px rgba(0,0,0,.34);
+
+  /* 字号级差 1.21（基准 16.5px） */
+  --t-1:0.72rem;
+  --t0:0.78rem;
+  --t1:0.86rem;
+  --t2:0.94rem;
+  --t3:1.03rem;
+  --t4:1.14rem;
+  --t5:1.40rem;
+  --t6:2.58rem;
+  --t7:7.2rem;
+
+  --font:ui-monospace,"Cascadia Mono",Consolas,"PingFang SC","Microsoft YaHei",monospace;
+  --mono:ui-monospace,"Cascadia Mono",Consolas,monospace;
+}
+
+html{
+  font-size:clamp(16px,0.45vw + 14.6px,17.5px);
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+  background:var(--bg);
+  scroll-behavior:smooth;
+  overflow-x:clip;
+}
+*,*::before,*::after{box-sizing:border-box}
+
+body{
+  margin:0;
+  overflow-x:clip;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font);
+  font-size:var(--t2);
+  line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+h1,h2,h3,h4,p,figure,blockquote,ul,ol{margin:0}
+ul,ol{padding:0;list-style:none}
+button,input{font:inherit;color:inherit}
+svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--accent-soft);color:var(--ink)}
+
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:2px;
+}
+
+.sr-only{
+  position:absolute;width:1px;height:1px;
+  margin:-1px;padding:0;overflow:hidden;
+  clip:rect(0 0 0 0);clip-path:inset(50%);
+  white-space:nowrap;border:0;
+}
+.skip-link{
+  position:fixed;z-index:900;top:8px;left:8px;
+  transform:translateY(-200%);
+  padding:12px 16px;
+  border:1px solid var(--accent);
+  border-radius:var(--radius);
+  background:var(--raised);
+  color:var(--ink);
+  font-size:var(--t1);
+  transition:transform var(--dur) var(--ease);
+}
+.skip-link:focus{transform:translateY(0)}
+
+/* ---------- 版心与区块骨架 ---------- */
+.wrap{
+  width:100%;
+  max-width:var(--container);
+  margin-inline:auto;
+  padding-inline:var(--gutter);
+  position:relative;
+  z-index:1;
+}
+
+/* 装饰母题：背景 1px 网格叠层，区块边界处渐隐 */
+.grid-backdrop{position:absolute;inset:0;z-index:0;pointer-events:none}
+.grid-backdrop::before{
+  content:"";position:absolute;inset:0;
+  background-image:
+    linear-gradient(to right,rgba(238,240,241,.10) 1px,transparent 1px),
+    linear-gradient(to bottom,rgba(238,240,241,.10) 1px,transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 64px,#000 calc(100% - 64px),transparent 100%);
+  mask-image:linear-gradient(to bottom,transparent 0,#000 64px,#000 calc(100% - 64px),transparent 100%);
+}
+
+.section{
+  position:relative;
+  padding-block:var(--block);
+  scroll-margin-top:96px;
+  background:var(--bg);
+}
+.section + .section{border-top:1px solid var(--line)}
+
+/* 区块序号：等宽补零 + 粘性侧标 */
+.block{
+  display:grid;
+  grid-template-columns:var(--rail) minmax(0,1fr);
+  column-gap:var(--blockgap);
+}
+.mark{position:relative;min-width:0}
+.mark span{
+  position:sticky;
+  top:100px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-family:var(--mono);
+  font-size:var(--t-1);
+  letter-spacing:var(--spread);
+  color:var(--accent);
+}
+.mark span::after{
+  content:"";
+  flex:1 1 auto;
+  height:1px;
+  background:var(--line);
+}
+.mark em{
+  font-style:normal;
+  font-family:var(--mono);
+  font-size:var(--t-1);
+  letter-spacing:var(--spread);
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.block-body{min-width:0}
+
+.h-sec{
+  font-size:var(--t6);
+  font-weight:600;
+  line-height:1.16;
+  letter-spacing:var(--trk);
+}
+.lead{
+  max-width:34rem;
+  margin-top:16px;
+  color:var(--muted);
+  font-size:var(--t2);
+  line-height:1.8;
+  overflow-wrap:anywhere;
+}
+.sec-head{margin-bottom:48px}
+
+/* ---------- 顶部导航 ---------- */
+.site-header{
+  position:sticky;top:0;z-index:80;
+  background:var(--bg);
+  border-bottom:1px solid var(--line);
+}
+.nav-bar{
+  display:flex;
+  align-items:center;
+  gap:24px;
+  min-height:68px;
+}
+.brand{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:var(--t3);
+  font-weight:600;
+  letter-spacing:var(--trk);
+}
+.brand svg{width:20px;height:20px;flex:none;color:var(--accent)}
+.nav-links{
+  display:flex;align-items:center;gap:24px;
+  margin-left:auto;
+}
+.nav-links a{
+  font-size:var(--t2);
+  color:var(--muted);
+  padding-block:4px;
+  border-bottom:1px solid transparent;
+  transition:color var(--dur) var(--ease),border-color var(--dur) var(--ease);
+}
+.nav-links a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 20px;
+  border:1px solid transparent;
+  border-radius:var(--radius);
+  font-size:var(--t2);
+  font-weight:600;
+  letter-spacing:var(--trk);
+  cursor:pointer;
+  white-space:nowrap;
+  transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease),
+             color var(--dur) var(--ease),transform var(--dur) var(--ease);
+}
+.btn-primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.btn-primary:hover{background:var(--accent-soft);border-color:var(--accent-soft);color:var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn-sm{padding:8px 16px}
+.btn-block{width:100%}
+.nav-cta{margin-left:0}
+
+.nav-toggle{
+  display:none;
+  align-items:center;gap:8px;
+  margin-left:auto;
+  padding:10px 12px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--surface);
+  color:var(--ink);
+  font-size:var(--t1);
+  font-weight:600;
+  cursor:pointer;
+  transition:border-color var(--dur) var(--ease);
+}
+.nav-toggle:hover{border-color:var(--accent)}
+.nav-toggle .bars{position:relative;width:16px;height:12px;flex:none}
+.nav-toggle .bars i{
+  position:absolute;left:0;width:100%;height:1px;
+  background:currentColor;
+  transition:transform var(--dur) var(--ease),opacity var(--dur) var(--ease);
+}
+.nav-toggle .bars i:nth-child(1){top:1px}
+.nav-toggle .bars i:nth-child(2){top:6px}
+.nav-toggle .bars i:nth-child(3){top:11px}
+.nav-toggle[aria-expanded="true"] .bars i:nth-child(1){transform:translateY(5px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] .bars i:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] .bars i:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+
+/* ---------- 首屏：左对齐超大字 ---------- */
+.hero{position:relative}
+.hero-inner{padding-block:96px 64px}
+.eyebrow{
+  display:block;
+  margin-bottom:24px;
+  font-family:var(--mono);
+  font-size:var(--t-1);
+  letter-spacing:var(--spread);
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.hero h1{
+  max-width:1040px;
+  font-size:var(--t7);
+  font-weight:600;
+  line-height:0.98;
+  letter-spacing:var(--trk);
+}
+.hero-sub{
+  max-width:40rem;
+  margin-top:24px;
+  font-size:var(--t4);
+  line-height:1.8;
+  color:var(--muted);
+}
+
+/* ---------- 全宽终端条 ---------- */
+.terminal{
+  position:relative;
+  z-index:1;
+  border-top:1px solid var(--line);
+  background:var(--surface);
+}
+.terminal .wrap{padding-block:24px}
+.cmd{
+  display:grid;
+  grid-template-columns:220px minmax(0,1fr) auto;
+  grid-template-areas:
+    "label field  action"
+    ".     status .";
+  align-items:start;
+  column-gap:24px;
+  row-gap:8px;
+}
+.cmd-label{
+  grid-area:label;
+  display:flex;align-items:center;gap:8px;
+  padding-top:16px;
+  font-family:var(--mono);
+  font-size:var(--t-1);
+  letter-spacing:var(--spread);
+  text-transform:uppercase;
+  color:var(--muted);
+  white-space:nowrap;
+}
+.cmd-field{
+  grid-area:field;
+  display:flex;align-items:center;gap:8px;
+  min-width:0;
+  padding:12px 16px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--bg);
+  transition:border-color var(--dur) var(--ease);
+}
+.cmd-field:focus-within{border-color:var(--accent)}
+.cmd-field .prompt{
+  flex:none;
+  color:var(--accent);
+  font-weight:600;
+  user-select:none;
+}
+.cmd-field input{
+  flex:1 1 auto;
+  min-width:0;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:var(--ink);
+  font-family:var(--mono);
+  font-size:var(--t3);
+  letter-spacing:var(--trk);
+}
+.cmd-field input::placeholder{color:var(--muted);opacity:.75}
+.cmd-field input:focus-visible{outline:none}
+.cmd-status{grid-area:status;min-height:1.8em;font-size:var(--t1)}
+.cmd-status p{
+  display:flex;align-items:flex-start;gap:8px;
+  line-height:1.6;
+  overflow-wrap:anywhere;
+}
+.cmd-status svg{width:14px;height:14px;flex:none;margin-top:4px}
+.cmd-status .is-error{color:var(--accent)}
+.cmd-status .is-ok{color:var(--ink)}
+.cmd-status [hidden]{display:none}
+.cmd-action{grid-area:action;align-self:start}
+.cmd-note{
+  margin-top:16px;
+  font-size:var(--t1);
+  color:var(--muted);
+  letter-spacing:var(--trk);
+}
+
+/* ---------- 快速收录演示：宽面板横切三栏 ---------- */
+.capture{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--surface);
+  box-shadow:var(--shadow);
+  overflow:clip;
+}
+.cell{
+  min-width:0;
+  padding:24px;
+}
+.cell + .cell{border-left:1px solid var(--line)}
+.cell-head{
+  display:flex;align-items:baseline;gap:8px;
+  margin-bottom:16px;
+}
+.cell-num{
+  font-family:var(--mono);
+  font-size:var(--t-1);
+  letter-spacing:var(--spread);
+  color:var(--accent);
+}
+.cell-title{
+  font-size:var(--t2);
+  font-weight:600;
+  letter-spacing:var(--trk);
+}
+.cell-body{display:grid;gap:12px;font-family:var(--mono);font-size:var(--t1);line-height:1.9}
+.cell-body .muted{color:var(--muted)}
+.kv{
+  display:grid;
+  grid-template-columns:56px minmax(0,1fr);
+  gap:8px;
+}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;color:var(--ink);overflow-wrap:anywhere}
+.cell-body .kv span{display:block}
+.rail-svg{width:100%;height:auto;max-height:48px;margin-top:8px}
+
+/* ---------- 社会证明：两行网格名牌 ---------- */
+.proof-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+.nameplate{
+  display:flex;align-items:center;gap:16px;
+  min-width:0;
+  padding:16px 20px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--surface);
+  transition:border-color var(--dur) var(--ease),background var(--dur) var(--ease);
+}
+.nameplate:hover{border-color:var(--accent-soft);background:var(--raised)}
+.nameplate em{
+  flex:none;
+  font-style:normal;
+  font-family:var(--mono);
+  font-size:var(--t-1);
+  letter-spacing:var(--spread);
+  color:var(--accent);
+}
+.nameplate b{
+  font-size:var(--t3);
+  font-weight:600;
+  letter-spacing:var(--trk);
+  overflow-wrap:anywhere;
+}
+
+/* ---------- 功能：一大两小 ---------- */
+.feature-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.34fr) minmax(0,1fr);
+  gap:16px;
+}
+.feature{
+  display:grid;
+  gap:16px;
+  align-content:start;
+  min-width:0;
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--surface);
+  transition:border-color var(--dur) var(--ease);
+}
+.feature:hover{border-color:var(--accent-soft)}
+.feature-lead{grid-row:span 2;align-content:start;gap:24px;background:var(--raised)}
+.feature-num{
+  font-family:var(--mono);
+  font-size:var(--t-1);
+  letter-spacing:var(--spread);
+  color:var(--muted);
+}
+.feature h3{
+  font-size:var(--t5);
+  font-weight:600;
+  line-height:1.24;
+  letter-spacing:var(--trk);
+}
+.feature-sm h3{font-size:var(--t3);line-height:1.3}
+.feature p{
+  font-size:var(--t2);
+  line-height:1.85;
+  color:var(--muted);
+  overflow-wrap:anywhere;
+}
+.feature-sm p{font-size:var(--t1);line-height:1.8}
+.feature-figure{margin-top:auto}
+.feature-figure svg{width:100%;height:auto}
+.feature-row{display:flex;align-items:center;gap:16px;min-width:0}
+.feature-row .feature-figure{flex:none;width:96px;margin-top:0}
+.feature-lead .feature-row{display:block}
+
+/* ---------- 工作流程：之字形左右交替 ---------- */
+.steps{
+  display:grid;
+  gap:48px;
+}
+.step{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,0.82fr);
+  gap:48px;
+  align-items:center;
+}
+.step:nth-child(even) .step-graphic{order:-1}
+.step-text{min-width:0}
+.step-top{
+  display:flex;align-items:baseline;gap:16px;
+  margin-bottom:8px;
+}
+.step-num{
+  font-family:var(--mono);
+  font-size:var(--t-1);
+  letter-spacing:var(--spread);
+  color:var(--accent);
+}
+.step-rule{
+  flex:1 1 auto;
+  height:1px;
+  background:var(--line);
+}
+.step h3{
+  font-size:var(--t4);
+  font-weight:600;
+  letter-spacing:var(--trk);
+}
+.step p{
+  margin-top:8px;
+  max-width:32rem;
+  font-size:var(--t2);
+  line-height:1.85;
+  color:var(--muted);
+  overflow-wrap:anywhere;
+}
+.step-graphic{min-width:0}
+.step-graphic svg{width:100%;height:auto}
+
+/* ---------- 用户评价：反色区块 + 超大引号纵向堆叠 ---------- */
+.inverse{
+  background:var(--ink);
+  color:var(--bg);
+  border-top:1px solid var(--line);
+}
+.inverse .grid-backdrop::before{
+  background-image:
+    linear-gradient(to right,rgba(16,33,35,.12) 1px,transparent 1px),
+    linear-gradient(to bottom,rgba(16,33,35,.12) 1px,transparent 1px);
+}
+.inverse .mark span,.inverse .mark em{color:var(--accent-soft)}
+.inverse .mark span::after{background:rgba(15,17,18,.22)}
+.inverse .lead{color:rgba(15,17,18,.66)}
+.inverse .h-sec{color:var(--bg)}
+.quote-list{display:grid}
+.quote{
+  display:grid;
+  grid-template-columns:104px minmax(0,1fr);
+  column-gap:32px;
+  align-items:start;
+  padding-block:32px;
+  border-top:1px solid rgba(15,17,18,.18);
+}
+.quote:last-child{border-bottom:1px solid rgba(15,17,18,.18)}
+.quote svg{
+  width:88px;height:auto;
+  color:var(--accent-soft);
+  margin-top:4px;
+}
+.quote blockquote{
+  max-width:46rem;
+  font-size:var(--t4);
+  line-height:1.7;
+  letter-spacing:var(--trk);
+  color:var(--bg);
+  overflow-wrap:anywhere;
+}
+.quote figcaption{
+  margin-top:16px;
+  font-family:var(--mono);
+  font-size:var(--t1);
+  letter-spacing:var(--trk);
+  color:rgba(15,17,18,.62);
+}
+
+/* ---------- 价格：整宽两行清单 ---------- */
+.billing{
+  display:inline-flex;
+  gap:4px;
+  margin-bottom:32px;
+  padding:4px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--surface);
+}
+.billing button{
+  padding:8px 20px;
+  border:0;
+  border-radius:var(--radius);
+  background:transparent;
+  color:var(--muted);
+  font-family:var(--mono);
+  font-size:var(--t1);
+  font-weight:600;
+  letter-spacing:var(--trk);
+  cursor:pointer;
+  transition:background var(--dur) var(--ease),color var(--dur) var(--ease);
+}
+.billing button:hover{color:var(--ink)}
+.billing button[aria-pressed="true"]{background:var(--raised);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.billing .save{color:var(--accent)}
+
+.plan-list{
+  display:grid;
+  gap:16px;
+}
+.plan{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  column-gap:32px;
+  row-gap:16px;
+  min-width:0;
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--surface);
+}
+.plan-pro{
+  background:var(--raised);
+  border-color:var(--accent-soft);
+  box-shadow:var(--shadow);
+}
+.plan-main{min-width:0}
+.plan-title{
+  display:flex;align-items:center;gap:16px;
+  flex-wrap:wrap;
+}
+.plan-title h3{
+  font-size:var(--t4);
+  font-weight:600;
+  letter-spacing:var(--trk);
+}
+.plan-tag{
+  font-family:var(--mono);
+  font-size:var(--t-1);
+  letter-spacing:var(--spread);
+  text-transform:uppercase;
+  color:var(--accent);
+  border:1px solid var(--accent-soft);
+  border-radius:var(--radius);
+  padding:2px 8px;
+}
+.plan-price{
+  display:flex;align-items:baseline;gap:8px;
+  margin-top:8px;
+  font-family:var(--mono);
+}
+.plan-price .amount{
+  font-size:var(--t5);
+  font-weight:600;
+  letter-spacing:var(--trk);
+}
+.plan-price .unit{font-size:var(--t1);color:var(--muted)}
+.plan-price .billed{font-size:var(--t1);color:var(--muted)}
+.plan-price .billed[hidden]{display:none}
+.plan-note{
+  margin-top:4px;
+  font-size:var(--t1);
+  color:var(--muted);
+  overflow-wrap:anywhere;
+}
+.plan-feats{
+  display:flex;align-items:center;gap:8px 24px;
+  flex-wrap:wrap;
+  margin-top:16px;
+  font-size:var(--t1);
+  color:var(--muted);
+}
+.plan-feats li{
+  display:flex;align-items:center;gap:8px;
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+.plan-feats svg{width:12px;height:12px;flex:none;color:var(--accent)}
+.plan-side{
+  display:grid;
+  gap:16px;
+  justify-items:stretch;
+  min-width:220px;
+}
+.plan-side .btn{width:100%}
+.plan-side .fine{
+  font-size:var(--t-1);
+  color:var(--muted);
+  text-align:center;
+}
+
+/* ---------- 常见问题：两栏各三条，栏间竖线 ---------- */
+.faq{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  column-gap:48px;
+  border-top:1px solid var(--line);
+}
+.faq details{
+  border-bottom:1px solid var(--line);
+  min-width:0;
+}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq details:nth-of-type(4){border-top:1px solid var(--line)}
+.faq summary{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:16px;
+  padding:20px 0;
+  cursor:pointer;
+  list-style:none;
+  font-size:var(--t3);
+  font-weight:600;
+  letter-spacing:var(--trk);
+  color:var(--ink);
+  overflow-wrap:anywhere;
+  transition:color var(--dur) var(--ease);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::marker{content:""}
+.faq summary:hover{color:var(--accent)}
+.faq-ico{
+  flex:none;
+  font-family:var(--mono);
+  font-size:var(--t4);
+  line-height:1.4;
+  color:var(--accent);
+  transition:transform var(--dur) var(--ease);
+}
+.faq details[open] .faq-ico{transform:rotate(45deg)}
+.faq details[open] summary{color:var(--accent)}
+.faq-body{
+  padding-bottom:24px;
+  max-width:44rem;
+}
+.faq-body p{
+  font-size:var(--t2);
+  line-height:1.85;
+  color:var(--muted);
+  overflow-wrap:anywhere;
+}
+
+/* ---------- 页脚：单行 ---------- */
+.site-footer{
+  position:relative;
+  border-top:1px solid var(--line);
+  background:var(--bg);
+}
+.footer-row{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;
+  flex-wrap:wrap;
+  padding-block:32px;
+}
+.footer-links{
+  display:flex;align-items:center;gap:24px;
+  flex-wrap:wrap;
+}
+.footer-links a{
+  font-size:var(--t1);
+  color:var(--muted);
+  border-bottom:1px solid transparent;
+  transition:color var(--dur) var(--ease),border-color var(--dur) var(--ease);
+}
+.footer-links a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.footer-copy{
+  font-family:var(--mono);
+  font-size:var(--t1);
+  color:var(--muted);
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1080px){
+  .block{display:block}
+  .mark{margin-bottom:16px}
+  .mark span{position:static}
+  .mark span::after{display:none}
+}
+@media (max-width:900px){
+  .capture{grid-template-columns:minmax(0,1fr)}
+  .cell + .cell{border-left:0;border-top:1px solid var(--line)}
+  .feature-grid{grid-template-columns:minmax(0,1fr)}
+  .feature-lead{grid-row:auto}
+  .step{grid-template-columns:minmax(0,1fr);gap:24px}
+  .step:nth-child(even) .step-graphic{order:0}
+  .quote{grid-template-columns:56px minmax(0,1fr);column-gap:24px}
+  .quote svg{width:48px}
+  .plan{grid-template-columns:minmax(0,1fr)}
+  .plan-side{min-width:0}
+  .faq{column-gap:32px}
+}
+@media (max-width:820px){
+  .nav-links,.nav-cta{display:none}
+  .nav-toggle{display:inline-flex}
+  .site-header[data-nav-open="true"] .nav-links{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:4px;
+    position:absolute;
+    left:var(--gutter);
+    right:var(--gutter);
+    top:100%;
+    margin:0;
+    padding:16px;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:var(--raised);
+    box-shadow:var(--shadow);
+  }
+  .site-header[data-nav-open="true"] .nav-links a{
+    padding:8px 0;
+    font-size:var(--t3);
+    border-bottom:0;
+  }
+  .footer-row{flex-direction:column;align-items:flex-start;gap:16px}
+}
+@media (max-width:640px){
+  :root{--gutter:16px;--block:64px}
+  .hero-inner{padding-block:64px}
+  .hero h1{font-size:clamp(2.9rem,9vw + 1.2rem,4.4rem)}
+  .cmd{
+    grid-template-columns:minmax(0,1fr);
+    grid-template-areas:
+      "label"
+      "field"
+      "status"
+      "action";
+  }
+  .cmd-label{padding-top:0}
+  .cmd-action .btn{width:100%}
+  .proof-grid{grid-template-columns:minmax(0,1fr)}
+  .faq{grid-template-columns:minmax(0,1fr)}
+  .faq details:nth-of-type(4){border-top:0}
+  .steps{gap:40px}
+}
+
+/* ---------- 减弱动效 ---------- */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:1ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:1ms !important;
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<!-- 1. 顶部导航 -->
+<header class="site-header" id="site-header" data-nav-open="false">
+  <nav class="wrap nav-bar" aria-label="主导航">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M3 9c3 0 3 6 6 6s3-6 6-6 3 6 6 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <span>Flowtide</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" type="button"
+            aria-expanded="false" aria-controls="nav-menu" aria-label="打开导航菜单">
+      <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span id="nav-toggle-text">菜单</span>
+    </button>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="#features">功能</a></li>
+      <li><a href="#flow">流程</a></li>
+      <li><a href="#pricing">价格</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+    <a class="btn btn-primary btn-sm nav-cta" href="#signup">免费开始</a>
+  </nav>
+</header>
+
+<main id="main">
+  <span id="top"></span>
+
+  <!-- 2. 主视觉 -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Flowtide / 自然语言任务系统</p>
+      <h1 id="hero-title">想到就记下，剩下的交给 Flowtide</h1>
+      <p class="hero-sub">把散落在聊天、便签和脑子里的待办，自动整理成一份真正执行得下去的计划。</p>
+    </div>
+  </section>
+
+  <!-- 2b. 全宽终端条 -->
+  <section class="terminal" id="signup" aria-labelledby="signup-title">
+    <div class="wrap">
+      <h2 class="sr-only" id="signup-title">免费开始使用 Flowtide</h2>
+      <form class="cmd" id="signup-form" action="#" method="post" novalidate>
+        <label class="cmd-label" for="email">邮箱 / EMAIL</label>
+        <div class="cmd-field">
+          <span class="prompt" aria-hidden="true">&gt;</span>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email"
+                 placeholder="your@email.com" aria-describedby="form-status" required>
+        </div>
+        <div class="cmd-action">
+          <button class="btn btn-primary" type="submit">免费开始</button>
+        </div>
+        <p class="cmd-status" id="form-status" role="status" aria-live="polite">
+          <span class="is-error" id="msg-error" hidden>
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v6M8 12.4v.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="8" cy="8" r="6.6" stroke="currentColor" stroke-width="1.1"/></svg>
+            <span id="msg-error-text">请输入邮箱地址。</span>
+          </span>
+          <span class="is-ok" id="msg-ok" hidden>
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3 3 7-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>已收到 <b id="msg-ok-mail">your@email.com</b>，邀请链接已发出。</span>
+          </span>
+        </p>
+      </form>
+      <p class="cmd-note">// 无需信用卡，30 秒开始使用</p>
+    </div>
+  </section>
+
+  <!-- 3. 快速收录演示 -->
+  <section class="section" id="capture" aria-labelledby="capture-title">
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="block">
+        <p class="mark"><span>01</span><em>捕获</em></p>
+        <div class="block-body">
+          <div class="sec-head">
+            <h2 class="h-sec" id="capture-title">一句话进来，三件事发生</h2>
+            <p class="lead">不用选项目，不用填表单。输入原样保留，结构由 Flowtide 补上。</p>
+          </div>
+
+          <div class="capture">
+            <div class="cell">
+              <div class="cell-head">
+                <span class="cell-num" aria-hidden="true">01</span>
+                <h3 class="cell-title">输入</h3>
+              </div>
+              <div class="cell-body">
+                <p><span class="muted">&gt;</span> 周五前给陈老师发课程大纲 #课程 @30分钟</p>
+              </div>
+            </div>
+
+            <div class="cell">
+              <div class="cell-head">
+                <span class="cell-num" aria-hidden="true">02</span>
+                <h3 class="cell-title">解析</h3>
+              </div>
+              <div class="cell-body">
+                <dl class="kv">
+                  <dt>截止</dt>
+                  <dd>4 月 18 日周五</dd>
+                  <dt>标签</dt>
+                  <dd>#课程</dd>
+                  <dt>时长</dt>
+                  <dd>预计 30 分钟</dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="cell">
+              <div class="cell-head">
+                <span class="cell-num" aria-hidden="true">03</span>
+                <h3 class="cell-title">排期</h3>
+              </div>
+              <div class="cell-body">
+                <dl class="kv">
+                  <dt>时段</dt>
+                  <dd>今天 15:00–15:30</dd>
+                  <dt>冲突</dt>
+                  <dd>与现有日程无冲突</dd>
+                </dl>
+                <svg class="rail-svg" viewBox="0 0 320 44" role="img" aria-label="今天 15:00 到 15:30 已排入一段新任务，与现有日程不重叠">
+                  <rect x="0" y="4" width="320" height="16" fill="none" stroke="#30373E"/>
+                  <rect x="48" y="8" width="8" height="8" fill="#93A4B4" opacity=".5"/>
+                  <rect x="104" y="8" width="12" height="8" fill="#93A4B4" opacity=".5"/>
+                  <rect x="208" y="8" width="16" height="8" fill="#93A4B4" opacity=".5"/>
+                  <rect x="152" y="8" width="24" height="8" fill="#71D7E7"/>
+                  <path d="M152 4V0M176 4V0" stroke="#71D7E7" stroke-width="1"/>
+                  <g fill="#93A4B4" font-family="ui-monospace,Consolas,monospace" font-size="9">
+                    <text x="0" y="36">12</text>
+                    <text x="152" y="36" fill="#EEF0F1">15:00</text>
+                    <text x="296" y="36">18</text>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 社会证明 -->
+  <section class="section" id="proof" aria-labelledby="proof-title">
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="block">
+        <p class="mark"><span>02</span><em>在用</em></p>
+        <div class="block-body">
+          <div class="sec-head">
+            <h2 class="h-sec" id="proof-title">已经在用的团队</h2>
+          </div>
+          <ul class="proof-grid">
+            <li class="nameplate"><em aria-hidden="true">01</em><b>明远设计</b></li>
+            <li class="nameplate"><em aria-hidden="true">02</em><b>云栖科技</b></li>
+            <li class="nameplate"><em aria-hidden="true">03</em><b>三木研究所</b></li>
+            <li class="nameplate"><em aria-hidden="true">04</em><b>白鲸工作室</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 功能 -->
+  <section class="section" id="features" aria-labelledby="features-title">
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="block">
+        <p class="mark"><span>03</span><em>功能</em></p>
+        <div class="block-body">
+          <div class="sec-head">
+            <h2 class="h-sec" id="features-title">三件事，交出去</h2>
+            <p class="lead">录入、排期和复盘是三件反复消耗注意力的事。Flowtide 把它们收进后台。</p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature feature-lead">
+              <p class="feature-num" aria-hidden="true">01</p>
+              <div>
+                <h3>自然语言录入</h3>
+                <p>输入「明天上午联系王工确认设备清单 #项目A」，Flowtide 自动识别截止时间、项目与时长。</p>
+              </div>
+              <div class="feature-figure" aria-hidden="true">
+                <svg viewBox="0 0 400 156" fill="none" preserveAspectRatio="xMidYMid meet">
+                  <rect x="0" y="0" width="400" height="40" stroke="#30373E"/>
+                  <path d="M16 20h10" stroke="#71D7E7" stroke-width="1.4"/>
+                  <rect x="36" y="14" width="184" height="12" fill="#93A4B4" opacity=".34"/>
+                  <rect x="232" y="14" width="42" height="12" fill="#71D7E7" opacity=".55"/>
+                  <rect x="284" y="14" width="58" height="12" fill="#93A4B4" opacity=".34"/>
+                  <path d="M200 40v26" stroke="#30373E"/>
+                  <path d="M40 76v14M200 76v14M330 76v14" stroke="#30373E"/>
+                  <path d="M40 90h290" stroke="#30373E"/>
+                  <rect x="16" y="106" width="60" height="30" stroke="#30373E"/>
+                  <rect x="24" y="116" width="26" height="10" fill="#93A4B4" opacity=".34"/>
+                  <rect x="96" y="106" width="60" height="30" stroke="#30373E"/>
+                  <rect x="104" y="116" width="26" height="10" fill="#71D7E7" opacity=".55"/>
+                  <rect x="176" y="106" width="60" height="30" stroke="#30373E"/>
+                  <rect x="184" y="116" width="26" height="10" fill="#93A4B4" opacity=".34"/>
+                </svg>
+              </div>
+            </article>
+
+            <article class="feature feature-sm">
+              <p class="feature-num" aria-hidden="true">02</p>
+              <div class="feature-row">
+                <div>
+                  <h3>自动排期</h3>
+                  <p>按截止时间、优先级和你真实的工作节奏，把任务放进当天最合适的时间段。</p>
+                </div>
+                <div class="feature-figure" aria-hidden="true">
+                  <svg viewBox="0 0 96 72" fill="none" preserveAspectRatio="xMidYMid meet">
+                    <rect x="8" y="6" width="80" height="60" stroke="#30373E"/>
+                    <path d="M8 22h80" stroke="#30373E"/>
+                    <path d="M28 6V6M68 6V6" stroke="#30373E"/>
+                    <rect x="20" y="34" width="26" height="10" fill="#71D7E7"/>
+                    <rect x="54" y="34" width="26" height="10" fill="#93A4B4" opacity=".34"/>
+                    <rect x="20" y="50" width="60" height="6" fill="#93A4B4" opacity=".2"/>
+                  </svg>
+                </div>
+              </div>
+            </article>
+
+            <article class="feature feature-sm">
+              <p class="feature-num" aria-hidden="true">03</p>
+              <div class="feature-row">
+                <div>
+                  <h3>每周复盘</h3>
+                  <p>自动生成完成率、延期项与时间去向，帮你发现哪些事情反复被推迟。</p>
+                </div>
+                <div class="feature-figure" aria-hidden="true">
+                  <svg viewBox="0 0 96 72" fill="none" preserveAspectRatio="xMidYMid meet">
+                    <path d="M8 62h80" stroke="#30373E"/>
+                    <rect x="18" y="34" width="10" height="28" fill="#93A4B4" opacity=".4"/>
+                    <rect x="36" y="22" width="10" height="40" fill="#71D7E7"/>
+                    <rect x="54" y="40" width="10" height="22" fill="#93A4B4" opacity=".4"/>
+                    <rect x="72" y="28" width="10" height="34" fill="#93A4B4" opacity=".4"/>
+                    <path d="M18 24h56" stroke="#30373E" stroke-dasharray="3 3"/>
+                  </svg>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 工作流程 -->
+  <section class="section" id="flow" aria-labelledby="flow-title">
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="block">
+        <p class="mark"><span>04</span><em>流程</em></p>
+        <div class="block-body">
+          <div class="sec-head">
+            <h2 class="h-sec" id="flow-title">四步，一条直线</h2>
+            <p class="lead">从想到的那一刻，到周末回头看的那一眼，中间没有需要你手动搬运的环节。</p>
+          </div>
+
+          <ol class="steps">
+            <li class="step">
+              <div class="step-text">
+                <div class="step-top">
+                  <span class="step-num" aria-hidden="true">01</span>
+                </div>
+                <h3>随手记</h3>
+                <p>想到什么就打一行字，不用选项目，不用填表单。</p>
+              </div>
+              <div class="step-graphic" aria-hidden="true">
+                <svg viewBox="0 0 360 128" fill="none" preserveAspectRatio="xMidYMid meet">
+                  <rect x="0" y="30" width="196" height="40" stroke="#30373E"/>
+                  <path d="M14 50h8" stroke="#71D7E7" stroke-width="1.4"/>
+                  <rect x="34" y="44" width="118" height="12" fill="#93A4B4" opacity=".34"/>
+                  <path d="M196 50h44" stroke="#30373E" stroke-dasharray="4 4"/>
+                  <rect x="240" y="30" width="120" height="40" stroke="#71D7E7"/>
+                  <rect x="254" y="44" width="92" height="12" fill="#71D7E7" opacity=".45"/>
+                  <rect x="0" y="96" width="360" height="1" fill="#30373E"/>
+                  <rect x="0" y="106" width="60" height="8" fill="#93A4B4" opacity=".22"/>
+                  <rect x="72" y="106" width="36" height="8" fill="#93A4B4" opacity=".22"/>
+                  <rect x="120" y="106" width="48" height="8" fill="#93A4B4" opacity=".22"/>
+                </svg>
+              </div>
+            </li>
+
+            <li class="step">
+              <div class="step-text">
+                <div class="step-top">
+                  <span class="step-num" aria-hidden="true">02</span>
+                </div>
+                <h3>自动整理</h3>
+                <p>Flowtide 解析时间、项目与预计时长，归到正确位置。</p>
+              </div>
+              <div class="step-graphic" aria-hidden="true">
+                <svg viewBox="0 0 360 128" fill="none" preserveAspectRatio="xMidYMid meet">
+                  <rect x="0" y="24" width="132" height="8" fill="#93A4B4" opacity=".34"/>
+                  <rect x="0" y="42" width="112" height="8" fill="#93A4B4" opacity=".34"/>
+                  <rect x="0" y="60" width="122" height="8" fill="#93A4B4" opacity=".34"/>
+                  <path d="M132 28h32v36h-32" stroke="#30373E"/>
+                  <path d="M132 46h32v0" stroke="#30373E"/>
+                  <path d="M132 64h32v-36" stroke="#30373E"/>
+                  <path d="M164 46h28" stroke="#30373E" stroke-dasharray="4 4"/>
+                  <rect x="192" y="18" width="168" height="30" stroke="#30373E"/>
+                  <rect x="204" y="28" width="86" height="10" fill="#93A4B4" opacity=".34"/>
+                  <rect x="192" y="56" width="168" height="30" stroke="#71D7E7"/>
+                  <rect x="204" y="66" width="86" height="10" fill="#71D7E7" opacity=".45"/>
+                  <rect x="192" y="94" width="168" height="30" stroke="#30373E"/>
+                  <rect x="204" y="104" width="86" height="10" fill="#93A4B4" opacity=".34"/>
+                </svg>
+              </div>
+            </li>
+
+            <li class="step">
+              <div class="step-text">
+                <div class="step-top">
+                  <span class="step-num" aria-hidden="true">03</span>
+                </div>
+                <h3>放进日程</h3>
+                <p>结合空闲时段和优先级，安排到具体时间段。</p>
+              </div>
+              <div class="step-graphic" aria-hidden="true">
+                <svg viewBox="0 0 360 128" fill="none" preserveAspectRatio="xMidYMid meet">
+                  <rect x="0" y="16" width="360" height="24" stroke="#30373E"/>
+                  <path d="M120 16v24M240 16v24" stroke="#30373E"/>
+                  <rect x="132" y="26" width="72" height="4" fill="#71D7E7"/>
+                  <g font-family="ui-monospace,Consolas,monospace" font-size="9" fill="#93A4B4">
+                    <text x="4" y="32">09</text>
+                    <text x="124" y="32">12</text>
+                    <text x="244" y="32">15</text>
+                  </g>
+                  <rect x="0" y="56" width="156" height="28" stroke="#30373E"/>
+                  <rect x="12" y="66" width="88" height="8" fill="#93A4B4" opacity=".3"/>
+                  <rect x="166" y="56" width="150" height="28" stroke="#30373E"/>
+                  <rect x="178" y="66" width="76" height="8" fill="#93A4B4" opacity=".3"/>
+                  <rect x="328" y="56" width="32" height="28" stroke="#30373E"/>
+                  <path d="M0 104h360" stroke="#30373E"/>
+                  <rect x="166" y="112" width="150" height="6" fill="#71D7E7" opacity=".55"/>
+                </svg>
+              </div>
+            </li>
+
+            <li class="step">
+              <div class="step-text">
+                <div class="step-top">
+                  <span class="step-num" aria-hidden="true">04</span>
+                </div>
+                <h3>每周复盘</h3>
+                <p>看完成率和延期情况，调整下周节奏。</p>
+              </div>
+              <div class="step-graphic" aria-hidden="true">
+                <svg viewBox="0 0 360 128" fill="none" preserveAspectRatio="xMidYMid meet">
+                  <rect x="0" y="104" width="360" height="1" fill="#30373E"/>
+                  <rect x="16" y="64" width="24" height="40" fill="#93A4B4" opacity=".3"/>
+                  <rect x="56" y="40" width="24" height="64" fill="#93A4B4" opacity=".3"/>
+                  <rect x="96" y="24" width="24" height="80" fill="#71D7E7" opacity=".5"/>
+                  <rect x="136" y="56" width="24" height="48" fill="#93A4B4" opacity=".3"/>
+                  <rect x="176" y="32" width="24" height="72" fill="#93A4B4" opacity=".3"/>
+                  <rect x="216" y="72" width="24" height="32" fill="#93A4B4" opacity=".3"/>
+                  <path d="M16 16h320" stroke="#30373E" stroke-dasharray="3 3"/>
+                  <path d="M248 20h96" stroke="#30373E"/>
+                  <rect x="248" y="30" width="72" height="8" fill="#93A4B4" opacity=".3"/>
+                  <rect x="248" y="46" width="54" height="8" fill="#93A4B4" opacity=".3"/>
+                  <rect x="248" y="62" width="88" height="8" fill="#71D7E7" opacity=".45"/>
+                </svg>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. 用户评价（反色区块） -->
+  <section class="section inverse" id="voices" aria-labelledby="voices-title">
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="block">
+        <p class="mark"><span>05</span><em>评价</em></p>
+        <div class="block-body">
+          <div class="sec-head">
+            <h2 class="h-sec" id="voices-title">用过的人怎么说</h2>
+            <p class="lead">三条来自不同工作方式的反馈。</p>
+          </div>
+
+          <div class="quote-list">
+            <figure class="quote">
+              <svg viewBox="0 0 120 88" aria-hidden="true" fill="none">
+                <path d="M2 62C2 27 22 5 52 0l6 14C40 20 32 30 32 44h20v44H2V62Z" fill="currentColor"/>
+                <path d="M62 62C62 27 82 5 112 0l6 14c-18 6-26 16-26 30h20v44H62V62Z" fill="currentColor"/>
+              </svg>
+              <div>
+                <blockquote>以前光整理待办就要花半小时，现在我只管记。每周复盘让我第一次看清时间到底去哪了。</blockquote>
+                <figcaption>林楠 · 产品设计师</figcaption>
+              </div>
+            </figure>
+
+            <figure class="quote">
+              <svg viewBox="0 0 120 88" aria-hidden="true" fill="none">
+                <path d="M2 62C2 27 22 5 52 0l6 14C40 20 32 30 32 44h20v44H2V62Z" fill="currentColor"/>
+                <path d="M62 62C62 27 82 5 112 0l6 14c-18 6-26 16-26 30h20v44H62V62Z" fill="currentColor"/>
+              </svg>
+              <div>
+                <blockquote>手机上记一句，回到电脑前它已经排好了，不用再想“这个什么时候做”。</blockquote>
+                <figcaption>周凛 · 自由开发者</figcaption>
+              </div>
+            </figure>
+
+            <figure class="quote">
+              <svg viewBox="0 0 120 88" aria-hidden="true" fill="none">
+                <path d="M2 62C2 27 22 5 52 0l6 14C40 20 32 30 32 44h20v44H2V62Z" fill="currentColor"/>
+                <path d="M62 62C62 27 82 5 112 0l6 14c-18 6-26 16-26 30h20v44H62V62Z" fill="currentColor"/>
+              </svg>
+              <div>
+                <blockquote>团队共享清单之后，跨时区交接再没丢过事情。</blockquote>
+                <figcaption>苏珊 · 内容负责人</figcaption>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. 价格 -->
+  <section class="section" id="pricing" aria-labelledby="pricing-title">
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="block">
+        <p class="mark"><span>06</span><em>价格</em></p>
+        <div class="block-body">
+          <div class="sec-head">
+            <h2 class="h-sec" id="pricing-title">两档，够用为止</h2>
+            <p class="lead">免费版长期有效，Pro 按需升级，随时可以退回免费版。</p>
+          </div>
+
+          <div class="billing" role="group" aria-label="计费周期">
+            <button type="button" data-cycle="monthly" aria-pressed="true">月付</button>
+            <button type="button" data-cycle="yearly" aria-pressed="false">年付 <span class="save">节省 20%</span></button>
+          </div>
+
+          <div class="plan-list">
+            <article class="plan">
+              <div class="plan-main">
+                <div class="plan-title">
+                  <h3>免费版</h3>
+                </div>
+                <p class="plan-price">
+                  <span class="amount">¥0</span>
+                  <span class="unit">/月</span>
+                </p>
+                <p class="plan-note">个人使用，永久免费</p>
+                <ul class="plan-feats">
+                  <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3 3 7-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>个人使用</li>
+                  <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3 3 7-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>无限任务</li>
+                  <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3 3 7-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>3 个项目</li>
+                  <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3 3 7-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>手机与网页同步</li>
+                </ul>
+              </div>
+              <div class="plan-side">
+                <a class="btn btn-ghost" href="#signup">免费开始</a>
+                <span class="fine">无需信用卡</span>
+              </div>
+            </article>
+
+            <article class="plan plan-pro">
+              <div class="plan-main">
+                <div class="plan-title">
+                  <h3>Pro</h3>
+                  <span class="plan-tag">推荐</span>
+                </div>
+                <p class="plan-price">
+                  <span class="amount" id="pro-price">¥38</span>
+                  <span class="unit">/月</span>
+                  <span class="billed" id="pro-billed" hidden>年付合计 ¥348</span>
+                </p>
+                <p class="plan-note" id="pro-note">按月付费，随时取消</p>
+                <ul class="plan-feats">
+                  <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3 3 7-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>无限项目</li>
+                  <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3 3 7-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>跨设备同步</li>
+                  <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3 3 7-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>日历双向同步</li>
+                  <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3 3 7-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>团队共享清单</li>
+                  <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3 3 7-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>每周复盘报告</li>
+                </ul>
+              </div>
+              <div class="plan-side">
+                <a class="btn btn-primary" href="#signup">免费开始</a>
+                <span class="fine">14 天无理由全额退款</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. 常见问题 -->
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="block">
+        <p class="mark"><span>07</span><em>常见问题</em></p>
+        <div class="block-body">
+          <div class="sec-head">
+            <h2 class="h-sec" id="faq-title">常见问题</h2>
+          </div>
+
+          <div class="faq">
+            <details>
+              <summary>和别的待办应用有什么不同？<span class="faq-ico" aria-hidden="true">+</span></summary>
+              <div class="faq-body"><p>多数工具让你自己整理，Flowtide 把整理变成自动的一步。</p></div>
+            </details>
+            <details>
+              <summary>支持哪些设备？<span class="faq-ico" aria-hidden="true">+</span></summary>
+              <div class="faq-body"><p>网页、iOS、Android，实时同步。</p></div>
+            </details>
+            <details>
+              <summary>数据能导出吗？<span class="faq-ico" aria-hidden="true">+</span></summary>
+              <div class="faq-body"><p>随时导出为 Markdown 或 CSV，包含全部任务与标签。</p></div>
+            </details>
+            <details>
+              <summary>离线能用吗？<span class="faq-ico" aria-hidden="true">+</span></summary>
+              <div class="faq-body"><p>能，恢复网络后自动合并，不丢改动。</p></div>
+            </details>
+            <details>
+              <summary>数据安全怎么保证？<span class="faq-ico" aria-hidden="true">+</span></summary>
+              <div class="faq-body"><p>传输与存储全程加密，不读取任务内容用于广告。</p></div>
+            </details>
+            <details>
+              <summary>Pro 可以退款吗？<span class="faq-ico" aria-hidden="true">+</span></summary>
+              <div class="faq-body"><p>14 天内无理由全额退款。</p></div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 10. 页脚 -->
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M3 9c3 0 3 6 6 6s3-6 6-6 3 6 6 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <span>Flowtide</span>
+    </a>
+    <nav class="footer-links" aria-label="页脚导航">
+      <a href="#features">产品</a>
+      <a href="#pricing">价格</a>
+      <a href="#faq">更新日志</a>
+      <a href="#faq">隐私政策</a>
+    </nav>
+    <p class="footer-copy">© 2026 Flowtide</p>
+  </div>
+</footer>
+
+<style>
+#wf-switch{position:fixed;z-index:9999;right:16px;bottom:16px;display:flex;gap:6px;padding:6px;border-radius:999px;
+  background:rgba(16,18,22,.9);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(10px);
+  font:600 12px/1 system-ui,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+#wf-switch div{cursor:pointer;padding:7px 11px;border-radius:999px;color:rgba(255,255,255,.66);user-select:none}
+#wf-switch div[aria-current="true"]{background:#fff;color:#111}
+#wf-switch span{color:rgba(255,255,255,.5);align-self:center;padding:0 3px}
+</style>
+<div id="wf-switch" role="group" aria-label="切换设计方案">
+  <div data-case="a">A</div><div data-case="b">B</div><div data-case="c">C</div><div data-case="d">D</div>
+</div>
+<script>
+(function(){
+  var cur=(location.pathname.split('/').pop()||'a.html').replace('.html','').toLowerCase();
+  var box=document.getElementById('wf-switch');
+  Array.prototype.forEach.call(box.querySelectorAll('[data-case]'),function(b){
+    var on=b.getAttribute('data-case')===cur;
+    b.setAttribute('aria-current',on?'true':'false');
+    b.addEventListener('click',function(){ if(!on) location.href=b.getAttribute('data-case')+'.html'; });
+  });
+})();
+</script>
+
+<script>
+(function(){
+  'use strict';
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  /* ---------- 邮箱表单：JS 校验 + 行内提示，不使用 alert ---------- */
+  var form = document.getElementById('signup-form');
+  var email = document.getElementById('email');
+  var msgError = document.getElementById('msg-error');
+  var msgErrorText = document.getElementById('msg-error-text');
+  var msgOk = document.getElementById('msg-ok');
+  var msgOkMail = document.getElementById('msg-ok-mail');
+  var EMAIL_RE = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}$/;
+
+  function showError(text){
+    msgErrorText.textContent = text;
+    msgError.hidden = false;
+    msgOk.hidden = true;
+    email.setAttribute('aria-invalid','true');
+  }
+  function showOk(mail){
+    msgOkMail.textContent = mail;
+    msgOk.hidden = false;
+    msgError.hidden = true;
+    email.removeAttribute('aria-invalid');
+  }
+  function clearMsg(){
+    msgError.hidden = true;
+    msgOk.hidden = true;
+    email.removeAttribute('aria-invalid');
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var value = email.value.trim();
+    if (value === '') { showError('请输入邮箱地址。'); email.focus(); return; }
+    if (!EMAIL_RE.test(value)) { showError('邮箱格式看起来不对，请检查后重试。'); email.focus(); return; }
+    showOk(value);
+    form.reset();
+  });
+
+  email.addEventListener('input', function(){
+    if (email.getAttribute('aria-invalid') === 'true' && EMAIL_RE.test(email.value.trim())) {
+      clearMsg();
+    }
+  });
+
+  /* ---------- 价格：月付 / 年付，Pro 只显示一个数字 ---------- */
+  var billing = document.querySelector('.billing');
+  var proPrice = document.getElementById('pro-price');
+  var proNote = document.getElementById('pro-note');
+  var proBilled = document.getElementById('pro-billed');
+
+  function setCycle(cycle){
+    Array.prototype.forEach.call(billing.querySelectorAll('button[data-cycle]'), function(btn){
+      btn.setAttribute('aria-pressed', btn.getAttribute('data-cycle') === cycle ? 'true' : 'false');
+    });
+    if (cycle === 'yearly') {
+      proPrice.textContent = '¥29';
+      proNote.textContent = '按年付费，折合每月';
+      proBilled.hidden = false;
+    } else {
+      proPrice.textContent = '¥38';
+      proNote.textContent = '按月付费，随时取消';
+      proBilled.hidden = true;
+    }
+  }
+
+  billing.addEventListener('click', function(e){
+    var btn = e.target.closest ? e.target.closest('button[data-cycle]') : null;
+    if (btn) setCycle(btn.getAttribute('data-cycle'));
+  });
+
+  /* ---------- ≤820px 汉堡导航 ---------- */
+  var header = document.getElementById('site-header');
+  var toggle = document.getElementById('nav-toggle');
+  var toggleText = document.getElementById('nav-toggle-text');
+  var menu = document.getElementById('nav-menu');
+  var mq = window.matchMedia('(max-width: 820px)');
+
+  function closeNav(){
+    header.setAttribute('data-nav-open','false');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','打开导航菜单');
+    toggleText.textContent = '菜单';
+  }
+  function openNav(){
+    header.setAttribute('data-nav-open','true');
+    toggle.setAttribute('aria-expanded','true');
+    toggle.setAttribute('aria-label','收起导航菜单');
+    toggleText.textContent = '收起';
+  }
+  function resetNav(){
+    header.setAttribute('data-nav-open','false');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','打开导航菜单');
+    toggleText.textContent = '菜单';
+  }
+
+  toggle.addEventListener('click', function(){
+    if (toggle.getAttribute('aria-expanded') === 'true') { closeNav(); } else { openNav(); }
+  });
+
+  menu.addEventListener('click', function(e){
+    if (e.target.closest && e.target.closest('a')) closeNav();
+  });
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+      closeNav();
+      toggle.focus();
+    }
+  });
+
+  document.addEventListener('click', function(e){
+    if (!mq.matches) return;
+    if (toggle.getAttribute('aria-expanded') !== 'true') return;
+    if (!header.contains(e.target)) closeNav();
+  });
+
+  function syncNavMode(){ if (!mq.matches) resetNav(); }
+  if (mq.addEventListener) { mq.addEventListener('change', syncNavMode); }
+  else if (mq.addListener) { mq.addListener(syncNavMode); }
+
+  /* ---------- 锚点链接在汉堡菜单里也真的能跳 ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll('a[href^="#"]'), function(a){
+    a.addEventListener('click', function(){
+      if (mq.matches) closeNav();
+    });
+  });
+
+  /* ---------- 克制的滚动进场 ---------- */
+  var targets = Array.prototype.slice.call(document.querySelectorAll('.mark, .sec-head, .capture, .nameplate, .feature, .step, .quote, .plan, .faq details'));
+  if (reduce.matches || !('IntersectionObserver' in window)) {
+    Array.prototype.forEach.call(targets, function(el){ el.style.opacity = '1'; });
+  } else {
+    Array.prototype.forEach.call(targets, function(el){
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(12px)';
+      el.style.transition = 'opacity 420ms var(--ease),transform 420ms var(--ease)';
+    });
+    var io = new IntersectionObserver(function(entries, obs){
+      entries.forEach(function(entry){
+        if (!entry.isIntersecting) return;
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'none';
+        obs.unobserve(entry.target);
+      });
+    }, {rootMargin:'0px 0px -6% 0px', threshold:0.05});
+    Array.prototype.forEach.call(targets, function(el){ io.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>

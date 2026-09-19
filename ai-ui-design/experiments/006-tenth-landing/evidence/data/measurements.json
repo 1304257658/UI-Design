@@ -1,0 +1,573 @@
+{
+  "base": "http://127.0.0.1:8781",
+  "generatedAt": "2026-09-19T12:51:14.399Z",
+  "cases": {
+    "a": {
+      "viewports": {
+        "360": {
+          "vw": 360,
+          "docW": 360,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 476,
+          "svg": 4,
+          "details": 6,
+          "anchors": 9,
+          "hamburger": true,
+          "hamSmall": true,
+          "ariaTargets": [
+            "nav-menu"
+          ],
+          "h1": "一天 144 格，你想留下什么",
+          "bodyBg": "rgb(10, 15, 22)",
+          "scrolledThrough": {
+            "total": 5949,
+            "back": 0
+          }
+        },
+        "768": {
+          "vw": 768,
+          "docW": 768,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 476,
+          "svg": 4,
+          "details": 6,
+          "anchors": 9,
+          "hamburger": true,
+          "hamSmall": true,
+          "ariaTargets": [
+            "nav-menu"
+          ],
+          "h1": "一天 144 格，你想留下什么",
+          "bodyBg": "rgb(10, 15, 22)",
+          "scrolledThrough": {
+            "total": 6278,
+            "back": 0
+          }
+        },
+        "1024": {
+          "vw": 1024,
+          "docW": 1024,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 476,
+          "svg": 4,
+          "details": 6,
+          "anchors": 9,
+          "hamburger": true,
+          "hamSmall": false,
+          "ariaTargets": [
+            "nav-menu"
+          ],
+          "h1": "一天 144 格，你想留下什么",
+          "bodyBg": "rgb(10, 15, 22)",
+          "scrolledThrough": {
+            "total": 4548,
+            "back": 0
+          }
+        },
+        "1440": {
+          "vw": 1440,
+          "docW": 1440,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 476,
+          "svg": 4,
+          "details": 6,
+          "anchors": 9,
+          "hamburger": true,
+          "hamSmall": false,
+          "ariaTargets": [
+            "nav-menu"
+          ],
+          "h1": "一天 144 格，你想留下什么",
+          "bodyBg": "rgb(10, 15, 22)",
+          "scrolledThrough": {
+            "total": 5492,
+            "back": 0
+          }
+        }
+      },
+      "interactions": {
+        "invalidMsg": "这个邮箱地址看起来不完整，请检查后再试一次。",
+        "validMsg": "已记录 me@example.com，30 秒内你会收到开始链接。",
+        "toggleCount": 2,
+        "price40before": 1,
+        "price32before": 0,
+        "price40after": 0,
+        "price32after": 1,
+        "priceAfterSample": [
+          "¥0",
+          "¥32/月"
+        ],
+        "hamburger": true,
+        "hamSelf": "none",
+        "hamExpandedBefore": "false",
+        "hamFrom": "flex|visible|1|none",
+        "hamLinksClosed": 5,
+        "hamTo": "flex|visible|1|none",
+        "hamExpandedAfter": "true",
+        "hamLinksOpen": 5,
+        "hamClosed": "flex|visible|1|none",
+        "hamExpandedClosed": "false",
+        "detailsOpened": true
+      },
+      "interactionsMobile": {
+        "invalidMsg": "这个邮箱地址看起来不完整，请检查后再试一次。",
+        "validMsg": "已记录 me@example.com，30 秒内你会收到开始链接。",
+        "toggleCount": 2,
+        "price40before": 1,
+        "price32before": 0,
+        "price40after": 0,
+        "price32after": 1,
+        "priceAfterSample": [
+          "¥0",
+          "¥32/月"
+        ],
+        "hamburger": true,
+        "hamSelf": "flex",
+        "hamExpandedBefore": "false",
+        "hamFrom": "flex|hidden|1|0px",
+        "hamLinksClosed": 0,
+        "hamTo": "flex|visible|1|460px",
+        "hamExpandedAfter": "true",
+        "hamLinksOpen": 5,
+        "hamClosed": "flex|hidden|1|0px",
+        "hamExpandedClosed": "false",
+        "detailsOpened": true
+      },
+      "consoleErrors": []
+    },
+    "b": {
+      "viewports": {
+        "360": {
+          "vw": 360,
+          "docW": 360,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 419,
+          "svg": 5,
+          "details": 6,
+          "anchors": 16,
+          "hamburger": true,
+          "hamSmall": true,
+          "ariaTargets": [
+            "nav-panel"
+          ],
+          "h1": "一天 144 格，\n        你想留下什么",
+          "bodyBg": "rgb(245, 243, 238)",
+          "scrolledThrough": {
+            "total": 6605,
+            "back": 0
+          }
+        },
+        "768": {
+          "vw": 768,
+          "docW": 768,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 419,
+          "svg": 5,
+          "details": 6,
+          "anchors": 16,
+          "hamburger": true,
+          "hamSmall": true,
+          "ariaTargets": [
+            "nav-panel"
+          ],
+          "h1": "一天 144 格，\n        你想留下什么",
+          "bodyBg": "rgb(245, 243, 238)",
+          "scrolledThrough": {
+            "total": 6325,
+            "back": 0
+          }
+        },
+        "1024": {
+          "vw": 1024,
+          "docW": 1024,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 419,
+          "svg": 5,
+          "details": 6,
+          "anchors": 16,
+          "hamburger": true,
+          "hamSmall": false,
+          "ariaTargets": [
+            "nav-panel"
+          ],
+          "h1": "一天 144 格，\n        你想留下什么",
+          "bodyBg": "rgb(245, 243, 238)",
+          "scrolledThrough": {
+            "total": 7242,
+            "back": 0
+          }
+        },
+        "1440": {
+          "vw": 1440,
+          "docW": 1440,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 419,
+          "svg": 5,
+          "details": 6,
+          "anchors": 16,
+          "hamburger": true,
+          "hamSmall": false,
+          "ariaTargets": [
+            "nav-panel"
+          ],
+          "h1": "一天 144 格，\n        你想留下什么",
+          "bodyBg": "rgb(245, 243, 238)",
+          "scrolledThrough": {
+            "total": 9079,
+            "back": 0
+          }
+        }
+      },
+      "interactions": {
+        "invalidMsg": "邮箱格式看起来不对，再检查一下。",
+        "validMsg": "已收到，我们会在 30 秒内把今天的格子排好发到 me@example.com。",
+        "toggleCount": 2,
+        "price40before": 1,
+        "price32before": 0,
+        "price40after": 0,
+        "price32after": 1,
+        "priceAfterSample": [
+          "¥0",
+          "¥32/月"
+        ],
+        "hamburger": true,
+        "hamSelf": "none",
+        "hamExpandedBefore": "false",
+        "hamFrom": "none|visible|1|none",
+        "hamLinksClosed": 0,
+        "hamTo": "none|visible|1|none",
+        "hamExpandedAfter": "true",
+        "hamLinksOpen": 0,
+        "hamClosed": "none|visible|1|none",
+        "hamExpandedClosed": "false",
+        "detailsOpened": true
+      },
+      "interactionsMobile": {
+        "invalidMsg": "邮箱格式看起来不对，再检查一下。",
+        "validMsg": "已收到，我们会在 30 秒内把今天的格子排好发到 me@example.com。",
+        "toggleCount": 2,
+        "price40before": 1,
+        "price32before": 0,
+        "price40after": 0,
+        "price32after": 1,
+        "priceAfterSample": [
+          "¥0",
+          "¥32/月"
+        ],
+        "hamburger": true,
+        "hamSelf": "flex",
+        "hamExpandedBefore": "false",
+        "hamFrom": "none|visible|1|none",
+        "hamLinksClosed": 0,
+        "hamTo": "block|visible|1|none",
+        "hamExpandedAfter": "true",
+        "hamLinksOpen": 5,
+        "hamClosed": "none|visible|1|none",
+        "hamExpandedClosed": "false",
+        "detailsOpened": true
+      },
+      "consoleErrors": []
+    },
+    "c": {
+      "viewports": {
+        "360": {
+          "vw": 360,
+          "docW": 360,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 473,
+          "svg": 14,
+          "details": 6,
+          "anchors": 18,
+          "hamburger": true,
+          "hamSmall": true,
+          "ariaTargets": [
+            "nav-panel"
+          ],
+          "h1": "一天 144 格，你想留下什么",
+          "bodyBg": "rgb(248, 242, 231)",
+          "scrolledThrough": {
+            "total": 7026,
+            "back": 0
+          }
+        },
+        "768": {
+          "vw": 768,
+          "docW": 768,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 473,
+          "svg": 14,
+          "details": 6,
+          "anchors": 18,
+          "hamburger": true,
+          "hamSmall": true,
+          "ariaTargets": [
+            "nav-panel"
+          ],
+          "h1": "一天 144 格，你想留下什么",
+          "bodyBg": "rgb(248, 242, 231)",
+          "scrolledThrough": {
+            "total": 6627,
+            "back": 0
+          }
+        },
+        "1024": {
+          "vw": 1024,
+          "docW": 1024,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 473,
+          "svg": 14,
+          "details": 6,
+          "anchors": 18,
+          "hamburger": true,
+          "hamSmall": false,
+          "ariaTargets": [
+            "nav-panel"
+          ],
+          "h1": "一天 144 格，你想留下什么",
+          "bodyBg": "rgb(248, 242, 231)",
+          "scrolledThrough": {
+            "total": 6101,
+            "back": 0
+          }
+        },
+        "1440": {
+          "vw": 1440,
+          "docW": 1440,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 473,
+          "svg": 14,
+          "details": 6,
+          "anchors": 18,
+          "hamburger": true,
+          "hamSmall": false,
+          "ariaTargets": [
+            "nav-panel"
+          ],
+          "h1": "一天 144 格，你想留下什么",
+          "bodyBg": "rgb(248, 242, 231)",
+          "scrolledThrough": {
+            "total": 6528,
+            "back": 0
+          }
+        }
+      },
+      "interactions": {
+        "invalidMsg": "邮箱格式看起来不太对，再检查一下",
+        "validMsg": "已排期",
+        "toggleCount": 2,
+        "price40before": 1,
+        "price32before": 0,
+        "price40after": 0,
+        "price32after": 1,
+        "priceAfterSample": [
+          "¥0",
+          "¥ 32"
+        ],
+        "hamburger": true,
+        "hamSelf": "none",
+        "hamExpandedBefore": "false",
+        "hamFrom": "none|visible|1|none",
+        "hamLinksClosed": 0,
+        "hamTo": "none|visible|1|none",
+        "hamExpandedAfter": "true",
+        "hamLinksOpen": 0,
+        "hamClosed": "none|visible|1|none",
+        "hamExpandedClosed": "false",
+        "detailsOpened": true
+      },
+      "interactionsMobile": {
+        "invalidMsg": "邮箱格式看起来不太对，再检查一下",
+        "validMsg": "已排期",
+        "toggleCount": 2,
+        "price40before": 1,
+        "price32before": 0,
+        "price40after": 0,
+        "price32after": 1,
+        "priceAfterSample": [
+          "¥0",
+          "¥ 32"
+        ],
+        "hamburger": true,
+        "hamSelf": "flex",
+        "hamExpandedBefore": "false",
+        "hamFrom": "none|visible|1|none",
+        "hamLinksClosed": 0,
+        "hamTo": "block|visible|1|none",
+        "hamExpandedAfter": "true",
+        "hamLinksOpen": 5,
+        "hamClosed": "none|visible|1|none",
+        "hamExpandedClosed": "false",
+        "detailsOpened": true
+      },
+      "consoleErrors": []
+    },
+    "d": {
+      "viewports": {
+        "360": {
+          "vw": 360,
+          "docW": 360,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 643,
+          "svg": 1,
+          "details": 6,
+          "anchors": 18,
+          "hamburger": true,
+          "hamSmall": true,
+          "ariaTargets": [
+            "mobileSheet"
+          ],
+          "h1": "一天 144 格，你想留下什么",
+          "bodyBg": "rgb(34, 34, 196)",
+          "scrolledThrough": {
+            "total": 7365,
+            "back": 0
+          }
+        },
+        "768": {
+          "vw": 768,
+          "docW": 768,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 643,
+          "svg": 1,
+          "details": 6,
+          "anchors": 18,
+          "hamburger": true,
+          "hamSmall": true,
+          "ariaTargets": [
+            "mobileSheet"
+          ],
+          "h1": "一天 144 格，你想留下什么",
+          "bodyBg": "rgb(34, 34, 196)",
+          "scrolledThrough": {
+            "total": 5950,
+            "back": 0
+          }
+        },
+        "1024": {
+          "vw": 1024,
+          "docW": 1024,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 643,
+          "svg": 1,
+          "details": 6,
+          "anchors": 18,
+          "hamburger": true,
+          "hamSmall": false,
+          "ariaTargets": [
+            "mobileSheet"
+          ],
+          "h1": "一天 144 格，你想留下什么",
+          "bodyBg": "rgb(34, 34, 196)",
+          "scrolledThrough": {
+            "total": 6249,
+            "back": 0
+          }
+        },
+        "1440": {
+          "vw": 1440,
+          "docW": 1440,
+          "overflow": 0,
+          "offenders": [],
+          "totalTags": 643,
+          "svg": 1,
+          "details": 6,
+          "anchors": 18,
+          "hamburger": true,
+          "hamSmall": false,
+          "ariaTargets": [
+            "mobileSheet"
+          ],
+          "h1": "一天 144 格，你想留下什么",
+          "bodyBg": "rgb(34, 34, 196)",
+          "scrolledThrough": {
+            "total": 5884,
+            "back": 0
+          }
+        }
+      },
+      "interactions": {
+        "invalidMsg": "邮箱格式不正确，请检查后重试：not-an-email",
+        "validMsg": "已收到，me@example.com —— 今天的第一格已经排好了。",
+        "toggleCount": 2,
+        "price40before": 1,
+        "price32before": 0,
+        "price40after": 0,
+        "price32after": 2,
+        "priceAfterSample": [
+          "¥32/月",
+          "¥0",
+          "¥32/月",
+          "¥0：个人使用"
+        ],
+        "hamburger": true,
+        "hamSelf": "none",
+        "hamExpandedBefore": "false",
+        "hamFrom": "none|visible|1|none",
+        "hamLinksClosed": 0,
+        "hamTo": "block|visible|1|none",
+        "hamExpandedAfter": "true",
+        "hamLinksOpen": 5,
+        "hamClosed": "none|visible|1|none",
+        "hamExpandedClosed": "false",
+        "detailsOpened": true
+      },
+      "interactionsMobile": {
+        "invalidMsg": "邮箱格式不正确，请检查后重试：not-an-email",
+        "validMsg": "已收到，me@example.com —— 今天的第一格已经排好了。",
+        "toggleCount": 2,
+        "price40before": 1,
+        "price32before": 0,
+        "price40after": 0,
+        "price32after": 2,
+        "priceAfterSample": [
+          "¥32/月",
+          "¥0",
+          "¥32/月",
+          "¥0：个人使用"
+        ],
+        "hamburger": true,
+        "hamSelf": "grid",
+        "hamExpandedBefore": "false",
+        "hamFrom": "none|visible|1|none",
+        "hamLinksClosed": 0,
+        "hamTo": "block|visible|1|none",
+        "hamExpandedAfter": "true",
+        "hamLinksOpen": 5,
+        "hamClosed": "none|visible|1|none",
+        "hamExpandedClosed": "false",
+        "detailsOpened": true
+      },
+      "consoleErrors": []
+    }
+  },
+  "index": {
+    "vw": 1440,
+    "docW": 1440,
+    "overflow": 0,
+    "offenders": [],
+    "totalTags": 244,
+    "svg": 0,
+    "details": 0,
+    "anchors": 1,
+    "hamburger": false,
+    "hamSmall": null,
+    "ariaTargets": [],
+    "h1": "同一个产品，同一份文案，四种设计语言",
+    "bodyBg": "rgb(11, 13, 16)"
+  }
+}

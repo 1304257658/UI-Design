@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flowtide 落地页 · 四个视觉方向</title>
+<style>
+  :root{
+    --ink:#14161A; --muted:#5C6472; --line:#E3E5EA; --bg:#F6F7F9; --card:#FFFFFF;
+    --focus:#2B4CFF;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .skip{position:absolute;left:-9999px}
+  .skip:focus{left:16px;top:16px;z-index:10;background:#fff;padding:10px 14px;border:2px solid var(--focus);border-radius:8px}
+  a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+  .wrap{max-width:1120px;margin:0 auto;padding:clamp(28px,5vw,64px) clamp(18px,4vw,32px) 72px}
+  header{max-width:720px}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  h1{font-size:clamp(28px,5vw,44px);line-height:1.25;letter-spacing:-.02em;margin:0 0 16px}
+  .lede{font-size:clamp(15px,1.6vw,17px);color:var(--muted);margin:0}
+  .lede code{background:#ECEEF2;padding:2px 6px;border-radius:5px;font-size:.92em}
+  .rule{height:1px;background:var(--line);border:0;margin:clamp(28px,4vw,44px) 0}
+  .grid{display:grid;gap:clamp(16px,2.2vw,22px);grid-template-columns:repeat(auto-fit,minmax(260px,1fr));padding:0;margin:0;list-style:none}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+  .card:hover,.card:focus-within{transform:translateY(-3px);box-shadow:0 14px 32px rgba(20,22,26,.10);border-color:#C9CDD6}
+  .card > a{display:block;text-decoration:none;color:inherit}
+  .swatch{height:104px;position:relative;display:flex;align-items:flex-end;padding:12px}
+  .swatch span{font-size:11px;font-weight:700;letter-spacing:.12em;color:inherit;opacity:.85}
+  .card-body{padding:18px 18px 22px}
+  .card-body h2{margin:0 0 6px;font-size:17px;letter-spacing:-.01em}
+  .card-body p{margin:0 0 14px;font-size:13.5px;color:var(--muted);line-height:1.65}
+  .go{font-size:13px;font-weight:700;color:var(--focus)}
+  /* 四张色卡各自示意对应方向；颜色取自 DESIGN-ROLL.md 里随机抽中的色板 */
+  .s-a{background:#0F1112;color:#EEF0F1}
+  .s-a::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 18% 0%,rgba(113,215,231,.32),transparent 62%)}
+  .s-b{background:#F9F7F1;color:#27221B;box-shadow:inset 0 -1px 0 #D7CFB7}
+  .s-b::after{content:"";position:absolute;left:12px;right:12px;bottom:34px;height:2px;background:#B56129}
+  .s-c{background:linear-gradient(135deg,#F87935,#3FEB7B 55%,#F844B9);color:#142F3D}
+  .s-c::after{content:"";position:absolute;right:12px;top:12px;width:34px;height:34px;border-radius:999px;background:#FDF9FA;opacity:.9}
+  .s-d{background:#9DFE2F;color:#0E100C}
+  .s-d::after{content:"";position:absolute;right:12px;top:12px;width:56px;height:56px;background:#2229F9;border:3px solid #0E100C;box-shadow:6px 6px 0 #0E100C}
+  .note{margin-top:clamp(28px,4vw,44px);font-size:13.5px;color:var(--muted)}
+  .note strong{color:var(--ink)}
+  .note ul{margin:10px 0 0;padding-left:20px}
+  .note li{margin:4px 0}
+  footer{margin-top:40px;font-size:12.5px;color:var(--muted)}
+  @media (prefers-reduced-motion:reduce){
+    .card{transition:none}
+    .card:hover,.card:focus-within{transform:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">实验 005 · 受控内容对照</p>
+    <h1>Flowtide 落地页：同一份内容，四个视觉方向</h1>
+    <p class="lede">文案、区块顺序、功能全部固定（见 <code>CONTENT-SPEC.md</code>），四个案例只改变视觉语言与版式结构。这样比较的是<strong>设计方向</strong>，而不是文案运气。</p>
+  </header>
+
+  <hr class="rule">
+
+  <main id="main">
+    <ul class="grid">
+      <li class="card">
+        <a href="cases/a.html">
+          <div class="swatch s-a" aria-hidden="true"><span>A · QUIET TECHNICAL</span></div>
+          <div class="card-body">
+            <h2>A · 安静的技术极简</h2>
+            <p>近黑底、克制的灰阶层级、细描边与单色强调。适合专业工具，传达精密与可信。</p>
+            <span class="go">打开案例 A →</span>
+          </div>
+        </a>
+      </li>
+      <li class="card">
+        <a href="cases/b.html">
+          <div class="swatch s-b" aria-hidden="true"><span>B · WARM EDITORIAL</span></div>
+          <div class="card-body">
+            <h2>B · 温暖编辑排版</h2>
+            <p>奶油纸底、大号衬线标题、栏线与不对称栅格。像一篇认真排过的长文，耐读、有分量。</p>
+            <span class="go">打开案例 B →</span>
+          </div>
+        </a>
+      </li>
+      <li class="card">
+        <a href="cases/c.html">
+          <div class="swatch s-c" aria-hidden="true"><span>C · FRIENDLY CONSUMER</span></div>
+          <div class="card-body">
+            <h2>C · 亲切大众消费向</h2>
+            <p>高饱和亮色、大圆角、柔和彩色投影与插画式图形。降低门槛，让非技术用户愿意试。</p>
+            <span class="go">打开案例 C →</span>
+          </div>
+        </a>
+      </li>
+      <li class="card">
+        <a href="cases/d.html">
+          <div class="swatch s-d" aria-hidden="true"><span>D · BOLD TYPOGRAPHIC</span></div>
+          <div class="card-body">
+            <h2>D · 大胆字体海报感</h2>
+            <p>粗黑描边、硬阴影偏移、超大标题与高对比撞色。视觉冲击优先，个性强、记忆点足。</p>
+            <span class="go">打开案例 D →</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <div class="note">
+      <strong>四个案例都实现了同一套功能</strong>，可以逐项对比体验差异：
+      <ul>
+        <li>邮箱表单内联校验（不弹 <code>alert</code>）</li>
+        <li>月付 / 年付切换，Pro 价格只显示一个数字</li>
+        <li><code>&lt;details&gt;</code> 手风琴 FAQ</li>
+        <li>≤820px 汉堡导航，带 <code>aria-expanded</code></li>
+        <li>360 / 768 / 1024 / 1440px 无横向溢出</li>
+      </ul>
+    </div>
+
+    <div class="note">
+      <strong>视觉决策是随机抽出来的，不是挑出来的。</strong>
+      色板色相、字号比例、圆角、间距基数、每个区块的分块手法、装饰母题，都由
+      <code>scripts/roll.mjs</code> 用本轮种子 <code>1667658728</code> 抽签决定，照单施工。
+      完整抽签记录见 <code>DESIGN-ROLL.md</code>，四个案例的施工单在 <code>briefs/</code>。
+      这样"设计方向"才是唯一自变量，而不是"谁顺手选了更好看的默认值"。
+    </div>
+
+    <footer>静态检查：<code>node scripts/audit.mjs</code> · 受控文案一致性：<code>node scripts/parity.mjs</code> · 浏览器实测：<code>node scripts/measure.mjs</code> · 每个页面右下角有 A/B/C/D 切换器</footer>
+  </main>
+</div>
+</body>
+</html>
