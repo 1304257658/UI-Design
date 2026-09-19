@@ -1,0 +1,302 @@
+[
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "0",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 1440
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "200",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 1440
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "275",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 1440
+  },
+  {
+    "environment": "transition",
+    "overflow": false,
+    "p": "290",
+    "panel": "visible",
+    "seam": "1",
+    "theme": "1.2654906660412784%",
+    "uiCards": 0,
+    "width": 1440
+  },
+  {
+    "environment": "transition",
+    "overflow": false,
+    "p": "330",
+    "panel": "hidden",
+    "seam": "1",
+    "theme": "64.89945316322564%",
+    "uiCards": 0,
+    "width": 1440
+  },
+  {
+    "environment": "architecture",
+    "overflow": false,
+    "p": "480",
+    "panel": "hidden",
+    "seam": "1",
+    "theme": "100%",
+    "uiCards": 0,
+    "width": 1440
+  },
+  {
+    "environment": "architecture",
+    "overflow": false,
+    "p": "740",
+    "panel": "hidden",
+    "seam": "1",
+    "theme": "100%",
+    "uiCards": 0,
+    "width": 1440
+  },
+  {
+    "environment": "transition",
+    "overflow": false,
+    "p": "880",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "39.43111964312745%",
+    "uiCards": 0,
+    "width": 1440
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "940",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 1440
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "1000",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 1440
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "0",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 1280
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "200",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 1280
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "275",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 1280
+  },
+  {
+    "environment": "transition",
+    "overflow": false,
+    "p": "290",
+    "panel": "visible",
+    "seam": "1",
+    "theme": "1.2654906660412784%",
+    "uiCards": 0,
+    "width": 1280
+  },
+  {
+    "environment": "transition",
+    "overflow": false,
+    "p": "330",
+    "panel": "hidden",
+    "seam": "1",
+    "theme": "64.89945316322564%",
+    "uiCards": 0,
+    "width": 1280
+  },
+  {
+    "environment": "architecture",
+    "overflow": false,
+    "p": "480",
+    "panel": "hidden",
+    "seam": "1",
+    "theme": "100%",
+    "uiCards": 0,
+    "width": 1280
+  },
+  {
+    "environment": "architecture",
+    "overflow": false,
+    "p": "740",
+    "panel": "hidden",
+    "seam": "1",
+    "theme": "100%",
+    "uiCards": 0,
+    "width": 1280
+  },
+  {
+    "environment": "transition",
+    "overflow": false,
+    "p": "880",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "39.43111964312745%",
+    "uiCards": 0,
+    "width": 1280
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "940",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 1280
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "1000",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 1280
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "0",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 390
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "200",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 390
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "275",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 390
+  },
+  {
+    "environment": "transition",
+    "overflow": false,
+    "p": "290",
+    "panel": "visible",
+    "seam": "1",
+    "theme": "1.2654906660412784%",
+    "uiCards": 0,
+    "width": 390
+  },
+  {
+    "environment": "transition",
+    "overflow": false,
+    "p": "330",
+    "panel": "hidden",
+    "seam": "1",
+    "theme": "64.89945316322564%",
+    "uiCards": 0,
+    "width": 390
+  },
+  {
+    "environment": "architecture",
+    "overflow": false,
+    "p": "480",
+    "panel": "hidden",
+    "seam": "1",
+    "theme": "100%",
+    "uiCards": 0,
+    "width": 390
+  },
+  {
+    "environment": "architecture",
+    "overflow": false,
+    "p": "740",
+    "panel": "hidden",
+    "seam": "1",
+    "theme": "100%",
+    "uiCards": 0,
+    "width": 390
+  },
+  {
+    "environment": "transition",
+    "overflow": false,
+    "p": "880",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "39.43111964312745%",
+    "uiCards": 0,
+    "width": 390
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "940",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 390
+  },
+  {
+    "environment": "workspace",
+    "overflow": false,
+    "p": "1000",
+    "panel": "visible",
+    "seam": "0",
+    "theme": "0%",
+    "uiCards": 0,
+    "width": 390
+  }
+]

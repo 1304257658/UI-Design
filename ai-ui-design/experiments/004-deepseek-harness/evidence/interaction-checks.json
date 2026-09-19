@@ -1,0 +1,74 @@
+{
+  "beforeWheel": {
+    "inner": 2888,
+    "p": "480",
+    "page": 229
+  },
+  "afterInside": {
+    "inner": 3806,
+    "p": "633",
+    "page": 229
+  },
+  "afterOutside": {
+    "inner": 3806,
+    "p": "633",
+    "page": 688
+  },
+  "boundaryBefore": {
+    "inner": 6016,
+    "page": 229
+  },
+  "boundaryAfter": {
+    "inner": 6016,
+    "page": 229
+  },
+  "autoProgress": "818",
+  "pausedProgress": "819",
+  "moduleChecks": [
+    {
+      "name": "01 Web UI 工作台",
+      "title": "工作台",
+      "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/api/session-controller/README.md"
+    },
+    {
+      "name": "02 SessionController 会话入口",
+      "title": "会话入口",
+      "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/api/session-controller/README.md"
+    },
+    {
+      "name": "03 AgentLoop 执行循环",
+      "title": "执行循环",
+      "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/core/agent-loop/src/agent.ts#L241-L321"
+    },
+    {
+      "name": "04 SystemPrompt 提示与上下文",
+      "title": "提示与上下文",
+      "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/core/agent-loop/src/agent.ts#L241-L255"
+    },
+    {
+      "name": "05 Session 会话记录",
+      "title": "会话记录",
+      "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/core/session/README.md"
+    },
+    {
+      "name": "06 ToolRuntime 工具运行时",
+      "title": "工具运行时",
+      "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/core/tools/src/index.ts#L1461-L1490"
+    },
+    {
+      "name": "07 LlmRuntime 模型适配",
+      "title": "模型适配",
+      "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/llm/llm-deepseek/src/index.ts#L53-L133"
+    },
+    {
+      "name": "08 DeepSeek Model 模型服务",
+      "title": "模型服务",
+      "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/llm/llm-deepseek/README.md"
+    },
+    {
+      "name": "00 Cordis 插件底座",
+      "title": "插件底座",
+      "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/docs/architecture.md#L9-L27"
+    }
+  ]
+}

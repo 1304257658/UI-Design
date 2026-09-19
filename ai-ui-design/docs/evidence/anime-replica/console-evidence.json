@@ -1,0 +1,12 @@
+{
+  "source": [
+    {
+      "level": "error",
+      "message": "THREE.BufferGeometry.computeBoundingSphere(): Computed radius is NaN. The \"position\" attribute is likely to have NaN values. i",
+      "timestamp": "2026-09-17T17:59:35.752Z",
+      "url": "https://animejs.com/assets/js/chunks/chunk-CPVC3KGU.js"
+    }
+  ],
+  "local": [],
+  "study": []
+}

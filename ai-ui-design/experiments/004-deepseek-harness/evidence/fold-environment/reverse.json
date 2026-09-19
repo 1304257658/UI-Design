@@ -1,0 +1,26 @@
+[
+  {
+    "line": "1",
+    "p": "480",
+    "theme": "100%",
+    "transform": "rotateX(-90deg) scale(0.476923)"
+  },
+  {
+    "line": "0",
+    "p": "1000",
+    "theme": "0%",
+    "transform": "rotateX(0deg) scale(1)"
+  },
+  {
+    "line": "1",
+    "p": "480",
+    "theme": "100%",
+    "transform": "rotateX(-90deg) scale(0.476923)"
+  },
+  {
+    "line": "0",
+    "p": "0",
+    "theme": "0%",
+    "transform": "rotateX(0deg) scale(1)"
+  }
+]

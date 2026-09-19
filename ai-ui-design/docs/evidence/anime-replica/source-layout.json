@@ -1,0 +1,212 @@
+{
+  "height": 16913,
+  "sections": [
+    {
+      "height": 2088,
+      "id": "intro",
+      "label": "HEADING"
+    },
+    {
+      "height": 2880,
+      "id": "toolbox",
+      "label": "TOOLBOX"
+    },
+    {
+      "height": 5760,
+      "id": "features-gallery",
+      "label": "FEATURES"
+    },
+    {
+      "height": 720,
+      "id": "intuitive",
+      "label": null
+    },
+    {
+      "height": 720,
+      "id": "composition",
+      "label": null
+    },
+    {
+      "height": 720,
+      "id": "scroll",
+      "label": null
+    },
+    {
+      "height": 720,
+      "id": "staggering",
+      "label": null
+    },
+    {
+      "height": 720,
+      "id": "svgUtils",
+      "label": null
+    },
+    {
+      "height": 720,
+      "id": "draggable",
+      "label": null
+    },
+    {
+      "height": 720,
+      "id": "clockwork",
+      "label": null
+    },
+    {
+      "height": 720,
+      "id": "responsive",
+      "label": null
+    },
+    {
+      "height": 2880,
+      "id": "modules",
+      "label": "MODULES"
+    },
+    {
+      "height": 720,
+      "id": "",
+      "label": null
+    },
+    {
+      "height": 720,
+      "id": "sponsors",
+      "label": "SPONSORS"
+    },
+    {
+      "height": 1440,
+      "id": "get-started",
+      "label": "GET_STARTED"
+    },
+    {
+      "height": 720,
+      "id": "",
+      "label": null
+    }
+  ],
+  "type": [
+    {
+      "color": "rgb(246, 244, 242)",
+      "family": "Mono, monospace",
+      "letterSpacing": "0.12px",
+      "lineHeight": "normal",
+      "size": "12px",
+      "tag": "HEADER",
+      "text": "Anime.js | JavaScript Animation Engine\n      \n      \n        \n          4.5.0\n  ",
+      "weight": "600"
+    },
+    {
+      "color": "rgb(246, 244, 242)",
+      "family": "DIN, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "letterSpacing": "normal",
+      "lineHeight": "55.36px",
+      "size": "64px",
+      "tag": "H2",
+      "text": "All-in-one animation engine.All-in-one animation engine.",
+      "weight": "700"
+    },
+    {
+      "color": "rgb(213, 211, 209)",
+      "family": "DIN, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "letterSpacing": "normal",
+      "lineHeight": "25px",
+      "size": "20px",
+      "tag": "P",
+      "text": "A fast and flexible JavaScript library to animate SVGSVG.A fast and flexible Jav",
+      "weight": "600"
+    },
+    {
+      "color": "rgb(213, 211, 209)",
+      "family": "DIN, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "letterSpacing": "normal",
+      "lineHeight": "25px",
+      "size": "20px",
+      "tag": "P",
+      "text": "",
+      "weight": "600"
+    },
+    {
+      "color": "rgb(180, 177, 175)",
+      "family": "Mono, monospace",
+      "letterSpacing": "0.12px",
+      "lineHeight": "48px",
+      "size": "12px",
+      "tag": "BUTTON",
+      "text": "Learn more",
+      "weight": "600"
+    },
+    {
+      "color": "rgb(48, 46, 45)",
+      "family": "DIN, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "letterSpacing": "-0.5px",
+      "lineHeight": "38px",
+      "size": "40px",
+      "tag": "H2",
+      "text": "The complete animator's toolbox",
+      "weight": "800"
+    },
+    {
+      "color": "rgb(53, 52, 50)",
+      "family": "DIN, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "letterSpacing": "normal",
+      "lineHeight": "25px",
+      "size": "20px",
+      "tag": "P",
+      "text": "Break free from browser limitations and animate anything on the web with a singl",
+      "weight": "600"
+    },
+    {
+      "color": "rgb(255, 75, 75)",
+      "family": "DIN, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "letterSpacing": "normal",
+      "lineHeight": "44.98px",
+      "size": "52px",
+      "tag": "H2",
+      "text": "Intuitive API",
+      "weight": "700"
+    },
+    {
+      "color": "rgb(213, 211, 209)",
+      "family": "DIN, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "letterSpacing": "normal",
+      "lineHeight": "25px",
+      "size": "20px",
+      "tag": "P",
+      "text": "Animate faster with an easy-to-use, yet powerful animation API.",
+      "weight": "600"
+    },
+    {
+      "color": "rgb(180, 177, 175)",
+      "family": "Mono, monospace",
+      "letterSpacing": "0.12px",
+      "lineHeight": "24px",
+      "size": "12px",
+      "tag": "A",
+      "text": "Per property parameters",
+      "weight": "600"
+    },
+    {
+      "color": "rgb(180, 177, 175)",
+      "family": "Mono, monospace",
+      "letterSpacing": "0.12px",
+      "lineHeight": "24px",
+      "size": "12px",
+      "tag": "A",
+      "text": "Flexible keyframes system",
+      "weight": "600"
+    },
+    {
+      "color": "rgb(180, 177, 175)",
+      "family": "Mono, monospace",
+      "letterSpacing": "0.12px",
+      "lineHeight": "24px",
+      "size": "12px",
+      "tag": "A",
+      "text": "Built-in easings",
+      "weight": "600"
+    }
+  ],
+  "viewport": {
+    "dpr": 1,
+    "h": 720,
+    "w": 1280
+  }
+}

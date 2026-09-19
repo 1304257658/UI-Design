@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>动画时间轴实验 · Anime.js 复刻笔记</title><link rel="stylesheet" href="/src/study.css"></head>
+<body>
+<header><a href="/">返回首页复刻</a><span>EXPERIMENT 003 / MOTION STUDY</span><a href="https://animejs.com/" target="_blank" rel="noreferrer">原作 Anime.js</a></header>
+<main>
+  <p class="eyebrow">ONE CLOCK. THREE TRACKS.</p>
+  <h1>一条时间轴，<br>编排整个画面。</h1>
+  <p class="intro">拖动进度，观察拆解、旋转和文字如何同步。这个教学引擎由我们独立编写；首页复刻复用原站引擎，两者分开。</p>
+  <section class="workbench" aria-label="可操作的时间轴实验">
+    <div class="stage" aria-label="分层拆解的抽象示意，不是原站模型">
+      <div class="stage-meta"><span>SCHEMATIC / 分层示意</span><output id="frame-time">0 ms</output></div>
+      <div class="diagram" aria-hidden="true"><div class="layer red">01</div><div class="layer yellow">02</div><div class="layer green">03</div><div class="layer blue">04</div></div>
+      <p class="annotation">把零件的位置写成时间的函数。<br>随时跳到任意一帧，结果仍然确定。</p>
+      <span class="stage-foot">不是逐帧累加位移，而是重新求值。</span>
+    </div>
+    <div class="inspector">
+      <div class="transport"><button id="play">播放</button><button id="reverse">倒放</button><button id="reset">归零</button><label>速度 <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label></div>
+      <label class="seek-label" for="seek">总进度 <output id="percent">0%</output></label>
+      <input id="seek" type="range" min="0" max="6000" value="0" step="1">
+      <div class="track"><div><span>01 / 拆解距离</span><output id="spread-value">0 px</output></div><div class="rail"><i id="spread-fill"></i></div><small>0–3 秒 · 向外展开</small></div>
+      <div class="track"><div><span>02 / 整组旋转</span><output id="rotation-value">0°</output></div><div class="rail yellow"><i id="rotation-fill"></i></div><small>1–5 秒 · 镜头感来自重叠编排</small></div>
+      <div class="track"><div><span>03 / 文字透明度</span><output id="opacity-value">0</output></div><div class="rail green"><i id="opacity-fill"></i></div><small>3.5–5.5 秒 · 留出阅读时间</small></div>
+      <label class="easing-label">拆解缓动 <select id="ease"><option value="inOutCubic">柔和起停 / inOutCubic</option><option value="linear">匀速 / linear</option><option value="outBack">越过终点再返回 / outBack</option></select></label>
+      <p id="play-state" role="status">已暂停。拖动进度条开始观察。</p>
+    </div>
+  </section>
+  <section class="reading"><article><span>01 / 观察</span><h2>试着来回拖动</h2><p>一帧的结果只取决于当前时间。拖回 50%，四片的位置会回到同一个状态，不依赖刚才从哪里来。</p></article><article><span>02 / 区分</span><h2>缓动不等于物理</h2><p>outBack 是预先定义的越界曲线，不是弹簧模拟。真正的弹簧还要考虑速度、阻尼、质量和释放时刻。</p></article><article><span>03 / 边界</span><h2>小引擎还缺什么</h2><p>这里仅支持数值属性。单位换算、颜色、SVG 变形、属性冲突、回调跨越与 WebGL 渲染，都需要额外设计。</p></article></section>
+  <footer>本实验用于理解动画机制。原站设计与素材 © Julian Garnier；此页示意及教学引擎为项目新增。</footer>
+</main><script type="module" src="/src/study.js"></script>
+</body></html>

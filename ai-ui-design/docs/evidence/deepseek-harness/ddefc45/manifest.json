@@ -1,0 +1,64 @@
+{
+  "repository": "https://github.com/deepseek-ai/deepseek-harness",
+  "branch": "master",
+  "commit": "ddefc45fbc7f8e46dd73185e68295696d1297887",
+  "checked": "2026-09-18",
+  "evidence": "static source review; not runtime validation",
+  "files": [
+    {
+      "path": "REVISION.txt",
+      "bytes": 71,
+      "sha256": "346878b9a260c02ed18b357a8c11afc159952c745b4c8b63f3def7665471f43f"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 18627,
+      "sha256": "a381d3b3cb3af59f9be1075b009d5fd0b65b926c2dadd59965af0b1d9d1d2b0a"
+    },
+    {
+      "path": "packages/core/agent-loop/README.md",
+      "bytes": 20355,
+      "sha256": "0a2275673cec2f22cb343cabab7554ef59ae7b6ffb73f0e7a93c8df421f446f8"
+    },
+    {
+      "path": "packages/core/agent-loop/src/agent.ts",
+      "bytes": 25001,
+      "sha256": "2b238998e1b63ac7ceffa20190caaaa4806a9ae275112807424d176244dfd014"
+    },
+    {
+      "path": "packages/core/agent-loop/src/tool-calls.ts",
+      "bytes": 11488,
+      "sha256": "1f8984127d4245b6a08c1e4b0c8b9d8fa7ce30ffcf08184187f16dc1bf57ae6d"
+    },
+    {
+      "path": "packages/core/session/README.md",
+      "bytes": 17052,
+      "sha256": "0d65d721e9f39d91a8798e24a9fab29f3cafbbfc20606350f7ea2eaa7dbff5b0"
+    },
+    {
+      "path": "packages/core/system-prompt/README.md",
+      "bytes": 12701,
+      "sha256": "d31b5a9a87233228d7d097134d7f7665216ab03dc478a10a47f48027a4ca5721"
+    },
+    {
+      "path": "packages/core/tools/src/index.ts",
+      "bytes": 88889,
+      "sha256": "e040cf44c7a4c1b74650cc32f67503b8881cc1d5b1f47f1cb38cf0167a9bb3da"
+    },
+    {
+      "path": "packages/llm/llm/src/index.ts",
+      "bytes": 50629,
+      "sha256": "2260ce28e29fddeaa0b78a273292b6f5c7194adf6226f38ff9e59a50b808cf09"
+    },
+    {
+      "path": "packages/llm/llm-deepseek/README.md",
+      "bytes": 24862,
+      "sha256": "3bf048d0b5c8d6646ac9bab62888b785e6a8d0f453e845b494e8e6fc58f5e022"
+    },
+    {
+      "path": "packages/llm/llm-deepseek/src/index.ts",
+      "bytes": 7151,
+      "sha256": "04956e2fb1f1dd6e165b0bc0da767853d6b056ccc103d447b09b3175718c83c0"
+    }
+  ]
+}

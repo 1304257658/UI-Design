@@ -1,0 +1,304 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+docs/diagrams/*.visual-check.*
+dist/
+build/
+*.local
+
+# Environment variables - 不提交实际环境配置
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.development.local
+.env.test.local
+# .env.production 可以提交作为生产环境配置模板
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+.gitnexus/
+
+# 项目说明文件
+自动@机器人.md
+
+# rsa 密钥
+*.pem
+*.pub
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Claude Code/Codex session data and index
+.claude/
+.codex/
+
+REFACTOR_CORP_WECHAT_CONFIG.md
+
+# Virtual environments
+.venv/
+.venv-monitoring/
+env/
+env.bak/
+pythonenv*/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django
+*.log
+local_settings.py
+settings_local.py
+
+# Django 设置文件
+# 只提交 settings_prod.py 作为生产环境配置模板
+# settings.py（测试环境配置）不提交
+**/services/*/settings.py
+
+# Database
+*.db
+*.sqlite3
+*.sqlite3-journal
+
+# Testing
+coverage/
+.tox/
+.nox/
+.pytest_cache/
+# 正式测试源码属于项目资产，不应在此忽略；这里只忽略测试生成物。
+
+# Logs
+logs/
+*.log
+
+# 环境变量
+.env
+.env.test
+
+# Temporary files
+tmp/
+temp/
+
+# Machine identity credentials and one-time Provider Credential import media
+/credentials/
+provider-credentials.json
+.codex-temp/
+
+# Package files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Server files
+*.pid
+*.seed
+*.pid.lock
+
+# Backup files
+*.backup
+*.bak
+
+# Docker
+Dockerfile*
+docker-compose*
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Documentation
+/docs/_build/
+
+# Other
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Generated files
+/generated/
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/test
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# token 缓存
+dsakjflsdlfmasdmf.json
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+AutoPickupBackend/scripts/ai_reply_analysis.local.env
+.venv
+env/
+env.bak/
+venv/
+venv.bak/
+pythonenv*
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Pytype static type analyzer
+.pytype/
+
+# Frontend static type file
+static/
+
+# Cython debug symbols
+cython_debug/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+/standalone-monitor/
+tmp/
+temp/

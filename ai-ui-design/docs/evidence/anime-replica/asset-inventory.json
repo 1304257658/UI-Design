@@ -1,0 +1,2182 @@
+{
+  "assets": [
+    {
+      "id": "e6ec6fc0ac70a176",
+      "kind": "stylesheet",
+      "name": "home.css",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "link"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 195,
+          "property": "href"
+        }
+      ],
+      "url": "https://animejs.com/assets/css/home.css?v=1787698626"
+    },
+    {
+      "id": "41d47c1b42e8c63c",
+      "kind": "stylesheet",
+      "name": "core.css",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "link"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 194,
+          "property": "href"
+        }
+      ],
+      "url": "https://animejs.com/assets/css/core.css?v=1787698626"
+    },
+    {
+      "id": "7508cb158634a002",
+      "kind": "image",
+      "name": "anime-js-logo-v4.svg",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 204,
+          "property": "src"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 724,
+          "property": "src"
+        }
+      ],
+      "url": "https://animejs.com/assets/images/anime-js-logo-v4.svg"
+    },
+    {
+      "id": "5af7d07f466784ec",
+      "kind": "script",
+      "name": "home.js",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "script"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 743,
+          "property": "src"
+        }
+      ],
+      "url": "https://animejs.com/assets/js/home.js?v=1787698626"
+    },
+    {
+      "id": "f1be8fb2f513247d",
+      "kind": "font",
+      "name": "BerkeleyMono-Regular.woff2",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "css"
+        }
+      ],
+      "url": "https://animejs.com/assets/fonts/BerkeleyMono-Regular.woff2"
+    },
+    {
+      "id": "ab5ea4b1ad31ea2b",
+      "kind": "font",
+      "name": "DINish[slnt,wdth,wght].woff2",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "css"
+        }
+      ],
+      "url": "https://animejs.com/assets/fonts/DINish[slnt,wdth,wght].woff2"
+    },
+    {
+      "id": "5b49da9f21a2f491",
+      "kind": "script",
+      "name": "chunk-N6I4AEHZ.js",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "script"
+        }
+      ],
+      "url": "https://animejs.com/assets/js/chunks/chunk-N6I4AEHZ.js"
+    },
+    {
+      "id": "298279b83ce65d6d",
+      "kind": "script",
+      "name": "chunk-WQVFBASJ.js",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "script"
+        }
+      ],
+      "url": "https://animejs.com/assets/js/chunks/chunk-WQVFBASJ.js"
+    },
+    {
+      "id": "4b3d9f467492ca3b",
+      "kind": "script",
+      "name": "chunk-WXAKRBIO.js",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "script"
+        }
+      ],
+      "url": "https://animejs.com/assets/js/chunks/chunk-WXAKRBIO.js"
+    },
+    {
+      "id": "19f4524ac9ba6af1",
+      "kind": "script",
+      "name": "chunk-FX45FQRC.js",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "script"
+        }
+      ],
+      "url": "https://animejs.com/assets/js/chunks/chunk-FX45FQRC.js"
+    },
+    {
+      "id": "122e8a2f45aebbe8",
+      "kind": "script",
+      "name": "chunk-DCANE7XH.js",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "script"
+        }
+      ],
+      "url": "https://animejs.com/assets/js/chunks/chunk-DCANE7XH.js"
+    },
+    {
+      "id": "0ab05d29abcf8028",
+      "kind": "script",
+      "name": "chunk-CPVC3KGU.js",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "script"
+        }
+      ],
+      "url": "https://animejs.com/assets/js/chunks/chunk-CPVC3KGU.js"
+    },
+    {
+      "id": "d7592b1067375c01",
+      "kind": "other",
+      "name": "platinum-sponsors",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        },
+        {
+          "kind": "resource",
+          "property": "fetch"
+        },
+        {
+          "kind": "resource",
+          "property": "fetch"
+        },
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/sponsors/platinum-sponsors"
+    },
+    {
+      "id": "a0302fcfb973d79f",
+      "kind": "other",
+      "name": "silver-sponsors",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        },
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/sponsors/silver-sponsors"
+    },
+    {
+      "id": "9940b01932a0386c",
+      "kind": "other",
+      "name": "github-sponsors",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/sponsors/github-sponsors"
+    },
+    {
+      "id": "6a8b47f5e370d9a7",
+      "kind": "other",
+      "name": "module-animate-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-animate-01.glb"
+    },
+    {
+      "id": "c936d9614bc32516",
+      "kind": "other",
+      "name": "module-easing-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-easing-01.glb"
+    },
+    {
+      "id": "f605b3175e32db72",
+      "kind": "other",
+      "name": "module-draggable-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-draggable-01.glb"
+    },
+    {
+      "id": "8c155b0211251ad2",
+      "kind": "other",
+      "name": "module-draggable-02.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-draggable-02.glb"
+    },
+    {
+      "id": "b080f18f57bc64fd",
+      "kind": "other",
+      "name": "module-scroll-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-scroll-01.glb"
+    },
+    {
+      "id": "241fe60d769335d2",
+      "kind": "other",
+      "name": "module-scope-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-scope-01.glb"
+    },
+    {
+      "id": "b540e8f42b6e95d0",
+      "kind": "other",
+      "name": "module-timer-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-timer-01.glb"
+    },
+    {
+      "id": "a7beb682ac087c46",
+      "kind": "other",
+      "name": "module-engine-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-engine-01.glb"
+    },
+    {
+      "id": "db2ba4236fd9d685",
+      "kind": "other",
+      "name": "module-timer-02.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-timer-02.glb"
+    },
+    {
+      "id": "f15287f5dda418b0",
+      "kind": "other",
+      "name": "module-timer-03.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-timer-03.glb"
+    },
+    {
+      "id": "c5e411c0efd42ca9",
+      "kind": "other",
+      "name": "module-timer-05.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-timer-05.glb"
+    },
+    {
+      "id": "0c351ada157db20b",
+      "kind": "other",
+      "name": "module-timer-04.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-timer-04.glb"
+    },
+    {
+      "id": "71a85296102680c9",
+      "kind": "other",
+      "name": "module-spring-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-spring-01.glb"
+    },
+    {
+      "id": "d548ab91428cb5f1",
+      "kind": "other",
+      "name": "module-stagger-02.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-stagger-02.glb"
+    },
+    {
+      "id": "da659ece55615a16",
+      "kind": "other",
+      "name": "module-stagger-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-stagger-01.glb"
+    },
+    {
+      "id": "f05759b2a4809b32",
+      "kind": "other",
+      "name": "module-timeline-02.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-timeline-02.glb"
+    },
+    {
+      "id": "63f18d831aa899de",
+      "kind": "other",
+      "name": "module-renderer-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-renderer-01.glb"
+    },
+    {
+      "id": "a40ba8f9d001739d",
+      "kind": "other",
+      "name": "module-svg-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-svg-01.glb"
+    },
+    {
+      "id": "a3c63aa0f114c6df",
+      "kind": "other",
+      "name": "module-timeline-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-timeline-01.glb"
+    },
+    {
+      "id": "233cc8d30e81b2a1",
+      "kind": "other",
+      "name": "module-shield-02.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-shield-02.glb"
+    },
+    {
+      "id": "99d137181214ef0d",
+      "kind": "other",
+      "name": "module-waapi-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-waapi-01.glb"
+    },
+    {
+      "id": "9aa87cc925e633e3",
+      "kind": "other",
+      "name": "module-shield-01.glb",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/models/module-shield-01.glb"
+    },
+    {
+      "id": "9cf40ce31e5bb5bc",
+      "kind": "image",
+      "name": "favicon.png",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "other"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 181,
+          "property": "href"
+        }
+      ],
+      "url": "https://animejs.com/assets/images/favicon.png"
+    },
+    {
+      "id": "cf51a6ddc2e69ac6",
+      "kind": "image",
+      "name": "56684844",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2845,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/56684844?u=15591a4cd624676b8534311a31a897503d0d3aab&v=4"
+    },
+    {
+      "id": "6ff8ebaa918598bf",
+      "kind": "image",
+      "name": "30808859",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2865,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/30808859?u=a7a495be11f99ca9b492c88f647760cbfb7a687b&v=4"
+    },
+    {
+      "id": "bdf8636dd58330e5",
+      "kind": "image",
+      "name": "7850794",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2853,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/7850794?u=c7a82c242c85e58c8ceeac958e7f9ad774f2147b&v=4"
+    },
+    {
+      "id": "173c06cb287f6b6d",
+      "kind": "image",
+      "name": "7033186",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2849,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/7033186?v=4"
+    },
+    {
+      "id": "a86d1ea86e9e892c",
+      "kind": "image",
+      "name": "8131304",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2861,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/8131304?v=4"
+    },
+    {
+      "id": "e19824775eacb6ba",
+      "kind": "image",
+      "name": "15028082",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2857,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/15028082?v=4"
+    },
+    {
+      "id": "85d93681fcdb1881",
+      "kind": "image",
+      "name": "13168561",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2893,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/13168561?u=0c8ae2cf90de781073693984fe03d6f0396919b7&v=4"
+    },
+    {
+      "id": "add9b9966d9a30e4",
+      "kind": "image",
+      "name": "1351436",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2917,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/1351436?u=eaf9fdf001221636b78b574f9c4e115b592f5a48&v=4"
+    },
+    {
+      "id": "cfb8a0cf6bf6d41b",
+      "kind": "image",
+      "name": "374134",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2869,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/374134?v=4"
+    },
+    {
+      "id": "61a6ff98450cebbf",
+      "kind": "image",
+      "name": "171592363",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2881,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/171592363?u=080d9ba6069d0ff2a0558825ff2f667c45807687&v=4"
+    },
+    {
+      "id": "709764db92f62f25",
+      "kind": "image",
+      "name": "1121725",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2885,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/1121725?v=4"
+    },
+    {
+      "id": "f95f8649131b0887",
+      "kind": "image",
+      "name": "2158130",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2909,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/2158130?u=5adde8fd6a285602abcda956c80ee909529d7c5e&v=4"
+    },
+    {
+      "id": "d1e5b03f4e0c3d05",
+      "kind": "image",
+      "name": "15368010",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2873,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/15368010?u=d27a3d5bc457e9e1c48a8bd9e501cafe01b8daec&v=4"
+    },
+    {
+      "id": "df2780ccbc09942b",
+      "kind": "image",
+      "name": "801425",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2905,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/801425?u=8695668d7fd93bc31264ca6a739a64618e4ac444&v=4"
+    },
+    {
+      "id": "4f704a213b3f75bf",
+      "kind": "image",
+      "name": "1908341",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2921,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/1908341?v=4"
+    },
+    {
+      "id": "fc5cb0714ab5daea",
+      "kind": "image",
+      "name": "1417323",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2901,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/1417323?u=12876f6373e65427454a3616b219e1d3f3c78a8e&v=4"
+    },
+    {
+      "id": "334575921863bd0b",
+      "kind": "image",
+      "name": "95952866",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2913,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/95952866?u=f4a0773cc5205cc4b531bdd87039b9e6a42f31d2&v=4"
+    },
+    {
+      "id": "9cc5371bc2059423",
+      "kind": "image",
+      "name": "5545171",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2889,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/5545171?u=ba1b5f5376949d6ab5a451c1587de028768904b1&v=4"
+    },
+    {
+      "id": "fcd9750064de0080",
+      "kind": "image",
+      "name": "4291354",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2877,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/4291354?u=d62b6917e998cb98640c1b6d0c102c656b2ada17&v=4"
+    },
+    {
+      "id": "f9710d2697cec6d5",
+      "kind": "image",
+      "name": "7118754",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2897,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/7118754?u=2fdcdec87990222f732dd517f0cfd35afc4194cc&v=4"
+    },
+    {
+      "id": "a04eaa26234684b9",
+      "kind": "image",
+      "name": "7050547",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2929,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/7050547?u=50b846f10e206481e93656b73f9eb11088499c56&v=4"
+    },
+    {
+      "id": "84abd1e6cb9c8ed1",
+      "kind": "image",
+      "name": "4266359",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2925,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/4266359?u=baee5a32c570af66b8a554df33701e11dea8a5fc&v=4"
+    },
+    {
+      "id": "978f25c32a71a836",
+      "kind": "image",
+      "name": "20308945",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2961,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/20308945?u=f38b5218c48a8c4062d317450bb404cc9b361ee6&v=4"
+    },
+    {
+      "id": "a72f35d9b27e4d80",
+      "kind": "image",
+      "name": "14859935",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2969,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/14859935?u=915c2e3e2ff24d493818d4230974ea288ee80a40&v=4"
+    },
+    {
+      "id": "2c35147757f3df26",
+      "kind": "image",
+      "name": "9310",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2973,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/9310?u=179151b7c0e01aa08598bfc041508a83998c759e&v=4"
+    },
+    {
+      "id": "5b5f1e768af7188c",
+      "kind": "image",
+      "name": "3381818",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2949,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/3381818?u=3a2f9f9d3fffbaaebc3c56b863b4ca2aae508510&v=4"
+    },
+    {
+      "id": "26187255e860e63d",
+      "kind": "image",
+      "name": "685518",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2937,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/685518?u=4a6880fc67b9455e2e9af9f531f8aac4bf0cd606&v=4"
+    },
+    {
+      "id": "6006b2c5c099d280",
+      "kind": "image",
+      "name": "16688047",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2933,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/16688047?u=37490b86ccfb7a60b3dfdea411ee196ece08d456&v=4"
+    },
+    {
+      "id": "cea1c952ccf02d25",
+      "kind": "image",
+      "name": "123018012",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2941,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/123018012?v=4"
+    },
+    {
+      "id": "343a9c857f125e0b",
+      "kind": "image",
+      "name": "579887",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2985,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/579887?u=16c3e4c14be7e3700b04f91ea9003d6d9b4c65df&v=4"
+    },
+    {
+      "id": "985bca0f6ebcb610",
+      "kind": "image",
+      "name": "14097554",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2957,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/14097554?u=f823ef7666925188e5ebec12ede0582b0f471dfd&v=4"
+    },
+    {
+      "id": "d44b343e311667f9",
+      "kind": "image",
+      "name": "21299126",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2953,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/21299126?u=2d1bbde99e3e5c845faf50f4da1ad120b88bcf4d&v=4"
+    },
+    {
+      "id": "a647d37c30111af8",
+      "kind": "image",
+      "name": "38730517",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2989,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/38730517?u=305b8b15a7cd43488d594f3ce28b4ef2951217b5&v=4"
+    },
+    {
+      "id": "5e25daafc608226e",
+      "kind": "image",
+      "name": "22761713",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2965,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/22761713?v=4"
+    },
+    {
+      "id": "f75ac68aa0b82dc4",
+      "kind": "image",
+      "name": "203968980",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2945,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/203968980?u=69ae5d7a543e6d070a4c885edce191288d8a5b8b&v=4"
+    },
+    {
+      "id": "437da71adc8d1c62",
+      "kind": "image",
+      "name": "1682225",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2981,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/1682225?u=aed3340b6f3c3a85abcb0370e854cb8ffb6ecf1e&v=4"
+    },
+    {
+      "id": "4973468ea8fda946",
+      "kind": "image",
+      "name": "24833827",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2977,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/24833827?u=23434967a0a3af479a377aa54f6ca9306ce36355&v=4"
+    },
+    {
+      "id": "56bc0b4937b4e583",
+      "kind": "image",
+      "name": "123049964",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3005,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/123049964?v=4"
+    },
+    {
+      "id": "b52ae5489982cfee",
+      "kind": "image",
+      "name": "24498666",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3013,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/24498666?v=4"
+    },
+    {
+      "id": "8caf64efc10c5b26",
+      "kind": "image",
+      "name": "6699959",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2997,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/6699959?u=bd2dde1f6570f2024c07aea866c2fec6042c55a5&v=4"
+    },
+    {
+      "id": "197b79327bf223bb",
+      "kind": "image",
+      "name": "217863722",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3001,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/217863722?v=4"
+    },
+    {
+      "id": "bffcfe611ba9f295",
+      "kind": "image",
+      "name": "456538",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 2993,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/456538?u=ace3c7cc31bd8b8d7e0df844061a9d3401f92ecb&v=4"
+    },
+    {
+      "id": "eb22faa616ebed2b",
+      "kind": "image",
+      "name": "140085084",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3009,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/140085084?v=4"
+    },
+    {
+      "id": "7ae44db5596af4e5",
+      "kind": "image",
+      "name": "11381341",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3033,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/11381341?v=4"
+    },
+    {
+      "id": "a0f213ead11e1395",
+      "kind": "image",
+      "name": "47975771",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3029,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/47975771?u=6dc0328cb90cd8b70a428e431ba28368a361e691&v=4"
+    },
+    {
+      "id": "219b62fa46990b65",
+      "kind": "image",
+      "name": "16178877",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3041,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/16178877?u=739b6e357c3c58a0bf10f929bc0a2580e849daa1&v=4"
+    },
+    {
+      "id": "ec1032b417c06e25",
+      "kind": "image",
+      "name": "8617673",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3021,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/8617673?u=770d2e1cb0cf72212f3f425e178f2e2068a2f893&v=4"
+    },
+    {
+      "id": "7c7e6c7762d01a3c",
+      "kind": "image",
+      "name": "4730431",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3037,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/4730431?u=810f2f1b1e34cf036d1f43380dcadc4d64b0b2de&v=4"
+    },
+    {
+      "id": "3ced9b0ad36485ad",
+      "kind": "image",
+      "name": "37394584",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3025,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/37394584?u=0a4171427e4f16d8fe0a1e57af04c43e21ab6ed0&v=4"
+    },
+    {
+      "id": "e3cdba84acc68b9c",
+      "kind": "image",
+      "name": "1255528",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3017,
+          "property": "src"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/1255528?u=03abccfc54f1c49b1317cce0528632b573722684&v=4"
+    },
+    {
+      "id": "3b510da08ccfae53",
+      "kind": "image",
+      "name": "40425150",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/40425150?v=4"
+    },
+    {
+      "id": "8b45af88b55f5b33",
+      "kind": "image",
+      "name": "52384531",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/52384531?v=4"
+    },
+    {
+      "id": "c2bc1a70ae19038c",
+      "kind": "image",
+      "name": "335118",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/335118?v=4"
+    },
+    {
+      "id": "013529af3c32807a",
+      "kind": "image",
+      "name": "223952",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/223952?u=0b5113ecd9aa4c3f3a4bd44815fc36c89c913229&v=4"
+    },
+    {
+      "id": "0c238b2501eaafca",
+      "kind": "image",
+      "name": "8601493",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/8601493?u=4ee62b87479fbfb7ea8b5e20ed910c3824b1c310&v=4"
+    },
+    {
+      "id": "c5f1022783ee16c7",
+      "kind": "image",
+      "name": "107817481",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/107817481?u=cfb66d78c84e423f4a0c950473f1a98e8be44fc6&v=4"
+    },
+    {
+      "id": "5747abbb60cdd680",
+      "kind": "image",
+      "name": "72539280",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/72539280?v=4"
+    },
+    {
+      "id": "c5da56ee9ef95ef4",
+      "kind": "image",
+      "name": "1492806",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/1492806?u=6edbac420bab75f3692e0ddec4431cfb5434b748&v=4"
+    },
+    {
+      "id": "56ff47fae4304776",
+      "kind": "image",
+      "name": "4593699",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/4593699?v=4"
+    },
+    {
+      "id": "ab04a16906ea52ed",
+      "kind": "image",
+      "name": "645713",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/645713?v=4"
+    },
+    {
+      "id": "d1eeb36b35bb8670",
+      "kind": "image",
+      "name": "78906517",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/78906517?u=924a27cbee3db7e0ece5cc1509921402e1445e74&v=4"
+    },
+    {
+      "id": "f1c30286ea6e568e",
+      "kind": "image",
+      "name": "171258970",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/171258970?v=4"
+    },
+    {
+      "id": "bb735bcb99ea11f4",
+      "kind": "image",
+      "name": "412352",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/412352?u=aae5e2d4f1a518805529da191830c3c5fa1db5fe&v=4"
+    },
+    {
+      "id": "be2ca7881512288e",
+      "kind": "image",
+      "name": "84647728",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/84647728?u=0da38d40520d88563af56c87f2c0ba7fbb8080c1&v=4"
+    },
+    {
+      "id": "012897a6c521e520",
+      "kind": "image",
+      "name": "2091293",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/2091293?u=6e51eb1a83632573fd481be390949b0880dd66fe&v=4"
+    },
+    {
+      "id": "a9fe28269bb50c2d",
+      "kind": "image",
+      "name": "213351",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        }
+      ],
+      "url": "https://avatars.githubusercontent.com/u/213351?v=4"
+    },
+    {
+      "id": "81507742e3cd1bd1",
+      "kind": "script",
+      "name": "draco_wasm_wrapper.js",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/draco/draco_wasm_wrapper.js"
+    },
+    {
+      "id": "4bfa96b8f089e913",
+      "kind": "other",
+      "name": "draco_decoder.wasm",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "fetch"
+        }
+      ],
+      "url": "https://animejs.com/assets/draco/draco_decoder.wasm"
+    },
+    {
+      "id": "6f8ed23669817312",
+      "kind": "image",
+      "name": "sponsor-placeholder.svg",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3208,
+          "property": "src"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3270,
+          "property": "src"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 696,
+          "property": "src"
+        }
+      ],
+      "url": "https://animejs.com/media/pages/sponsors/platinum-sponsors/ef1c9c6c85-1787698629/sponsor-placeholder.svg"
+    },
+    {
+      "id": "a62a70dc093fa94a",
+      "kind": "image",
+      "name": "testmu-ai-logomark.svg",
+      "sources": [
+        {
+          "kind": "resource",
+          "property": "img"
+        },
+        {
+          "kind": "attribute",
+          "nodeId": 3205,
+          "property": "src"
+        }
+      ],
+      "url": "https://animejs.com/media/pages/sponsors/silver-sponsors/49214d1e15-1787698629/testmu-ai-logomark.svg"
+    }
+  ],
+  "id": "c9463c7b-5b87-4a30-b1ca-0e107c36fa98",
+  "inlineSvgs": [
+    {
+      "id": "b37f0ad54a619b6f",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g id=\"sidebar\" fill=\"none\" fill-rule=\"evenodd\">\n    <path id=\"rectangle\" fill=\"#FFFFFF\" fill-rule=\"nonzero\" d=\"M16.167 6.125H7.833A3.375 3.375 0 0 0 4.458 9.5v5a3.375 3.375 0 0 0 3.375 3.375h8.334a3.375 3.375 0 0 0 3.375-3.375v-5a3.375 3.375 0 0 0-3.375-3.375zm-8.334 1.75h8.334c.897 0 1.625.728 1.625 1.625v5c0 .897-.728 1.625-1.625 1.625H7.833A1.625 1.625 0 0 1 6.208 14.5v-5c0-.897.728-1.625 1.625-1.625z\"></path>\n    <polyline id=\"Path-42\" stroke=\"#FFFFFF\" stroke-width=\"1.75\" points=\"9.5 7.75 9.5 12 9.5 16.25\" data-points=\"13.5 8.75 10.5 12 13.5 15.25\"></polyline>\n  </g>\n</svg>",
+      "name": "svg-1"
+    },
+    {
+      "id": "1611db2dab997612",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" class=\"icon\"><path fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" d=\"M4.5,17 C14.5967876,17 8.37571813,7 19.5,7\"></path></svg>",
+      "name": "svg-2"
+    },
+    {
+      "id": "f28e33dd70d2bbe8",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\"><path fill=\"currentColor\" d=\"M16.1666667,6.125 L7.83333333,6.125 C5.9693723,6.125 4.45833333,7.63603897 4.45833333,9.5 L4.45833333,14.5 C4.45833333,16.363961 5.9693723,17.875 7.83333333,17.875 L16.1666667,17.875 C18.0306277,17.875 19.5416667,16.363961 19.5416667,14.5 L19.5416667,9.5 C19.5416667,7.63603897 18.0306277,6.125 16.1666667,6.125 Z M7.83333333,7.875 L16.1666667,7.875 C17.0641294,7.875 17.7916667,8.60253728 17.7916667,9.5 L17.7916667,14.5 C17.7916667,15.3974627 17.0641294,16.125 16.1666667,16.125 L7.83333333,16.125 C6.93587061,16.125 6.20833333,15.3974627 6.20833333,14.5 L6.20833333,9.5 C6.20833333,8.60253728 6.93587061,7.875 7.83333333,7.875 Z\"></path><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M10,10.0706309 L10,13.9294941 C10,14.2445758 10.2554242,14.5 10.5705059,14.5 C10.6590742,14.5 10.7464261,14.479379 10.8256439,14.4397701 L14.6845071,12.5103385 C14.9663248,12.3694297 15.0805539,12.0267421 14.9396451,11.7449245 C14.8844409,11.634516 14.7949156,11.5449908 14.6845071,11.4897865 L10.8256439,9.56035488 C10.5438263,9.41944606 10.2011387,9.53367523 10.0602299,9.81549288 C10.033824,9.86830478 10.0158571,9.92473182 10.0068132,9.9827243 L10,10.0706309 Z\"></path></g>\n</svg>",
+      "name": "svg-3"
+    },
+    {
+      "id": "b55a47d99e9cb328",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g id=\"codepen\" fill=\"none\" fill-rule=\"evenodd\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n    <path id=\"Shape\" stroke=\"#FFFFFF\" stroke-width=\"1.75\" d=\"M5 14.355L12 19l7-4.645v-4.71L12 5 5 9.645v4.71zm14 0l-7-4.71-7 4.71m0-4.71l7 4.646 7-4.646M12 5v4.645m0 4.71V19\"></path>\n  </g>\n</svg>",
+      "name": "svg-4"
+    },
+    {
+      "id": "1e168e0572bf7ece",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" d=\"M12.007 4C7.579 4 4 7.606 4 12.066a8.06 8.06 0 0 0 5.475 7.652c.397.08.543-.173.543-.387 0-.187-.013-.828-.013-1.496-2.227.481-2.691-.961-2.691-.961-.358-.935-.888-1.175-.888-1.175-.73-.495.053-.495.053-.495.808.054 1.233.828 1.233.828.715 1.229 1.869.882 2.333.668.066-.52.278-.881.504-1.082-1.777-.187-3.646-.881-3.646-3.98 0-.88.318-1.602.822-2.163-.08-.2-.358-1.028.08-2.136 0 0 .676-.214 2.2.828a7.698 7.698 0 0 1 2.002-.268 7.7 7.7 0 0 1 2.001.268c1.525-1.042 2.2-.828 2.2-.828.438 1.108.16 1.936.08 2.136.517.561.822 1.282.822 2.164 0 3.098-1.869 3.779-3.659 3.98.292.253.544.734.544 1.495 0 1.082-.013 1.95-.013 2.217 0 .214.146.467.543.387A8.06 8.06 0 0 0 20 12.066C20.013 7.606 16.42 4 12.007 4z\"></path>\n  </g>\n</svg>",
+      "name": "svg-5"
+    },
+    {
+      "id": "e2e5bef528e7f079",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-6"
+    },
+    {
+      "id": "f0a72e2b021c2b52",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-7"
+    },
+    {
+      "id": "1aabcafaaeace996",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-8"
+    },
+    {
+      "id": "42afd3def4c3c822",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-9"
+    },
+    {
+      "id": "4dd4386f25b9fc60",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-10"
+    },
+    {
+      "id": "0fb5fa9bd1ac8350",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-11"
+    },
+    {
+      "id": "2114c706a6facc72",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-12"
+    },
+    {
+      "id": "597b73127684265a",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-13"
+    },
+    {
+      "id": "caaa86077f6aa9b2",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-14"
+    },
+    {
+      "id": "4e08fd79bbfabe74",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-15"
+    },
+    {
+      "id": "9580a93301107e6b",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-16"
+    },
+    {
+      "id": "c6a2125ece597f4e",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-17"
+    },
+    {
+      "id": "13aa5293e2b7cfc2",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-18"
+    },
+    {
+      "id": "36c8de38cc6c8f5e",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-19"
+    },
+    {
+      "id": "a3184ab47ab9ea27",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-20"
+    },
+    {
+      "id": "2b17af675c8bd4d8",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-21"
+    },
+    {
+      "id": "9db418f047a1d465",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-22"
+    },
+    {
+      "id": "d9bf91b9df6dd4ed",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-23"
+    },
+    {
+      "id": "d6fab9c8b4391542",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-24"
+    },
+    {
+      "id": "ed8183e61300815a",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-25"
+    },
+    {
+      "id": "7c032ab70347bc30",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-26"
+    },
+    {
+      "id": "03fe7ef2f2af1c17",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-27"
+    },
+    {
+      "id": "bdc68f412fbf46bf",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-28"
+    },
+    {
+      "id": "731e2d01ff31ee18",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-29"
+    },
+    {
+      "id": "9b92b59ff72b2ea3",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path>\n  </g>\n</svg>",
+      "name": "svg-30"
+    },
+    {
+      "id": "834a58f26b0b0219",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g id=\"menu\" fill=\"none\" fill-rule=\"evenodd\">\n    <rect id=\"Rectangle\" width=\"16\" height=\"1.75\" x=\"4\" y=\"8\" fill=\"currentColor\"></rect>\n    <rect id=\"Rectangle-Copy\" width=\"16\" height=\"1.75\" x=\"4\" y=\"14\" fill=\"currentColor\"></rect>\n  </g>\n</svg>",
+      "name": "svg-31"
+    },
+    {
+      "id": "78e23073f66509cc",
+      "markup": "<svg class=\"icon\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z\"></path>\n    <polyline stroke=\"var(--hex-green-1)\" stroke-width=\"1.75\" points=\"5 12 10 17 19 8\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke-linecap: butt;\"></polyline>\n  </g>\n</svg>",
+      "name": "svg-32"
+    },
+    {
+      "id": "33c72845b1404706",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\" style=\"transform: translateY(0.7855em); opacity: 0.683;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"12 18 17.237 12.763 16 11.525 12.875 14.651 12.875 6.763 11.125 6.763 11.125 14.651 8 11.525 6.763 12.763\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-33"
+    },
+    {
+      "id": "d2dbe9aedf4cf6a0",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\" style=\"transform: translateY(0.7855em); opacity: 0.317;\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"12 18 17.237 12.763 16 11.525 12.875 14.651 12.875 6.763 11.125 6.763 11.125 14.651 8 11.525 6.763 12.763\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-34"
+    },
+    {
+      "id": "bab07c202d77dc9a",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-35"
+    },
+    {
+      "id": "9443b9867d52abcf",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-36"
+    },
+    {
+      "id": "f90e4f4fbac5d7fb",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-37"
+    },
+    {
+      "id": "2568e461fffa1d04",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-38"
+    },
+    {
+      "id": "5a0e719463277870",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-39"
+    },
+    {
+      "id": "40c853c1ca2c0a46",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-40"
+    },
+    {
+      "id": "f9fcc19c22458e86",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-41"
+    },
+    {
+      "id": "e86a85b6a51f1939",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-42"
+    },
+    {
+      "id": "58be27647fbaf9a5",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-43"
+    },
+    {
+      "id": "d01417cf95b379f1",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-44"
+    },
+    {
+      "id": "a75435278b16d10c",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-45"
+    },
+    {
+      "id": "803faf50c1baf5b5",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-46"
+    },
+    {
+      "id": "978d6da6c073b122",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-47"
+    },
+    {
+      "id": "cf2a08b7139352bd",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-48"
+    },
+    {
+      "id": "c566458fd15bbb0f",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-49"
+    },
+    {
+      "id": "a87096348b2e5e63",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-50"
+    },
+    {
+      "id": "35394945e6f38816",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-51"
+    },
+    {
+      "id": "decdab3c57e6b2ea",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-52"
+    },
+    {
+      "id": "1980dcc6d5ccb96e",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-53"
+    },
+    {
+      "id": "a2c65b11142114c3",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-54"
+    },
+    {
+      "id": "107074693ff52839",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-55"
+    },
+    {
+      "id": "b93213a313031e11",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-56"
+    },
+    {
+      "id": "556390e28dc27929",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-57"
+    },
+    {
+      "id": "c44831e72feb468b",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-58"
+    },
+    {
+      "id": "3253f417504a00e4",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-59"
+    },
+    {
+      "id": "76d7cefb4f1f051f",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-60"
+    },
+    {
+      "id": "48d1891ee3f0e6a1",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-61"
+    },
+    {
+      "id": "057c39145c88516e",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-62"
+    },
+    {
+      "id": "e696fa59140dc51b",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-63"
+    },
+    {
+      "id": "838768e36c1ecc78",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-64"
+    },
+    {
+      "id": "4e5ea15a91e5109f",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-65"
+    },
+    {
+      "id": "20af97e9d5ef2e23",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-66"
+    },
+    {
+      "id": "d99283ddb400e808",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-67"
+    },
+    {
+      "id": "7e04f83fdd5c9dc2",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-68"
+    },
+    {
+      "id": "1ed53693e1c7e939",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-69"
+    },
+    {
+      "id": "03723f68a5eeb62d",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-70"
+    },
+    {
+      "id": "0c7900048060f807",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <polygon fill=\"currentColor\" fill-rule=\"nonzero\" points=\"17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75\"></polygon>\n  </g>\n</svg>",
+      "name": "svg-71"
+    },
+    {
+      "id": "0b6ebea8ed2aa73b",
+      "markup": "<svg class=\"icon\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z\"></path>\n    <polyline stroke=\"var(--hex-green-1)\" stroke-width=\"1.75\" points=\"5 12 10 17 19 8\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke-linecap: butt;\"></polyline>\n  </g>\n</svg>",
+      "name": "svg-72"
+    },
+    {
+      "id": "a8ed60ef17710f60",
+      "markup": "<svg class=\"icon\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z\"></path>\n    <polyline stroke=\"var(--hex-green-1)\" stroke-width=\"1.75\" points=\"5 12 10 17 19 8\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke-linecap: butt;\"></polyline>\n  </g>\n</svg>",
+      "name": "svg-73"
+    },
+    {
+      "id": "821e8ae5c7b02c99",
+      "markup": "<svg class=\"icon\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z\"></path>\n    <polyline stroke=\"var(--hex-green-1)\" stroke-width=\"1.75\" points=\"5 12 10 17 19 8\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke-linecap: butt;\"></polyline>\n  </g>\n</svg>",
+      "name": "svg-74"
+    },
+    {
+      "id": "f466de355070c2f4",
+      "markup": "<svg class=\"icon\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z\"></path>\n    <polyline stroke=\"var(--hex-green-1)\" stroke-width=\"1.75\" points=\"5 12 10 17 19 8\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke-linecap: butt;\"></polyline>\n  </g>\n</svg>",
+      "name": "svg-75"
+    },
+    {
+      "id": "b18bdae5b845f18b",
+      "markup": "<svg class=\"icon\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z\"></path>\n    <polyline stroke=\"var(--hex-green-1)\" stroke-width=\"1.75\" points=\"5 12 10 17 19 8\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke-linecap: butt;\"></polyline>\n  </g>\n</svg>",
+      "name": "svg-76"
+    },
+    {
+      "id": "292cb960f5161010",
+      "markup": "<svg class=\"icon\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z\"></path>\n    <polyline stroke=\"var(--hex-green-1)\" stroke-width=\"1.75\" points=\"5 12 10 17 19 8\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke-linecap: butt;\"></polyline>\n  </g>\n</svg>",
+      "name": "svg-77"
+    },
+    {
+      "id": "7f81dd95c90ebde6",
+      "markup": "<svg class=\"icon\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z\"></path>\n    <polyline stroke=\"var(--hex-green-1)\" stroke-width=\"1.75\" points=\"5 12 10 17 19 8\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke-linecap: butt;\"></polyline>\n  </g>\n</svg>",
+      "name": "svg-78"
+    },
+    {
+      "id": "da7fadddd98f9eb6",
+      "markup": "<svg class=\"icon\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">\n  <g fill=\"none\" fill-rule=\"evenodd\">\n    <path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z\"></path>\n    <polyline stroke=\"var(--hex-green-1)\" stroke-width=\"1.75\" points=\"5 12 10 17 19 8\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke-linecap: butt;\"></polyline>\n  </g>\n</svg>",
+      "name": "svg-79"
+    },
+    {
+      "id": "8e66ce9b8bc52c4d",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-80"
+    },
+    {
+      "id": "2aa0d0b3873582a2",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-81"
+    },
+    {
+      "id": "0d67fad790bff86f",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-82"
+    },
+    {
+      "id": "81f1482987187930",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-83"
+    },
+    {
+      "id": "18758201625bbae0",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-84"
+    },
+    {
+      "id": "ad844ed611b04635",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-85"
+    },
+    {
+      "id": "f398fb86287ac737",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-86"
+    },
+    {
+      "id": "abefb8e3e43686f4",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-87"
+    },
+    {
+      "id": "7a46f473d7e58c0e",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-88"
+    },
+    {
+      "id": "1fc777181c005705",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-89"
+    },
+    {
+      "id": "8c97d262cc070776",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-90"
+    },
+    {
+      "id": "ae3e32d1e3a71802",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-91"
+    },
+    {
+      "id": "24ff1680b9bb186d",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-92"
+    },
+    {
+      "id": "f434512f2e626c67",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-93"
+    },
+    {
+      "id": "dea4c268467edd7d",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-94"
+    },
+    {
+      "id": "e9a75ef73aff26ce",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-95"
+    },
+    {
+      "id": "3d04f29883f03938",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-96"
+    },
+    {
+      "id": "3d09da02ec44eabf",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-97"
+    },
+    {
+      "id": "0d8e0137a95c1934",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-98"
+    },
+    {
+      "id": "f657f08f0d8d7b4e",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-99"
+    },
+    {
+      "id": "88f4d9cc7748f675",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-100"
+    },
+    {
+      "id": "1f2c64137c3b0694",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-101"
+    },
+    {
+      "id": "8ae84c19c7e74737",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-102"
+    },
+    {
+      "id": "a5dceb7e60765600",
+      "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" class=\"icon particle\" style=\"position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;\"><g id=\"sponsor\" fill=\"none\" fill-rule=\"evenodd\"><path fill=\"currentColor\" fill-rule=\"nonzero\" d=\"M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z\"></path></g></svg>",
+      "name": "svg-103"
+    },
+    {
+      "id": "c64c6b008f049930",
+      "markup": "<svg class=\"output-progress-bg\" viewBox=\"0 0 614 614\" style=\"opacity: 1;\">\n        <g fill=\"none\" fill-rule=\"evenodd\" stroke=\"currentColor\" stroke-width=\"5\">\n          <path d=\"M310.500816,16.5151574 C388.463924,17.3029412 459.084769,48.7495124 510.882318,99.3738384\" class=\"color-getting-started\" style=\"stroke-width: 5px; opacity: 1;\"></path>\n          <path d=\"M515.130663,103.611934 C565.939831,155.348014 597.563252,225.989466 598.479596,304.014416\" class=\"color-animation\" style=\"stroke-width: 5px; opacity: 1;\"></path>\n          <path d=\"M598.488972,310.001429 C597.830864,388.162526 566.358163,458.974586 515.625661,510.882819\" class=\"color-turquoise\" style=\"stroke-width: 5px; opacity: 1;\"></path>\n          <path d=\"M511.387565,515.131164 C459.543848,566.04604 388.716012,597.695256 310.497994,598.484871\" class=\"color-utils\" style=\"stroke-width: 5px; opacity: 1;\"></path>\n          <path d=\"M304.498499,598.484829 C226.280452,597.694123 155.454223,566.04513 103.611433,515.131164\" class=\"color-svg\" style=\"stroke-width: 5px; opacity: 1;\"></path>\n          <path d=\"M99.3733373,510.882819 C48.6401567,458.973892 17.1672932,388.160634 16.51,309.998296\" class=\"color-draggable\" style=\"stroke-width: 5px; opacity: 1;\"></path>\n          <path d=\"M16.5201414,303.999 C17.4402555,225.979392 49.06279,155.344325 99.8683349,103.611934\" class=\"color-timeline\" style=\"stroke-width: 5px; opacity: 1;\"></path>\n          <path d=\"M104.11668,99.3738384 C155.911216,48.7524579 226.526856,17.3066006 304.484574,16.5150897\" class=\"color-green\" style=\"stroke-width: 5px; opacity: 1;\"></path>\n        </g>\n      </svg>",
+      "name": "svg-104"
+    },
+    {
+      "id": "6b6a6406a77893aa",
+      "markup": "<svg class=\"output-progress\" viewBox=\"0 0 614 614\" style=\"opacity: 1;\">\n        <g fill=\"none\" fill-rule=\"evenodd\" stroke=\"currentColor\" stroke-width=\"5\">\n          <path d=\"M310.500816,16.5151574 C388.463924,17.3029412 459.084769,48.7495124 510.882318,99.3738384\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" class=\"color-getting-started\" style=\"stroke-width: 5px;\"></path>\n          <path d=\"M515.130663,103.611934 C565.939831,155.348014 597.563252,225.989466 598.479596,304.014416\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" class=\"color-animation\" style=\"stroke-width: 5px;\"></path>\n          <path d=\"M598.488972,310.001429 C597.830864,388.162526 566.358163,458.974586 515.625661,510.882819\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" class=\"color-turquoise\" style=\"stroke-width: 5px;\"></path>\n          <path d=\"M511.387565,515.131164 C459.543848,566.04604 388.716012,597.695256 310.497994,598.484871\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" class=\"color-utils\" style=\"stroke-width: 5px;\"></path>\n          <path d=\"M304.498499,598.484829 C226.280452,597.694123 155.454223,566.04513 103.611433,515.131164\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" class=\"color-svg\" style=\"stroke-width: 5px;\"></path>\n          <path d=\"M99.3733373,510.882819 C48.6401567,458.973892 17.1672932,388.160634 16.51,309.998296\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" class=\"color-draggable\" style=\"stroke-width: 5px;\"></path>\n          <path d=\"M16.5201414,303.999 C17.4402555,225.979392 49.06279,155.344325 99.8683349,103.611934\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" class=\"color-timeline\" style=\"stroke-width: 5px;\"></path>\n          <path d=\"M104.11668,99.3738384 C155.911216,48.7524579 226.526856,17.3066006 304.484574,16.5150897\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" class=\"color-green\" style=\"stroke-width: 5px;\"></path>\n        </g>\n      </svg>",
+      "name": "svg-105"
+    },
+    {
+      "id": "6927680b52d3e3f4",
+      "markup": "<svg id=\"sphere-animation\" viewBox=\"0 0 402 402\">\n          <g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n            <path d=\"M342.057269,342.05826 C317.650269,366.46626 290.938269,379.32826 282.395269,370.78526 C273.853269,362.24226 286.714269,335.53026 311.121269,311.12226 C335.529269,286.71526 362.241269,273.85326 370.784269,282.39626 C379.326269,290.93926 366.465269,317.65126 342.057269,342.05826 L342.057269,342.05826 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1010\" draw=\"1.01 1.01\" style=\"transform: translate(2.3038px, 2.3038px); stroke-width: 3.5759px;\"></path>\n            <path d=\"M341.173269,341.17426 C305.294269,377.05426 265.919269,395.85126 253.227269,383.15926 C240.535269,370.46726 259.332269,331.09226 295.212269,295.21226 C331.091269,259.33326 370.466269,240.53626 383.158269,253.22826 C395.850269,265.92026 377.053269,305.29526 341.174269,341.17426 L341.173269,341.17426 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1060\" draw=\"1.06 1.06\" style=\"transform: translate(3.5612px, 3.5612px); stroke-width: 3.8903px;\"></path>\n            <path d=\"M337.638269,337.63926 C292.728269,382.54926 243.262269,405.89726 227.153269,389.78826 C211.043269,373.67826 234.391269,324.21326 279.302269,279.30326 C324.212269,234.39326 373.678269,211.04426 389.787269,227.15326 C405.897269,243.26326 382.548269,292.72926 337.638269,337.63926 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1110\" draw=\"1.11 1.11\" style=\"transform: translate(3.9995px, 3.9995px); stroke-width: 3.9999px;\"></path>\n            <path d=\"M331.451269,331.45226 C278.241269,384.66126 219.872269,412.55926 201.078269,393.76526 C182.284269,374.97226 210.183269,316.60226 263.392269,263.39326 C316.601269,210.18326 374.971269,182.28526 393.765269,201.07926 C412.559269,219.87326 384.660269,278.24326 331.451269,331.45226 L331.451269,331.45226 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1160.0000000000002\" draw=\"1.1600000000000001 1.1600000000000001\" style=\"transform: translate(3.7351px, 3.7351px); stroke-width: 3.9338px;\"></path>\n            <path d=\"M323.496269,323.49726 C263.696269,383.29626 198.204269,414.75726 177.213269,393.76526 C156.223269,372.77526 187.683269,307.28226 247.482269,247.48326 C307.281269,187.68326 372.774269,156.22326 393.765269,177.21426 C414.755269,198.20426 383.295269,263.69826 323.495269,323.49726 L323.496269,323.49726 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1210\" draw=\"1.21 1.21\" style=\"transform: translate(2.9017px, 2.9017px); stroke-width: 3.7254px;\"></path>\n            <path d=\"M315.099269,315.10026 C249.930269,380.26926 178.402269,414.40026 155.337269,391.33526 C132.272269,368.26926 166.403269,296.74226 231.572269,231.57326 C296.741269,166.40426 368.269269,132.27326 391.334269,155.33826 C414.399269,178.40326 380.268269,249.93126 315.099269,315.10026 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1260\" draw=\"1.26 1.26\" style=\"transform: translate(1.4994px, 1.4994px); stroke-width: 3.3748px;\"></path>\n            <path d=\"M305.376269,305.37726 C235.570269,375.18326 158.996269,411.78826 134.345269,387.13726 C109.693269,362.48526 146.298269,285.91126 216.104269,216.10526 C285.910269,146.29926 362.484269,109.69426 387.135269,134.34526 C411.787269,158.99826 375.182269,235.57126 305.376269,305.37726 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1310\" draw=\"1.31 1.31\" style=\"transform: translate(-0.4455px, -0.4455px); stroke-width: 2.8886px;\"></path>\n            <path d=\"M293.443269,293.44526 C220.221269,366.66826 139.888269,405.05426 114.015269,379.18126 C88.143269,353.30926 126.529269,272.97626 199.752269,199.75326 C272.975269,126.53026 353.308269,88.1442597 379.181269,114.01626 C405.053269,139.88926 366.667269,220.22126 293.444269,293.44526 L293.443269,293.44526 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1360\" draw=\"1.36 1.36\" style=\"transform: translate(-2.1721px, -2.1721px); stroke-width: 2.457px;\"></path>\n            <path d=\"M280.628269,280.62826 C204.719269,356.53726 121.518269,396.40626 94.791269,369.68026 C68.065269,342.95326 107.934269,259.75126 183.842269,183.84326 C259.750269,107.93526 342.952269,68.0652597 369.679269,94.7922597 C396.405269,121.51826 356.536269,204.72026 280.628269,280.62826 L280.628269,280.62826 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1410.0000000000002\" draw=\"1.4100000000000001 1.4100000000000001\" style=\"transform: translate(-3.3298px, -3.3298px); stroke-width: 2.1676px;\"></path>\n            <path d=\"M265.160269,265.16026 C187.543269,342.77726 102.857269,383.93326 76.008269,357.08426 C49.160269,330.23626 90.316269,245.55026 167.932269,167.93426 C245.549269,90.3162597 330.235269,49.1602597 357.083269,76.0082597 C383.932269,102.85726 342.776269,187.54326 265.160269,265.15926 L265.160269,265.16026 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1460\" draw=\"1.46 1.46\" style=\"transform: translate(-3.9186px, -3.9186px); stroke-width: 2.0204px;\"></path>\n            <path d=\"M249.692269,248.80926 C171.587269,326.91326 86.505269,368.46526 59.657269,341.61626 C32.808269,314.76826 74.360269,229.68626 152.464269,151.58126 C230.569269,73.4772597 315.651269,31.9252597 342.499269,58.7742597 C369.348269,85.6222597 327.796269,170.70426 249.692269,248.80926 L249.692269,248.80926 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1510\" draw=\"1.51 1.51\" style=\"transform: translate(-3.9114px, -3.9114px); stroke-width: 2.0221px;\"></path>\n            <path d=\"M233.340269,233.34026 C155.723269,310.95826 71.037269,352.11426 44.189269,325.26626 C17.340269,298.41626 58.496269,213.73026 136.113269,136.11326 C213.729269,58.4972597 298.415269,17.3412597 325.263269,44.1902597 C352.113269,71.0382597 310.956269,155.72426 233.340269,233.34026 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1560\" draw=\"1.56 1.56\" style=\"transform: translate(-3.1209px, -3.1209px); stroke-width: 2.2198px;\"></path>\n            <path d=\"M217.430269,217.43026 C141.522269,293.34026 58.320269,333.20926 31.593269,306.48326 C4.86726902,279.75626 44.736269,196.55526 120.645269,120.64626 C196.553269,44.7382597 279.755269,4.86925972 306.481269,31.5962597 C333.208269,58.3222597 293.338269,141.52426 217.430269,217.43226 L217.430269,217.43026 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1610\" draw=\"1.61 1.61\" style=\"transform: translate(-1.5112px, -1.5112px); stroke-width: 2.6222px;\"></path>\n            <path d=\"M201.520269,201.52026 C128.297269,274.74526 47.963269,313.13026 22.092269,287.25926 C-3.78073098,261.38626 34.605269,181.05326 107.828269,107.83026 C181.053269,34.6062597 261.384269,-3.77974028 287.257269,22.0922597 C313.129269,47.9652597 274.743269,128.29826 201.520269,201.52126 L201.520269,201.52026 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1660.0000000000002\" draw=\"1.6600000000000001 1.6600000000000001\" style=\"transform: translate(0.8231px, 0.8231px); stroke-width: 3.2058px;\"></path>\n            <path d=\"M185.610269,185.61026 C115.804269,255.41726 39.230269,292.02226 14.579269,267.37026 C-10.072731,242.71826 26.532269,166.14526 96.338269,96.3392597 C166.144269,26.5322597 242.718269,-10.0717403 267.369269,14.5792597 C292.021269,39.2312597 255.416269,115.80526 185.610269,185.61126 L185.610269,185.61026 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1710\" draw=\"1.71 1.71\" style=\"transform: translate(2.6949px, 2.6949px); stroke-width: 3.6737px;\"></path>\n            <path d=\"M169.700269,169.70126 C104.531269,234.87026 33.004269,269.00126 9.93826902,245.93626 C-13.126731,222.87126 21.004269,151.34326 86.173269,86.1742597 C151.342269,21.0052597 222.870269,-13.1257403 245.935269,9.93925972 C269.000269,33.0042597 234.869269,104.53226 169.700269,169.70126 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1760\" draw=\"1.76 1.76\" style=\"transform: translate(3.7476px, 3.7476px); stroke-width: 3.9369px;\"></path>\n            <path d=\"M153.790269,153.79126 C93.991269,213.59126 28.498269,245.05126 7.50826902,224.06026 C-13.482731,203.07026 17.978269,137.57626 77.776269,77.7772597 C137.576269,17.9782597 203.068269,-13.4827403 224.059269,7.50825972 C245.049269,28.4992597 213.589269,93.9922597 153.790269,153.79126 L153.790269,153.79126 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1810\" draw=\"1.81 1.81\" style=\"transform: translate(3.9869px, 3.9869px); stroke-width: 3.9967px;\"></path>\n            <path d=\"M137.880269,137.88126 C84.671269,191.09126 26.302269,218.98926 7.50826902,200.19526 C-11.285731,181.40126 16.612269,123.03126 69.821269,69.8222597 C123.031269,16.6132597 181.401269,-11.2857403 200.194269,7.50825972 C218.988269,26.3022597 191.089269,84.6722597 137.880269,137.88126 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1860\" draw=\"1.86 1.86\" style=\"transform: translate(3.5801px, 3.5801px); stroke-width: 3.895px;\"></path>\n            <path d=\"M121.970269,121.97126 C77.060269,166.88126 27.594269,190.23026 11.485269,174.12126 C-4.62473098,158.01126 18.724269,108.54526 63.635269,63.6352597 C108.545269,18.7252597 158.010269,-4.62274028 174.120269,11.4852597 C190.229269,27.5952597 166.880269,77.0612597 121.970269,121.97126 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1910.0000000000002\" draw=\"1.9100000000000001 1.9100000000000001\" style=\"transform: translate(2.6045px, 2.6045px); stroke-width: 3.6511px;\"></path>\n            <path d=\"M106.061269,106.06126 C70.181269,141.94126 30.806269,160.73826 18.114269,148.04626 C5.42226902,135.35426 24.219269,95.9792597 60.099269,60.0992597 C95.978269,24.2202597 135.353269,5.42325972 148.045269,18.1152597 C160.737269,30.8072597 141.940269,70.1822597 106.061269,106.06126 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-1960\" draw=\"1.96 1.96\" style=\"transform: translate(1.0599px, 1.0599px); stroke-width: 3.265px;\"></path>\n            <path d=\"M90.151269,90.1522597 C65.743269,114.55926 39.031269,127.42026 30.488269,118.87826 C21.946269,110.33526 34.807269,83.6232597 59.215269,59.2162597 C83.622269,34.8082597 110.335269,21.9462597 118.877269,30.4892597 C127.420269,39.0322597 114.558269,65.7442597 90.151269,90.1522597 Z\" fill-rule=\"nonzero\" stroke-dasharray=\"0 1010\" pathLength=\"1000\" stroke-dashoffset=\"-2009.9999999999998\" draw=\"2.01 2.01\" style=\"transform: translate(-0.9305px, -0.9305px); stroke-width: 2.7674px;\"></path>\n          </g>\n        </svg>",
+      "name": "sphere-animation"
+    },
+    {
+      "id": "c1eed4122ec6e821",
+      "markup": "<svg class=\"svg-track svg-track-bg\" opacity=\".4\" viewBox=\"0 0 304 112\" style=\"transform: translateZ(0px) rotateX(90deg) rotateZ(10.26deg) scale(0.8);\"><g stroke=\"none\" fill=\"none\" fill-rule=\"evenodd\"><path d=\"M189.142857,4 C227.456875,4 248.420457,4.00974888 256.864191,4.00974888 C263.817211,4.00974888 271.61219,3.69583517 274.986231,6.63061513 C276.382736,7.84531176 279.193529,11.3814152 280.479499,13.4815847 C281.719344,15.5064248 284.841964,20.3571626 275.608629,20.3571626 C265.817756,20.3571626 247.262478,19.9013915 243.955117,19.9013915 C239.27946,19.9013915 235.350655,24.7304885 228.6344,24.7304885 C224.377263,24.7304885 219.472178,21.0304113 214.535324,21.0304113 C207.18393,21.0304113 200.882842,30.4798911 194.124187,30.4798911 C186.992968,30.4798911 182.652552,23.6245972 173.457298,23.6245972 C164.83277,23.6245972 157.191045,31.5424105 157.191045,39.1815359 C157.191045,48.466779 167.088672,63.6623005 166.666679,66.9065088 C166.378668,69.1206889 155.842137,79.2568633 151.508744,77.8570506 C145.044576,75.7689355 109.126667,61.6405346 98.7556561,52.9785141 C96.4766876,51.0750861 89.3680347,39.5769094 83.4195005,38.5221785 C80.6048001,38.0231057 73.0179337,38.7426555 74.4158694,42.6956376 C76.7088819,49.1796531 86.3280337,64.1214904 87.1781062,66.9065088 C88.191957,70.2280995 86.4690152,77.0567847 82.2060607,79.2503488 C79.2489435,80.7719756 73.1324132,82.8858479 64.7015706,83.0708761 C55.1604808,83.2802705 44.4254811,80.401884 39.1722168,80.401884 C25.7762119,80.401884 24.3280517,89.1260466 22.476679,94.4501705 C21.637667,96.8629767 20.4337535,108 33.2301959,108 C37.8976087,108 45.0757044,107.252595 53.4789069,103.876424 C61.8821095,100.500252 122.090049,78.119656 128.36127,75.3523302 C141.413669,69.5926477 151.190142,68.4987755 147.018529,52.0784879 C143.007818,36.291544 143.396957,23.4057975 145.221196,19.6589263 C146.450194,17.1346449 148.420955,14.8552817 153.206723,15.7880203 C155.175319,16.1716965 155.097637,15.0525421 156.757598,11.3860986 C158.417558,7.71965506 161.842736,4.00974888 167.736963,4.00974888 C177.205308,4.00974888 184.938832,4 189.142857,4 Z\" stroke=\"currentColor\" stroke-width=\"6\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\"></path></g></svg>",
+      "name": "svg-107"
+    },
+    {
+      "id": "bd10bf37c4aab4ea",
+      "markup": "<svg class=\"svg-track svg-track-higlight\" viewBox=\"0 0 304 112\" style=\"transform: translateZ(0px) rotateX(90deg) rotateZ(10.26deg) scale(0.8);\"><g stroke=\"none\" fill=\"none\" fill-rule=\"evenodd\"><path d=\"M189.142857,4 C227.456875,4 248.420457,4.00974888 256.864191,4.00974888 C263.817211,4.00974888 271.61219,3.69583517 274.986231,6.63061513 C276.382736,7.84531176 279.193529,11.3814152 280.479499,13.4815847 C281.719344,15.5064248 284.841964,20.3571626 275.608629,20.3571626 C265.817756,20.3571626 247.262478,19.9013915 243.955117,19.9013915 C239.27946,19.9013915 235.350655,24.7304885 228.6344,24.7304885 C224.377263,24.7304885 219.472178,21.0304113 214.535324,21.0304113 C207.18393,21.0304113 200.882842,30.4798911 194.124187,30.4798911 C186.992968,30.4798911 182.652552,23.6245972 173.457298,23.6245972 C164.83277,23.6245972 157.191045,31.5424105 157.191045,39.1815359 C157.191045,48.466779 167.088672,63.6623005 166.666679,66.9065088 C166.378668,69.1206889 155.842137,79.2568633 151.508744,77.8570506 C145.044576,75.7689355 109.126667,61.6405346 98.7556561,52.9785141 C96.4766876,51.0750861 89.3680347,39.5769094 83.4195005,38.5221785 C80.6048001,38.0231057 73.0179337,38.7426555 74.4158694,42.6956376 C76.7088819,49.1796531 86.3280337,64.1214904 87.1781062,66.9065088 C88.191957,70.2280995 86.4690152,77.0567847 82.2060607,79.2503488 C79.2489435,80.7719756 73.1324132,82.8858479 64.7015706,83.0708761 C55.1604808,83.2802705 44.4254811,80.401884 39.1722168,80.401884 C25.7762119,80.401884 24.3280517,89.1260466 22.476679,94.4501705 C21.637667,96.8629767 20.4337535,108 33.2301959,108 C37.8976087,108 45.0757044,107.252595 53.4789069,103.876424 C61.8821095,100.500252 122.090049,78.119656 128.36127,75.3523302 C141.413669,69.5926477 151.190142,68.4987755 147.018529,52.0784879 C143.007818,36.291544 143.396957,23.4057975 145.221196,19.6589263 C146.450194,17.1346449 148.420955,14.8552817 153.206723,15.7880203 C155.175319,16.1716965 155.097637,15.0525421 156.757598,11.3860986 C158.417558,7.71965506 161.842736,4.00974888 167.736963,4.00974888 C177.205308,4.00974888 184.938832,4 189.142857,4 Z\" stroke=\"currentColor\" stroke-width=\"2\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"57 953\" draw=\"0 0.057\"></path></g></svg>",
+      "name": "svg-108"
+    },
+    {
+      "id": "30c1753be6c76e98",
+      "markup": "<svg class=\"clock-grid\" width=\"400px\" height=\"400px\" viewBox=\"0 0 400 400\">\n          <g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n            <g class=\"circle-grid-drawable\" opacity=\"1\" transform=\"translate(18.9387, 18.9387)\" stroke=\"currentColor\" stroke-linecap=\"butt\" stroke-linejoin=\"square\" stroke-width=\"5\">\n              <path d=\"M287.120579,74.9885455 C259.976449,47.8478276 222.479216,31.0612724 181.061272,31.0612724\" id=\"0.0_0.125\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" style=\"stroke-width: 5px; opacity: 0.15;\"></path>\n              <path d=\"M362.123934,149.987156 C334.979804,122.846438 297.482571,106.059883 256.064627,106.059883\" id=\"0.0_0.125\" transform=\"translate(309.0943, 128.0235) rotate(45) translate(-309.0943, -128.0235)\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" style=\"stroke-width: 5px; opacity: 0.15;\"></path>\n              <path d=\"M362.127289,256.054562 C334.983159,228.913845 297.485926,212.127289 256.067982,212.127289\" id=\"0.0_0.125\" transform=\"translate(309.0976, 234.0909) rotate(90) translate(-309.0976, -234.0909)\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" style=\"stroke-width: 5px; opacity: 0.15;\"></path>\n              <path d=\"M287.128679,331.057917 C259.984549,303.917199 222.487315,287.130644 181.069372,287.130644\" id=\"0.0_0.125\" transform=\"translate(234.099, 309.0943) rotate(135) translate(-234.099, -309.0943)\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" style=\"stroke-width: 5px; opacity: 0.15;\"></path>\n              <path d=\"M181.061272,331.061272 C153.917142,303.920554 116.419909,287.133999 75.0019654,287.133999\" id=\"0.0_0.125\" transform=\"translate(128.0316, 309.0976) rotate(180) translate(-128.0316, -309.0976)\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" style=\"stroke-width: 5px; opacity: 0.15;\"></path>\n              <path d=\"M106.057917,256.062662 C78.9137868,228.921944 41.4165536,212.135389 -0.00138957053,212.135389\" id=\"0.0_0.125\" transform=\"translate(53.0283, 234.099) rotate(225) translate(-53.0283, -234.099)\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" style=\"stroke-width: 5px; opacity: 0.15;\"></path>\n              <path d=\"M106.054562,149.995255 C78.9104318,122.854538 41.4131986,106.067982 -0.00474459127,106.067982\" id=\"0.0_0.125\" transform=\"translate(53.0249, 128.0316) rotate(270) translate(-53.0249, -128.0316)\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" style=\"stroke-width: 5px; opacity: 0.15;\"></path>\n              <path d=\"M181.053173,74.9919005 C153.909042,47.8511826 116.411809,31.0646274 74.9938656,31.0646274\" id=\"0.0_0.125\" transform=\"translate(128.0235, 53.0283) rotate(315) translate(-128.0235, -53.0283)\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"1000 0\" draw=\"0 1\" style=\"stroke-width: 5px; opacity: 0.15;\"></path>\n            </g>\n          </g>\n        </svg>",
+      "name": "svg-109"
+    },
+    {
+      "id": "2b33c9cc1545255b",
+      "markup": "<svg id=\"path-animation\" viewBox=\"0 0 1264 720\"><polyline points=\"1148 73.75 1148 73.75 731.3340805477653 657.5254247086614\" class=\"color-waapi\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;\"></polyline><polyline points=\"1122.796875 94.75 581.1930207161624 94.75 326.87279761647324 349.0702230996892\" class=\"color-timeline\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;\"></polyline><polyline points=\"1131.1875 115.75 783.7901308135292 115.75 585.9005464531173 313.6395843604119\" class=\"color-utils\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;\"></polyline><polyline points=\"1164.796875 136.75 1162.3757569732293 136.75 721.7312695619258 577.3944874113034\" class=\"color-svg\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;\"></polyline><polyline points=\"1139.59375 157.75 567.6706576422368 157.75 445.05302674468794 280.3676308975489\" class=\"color-easings\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;\"></polyline><polyline points=\"1114.390625 178.75 815.8954527547157 178.75 664.2098614780595 330.4355912766563\" class=\"color-animation\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;\"></polyline><polyline points=\"117 560.75 375.74815412568756 560.75 536.2749895931429 400.2231645325447\" class=\"color-timer\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;\"></polyline><polyline points=\"133.8125 581.75 412.1749289350677 581.75 582.9723055268161 410.95262340825167\" class=\"color-easings\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;\"></polyline><polyline points=\"150.609375 602.75 726.4158489191913 602.75 802.2810205435892 526.8848283756021\" class=\"color-draggable\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;\"></polyline><polyline points=\"125.40625 623.75 298.6535900418822 623.75 678.0982847658869 244.3053052759953\" class=\"color-events\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;\"></polyline><polyline points=\"117 644.75 471.6095539527404 644.75 681.7479982074091 434.6115557453313\" class=\"color-scope\" pathLength=\"1000\" stroke-dashoffset=\"0\" stroke-dasharray=\"0 1010\" draw=\"0 0\" style=\"stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;\"></polyline></svg>",
+      "name": "path-animation"
+    }
+  ],
+  "pageUrl": "https://animejs.com/",
+  "summary": {
+    "byKind": {
+      "font": 2,
+      "image": 70,
+      "other": 30,
+      "script": 10,
+      "stylesheet": 2,
+      "video": 0
+    },
+    "inlineSvgCount": 110,
+    "totalCount": 114
+  }
+}

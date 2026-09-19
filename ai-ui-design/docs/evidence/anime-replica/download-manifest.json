@@ -1,0 +1,650 @@
+[
+  {
+    "url": "https://animejs.com/assets/css/home.css?v=1787698626",
+    "path": "assets/css/home.css",
+    "bytes": 17546,
+    "sha256": "51206a82cb6a23860336952c4e5076ba3707a0bb3985217e99437abdc95e330a"
+  },
+  {
+    "url": "https://animejs.com/assets/css/core.css?v=1787698626",
+    "path": "assets/css/core.css",
+    "bytes": 43259,
+    "sha256": "7cd4a15f06240e609de9094bd1918099ba9ecb8caf285c00c8faaf68d89a0f85"
+  },
+  {
+    "url": "https://animejs.com/assets/images/anime-js-logo-v4.svg",
+    "path": "assets/images/anime-js-logo-v4.svg",
+    "bytes": 13171,
+    "sha256": "ad55a2db1f323c48db12db2a507d330c68b926c16215ee523ef7d92d8d9fb636"
+  },
+  {
+    "url": "https://animejs.com/assets/js/home.js?v=1787698626",
+    "path": "assets/js/home.js",
+    "bytes": 250762,
+    "sha256": "b1765a91ec40fa1264e6e622e5a598acb54f7b061265cb9a4ac77fc74a625d4d"
+  },
+  {
+    "url": "https://animejs.com/assets/fonts/BerkeleyMono-Regular.woff2",
+    "path": "assets/fonts/BerkeleyMono-Regular.woff2",
+    "bytes": 32052,
+    "sha256": "cf58b76a957314940837e6df57432ea04069f558ce2ccab1da7c89f5753f987e"
+  },
+  {
+    "url": "https://animejs.com/assets/fonts/DINish[slnt,wdth,wght].woff2",
+    "path": "assets/fonts/DINish[slnt,wdth,wght].woff2",
+    "bytes": 166104,
+    "sha256": "89ccc932d2b4efda7ff5f6644195d7eb2660bba6aae50782b084428f075c1d98"
+  },
+  {
+    "url": "https://animejs.com/assets/js/chunks/chunk-N6I4AEHZ.js",
+    "path": "assets/js/chunks/chunk-N6I4AEHZ.js",
+    "bytes": 13020,
+    "sha256": "ffd98a5d1f4abd69722522989cb410f942db5f725509cbc297436f73254681c5"
+  },
+  {
+    "url": "https://animejs.com/assets/js/chunks/chunk-WQVFBASJ.js",
+    "path": "assets/js/chunks/chunk-WQVFBASJ.js",
+    "bytes": 29082,
+    "sha256": "53d0556a2e1f0281b95af6416a7691b3e111195c27181ede071fda73cee521ae"
+  },
+  {
+    "url": "https://animejs.com/assets/js/chunks/chunk-WXAKRBIO.js",
+    "path": "assets/js/chunks/chunk-WXAKRBIO.js",
+    "bytes": 130763,
+    "sha256": "907e3832766f68caaec405482f693f47ce3932e41869538aeeb84ae7eebdf38f"
+  },
+  {
+    "url": "https://animejs.com/assets/js/chunks/chunk-FX45FQRC.js",
+    "path": "assets/js/chunks/chunk-FX45FQRC.js",
+    "bytes": 5773,
+    "sha256": "7c67b42e5bc78af3ad025f75cb27341a4ecd6e30691ed14bf44ed0744b1c5d7f"
+  },
+  {
+    "url": "https://animejs.com/assets/js/chunks/chunk-DCANE7XH.js",
+    "path": "assets/js/chunks/chunk-DCANE7XH.js",
+    "bytes": 638,
+    "sha256": "9dbaaa1b267ebd74b96fc498735a78d76804f1e96e532871291c937cf83694e7"
+  },
+  {
+    "url": "https://animejs.com/assets/js/chunks/chunk-CPVC3KGU.js",
+    "path": "assets/js/chunks/chunk-CPVC3KGU.js",
+    "bytes": 546180,
+    "sha256": "29b361892842eb6bd2cfaa442a8628a6fab4a94d9aea500925bcc664f6c70b12"
+  },
+  {
+    "url": "https://animejs.com/sponsors/platinum-sponsors",
+    "path": "sponsors/platinum-sponsors",
+    "bytes": 466,
+    "sha256": "7c4c8879dff7294273b610eb35901143e2fa40088c54fe5de70e3953bf0d69bb"
+  },
+  {
+    "url": "https://animejs.com/sponsors/silver-sponsors",
+    "path": "sponsors/silver-sponsors",
+    "bytes": 464,
+    "sha256": "6a879a89ff56cb691e5685cf4670a47b771e180f50408baa9eb469f923ff6610"
+  },
+  {
+    "url": "https://animejs.com/sponsors/github-sponsors",
+    "path": "sponsors/github-sponsors",
+    "bytes": 16831,
+    "sha256": "d460ad93268644a27c295e52fc48dc32554530c9db431ef95e6121fc0964025d"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-animate-01.glb",
+    "path": "assets/models/module-animate-01.glb",
+    "bytes": 38144,
+    "sha256": "48536239a13f04c1aaefc4ed80ebfc40330550598d1a5b74cb8cd4d0d32e714a"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-easing-01.glb",
+    "path": "assets/models/module-easing-01.glb",
+    "bytes": 13336,
+    "sha256": "e8f8a41e61e1079eb5cb110cbb000907403a1927ca9a23aefc960f7a9896fb20"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-draggable-01.glb",
+    "path": "assets/models/module-draggable-01.glb",
+    "bytes": 24244,
+    "sha256": "28d39d40f085aa29bb50ec762a0759af57c143aa573ae5d24382396c91facc12"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-draggable-02.glb",
+    "path": "assets/models/module-draggable-02.glb",
+    "bytes": 14020,
+    "sha256": "55cd621ca36513197532209864a9a857b2b70cefcffbb11d2dfc0ef0090cd455"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-scroll-01.glb",
+    "path": "assets/models/module-scroll-01.glb",
+    "bytes": 28120,
+    "sha256": "99c8c5c6d225a751fab0c3442d8edd0109055b8e51a52aef4a66d71b048c5976"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-scope-01.glb",
+    "path": "assets/models/module-scope-01.glb",
+    "bytes": 15192,
+    "sha256": "b2428f5f21ee3eb2a11c67a2dd0767edf7118185fd34f862fc621110222b541e"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-timer-01.glb",
+    "path": "assets/models/module-timer-01.glb",
+    "bytes": 28516,
+    "sha256": "e1d83f0f2d757965cab20e85959de081c89b905863bf0a3b02e6304b2bd51376"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-engine-01.glb",
+    "path": "assets/models/module-engine-01.glb",
+    "bytes": 36524,
+    "sha256": "1eb8b022ffb0dc102cd22cfa278becfc5c5661def42c29b9c90d26f8b66eafdf"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-timer-02.glb",
+    "path": "assets/models/module-timer-02.glb",
+    "bytes": 24468,
+    "sha256": "a7e38507d3d74286515b0a025c9cf5abd1e88068b9de5d3ed522f3b224da6767"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-timer-03.glb",
+    "path": "assets/models/module-timer-03.glb",
+    "bytes": 21760,
+    "sha256": "1c0bcf3375e2f5a4cba0fad01bcffd854de030636c444d2bc0ea320afa97ad01"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-timer-05.glb",
+    "path": "assets/models/module-timer-05.glb",
+    "bytes": 13840,
+    "sha256": "18eca141cd530fee47ca23e788b681e591fbeab018491b5a467d6a73319a273f"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-timer-04.glb",
+    "path": "assets/models/module-timer-04.glb",
+    "bytes": 25224,
+    "sha256": "1412f56e33cefdae6bd13e4847740ffd0bfd921e47e485f1a16c42c720e9d3ac"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-spring-01.glb",
+    "path": "assets/models/module-spring-01.glb",
+    "bytes": 16748,
+    "sha256": "78fc9804e648817a23808da73658ceaf9a90688c7d43f91f23185d5632b45041"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-stagger-02.glb",
+    "path": "assets/models/module-stagger-02.glb",
+    "bytes": 13464,
+    "sha256": "074b66acab13a4215e14a1c069a490537b9a754ac12b66d282044738dfde53c6"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-stagger-01.glb",
+    "path": "assets/models/module-stagger-01.glb",
+    "bytes": 14864,
+    "sha256": "48493cd781a16dafa7a038564d3421a8235e73e1efdddd0c88c1879b003b58f8"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-timeline-02.glb",
+    "path": "assets/models/module-timeline-02.glb",
+    "bytes": 14300,
+    "sha256": "4e69c3b112397004ff47c05ee1d14b1e7a49e6363843cc1626f8087a125c5aa8"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-renderer-01.glb",
+    "path": "assets/models/module-renderer-01.glb",
+    "bytes": 46000,
+    "sha256": "c18bdfeee5a2fda45d5717e412caa616f16e58db91e71dc8e95e8e7c6dd34a28"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-svg-01.glb",
+    "path": "assets/models/module-svg-01.glb",
+    "bytes": 14228,
+    "sha256": "4f7286e86db3f2176f1ab7aa7f13275dda8d5b3949168ddba93c476511b527c5"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-timeline-01.glb",
+    "path": "assets/models/module-timeline-01.glb",
+    "bytes": 17456,
+    "sha256": "61c49c73a216abe8411f62fd51117b8ad5c2df11814b89cae2962c924b82b969"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-shield-02.glb",
+    "path": "assets/models/module-shield-02.glb",
+    "bytes": 14096,
+    "sha256": "f3e1cdc8a07f8f2ffe8fde8a76a8566aaa047b6911057576e7aacae9ee75737a"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-waapi-01.glb",
+    "path": "assets/models/module-waapi-01.glb",
+    "bytes": 17992,
+    "sha256": "70722a66af224309f5f329d030e38b2dad362890db71099df90a11b6d0a0966d"
+  },
+  {
+    "url": "https://animejs.com/assets/models/module-shield-01.glb",
+    "path": "assets/models/module-shield-01.glb",
+    "bytes": 14096,
+    "sha256": "193a1116a855d79a21dc4b9906e70a62fb20bcc168f19901a6aae26838c32c64"
+  },
+  {
+    "url": "https://animejs.com/assets/images/favicon.png",
+    "path": "assets/images/favicon.png",
+    "bytes": 2926,
+    "sha256": "f85cb516d39dc05b4bb3c14ea20d66ccc479e825ab05f1ebf79a12bec1df6cda"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/56684844?u=15591a4cd624676b8534311a31a897503d0d3aab&v=4",
+    "path": "assets/avatars/56684844.png",
+    "bytes": 23903,
+    "sha256": "e70acedac34831650aeb6246c6c427a959968e23c738fa7d4d94eca4816029f9"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/30808859?u=a7a495be11f99ca9b492c88f647760cbfb7a687b&v=4",
+    "path": "assets/avatars/30808859.png",
+    "bytes": 57530,
+    "sha256": "6863c8cf3020d789d05158e452d6f4d61f9a8bc56f4286913b0d87caabab8a30"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/7850794?u=c7a82c242c85e58c8ceeac958e7f9ad774f2147b&v=4",
+    "path": "assets/avatars/7850794.png",
+    "bytes": 15758,
+    "sha256": "631b007848e958e1d510bc1e25a4fafbb6dcdf890c85692b16ec876068b34130"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/7033186?v=4",
+    "path": "assets/avatars/7033186.png",
+    "bytes": 1561,
+    "sha256": "92f305770d8f1732701534021a54e76f55501a1501ff3f18a3e4a4c5e1ab34a2"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/8131304?v=4",
+    "path": "assets/avatars/8131304.png",
+    "bytes": 38016,
+    "sha256": "8822d59aabf1e1f999e76505ed439cac1c7158444912ba818ddf99f896863557"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/15028082?v=4",
+    "path": "assets/avatars/15028082.png",
+    "bytes": 15697,
+    "sha256": "be4c9a1ba6d9082b7afd6bb523ea1929a9c7bcbd03a063f8aa92570b940b6b35"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/13168561?u=0c8ae2cf90de781073693984fe03d6f0396919b7&v=4",
+    "path": "assets/avatars/13168561.png",
+    "bytes": 32379,
+    "sha256": "590351a3741598220bc1049e260185328bf18db32106c8b381b4f00e365791fb"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/1351436?u=eaf9fdf001221636b78b574f9c4e115b592f5a48&v=4",
+    "path": "assets/avatars/1351436.png",
+    "bytes": 24158,
+    "sha256": "e52c5d63c6340ce168127535e4d72b6c5a75bd1314a9f8e44133414b17eae300"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/374134?v=4",
+    "path": "assets/avatars/374134.png",
+    "bytes": 1536,
+    "sha256": "93a93a19cf8359379dea672f1ba28409e8972092eff8387397340a8c2ca86ff0"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/171592363?u=080d9ba6069d0ff2a0558825ff2f667c45807687&v=4",
+    "path": "assets/avatars/171592363.png",
+    "bytes": 4010,
+    "sha256": "dbea80d3733de743260371a28d56213547b54b3d8b61d1c49b573fd85f7d7f88"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/1121725?v=4",
+    "path": "assets/avatars/1121725.png",
+    "bytes": 1551,
+    "sha256": "ed557164b58238d84d874cd489e6c003320344cee745a68a9222144f10cb3d79"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/2158130?u=5adde8fd6a285602abcda956c80ee909529d7c5e&v=4",
+    "path": "assets/avatars/2158130.png",
+    "bytes": 42382,
+    "sha256": "2072e26fd727b2ab93a349efcc93dca4b010eb8e81bba2042fe7ecb33f1a5bae"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/15368010?u=d27a3d5bc457e9e1c48a8bd9e501cafe01b8daec&v=4",
+    "path": "assets/avatars/15368010.png",
+    "bytes": 16894,
+    "sha256": "9a71e61f51db4909e4c2c3399c746408c35c083f838e559355dd1ca50efc3d61"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/801425?u=8695668d7fd93bc31264ca6a739a64618e4ac444&v=4",
+    "path": "assets/avatars/801425.png",
+    "bytes": 36058,
+    "sha256": "c2d3796f78ae46e165d61c42e823e2ca02069f7e938ba607ad8ac383050f3925"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/1908341?v=4",
+    "path": "assets/avatars/1908341.png",
+    "bytes": 1524,
+    "sha256": "355922ea14dc323b9c143249984ea90ced15330f1ccf4dc819d0967d12db1b87"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/1417323?u=12876f6373e65427454a3616b219e1d3f3c78a8e&v=4",
+    "path": "assets/avatars/1417323.png",
+    "bytes": 20112,
+    "sha256": "780fca736cd3b3c21fb49288c5d2c8526556a0732ba1f9cc7cfd40d8d99cbc0b"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/95952866?u=f4a0773cc5205cc4b531bdd87039b9e6a42f31d2&v=4",
+    "path": "assets/avatars/95952866.png",
+    "bytes": 10645,
+    "sha256": "ee782bce6d4d135608aa16875c0568318221edd4a4c0a7113106e083d9042f64"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/5545171?u=ba1b5f5376949d6ab5a451c1587de028768904b1&v=4",
+    "path": "assets/avatars/5545171.png",
+    "bytes": 9172,
+    "sha256": "4a155981305dfdce6f6b019dd162f3fc47edfe21c0bd84a9c7ece6dd613e7abf"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/4291354?u=d62b6917e998cb98640c1b6d0c102c656b2ada17&v=4",
+    "path": "assets/avatars/4291354.png",
+    "bytes": 41048,
+    "sha256": "8eb884c860d696e2473c31b4140a013632f99fb6bc46bf444fb2c93e82e53fd3"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/7118754?u=2fdcdec87990222f732dd517f0cfd35afc4194cc&v=4",
+    "path": "assets/avatars/7118754.png",
+    "bytes": 227095,
+    "sha256": "c1333ffeff4a659f06a861632267d525cc034a82ccf979207a4665c4ee9f6b31"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/7050547?u=50b846f10e206481e93656b73f9eb11088499c56&v=4",
+    "path": "assets/avatars/7050547.png",
+    "bytes": 18841,
+    "sha256": "ca4661fd565e4a312a6b4cfff86f277740fe10b22f02fc9ee90307a0eee2dbb8"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/4266359?u=baee5a32c570af66b8a554df33701e11dea8a5fc&v=4",
+    "path": "assets/avatars/4266359.png",
+    "bytes": 65748,
+    "sha256": "e06af3350660099927768e6fe7b4174fff42c6dd225f49eb30008fb23cd730b7"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/20308945?u=f38b5218c48a8c4062d317450bb404cc9b361ee6&v=4",
+    "path": "assets/avatars/20308945.png",
+    "bytes": 3549,
+    "sha256": "e9dd3a31e14a270c9c19e897c929e0751d2de14ffe93a5d29f6d09bf323f0906"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/14859935?u=915c2e3e2ff24d493818d4230974ea288ee80a40&v=4",
+    "path": "assets/avatars/14859935.png",
+    "bytes": 21598,
+    "sha256": "b31bfd3cac4e5f9b74ea5dd0c33d98d9a7d656089409c741446a279bd2ccab5e"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/9310?u=179151b7c0e01aa08598bfc041508a83998c759e&v=4",
+    "path": "assets/avatars/9310.png",
+    "bytes": 17955,
+    "sha256": "531337ca36126d7490d2877be18f87faf6deab4f2ef660becc06701ca3480010"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/3381818?u=3a2f9f9d3fffbaaebc3c56b863b4ca2aae508510&v=4",
+    "path": "assets/avatars/3381818.png",
+    "bytes": 34342,
+    "sha256": "d258587f770a22b6b8c9536c003111dc985b2028d494bc1302935a03a2e3ca70"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/685518?u=4a6880fc67b9455e2e9af9f531f8aac4bf0cd606&v=4",
+    "path": "assets/avatars/685518.png",
+    "bytes": 27361,
+    "sha256": "d971c2672f035670b7f61b3599f264c59163dab1fc1214c7b8a916f8012f934c"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/16688047?u=37490b86ccfb7a60b3dfdea411ee196ece08d456&v=4",
+    "path": "assets/avatars/16688047.png",
+    "bytes": 24293,
+    "sha256": "e608ef14578b58bbd489619b8d26edd4ef687dbd4c3329b172676634f88c9306"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/123018012?v=4",
+    "path": "assets/avatars/123018012.png",
+    "bytes": 1557,
+    "sha256": "91173440485d6b1cee49cbb9b3dd6eead97f37c3d15b7a4e76b87863e3072c8a"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/579887?u=16c3e4c14be7e3700b04f91ea9003d6d9b4c65df&v=4",
+    "path": "assets/avatars/579887.png",
+    "bytes": 34315,
+    "sha256": "d8f6c9b67706d5566112cf67efeb6c87050be96f074fb5512e3c0df5c9dda598"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/14097554?u=f823ef7666925188e5ebec12ede0582b0f471dfd&v=4",
+    "path": "assets/avatars/14097554.png",
+    "bytes": 36404,
+    "sha256": "6648f12f47fddb697a183c51e5d01e866d61b0503513f87c42b3df066d758980"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/21299126?u=2d1bbde99e3e5c845faf50f4da1ad120b88bcf4d&v=4",
+    "path": "assets/avatars/21299126.png",
+    "bytes": 260423,
+    "sha256": "ad371ca579b58295bef6b2dd355dbadc30d2828442d23e8e0873ee1cab753294"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/38730517?u=305b8b15a7cd43488d594f3ce28b4ef2951217b5&v=4",
+    "path": "assets/avatars/38730517.png",
+    "bytes": 11565,
+    "sha256": "8bc0a0d5a78cd6555d86fc82119fe000d47c99757bf37ea495f1ec333ac4080f"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/22761713?v=4",
+    "path": "assets/avatars/22761713.png",
+    "bytes": 1526,
+    "sha256": "c7a79f5b7aff8eac57f1dc431593aa497694535e9852dbacfc27345a26a51427"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/203968980?u=69ae5d7a543e6d070a4c885edce191288d8a5b8b&v=4",
+    "path": "assets/avatars/203968980.png",
+    "bytes": 124928,
+    "sha256": "a5be820e690c3c1bab070496d29f8524c80402eeafde1b39b474d3b7a764b222"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/1682225?u=aed3340b6f3c3a85abcb0370e854cb8ffb6ecf1e&v=4",
+    "path": "assets/avatars/1682225.png",
+    "bytes": 13140,
+    "sha256": "e96a3e7fd09525d94df20accd80be36e9d91fe5656699d2befd5d1a147bae239"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/24833827?u=23434967a0a3af479a377aa54f6ca9306ce36355&v=4",
+    "path": "assets/avatars/24833827.png",
+    "bytes": 119710,
+    "sha256": "6773a658dd1e16259b196ae3be8765bf7523f63d49dff1eb2b7739c36127485b"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/123049964?v=4",
+    "path": "assets/avatars/123049964.png",
+    "bytes": 1582,
+    "sha256": "f379c8cbfdfb8225fb1812f3a24c813b5fe0d145147eecc2174b8eb8cdf09ae3"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/24498666?v=4",
+    "path": "assets/avatars/24498666.png",
+    "bytes": 36140,
+    "sha256": "14d50f17e466b960eb0c13e4b9dd53ded1d78c0fc27ed33ae0892a10b4286919"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/6699959?u=bd2dde1f6570f2024c07aea866c2fec6042c55a5&v=4",
+    "path": "assets/avatars/6699959.png",
+    "bytes": 103924,
+    "sha256": "f9ca02f655f418a9c5a761ad7cca44e54516ad934597fbc0d5ec92ed0d46592b"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/217863722?v=4",
+    "path": "assets/avatars/217863722.png",
+    "bytes": 1535,
+    "sha256": "85277e16828b02930a8bd8dc1a479a544e83f3acdc1b11352f9efc0e301c0a03"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/456538?u=ace3c7cc31bd8b8d7e0df844061a9d3401f92ecb&v=4",
+    "path": "assets/avatars/456538.png",
+    "bytes": 280997,
+    "sha256": "03287a71419a880c54b275ac989a4da5e67ef552dcbb624c77d063b7e35ab5d4"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/140085084?v=4",
+    "path": "assets/avatars/140085084.png",
+    "bytes": 1535,
+    "sha256": "58f8964ce739e71035d4e348193e8c14674f29dc554a8f3d4eb45c63146ebf58"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/11381341?v=4",
+    "path": "assets/avatars/11381341.png",
+    "bytes": 1541,
+    "sha256": "2a889ef084b5f038aef78cc51a095a07f93b388da84c49622f4ebc0798c2fdc5"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/47975771?u=6dc0328cb90cd8b70a428e431ba28368a361e691&v=4",
+    "path": "assets/avatars/47975771.png",
+    "bytes": 115597,
+    "sha256": "6f8e9d8c9b67ecfa2a6a2881790e078c9307559c7e8d87e9262922229ec3dbc3"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/16178877?u=739b6e357c3c58a0bf10f929bc0a2580e849daa1&v=4",
+    "path": "assets/avatars/16178877.png",
+    "bytes": 29158,
+    "sha256": "c0f5ae0075ac18a12cdd11461830955285ad66c47cceb0d49ef887870c864d69"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/8617673?u=770d2e1cb0cf72212f3f425e178f2e2068a2f893&v=4",
+    "path": "assets/avatars/8617673.png",
+    "bytes": 11251,
+    "sha256": "e9d51548bf4d0fdc77027746e5d021c2a3d6be2833d2509942aed940e44d3049"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/4730431?u=810f2f1b1e34cf036d1f43380dcadc4d64b0b2de&v=4",
+    "path": "assets/avatars/4730431.png",
+    "bytes": 42132,
+    "sha256": "f235101531aab1858cdf9897eb0d7faff8d288812a9edab9af4f937aa3fdfb9b"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/37394584?u=0a4171427e4f16d8fe0a1e57af04c43e21ab6ed0&v=4",
+    "path": "assets/avatars/37394584.png",
+    "bytes": 5483,
+    "sha256": "5e55ac859b60375967830c0759546c966fd6ce6dcb74dc2da1f6529b824fdb5b"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/1255528?u=03abccfc54f1c49b1317cce0528632b573722684&v=4",
+    "path": "assets/avatars/1255528.png",
+    "bytes": 24157,
+    "sha256": "de41838f474cdb1830dca27e372dd3e08368dd919d7a906322981844d1de121c"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/40425150?v=4",
+    "path": "assets/avatars/40425150.png",
+    "bytes": 1539,
+    "sha256": "b312be102af5224e7c90fd34f18caf9a3515a1516653acd9ee708e95e3460a73"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/52384531?v=4",
+    "path": "assets/avatars/52384531.png",
+    "bytes": 37613,
+    "sha256": "e0422c852793966af2b37f342236bc173e4b4333051d9cf00402242a71efcdac"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/335118?v=4",
+    "path": "assets/avatars/335118.png",
+    "bytes": 1549,
+    "sha256": "d705afd169995bc43eb2d5074709bf97046f75ea58b34ca02d43bb76041465c6"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/223952?u=0b5113ecd9aa4c3f3a4bd44815fc36c89c913229&v=4",
+    "path": "assets/avatars/223952.png",
+    "bytes": 15930,
+    "sha256": "b4ccb526b10e7f59b457a1ecba422602f6511f2595b24ba41828e434b74b67a6"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/8601493?u=4ee62b87479fbfb7ea8b5e20ed910c3824b1c310&v=4",
+    "path": "assets/avatars/8601493.png",
+    "bytes": 66528,
+    "sha256": "11b15734c1932423d05e06e11eca934c01318bd28658b424e50530d9d9015dc2"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/107817481?u=cfb66d78c84e423f4a0c950473f1a98e8be44fc6&v=4",
+    "path": "assets/avatars/107817481.png",
+    "bytes": 26456,
+    "sha256": "b9f1e778597294b16bc922555d1aa72521c97a3e0c0ac6f285d94bab53123693"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/72539280?v=4",
+    "path": "assets/avatars/72539280.png",
+    "bytes": 11467,
+    "sha256": "3d968c9d783d7b8ee4dba831fb1a6bf4374bfdc9058a5b99cb8fe1dca0ec4cdc"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/1492806?u=6edbac420bab75f3692e0ddec4431cfb5434b748&v=4",
+    "path": "assets/avatars/1492806.png",
+    "bytes": 11723,
+    "sha256": "03ddffec7120b7f0a907863178081238b3f7e0f16f38cfce7a86c85332c42254"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/4593699?v=4",
+    "path": "assets/avatars/4593699.png",
+    "bytes": 41779,
+    "sha256": "d7ccddc24376d580028f0f7f072eca5957feb4c7fcd1cf60c9255a49262c0f9b"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/645713?v=4",
+    "path": "assets/avatars/645713.png",
+    "bytes": 383064,
+    "sha256": "c2c6938d04a5b14eed6f52eac8bf19f0233e8e1715514fd24a34cda0775619af"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/78906517?u=924a27cbee3db7e0ece5cc1509921402e1445e74&v=4",
+    "path": "assets/avatars/78906517.png",
+    "bytes": 16936,
+    "sha256": "792fd7d0dcda81df28792d995f2ec47e198b1585ce1bfbecad94f7fe4c58d583"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/171258970?v=4",
+    "path": "assets/avatars/171258970.png",
+    "bytes": 1558,
+    "sha256": "b0ff8e6b84d9cd0640f38958195cb406acd812266e35bf56b9994ee63dcbb1c7"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/412352?u=aae5e2d4f1a518805529da191830c3c5fa1db5fe&v=4",
+    "path": "assets/avatars/412352.png",
+    "bytes": 19270,
+    "sha256": "a737d431354a7010c83bee273eddfc7835be1a999f849ab972c8ca46ae08c9e2"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/84647728?u=0da38d40520d88563af56c87f2c0ba7fbb8080c1&v=4",
+    "path": "assets/avatars/84647728.png",
+    "bytes": 29425,
+    "sha256": "35843a4178f0eef6ea1b8caba2e45298ee2ac342162451996f5a6eb822997b4b"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/2091293?u=6e51eb1a83632573fd481be390949b0880dd66fe&v=4",
+    "path": "assets/avatars/2091293.png",
+    "bytes": 17241,
+    "sha256": "d56c86994207f4db9279707a3c1d0d82db1c49d1e39f2d6a31aef1dd2897ba00"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/213351?v=4",
+    "path": "assets/avatars/213351.png",
+    "bytes": 450567,
+    "sha256": "6391cdce6b8d87764d67f491bb7c2a30a551759ec96c3f2b9577bd11f3be0eb1"
+  },
+  {
+    "url": "https://animejs.com/assets/draco/draco_wasm_wrapper.js",
+    "path": "assets/draco/draco_wasm_wrapper.js",
+    "bytes": 58763,
+    "sha256": "e8049906ef3f8f75d3456c22a3f31bfdfe5b5b5bd09ccdec613b9e9a49d554d8"
+  },
+  {
+    "url": "https://animejs.com/assets/draco/draco_decoder.wasm",
+    "path": "assets/draco/draco_decoder.wasm",
+    "bytes": 285747,
+    "sha256": "c55a594e8ffd18426d36b27fea9618af3df5e173640a3e56d46f09d76f0574f2"
+  },
+  {
+    "url": "https://animejs.com/media/pages/sponsors/platinum-sponsors/ef1c9c6c85-1787698629/sponsor-placeholder.svg",
+    "path": "media/pages/sponsors/platinum-sponsors/ef1c9c6c85-1787698629/sponsor-placeholder.svg",
+    "bytes": 743,
+    "sha256": "f2dfce93bb0f006e4e3a88ad8a7e1fea61fbe61d944160f269659f25372870f8"
+  },
+  {
+    "url": "https://animejs.com/media/pages/sponsors/silver-sponsors/49214d1e15-1787698629/testmu-ai-logomark.svg",
+    "path": "media/pages/sponsors/silver-sponsors/49214d1e15-1787698629/testmu-ai-logomark.svg",
+    "bytes": 481,
+    "sha256": "5a68c804eab4bd2a9a2f8656919c2fd2dbd821b7f3cce18dea8cd4b081b1e773"
+  }
+]

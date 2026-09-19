@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#000000"><link rel="icon" href="data:,"><title>Murmuration — 粒子与传播实验</title></head>
+<body>
+  <header><a class="wordmark" href="#">Motion studies<span> / 001</span></a><a class="source" href="https://openai.com/zh-Hans-CN/index/hugging-face-incident-and-the-road-ahead/" target="_blank" rel="noreferrer">参考原页 ↗</a></header>
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <div class="intro"><p class="eyebrow">A STUDY IN PARTICLES & CONNECTIONS</p><h1 id="title">粒子之间，<span>信息流动。</span></h1><p class="subtitle">Hugging Face 页面动效 · 可交互复刻</p></div>
+      <div id="stage" role="img" aria-label="缓慢流动的白色三维点云，红色弧线在粒子之间传递消息"><p id="fallback" hidden>当前浏览器无法启用 WebGL。请开启硬件加速后刷新页面。</p></div>
+      <div class="stage-meta"><span><i></i><span id="state">LIVE SIMULATION</span></span><span id="metrics">32,000 PARTICLES</span></div>
+    </section>
+    <section class="console" aria-label="动效控制">
+      <div class="playback"><button id="pause" aria-pressed="false">暂停</button><button id="restart" class="quiet">重新开始</button></div>
+      <div class="layers"><label><input id="particles" type="checkbox" checked><span>点云</span></label><label><input id="lines" type="checkbox" checked><span>传播线</span></label><label><input id="dof" type="checkbox" checked><span>景深</span></label></div>
+      <label class="speed" for="speed"><span>速度</span><input id="speed" type="range" min="0.25" max="3" step="0.25" value="1"><output id="speed-value">1.00×</output></label>
+    </section>
+    <section class="explanation" aria-label="实现拆解">
+      <div class="section-label">UNDER THE SURFACE <span>实现拆解</span></div>
+      <div class="notes"><article><span class="number">01 / FORMATION</span><h2>有结构的流动</h2><p>粒子共享一套参数化形态，在环、飘带和交叠结构间缓慢过渡。每个点的稳定种子决定位置与亮度。</p></article><article><span class="number red">02 / PROPAGATION</span><h2>沿弧线接力</h2><p>红线从真实粒子出发，沿 Bézier 弧线抵达另一个粒子。接收点变红，再继续传递；旧轨迹逐渐消散。</p></article><article><span class="number">03 / DEPTH</span><h2>让空间显影</h2><p>透视改变点的大小，景深让焦平面前后的点变柔。关闭景深，可以直接观察清晰的原始点云。</p></article></div>
+      <p class="footnote">基于原页面运行时与 Shader 分析的独立实现。保留核心机制，简化消息调度与自动取景。</p>
+    </section>
+  </main><script type="module" src="/src/main.js"></script>
+</body></html>

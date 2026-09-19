@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-18",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "progress": [
+    0,
+    20,
+    48,
+    62,
+    74,
+    88,
+    100
+  ],
+  "hover": "SystemPrompt description confirmed",
+  "reducedMotion": "default static view at 48%",
+  "fullscreen": "CSS viewport fallback verified; native fullscreen did not enter",
+  "logs": []
+}

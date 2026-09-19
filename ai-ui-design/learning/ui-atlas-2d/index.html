@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light"><meta name="description" content="通过可操作的方块认识 UI 风格、交互、粒子、动画与数据图表。">
+  <title>界面图鉴 · 看见，试一试，说清楚</title>
+  <link rel="stylesheet" href="./styles.css?v=5"><script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a href="#gallery" class="skip-link">跳到图鉴</a>
+  <header class="site-header"><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">a.</span><span>界面图鉴<small>INTERFACE ATLAS</small></span></a><div class="header-right"><span class="edition">一本可以动手的设计词典</span><button class="motion-toggle" id="motion-toggle" aria-pressed="true">动效已开启</button></div></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">LOOK. PLAY. UNDERSTAND.</p><h1>把「那个感觉」，说清楚<span class="title-dot">.</span></h1><p>挑一个方块，认识它的名字，也试试它的手感。</p></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索全部：玻璃、抽屉、磁吸…" aria-label="搜索全部图鉴"><kbd>/</kbd></label></section>
+    <div class="tabs-wrap"><nav id="categories" class="category-tabs" role="tablist" aria-label="图鉴分类"></nav></div>
+    <section class="collection" id="collection-panel" role="tabpanel" aria-labelledby="tab-material"><div class="collection-head"><div><h2 id="category-title">材质与风格</h2><p id="category-description"></p></div><span id="result-count" class="result-count" aria-live="polite"></span></div><div class="gallery" id="gallery" tabindex="-1"></div><div class="empty" id="empty" hidden><span aria-hidden="true">∅</span><h3>还没有这个条目</h3><p>试试中文名称、英文术语或更短的关键词。</p><button id="reset-search" class="primary">清空搜索</button></div></section>
+    <footer><p>先观察，再命名。风格描述外观，交互描述行为，它们可以自由组合。</p><span id="total-count"></span></footer>
+  </main>
+  <dialog class="detail-dialog" id="detail" aria-labelledby="detail-title"><div class="detail-top"><span id="detail-category" class="eyebrow"></span><button id="close-detail" class="close-button" aria-label="关闭介绍">×</button></div><div class="detail-grid"><section class="experiment"><div id="live-demo" class="live-demo"></div><div class="demo-controls" id="demo-controls"></div><div class="demo-caption"><span class="live-dot"></span><span id="demo-caption">可操作示例</span></div></section><section class="explanation"><div class="detail-heading"><span id="detail-number" class="detail-number"></span><h2 id="detail-title"></h2><p id="detail-english"></p></div><div id="detail-tags" class="tags"></div><p id="detail-description" class="description"></p><div class="learning-note"><h3>看哪里</h3><p id="detail-observe"></p></div><div class="learning-note subtle"><h3>容易混淆</h3><p id="detail-avoid"></p></div><div class="prompt-block"><div><h3>这样告诉 AI</h3><button id="copy-prompt" class="text-button">复制描述 ↗</button></div><textarea id="detail-prompt" aria-label="给 AI 的设计描述" spellcheck="false"></textarea></div></section></div><div class="detail-bottom"><span>不用背术语。看出差别，就多一种表达。</span><div><button id="previous-item" aria-label="上一项">←</button><span id="detail-position"></span><button id="next-item" aria-label="下一项">→</button></div></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" popover="manual"></div>
+  <noscript>请启用 JavaScript，以打开介绍和操作示例。</noscript>
+</body>
+</html>
+
+

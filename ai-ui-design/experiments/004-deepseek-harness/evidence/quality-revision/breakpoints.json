@@ -1,0 +1,212 @@
+[
+  {
+    "active": "01提出问题",
+    "answer": 0,
+    "chapter": "01 / THE INTERFACE",
+    "fallback": false,
+    "height": 900,
+    "overflow": false,
+    "progress": "0",
+    "width": 1440
+  },
+  {
+    "active": "02进入系统",
+    "answer": 0,
+    "chapter": "02 / BEYOND THE SURFACE",
+    "fallback": false,
+    "height": 900,
+    "overflow": false,
+    "progress": "200",
+    "width": 1440
+  },
+  {
+    "active": "03展开架构",
+    "answer": 0,
+    "chapter": "03 / EVERYTHING IS A PLUGIN",
+    "fallback": false,
+    "height": 900,
+    "overflow": false,
+    "progress": "480",
+    "width": 1440
+  },
+  {
+    "active": "04工具往返",
+    "answer": 0,
+    "chapter": "04 / THE AGENT LOOP",
+    "fallback": false,
+    "height": 900,
+    "overflow": false,
+    "progress": "620",
+    "width": 1440
+  },
+  {
+    "active": "05答案回流",
+    "answer": 0,
+    "chapter": "05 / FROM MODEL TO MESSAGE",
+    "fallback": false,
+    "height": 900,
+    "overflow": false,
+    "progress": "740",
+    "width": 1440
+  },
+  {
+    "active": "06回到面板",
+    "answer": 0,
+    "chapter": "06 / BACK TO THE WORKSPACE",
+    "fallback": false,
+    "height": 900,
+    "overflow": false,
+    "progress": "880",
+    "width": 1440
+  },
+  {
+    "active": "06回到面板",
+    "answer": 227,
+    "chapter": "06 / BACK TO THE WORKSPACE",
+    "fallback": false,
+    "height": 900,
+    "overflow": false,
+    "progress": "1000",
+    "width": 1440
+  },
+  {
+    "active": "01提出问题",
+    "answer": 0,
+    "chapter": "01 / THE INTERFACE",
+    "fallback": false,
+    "height": 800,
+    "overflow": false,
+    "progress": "0",
+    "width": 1280
+  },
+  {
+    "active": "02进入系统",
+    "answer": 0,
+    "chapter": "02 / BEYOND THE SURFACE",
+    "fallback": false,
+    "height": 800,
+    "overflow": false,
+    "progress": "200",
+    "width": 1280
+  },
+  {
+    "active": "03展开架构",
+    "answer": 0,
+    "chapter": "03 / EVERYTHING IS A PLUGIN",
+    "fallback": false,
+    "height": 800,
+    "overflow": false,
+    "progress": "480",
+    "width": 1280
+  },
+  {
+    "active": "04工具往返",
+    "answer": 0,
+    "chapter": "04 / THE AGENT LOOP",
+    "fallback": false,
+    "height": 800,
+    "overflow": false,
+    "progress": "620",
+    "width": 1280
+  },
+  {
+    "active": "05答案回流",
+    "answer": 0,
+    "chapter": "05 / FROM MODEL TO MESSAGE",
+    "fallback": false,
+    "height": 800,
+    "overflow": false,
+    "progress": "740",
+    "width": 1280
+  },
+  {
+    "active": "06回到面板",
+    "answer": 0,
+    "chapter": "06 / BACK TO THE WORKSPACE",
+    "fallback": false,
+    "height": 800,
+    "overflow": false,
+    "progress": "880",
+    "width": 1280
+  },
+  {
+    "active": "06回到面板",
+    "answer": 227,
+    "chapter": "06 / BACK TO THE WORKSPACE",
+    "fallback": false,
+    "height": 800,
+    "overflow": false,
+    "progress": "1000",
+    "width": 1280
+  },
+  {
+    "active": "01提出问题",
+    "answer": 0,
+    "chapter": "01 / THE INTERFACE",
+    "fallback": false,
+    "height": 844,
+    "overflow": false,
+    "progress": "0",
+    "width": 390
+  },
+  {
+    "active": "02进入系统",
+    "answer": 0,
+    "chapter": "02 / BEYOND THE SURFACE",
+    "fallback": false,
+    "height": 844,
+    "overflow": false,
+    "progress": "200",
+    "width": 390
+  },
+  {
+    "active": "03展开架构",
+    "answer": 0,
+    "chapter": "03 / EVERYTHING IS A PLUGIN",
+    "fallback": false,
+    "height": 844,
+    "overflow": false,
+    "progress": "480",
+    "width": 390
+  },
+  {
+    "active": "04工具往返",
+    "answer": 0,
+    "chapter": "04 / THE AGENT LOOP",
+    "fallback": false,
+    "height": 844,
+    "overflow": false,
+    "progress": "620",
+    "width": 390
+  },
+  {
+    "active": "05答案回流",
+    "answer": 0,
+    "chapter": "05 / FROM MODEL TO MESSAGE",
+    "fallback": false,
+    "height": 844,
+    "overflow": false,
+    "progress": "740",
+    "width": 390
+  },
+  {
+    "active": "06回到面板",
+    "answer": 0,
+    "chapter": "06 / BACK TO THE WORKSPACE",
+    "fallback": false,
+    "height": 844,
+    "overflow": false,
+    "progress": "880",
+    "width": 390
+  },
+  {
+    "active": "06回到面板",
+    "answer": 227,
+    "chapter": "06 / BACK TO THE WORKSPACE",
+    "fallback": false,
+    "height": 844,
+    "overflow": false,
+    "progress": "1000",
+    "width": 390
+  }
+]

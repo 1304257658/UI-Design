@@ -1,0 +1,47 @@
+[
+  {
+    "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/api/session-controller/README.md",
+    "title": "工作台",
+    "visible": true
+  },
+  {
+    "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/api/session-controller/README.md",
+    "title": "会话入口",
+    "visible": true
+  },
+  {
+    "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/core/agent-loop/src/agent.ts#L241-L321",
+    "title": "执行循环",
+    "visible": true
+  },
+  {
+    "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/core/agent-loop/src/agent.ts#L241-L255",
+    "title": "提示与上下文",
+    "visible": true
+  },
+  {
+    "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/core/session/README.md",
+    "title": "会话记录",
+    "visible": true
+  },
+  {
+    "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/core/tools/src/index.ts#L1461-L1490",
+    "title": "工具运行时",
+    "visible": true
+  },
+  {
+    "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/llm/llm-deepseek/src/index.ts#L53-L133",
+    "title": "模型适配",
+    "visible": true
+  },
+  {
+    "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/packages/llm/llm-deepseek/README.md",
+    "title": "模型服务",
+    "visible": true
+  },
+  {
+    "href": "https://github.com/deepseek-ai/deepseek-harness/blob/ddefc45fbc7f8e46dd73185e68295696d1297887/docs/architecture.md#L9-L27",
+    "title": "插件底座",
+    "visible": true
+  }
+]
