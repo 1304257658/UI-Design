@@ -1,0 +1,5 @@
+@font-face{font-family:Manrope;src:url('/fonts/manrope.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Manrope;src:url('/fonts/manrope-semibold.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:Noto;src:url('/fonts/noto-sc.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Noto;src:url('/fonts/noto-sc-light.woff2') format('woff2');font-weight:300;font-display:swap}
+:root{--brand-paper:#f1ede5;--brand-ink:#292f28;--brand-accent:#687457;--brand-linen:#d9d3c5;--brand-oak:#ac8862;--brand-font:Manrope,Noto,sans-serif;--brand-ease:cubic-bezier(.22,.68,.18,1)}

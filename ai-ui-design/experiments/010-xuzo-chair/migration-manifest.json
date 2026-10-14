@@ -1,0 +1,3731 @@
+{
+  "sourceRepository": "AI-Office-Case",
+  "sourceCase": "18-xuzo-chair",
+  "files": [
+    {
+      "path": "company-page.html",
+      "sourcePath": "company-page.html",
+      "sourceSHA256": "9b9e40477a5f03e219d39eaeb4833f16af4897f5f77431151b648de6fb4bbe01",
+      "copiedSHA256": "9b9e40477a5f03e219d39eaeb4833f16af4897f5f77431151b648de6fb4bbe01",
+      "adapted": false
+    },
+    {
+      "path": "design-qa.md",
+      "sourcePath": "design-qa.md",
+      "sourceSHA256": "4b7315e878fd5e1191d5ea9cac36198daaf5d5d2e37ef3c1b8d4366ae4282544",
+      "copiedSHA256": "4b7315e878fd5e1191d5ea9cac36198daaf5d5d2e37ef3c1b8d4366ae4282544",
+      "adapted": false
+    },
+    {
+      "path": "DESIGN.md",
+      "sourcePath": "DESIGN.md",
+      "sourceSHA256": "de6f634341d0e9ea4ab5da95a4d3e010592b3c6180174d9ed1858aff38b3d03f",
+      "copiedSHA256": "de6f634341d0e9ea4ab5da95a4d3e010592b3c6180174d9ed1858aff38b3d03f",
+      "adapted": false
+    },
+    {
+      "path": "index.html",
+      "sourcePath": "index.html",
+      "sourceSHA256": "9b9e40477a5f03e219d39eaeb4833f16af4897f5f77431151b648de6fb4bbe01",
+      "copiedSHA256": "9b9e40477a5f03e219d39eaeb4833f16af4897f5f77431151b648de6fb4bbe01",
+      "adapted": false
+    },
+    {
+      "path": "package-lock.json",
+      "sourcePath": "package-lock.json",
+      "sourceSHA256": "5df77db32aceddd252c5707f424a1992b29e449c1b9238413b01050d3a434621",
+      "copiedSHA256": "5df77db32aceddd252c5707f424a1992b29e449c1b9238413b01050d3a434621",
+      "adapted": false
+    },
+    {
+      "path": "package-site.ps1",
+      "sourcePath": "package-site.ps1",
+      "sourceSHA256": "799aa34dbacc1354862cf8546e470809897e6921b4be4ec12a7cafc9144d62f0",
+      "copiedSHA256": "799aa34dbacc1354862cf8546e470809897e6921b4be4ec12a7cafc9144d62f0",
+      "adapted": false
+    },
+    {
+      "path": "package.json",
+      "sourcePath": "package.json",
+      "sourceSHA256": "265378d73cd9e12c972e4a4ba56de106859a6545fd1a796bef4990b58ead44e2",
+      "copiedSHA256": "28ac1e96991a09643d45dadcbb3042f2d7576001cf5efa0d3715eb69337f14dc",
+      "adapted": true
+    },
+    {
+      "path": "preview.config.json",
+      "sourcePath": "preview.config.json",
+      "sourceSHA256": "6920eb1241ac7ef4b98d13d40fce381b97a47419772947a6faaefb6d2992f832",
+      "copiedSHA256": "6920eb1241ac7ef4b98d13d40fce381b97a47419772947a6faaefb6d2992f832",
+      "adapted": false
+    },
+    {
+      "path": "preview.mjs",
+      "sourcePath": "preview.mjs",
+      "sourceSHA256": "51403ed6c2289e50944875f60158dcd494d4361415c4480a073698abf95287d1",
+      "copiedSHA256": "51403ed6c2289e50944875f60158dcd494d4361415c4480a073698abf95287d1",
+      "adapted": false
+    },
+    {
+      "path": "历史开发记录.md",
+      "sourcePath": "README.md",
+      "sourceSHA256": "010e7082fd7fdbcf91de4953696c080d70b63b28ef8e981e9b1b02453f0c081e",
+      "copiedSHA256": "010e7082fd7fdbcf91de4953696c080d70b63b28ef8e981e9b1b02453f0c081e",
+      "adapted": false
+    },
+    {
+      "path": "start-site.ps1",
+      "sourcePath": "start-site.ps1",
+      "sourceSHA256": "d97df845f3f29ec6dc48b75c30d092906b88e13b33180df97387f4428864d68c",
+      "copiedSHA256": "d97df845f3f29ec6dc48b75c30d092906b88e13b33180df97387f4428864d68c",
+      "adapted": false
+    },
+    {
+      "path": "vite.config.js",
+      "sourcePath": "vite.config.js",
+      "sourceSHA256": "e7e55044cd5a53282d537b6c0b4bbb479696b9f66ca186ee420a05305ff7be8e",
+      "copiedSHA256": "e7e55044cd5a53282d537b6c0b4bbb479696b9f66ca186ee420a05305ff7be8e",
+      "adapted": false
+    },
+    {
+      "path": "公司主页动效方向.md",
+      "sourcePath": "公司主页动效方向.md",
+      "sourceSHA256": "604ca117a6922a3f191c12c1cba8c85e88519a522c0d7ea6266a7b8080510550",
+      "copiedSHA256": "604ca117a6922a3f191c12c1cba8c85e88519a522c0d7ea6266a7b8080510550",
+      "adapted": false
+    },
+    {
+      "path": "启动人体工学椅.cmd",
+      "sourcePath": "启动人体工学椅.cmd",
+      "sourceSHA256": "d69d133c0740b4650357cb979d2c3cecc6d6c3354692b8ec7773636f7cc4f9fd",
+      "copiedSHA256": "71e1459cc2daae611b2c08ffe2e9403b4b5d003910dc7bd4564b99b6554f8bc6",
+      "adapted": true
+    },
+    {
+      "path": "启动家具官网.cmd",
+      "sourcePath": "启动家具官网.cmd",
+      "sourceSHA256": "47db6ec6a2ea29029ff6a0e5f584d4b07e242aea572d9a33eff9560255bbf28d",
+      "copiedSHA256": "8aba2de6e19369188be0ea9880c19a4895a9390dbf27aff2fd7d900913719508",
+      "adapted": true
+    },
+    {
+      "path": "打包部署.cmd",
+      "sourcePath": "打包部署.cmd",
+      "sourceSHA256": "f2c2c1d84f76001e34eb83d77924aa473525458637afb8982b08f694a1f3356b",
+      "copiedSHA256": "f2c2c1d84f76001e34eb83d77924aa473525458637afb8982b08f694a1f3356b",
+      "adapted": false
+    },
+    {
+      "path": "检查运行环境.cmd",
+      "sourcePath": "检查运行环境.cmd",
+      "sourceSHA256": "d151447156df6e072b1de2006c22af56ae722886186235036dbead5b082ea5b0",
+      "copiedSHA256": "c1c69f6f402d505a6a4cba5a107e97938c5b904d853cbfc9906cef25fa118c0a",
+      "adapted": true
+    },
+    {
+      "path": "部署说明.md",
+      "sourcePath": "部署说明.md",
+      "sourceSHA256": "d22046948fa5d8e9bec8876e9530a61bcac2c85c19f97c1c866a099211b328c0",
+      "copiedSHA256": "70b45ff39c1179d2266970084357a50b8714e1dad1c248f3c79703e1c25424b4",
+      "adapted": true
+    },
+    {
+      "path": "预览产品页.cmd",
+      "sourcePath": "预览产品页.cmd",
+      "sourceSHA256": "d69d133c0740b4650357cb979d2c3cecc6d6c3354692b8ec7773636f7cc4f9fd",
+      "copiedSHA256": "71e1459cc2daae611b2c08ffe2e9403b4b5d003910dc7bd4564b99b6554f8bc6",
+      "adapted": true
+    },
+    {
+      "path": "预览公司主页.cmd",
+      "sourcePath": "预览公司主页.cmd",
+      "sourceSHA256": "47db6ec6a2ea29029ff6a0e5f584d4b07e242aea572d9a33eff9560255bbf28d",
+      "copiedSHA256": "8aba2de6e19369188be0ea9880c19a4895a9390dbf27aff2fd7d900913719508",
+      "adapted": true
+    },
+    {
+      "path": "concepts/contour-directions.png",
+      "sourcePath": "concepts/contour-directions.png",
+      "sourceSHA256": "2805eb028e1b3d9d3d789e2f2a13581e379ffdc0d600b7b92886b847a5210977",
+      "copiedSHA256": "2805eb028e1b3d9d3d789e2f2a13581e379ffdc0d600b7b92886b847a5210977",
+      "adapted": false
+    },
+    {
+      "path": "concepts/furniture-content/正面展示-v2-提示词.json",
+      "sourcePath": "concepts/furniture-content/正面展示-v2-提示词.json",
+      "sourceSHA256": "f3cf6d757de42a1d466b9ed61fd436eede42c93eca50742da84e66788e5fce1d",
+      "copiedSHA256": "f3cf6d757de42a1d466b9ed61fd436eede42c93eca50742da84e66788e5fce1d",
+      "adapted": false
+    },
+    {
+      "path": "concepts/furniture-content/正面展示-v2-桌面.png",
+      "sourcePath": "concepts/furniture-content/正面展示-v2-桌面.png",
+      "sourceSHA256": "5840d9d317f42a490aa8274d0ddd9c927214f7e5f056e6a8567a86b649922d31",
+      "copiedSHA256": "5840d9d317f42a490aa8274d0ddd9c927214f7e5f056e6a8567a86b649922d31",
+      "adapted": false
+    },
+    {
+      "path": "concepts/furniture-content/正面展示-v2-椅背.png",
+      "sourcePath": "concepts/furniture-content/正面展示-v2-椅背.png",
+      "sourceSHA256": "631e268f9bbfeed319f5a8ea134b340d72c33e9e2a1847268dd8720c05110e8e",
+      "copiedSHA256": "631e268f9bbfeed319f5a8ea134b340d72c33e9e2a1847268dd8720c05110e8e",
+      "adapted": false
+    },
+    {
+      "path": "concepts/furniture-content/生成提示词.json",
+      "sourcePath": "concepts/furniture-content/生成提示词.json",
+      "sourceSHA256": "c6ffe0ea91245f25b63b2a92dd15dc18ce4d48ae1222cf67a50d1c5dec5bf7c0",
+      "copiedSHA256": "c6ffe0ea91245f25b63b2a92dd15dc18ce4d48ae1222cf67a50d1c5dec5bf7c0",
+      "adapted": false
+    },
+    {
+      "path": "evidence/detail-v7/changes.md",
+      "sourcePath": "evidence/detail-v7/changes.md",
+      "sourceSHA256": "db9ce47d9f1397c9f5adaadec6b5501bbe39e10d5827e6d75576205fc8aed255",
+      "copiedSHA256": "2b56126cbd38d335749fdfc6593df0b9a6f888e8fba09e802338511054a7e341",
+      "adapted": true
+    },
+    {
+      "path": "evidence/detail-v7/home-chair-1672.jpg",
+      "sourcePath": "evidence/detail-v7/home-chair-1672.jpg",
+      "sourceSHA256": "688f0911777fde42f9c0c8c3a5961310b07ff7b11ce54ab0891c7b0cdf68f2e7",
+      "copiedSHA256": "688f0911777fde42f9c0c8c3a5961310b07ff7b11ce54ab0891c7b0cdf68f2e7",
+      "adapted": false
+    },
+    {
+      "path": "evidence/detail-v7/home-method-1280.jpg",
+      "sourcePath": "evidence/detail-v7/home-method-1280.jpg",
+      "sourceSHA256": "aa69e92517f504e41011ac9f38713fe2e3e8457e31ba3300eee8b2f60255c75f",
+      "copiedSHA256": "aa69e92517f504e41011ac9f38713fe2e3e8457e31ba3300eee8b2f60255c75f",
+      "adapted": false
+    },
+    {
+      "path": "evidence/detail-v7/home-space-1280.jpg",
+      "sourcePath": "evidence/detail-v7/home-space-1280.jpg",
+      "sourceSHA256": "f30757d20d50da58ff99911646d41a3743e788275710f7c158aba14b8da2656c",
+      "copiedSHA256": "f30757d20d50da58ff99911646d41a3743e788275710f7c158aba14b8da2656c",
+      "adapted": false
+    },
+    {
+      "path": "evidence/detail-v7/product-arm-1672.jpg",
+      "sourcePath": "evidence/detail-v7/product-arm-1672.jpg",
+      "sourceSHA256": "40bde75ac4a2dc654ba0ae146bbf620cf1315bbbe5bca23ec3c23e97aebdcc10",
+      "copiedSHA256": "40bde75ac4a2dc654ba0ae146bbf620cf1315bbbe5bca23ec3c23e97aebdcc10",
+      "adapted": false
+    },
+    {
+      "path": "evidence/detail-v7/product-back-1672.jpg",
+      "sourcePath": "evidence/detail-v7/product-back-1672.jpg",
+      "sourceSHA256": "e45374df54d6e986f556740f402b9bfbcfaa7a3d4e399a61a9e0f67b2adf12a1",
+      "copiedSHA256": "e45374df54d6e986f556740f402b9bfbcfaa7a3d4e399a61a9e0f67b2adf12a1",
+      "adapted": false
+    },
+    {
+      "path": "evidence/detail-v7/product-exploded-1672.jpg",
+      "sourcePath": "evidence/detail-v7/product-exploded-1672.jpg",
+      "sourceSHA256": "8bd8f76679fd6017a4b65ea96ed8f0f1f582547de177a3bd00e416d39e68b4e8",
+      "copiedSHA256": "8bd8f76679fd6017a4b65ea96ed8f0f1f582547de177a3bd00e416d39e68b4e8",
+      "adapted": false
+    },
+    {
+      "path": "evidence/detail-v7/product-hero-1672.jpg",
+      "sourcePath": "evidence/detail-v7/product-hero-1672.jpg",
+      "sourceSHA256": "c2b63df8b4b3b1952a38494a499722012a151a97ddef24f5a6924c52a152675e",
+      "copiedSHA256": "c2b63df8b4b3b1952a38494a499722012a151a97ddef24f5a6924c52a152675e",
+      "adapted": false
+    },
+    {
+      "path": "evidence/detail-v7/product-hero-2182.jpg",
+      "sourcePath": "evidence/detail-v7/product-hero-2182.jpg",
+      "sourceSHA256": "cbe2f5e9f8dcdafab95103af4fc57847458d50a59d68244213806c9bdb59600f",
+      "copiedSHA256": "cbe2f5e9f8dcdafab95103af4fc57847458d50a59d68244213806c9bdb59600f",
+      "adapted": false
+    },
+    {
+      "path": "evidence/detail-v7/product-return-1672.jpg",
+      "sourcePath": "evidence/detail-v7/product-return-1672.jpg",
+      "sourceSHA256": "8739f0675d4b9f7e4d4965ab92d67705d9025e67c7733b3fb1f50124f9bec54d",
+      "copiedSHA256": "8739f0675d4b9f7e4d4965ab92d67705d9025e67c7733b3fb1f50124f9bec54d",
+      "adapted": false
+    },
+    {
+      "path": "evidence/detail-v7/product-seat-1280.jpg",
+      "sourcePath": "evidence/detail-v7/product-seat-1280.jpg",
+      "sourceSHA256": "65dfa1cb4b43bca397c8f6f08ad69edc6d6ddf56b944a51d6932237d961019d7",
+      "copiedSHA256": "65dfa1cb4b43bca397c8f6f08ad69edc6d6ddf56b944a51d6932237d961019d7",
+      "adapted": false
+    },
+    {
+      "path": "evidence/detail-v7/product-seat-1672.jpg",
+      "sourcePath": "evidence/detail-v7/product-seat-1672.jpg",
+      "sourceSHA256": "5eb2f18064416bfadd11971ed4efb662666de399a7b1613d85d09d26a144e3b9",
+      "copiedSHA256": "5eb2f18064416bfadd11971ed4efb662666de399a7b1613d85d09d26a144e3b9",
+      "adapted": false
+    },
+    {
+      "path": "evidence/detail-v7/reference-24-comparison.jpg",
+      "sourcePath": "evidence/detail-v7/reference-24-comparison.jpg",
+      "sourceSHA256": "94beb614a932d265dd19abb6e038027187bf5803d0388bc315d72eb14f91c9b2",
+      "copiedSHA256": "94beb614a932d265dd19abb6e038027187bf5803d0388bc315d72eb14f91c9b2",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/approved-reference.png",
+      "sourcePath": "evidence/floating-v5/approved-reference.png",
+      "sourceSHA256": "ceb034060edd93bd98353223a80b00661f22de28e279dfef049a930b80b1d178",
+      "copiedSHA256": "ceb034060edd93bd98353223a80b00661f22de28e279dfef049a930b80b1d178",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/assets-contact-sheet.jpg",
+      "sourcePath": "evidence/floating-v5/assets-contact-sheet.jpg",
+      "sourceSHA256": "251f8f2dee1405cf752cc7fadfc217dc7a56119be5e37385d234ef09b984852c",
+      "copiedSHA256": "251f8f2dee1405cf752cc7fadfc217dc7a56119be5e37385d234ef09b984852c",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/chair-hover.jpg",
+      "sourcePath": "evidence/floating-v5/chair-hover.jpg",
+      "sourceSHA256": "e6bf6bb86a02dccbba44d5b1dff2b548446361b7a53edeb1c93162c14e0866e5",
+      "copiedSHA256": "e6bf6bb86a02dccbba44d5b1dff2b548446361b7a53edeb1c93162c14e0866e5",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/comfort.jpg",
+      "sourcePath": "evidence/floating-v5/comfort.jpg",
+      "sourceSHA256": "be1b54d80fb6ef3d38b75d01a3685349e0392fa6c723f488536fd1f2301841f3",
+      "copiedSHA256": "be1b54d80fb6ef3d38b75d01a3685349e0392fa6c723f488536fd1f2301841f3",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/company-before.html",
+      "sourcePath": "evidence/floating-v5/company-before.html",
+      "sourceSHA256": "3e64c4152072372618604d267a106acca68ae3d060846088887bbf4cf1c3e8c7",
+      "copiedSHA256": "3e64c4152072372618604d267a106acca68ae3d060846088887bbf4cf1c3e8c7",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/company.jpg",
+      "sourcePath": "evidence/floating-v5/company.jpg",
+      "sourceSHA256": "7f077aabc0a74d56bd31a65723875a8246e427c8625c4ec3624041e91aed1d2c",
+      "copiedSHA256": "7f077aabc0a74d56bd31a65723875a8246e427c8625c4ec3624041e91aed1d2c",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/continuous-float.jpg",
+      "sourcePath": "evidence/floating-v5/continuous-float.jpg",
+      "sourceSHA256": "37450e0f80a57564953f00807edad7825ab95f3ba1c26f03e5d01f10428c3816",
+      "copiedSHA256": "37450e0f80a57564953f00807edad7825ab95f3ba1c26f03e5d01f10428c3816",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/continuous-float.json",
+      "sourcePath": "evidence/floating-v5/continuous-float.json",
+      "sourceSHA256": "26b84d720ac114d4c69c47c7493d7f6b5c94e173baebb8dc07e2b01b5a39a23d",
+      "copiedSHA256": "26b84d720ac114d4c69c47c7493d7f6b5c94e173baebb8dc07e2b01b5a39a23d",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/exit-mid.jpg",
+      "sourcePath": "evidence/floating-v5/exit-mid.jpg",
+      "sourceSHA256": "3b12f79fe24a0a43a689bd872a6cd6844fb5a20033145b1c235a2e26bde76903",
+      "copiedSHA256": "3b12f79fe24a0a43a689bd872a6cd6844fb5a20033145b1c235a2e26bde76903",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/hover-1672.jpg",
+      "sourcePath": "evidence/floating-v5/hover-1672.jpg",
+      "sourceSHA256": "96c115b99553d34bdaa3d56b1ddab49c1cd6d5d9fecc31d8d9dfb4f7920cbafc",
+      "copiedSHA256": "96c115b99553d34bdaa3d56b1ddab49c1cd6d5d9fecc31d8d9dfb4f7920cbafc",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/initial.jpg",
+      "sourcePath": "evidence/floating-v5/initial.jpg",
+      "sourceSHA256": "c22c3f384ef4af9e7468646c61bd717cd9a0a94325a358b3eb0e642fb98dd013",
+      "copiedSHA256": "c22c3f384ef4af9e7468646c61bd717cd9a0a94325a358b3eb0e642fb98dd013",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/method.jpg",
+      "sourcePath": "evidence/floating-v5/method.jpg",
+      "sourceSHA256": "2fec6756a73329c965ae50ea0778ae51eb2501e7994905a8791f5f52db1d746a",
+      "copiedSHA256": "2fec6756a73329c965ae50ea0778ae51eb2501e7994905a8791f5f52db1d746a",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/opening-1672.jpg",
+      "sourcePath": "evidence/floating-v5/opening-1672.jpg",
+      "sourceSHA256": "a7c0001b6cb72327548b966514a86e738a38b4628f6c17e66573cdba2641565b",
+      "copiedSHA256": "a7c0001b6cb72327548b966514a86e738a38b4628f6c17e66573cdba2641565b",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/opening.jpg",
+      "sourcePath": "evidence/floating-v5/opening.jpg",
+      "sourceSHA256": "041730f187fd09fd6b055dcca70f00980128abd2daa2e0bc48e72b2aa5a730f4",
+      "copiedSHA256": "041730f187fd09fd6b055dcca70f00980128abd2daa2e0bc48e72b2aa5a730f4",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/reference-comparison.jpg",
+      "sourcePath": "evidence/floating-v5/reference-comparison.jpg",
+      "sourceSHA256": "e760e22e3b2808d6fbfea0342b291fb06430e7ee9e508614ec2ca92a0066af22",
+      "copiedSHA256": "e760e22e3b2808d6fbfea0342b291fb06430e7ee9e508614ec2ca92a0066af22",
+      "adapted": false
+    },
+    {
+      "path": "evidence/floating-v5/transition.jpg",
+      "sourcePath": "evidence/floating-v5/transition.jpg",
+      "sourceSHA256": "21b437fff06d1797d3ac8f19f69c280c04d775bd276ebe7b7811f41b4abbe8f9",
+      "copiedSHA256": "21b437fff06d1797d3ac8f19f69c280c04d775bd276ebe7b7811f41b4abbe8f9",
+      "adapted": false
+    },
+    {
+      "path": "model-source/contour-sage/build-before-likeness.py",
+      "sourcePath": "model-source/contour-sage/build-before-likeness.py",
+      "sourceSHA256": "879c0b53bf3cd2f9435f62526475e973fafc9c66c83b51947e538899cedfc563",
+      "copiedSHA256": "879c0b53bf3cd2f9435f62526475e973fafc9c66c83b51947e538899cedfc563",
+      "adapted": false
+    },
+    {
+      "path": "model-source/contour-sage/build.py",
+      "sourcePath": "model-source/contour-sage/build.py",
+      "sourceSHA256": "606083b748fbbab48a61ba3ecc0e1b8965bcc584f6e20982a5f9da9e8e5ea4f3",
+      "copiedSHA256": "7571caac7b121c1877313152f979dcf15367e6a08f5745dd1612048da9723916",
+      "adapted": true
+    },
+    {
+      "path": "model-source/contour-sage/contour-sage.blend",
+      "sourcePath": "model-source/contour-sage/contour-sage.blend",
+      "sourceSHA256": "1087e0ca501136b319085f2bc9c9ab491c8c6d75d583cf82c3568f9beaf40511",
+      "copiedSHA256": "1087e0ca501136b319085f2bc9c9ab491c8c6d75d583cf82c3568f9beaf40511",
+      "adapted": false
+    },
+    {
+      "path": "model-source/contour-sage/pack_assets.py",
+      "sourcePath": "model-source/contour-sage/pack_assets.py",
+      "sourceSHA256": "9d99f4021d5a179fe8879d9b7f2ea7ebd4d5eb87c52aa30a70baca4185f7494c",
+      "copiedSHA256": "9d99f4021d5a179fe8879d9b7f2ea7ebd4d5eb87c52aa30a70baca4185f7494c",
+      "adapted": false
+    },
+    {
+      "path": "model-source/contour-sage/sage-weave.png",
+      "sourcePath": "model-source/contour-sage/sage-weave.png",
+      "sourceSHA256": "7f2133dd36066973eff69a0791d629b6b64ec37faf82e3a2b64c45a5990f1431",
+      "copiedSHA256": "7f2133dd36066973eff69a0791d629b6b64ec37faf82e3a2b64c45a5990f1431",
+      "adapted": false
+    },
+    {
+      "path": "products/contour-01/index.html",
+      "sourcePath": "products/contour-01/index.html",
+      "sourceSHA256": "8a631d3e0bd6201464bedeb7d2fee66163c65d9af90589f7e495da77128e9410",
+      "copiedSHA256": "8a631d3e0bd6201464bedeb7d2fee66163c65d9af90589f7e495da77128e9410",
+      "adapted": false
+    },
+    {
+      "path": "public/favicon.svg",
+      "sourcePath": "public/favicon.svg",
+      "sourceSHA256": "d6715c1d674748187e48ab5935c6fb5c6f8e222a8013b667159e2016b599ff4b",
+      "copiedSHA256": "d6715c1d674748187e48ab5935c6fb5c6f8e222a8013b667159e2016b599ff4b",
+      "adapted": false
+    },
+    {
+      "path": "public/environments/studio_small_09_2k.hdr",
+      "sourcePath": "public/environments/studio_small_09_2k.hdr",
+      "sourceSHA256": "36724313c0fc66dab126ff90f081b85a0b1ef47be65eda1417bd20b033f0573f",
+      "copiedSHA256": "36724313c0fc66dab126ff90f081b85a0b1ef47be65eda1417bd20b033f0573f",
+      "adapted": false
+    },
+    {
+      "path": "public/fonts/manrope-semibold.woff2",
+      "sourcePath": "public/fonts/manrope-semibold.woff2",
+      "sourceSHA256": "f7ac6258da20ab7541939b59851155753d1d24f1b30cbcb949077a3faa3d1593",
+      "copiedSHA256": "f7ac6258da20ab7541939b59851155753d1d24f1b30cbcb949077a3faa3d1593",
+      "adapted": false
+    },
+    {
+      "path": "public/fonts/manrope.woff2",
+      "sourcePath": "public/fonts/manrope.woff2",
+      "sourceSHA256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "copiedSHA256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "adapted": false
+    },
+    {
+      "path": "public/fonts/noto-sc-light.woff2",
+      "sourcePath": "public/fonts/noto-sc-light.woff2",
+      "sourceSHA256": "a8cff79fbb18b24b6e52d8cd2e9294f9060363ec4a1c54c9e1f968a92f3286eb",
+      "copiedSHA256": "a8cff79fbb18b24b6e52d8cd2e9294f9060363ec4a1c54c9e1f968a92f3286eb",
+      "adapted": false
+    },
+    {
+      "path": "public/fonts/noto-sc.woff2",
+      "sourcePath": "public/fonts/noto-sc.woff2",
+      "sourceSHA256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
+      "copiedSHA256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
+      "adapted": false
+    },
+    {
+      "path": "public/images/contour-poster.png",
+      "sourcePath": "public/images/contour-poster.png",
+      "sourceSHA256": "c2067f4ba4801455edcaef8804c01d6ad3087a19599288a6c3df2f39f6622c55",
+      "copiedSHA256": "c2067f4ba4801455edcaef8804c01d6ad3087a19599288a6c3df2f39f6622c55",
+      "adapted": false
+    },
+    {
+      "path": "public/images/xuzo-everyday-v4.webp",
+      "sourcePath": "public/images/xuzo-everyday-v4.webp",
+      "sourceSHA256": "ae88d6d4f5979a218fc11af4a738d83bff581ddb14849fb9b2c7d7c2fe70bbe0",
+      "copiedSHA256": "ae88d6d4f5979a218fc11af4a738d83bff581ddb14849fb9b2c7d7c2fe70bbe0",
+      "adapted": false
+    },
+    {
+      "path": "public/images/xuzo-materials.webp",
+      "sourcePath": "public/images/xuzo-materials.webp",
+      "sourceSHA256": "baf2a6c80e385cc726590554a311c199e78930fe542e8014ad0276a06b96f9c9",
+      "copiedSHA256": "baf2a6c80e385cc726590554a311c199e78930fe542e8014ad0276a06b96f9c9",
+      "adapted": false
+    },
+    {
+      "path": "public/images/xuzo-space.webp",
+      "sourcePath": "public/images/xuzo-space.webp",
+      "sourceSHA256": "8ab3076553190baa3d0e52d56b94da82f7a2c00085dff4eee35ba62e1feab9a2",
+      "copiedSHA256": "8ab3076553190baa3d0e52d56b94da82f7a2c00085dff4eee35ba62e1feab9a2",
+      "adapted": false
+    },
+    {
+      "path": "public/images/xuzo-touch-v4.webp",
+      "sourcePath": "public/images/xuzo-touch-v4.webp",
+      "sourceSHA256": "e2d246c6b5e6b9d70e7940fa4dc45af3f044a9d72eae5500a0946803b1df3b4d",
+      "copiedSHA256": "e2d246c6b5e6b9d70e7940fa4dc45af3f044a9d72eae5500a0946803b1df3b4d",
+      "adapted": false
+    },
+    {
+      "path": "public/images/floating/cabinet.png",
+      "sourcePath": "public/images/floating/cabinet.png",
+      "sourceSHA256": "73bdfc665748971ff67323bc454842c505946336a3b7e41ece21f86ea4ec0675",
+      "copiedSHA256": "73bdfc665748971ff67323bc454842c505946336a3b7e41ece21f86ea4ec0675",
+      "adapted": false
+    },
+    {
+      "path": "public/images/floating/cabinet.webp",
+      "sourcePath": "public/images/floating/cabinet.webp",
+      "sourceSHA256": "ed0efb66cea0d7a1c2ae3c41cb000e43310f258c53f400b29f86ea7c35504dc5",
+      "copiedSHA256": "ed0efb66cea0d7a1c2ae3c41cb000e43310f258c53f400b29f86ea7c35504dc5",
+      "adapted": false
+    },
+    {
+      "path": "public/images/floating/chair-sage.webp",
+      "sourcePath": "public/images/floating/chair-sage.webp",
+      "sourceSHA256": "e6dda363cd23d50e2dbe7444c7b44ac42b075176b1ffc5355aadfa3d5c8b0383",
+      "copiedSHA256": "e6dda363cd23d50e2dbe7444c7b44ac42b075176b1ffc5355aadfa3d5c8b0383",
+      "adapted": false
+    },
+    {
+      "path": "public/images/floating/chair.png",
+      "sourcePath": "public/images/floating/chair.png",
+      "sourceSHA256": "871158c901d4ddcffc69e7a08ed9600c19550434f5b035b62d3f8f0b2486b665",
+      "copiedSHA256": "871158c901d4ddcffc69e7a08ed9600c19550434f5b035b62d3f8f0b2486b665",
+      "adapted": false
+    },
+    {
+      "path": "public/images/floating/chair.webp",
+      "sourcePath": "public/images/floating/chair.webp",
+      "sourceSHA256": "099eb21d34bf4c9d70f60550aca16ce90f4c8112ced1267cc2c8ce7624ce522c",
+      "copiedSHA256": "099eb21d34bf4c9d70f60550aca16ce90f4c8112ced1267cc2c8ce7624ce522c",
+      "adapted": false
+    },
+    {
+      "path": "public/images/floating/coffee.png",
+      "sourcePath": "public/images/floating/coffee.png",
+      "sourceSHA256": "9305cad4f3a269fc3f1288dfecc1e966ff87efbcdcb40e4becc5ec3cabaf6d63",
+      "copiedSHA256": "9305cad4f3a269fc3f1288dfecc1e966ff87efbcdcb40e4becc5ec3cabaf6d63",
+      "adapted": false
+    },
+    {
+      "path": "public/images/floating/coffee.webp",
+      "sourcePath": "public/images/floating/coffee.webp",
+      "sourceSHA256": "49ff5150bbc41d44528c77568fc731e29c22690b3145989972efefd8235beb2e",
+      "copiedSHA256": "49ff5150bbc41d44528c77568fc731e29c22690b3145989972efefd8235beb2e",
+      "adapted": false
+    },
+    {
+      "path": "public/images/floating/desk.png",
+      "sourcePath": "public/images/floating/desk.png",
+      "sourceSHA256": "0bed06ed3bb66042dbe29906610ae59bac3aa862e2b529c08b8fc61a7d9ed76e",
+      "copiedSHA256": "0bed06ed3bb66042dbe29906610ae59bac3aa862e2b529c08b8fc61a7d9ed76e",
+      "adapted": false
+    },
+    {
+      "path": "public/images/floating/desk.webp",
+      "sourcePath": "public/images/floating/desk.webp",
+      "sourceSHA256": "d92604042f008c5e27e80fc25cd36bab6e4e18992f909bbf64d1ca0f0722a0f5",
+      "copiedSHA256": "d92604042f008c5e27e80fc25cd36bab6e4e18992f909bbf64d1ca0f0722a0f5",
+      "adapted": false
+    },
+    {
+      "path": "public/images/floating/lamp.png",
+      "sourcePath": "public/images/floating/lamp.png",
+      "sourceSHA256": "3171b4ed3176787f0ba58380ffa669948dda5babadc7c1102f66d36ffca9b2fc",
+      "copiedSHA256": "3171b4ed3176787f0ba58380ffa669948dda5babadc7c1102f66d36ffca9b2fc",
+      "adapted": false
+    },
+    {
+      "path": "public/images/floating/lamp.webp",
+      "sourcePath": "public/images/floating/lamp.webp",
+      "sourceSHA256": "ef1ab809be51127d20850788feea1207af97e5384b7bbc5a5b3115aab1575f00",
+      "copiedSHA256": "ef1ab809be51127d20850788feea1207af97e5384b7bbc5a5b3115aab1575f00",
+      "adapted": false
+    },
+    {
+      "path": "public/images/floating/sofa.png",
+      "sourcePath": "public/images/floating/sofa.png",
+      "sourceSHA256": "150e42cb9d6b9fee3c6e8b2560fdd68db4f68b7dc75df233578b4fedaee50115",
+      "copiedSHA256": "150e42cb9d6b9fee3c6e8b2560fdd68db4f68b7dc75df233578b4fedaee50115",
+      "adapted": false
+    },
+    {
+      "path": "public/images/floating/sofa.webp",
+      "sourcePath": "public/images/floating/sofa.webp",
+      "sourceSHA256": "08215f014c60f51486fc33ee4ed962f08ef42de4126e1dd4c62fd9a3e9e26cb8",
+      "copiedSHA256": "08215f014c60f51486fc33ee4ed962f08ef42de4126e1dd4c62fd9a3e9e26cb8",
+      "adapted": false
+    },
+    {
+      "path": "public/licenses/Manrope-OFL.txt",
+      "sourcePath": "public/licenses/Manrope-OFL.txt",
+      "sourceSHA256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "copiedSHA256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "adapted": false
+    },
+    {
+      "path": "public/licenses/Modern-Coffee-Table-01.txt",
+      "sourcePath": "public/licenses/Modern-Coffee-Table-01.txt",
+      "sourceSHA256": "565871b4239980faf812dd101b1709b19a2755db9f6c1f90e871dfc504f74f45",
+      "copiedSHA256": "565871b4239980faf812dd101b1709b19a2755db9f6c1f90e871dfc504f74f45",
+      "adapted": false
+    },
+    {
+      "path": "public/licenses/Noto-Sans-SC-OFL.txt",
+      "sourcePath": "public/licenses/Noto-Sans-SC-OFL.txt",
+      "sourceSHA256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "copiedSHA256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "adapted": false
+    },
+    {
+      "path": "public/licenses/Poly-Haven.txt",
+      "sourcePath": "public/licenses/Poly-Haven.txt",
+      "sourceSHA256": "afc05f46e7b30759fc484aacca21590d7daa061b1986d51b2efd95907bbfa718",
+      "copiedSHA256": "afc05f46e7b30759fc484aacca21590d7daa061b1986d51b2efd95907bbfa718",
+      "adapted": false
+    },
+    {
+      "path": "public/licenses/SheenChair-CC0.md",
+      "sourcePath": "public/licenses/SheenChair-CC0.md",
+      "sourceSHA256": "7bbb705e0532711b80a512161da64ab0f2a719412121daf24b8177bdbdbaca7a",
+      "copiedSHA256": "7bbb705e0532711b80a512161da64ab0f2a719412121daf24b8177bdbdbaca7a",
+      "adapted": false
+    },
+    {
+      "path": "public/licenses/Three-MIT.txt",
+      "sourcePath": "public/licenses/Three-MIT.txt",
+      "sourceSHA256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "copiedSHA256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "adapted": false
+    },
+    {
+      "path": "public/models/contour-01.glb",
+      "sourcePath": "public/models/contour-01.glb",
+      "sourceSHA256": "72f47a020ca6d112be45827acc41a03c54ea79213e72c59b8df5f57fb9159791",
+      "copiedSHA256": "72f47a020ca6d112be45827acc41a03c54ea79213e72c59b8df5f57fb9159791",
+      "adapted": false
+    },
+    {
+      "path": "public/models/modern-table/modern-table.gltf",
+      "sourcePath": "public/models/modern-table/modern-table.gltf",
+      "sourceSHA256": "0934d355e65fc5d1b2056fa913813384246572839af464d741f443462cc8e955",
+      "copiedSHA256": "0934d355e65fc5d1b2056fa913813384246572839af464d741f443462cc8e955",
+      "adapted": false
+    },
+    {
+      "path": "public/models/modern-table/modern_coffee_table_01.bin",
+      "sourcePath": "public/models/modern-table/modern_coffee_table_01.bin",
+      "sourceSHA256": "b8fe0d49041b879a5d5962685a39e3daf009679f7b6a88ced1347e6dc6c0851e",
+      "copiedSHA256": "b8fe0d49041b879a5d5962685a39e3daf009679f7b6a88ced1347e6dc6c0851e",
+      "adapted": false
+    },
+    {
+      "path": "public/models/modern-table/textures/modern_coffee_table_01_diff_2k.jpg",
+      "sourcePath": "public/models/modern-table/textures/modern_coffee_table_01_diff_2k.jpg",
+      "sourceSHA256": "527c9cbe6162b5ba84c5427407148d45a051f38c8475b32b5cd3fc02534a7090",
+      "copiedSHA256": "527c9cbe6162b5ba84c5427407148d45a051f38c8475b32b5cd3fc02534a7090",
+      "adapted": false
+    },
+    {
+      "path": "public/models/modern-table/textures/modern_coffee_table_01_nor_gl_2k.jpg",
+      "sourcePath": "public/models/modern-table/textures/modern_coffee_table_01_nor_gl_2k.jpg",
+      "sourceSHA256": "ce0fbc0e6e900480edafbeaab4e4593882c8f3f46dea43b897ccef07093b8caa",
+      "copiedSHA256": "ce0fbc0e6e900480edafbeaab4e4593882c8f3f46dea43b897ccef07093b8caa",
+      "adapted": false
+    },
+    {
+      "path": "public/models/modern-table/textures/modern_coffee_table_01_rough_2k.jpg",
+      "sourcePath": "public/models/modern-table/textures/modern_coffee_table_01_rough_2k.jpg",
+      "sourceSHA256": "48575f42cab1b40558a4f5957ccaf304651460d6caad2de23d86aec3a6bcd6ff",
+      "copiedSHA256": "48575f42cab1b40558a4f5957ccaf304651460d6caad2de23d86aec3a6bcd6ff",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/manifest.json",
+      "sourcePath": "public/products/contour-sage/manifest.json",
+      "sourceSHA256": "62f5ee197ff239e1e22a6ee20fa90352b381a90884b42e88f8a71106d37a4c10",
+      "copiedSHA256": "62f5ee197ff239e1e22a6ee20fa90352b381a90884b42e88f8a71106d37a4c10",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/poster.webp",
+      "sourcePath": "public/products/contour-sage/poster.webp",
+      "sourceSHA256": "8eddb5cb5382f073c63fcf2f6ec3c6dd361dee29ab824cd8cfba4250a17bfadd",
+      "copiedSHA256": "8eddb5cb5382f073c63fcf2f6ec3c6dd361dee29ab824cd8cfba4250a17bfadd",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/sage-weave.webp",
+      "sourcePath": "public/products/contour-sage/sage-weave.webp",
+      "sourceSHA256": "d97b86d8fb6a5c4c5e4a3899ec1c28b9590cabb55ef84eb9bcd473a0f4a7b8ea",
+      "copiedSHA256": "d97b86d8fb6a5c4c5e4a3899ec1c28b9590cabb55ef84eb9bcd473a0f4a7b8ea",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/seat-detail.webp",
+      "sourcePath": "public/products/contour-sage/seat-detail.webp",
+      "sourceSHA256": "97e4440c3e74c0145da22e49c4c10de2fbf9f70f32503d8d9e5a6d5eb5e796d2",
+      "copiedSHA256": "97e4440c3e74c0145da22e49c4c10de2fbf9f70f32503d8d9e5a6d5eb5e796d2",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/000.webp",
+      "sourcePath": "public/products/contour-sage/frames/000.webp",
+      "sourceSHA256": "8e35272e6df0cc0303568092cdb81d2855bd1f7edd766d4d18df302b1efc612f",
+      "copiedSHA256": "8e35272e6df0cc0303568092cdb81d2855bd1f7edd766d4d18df302b1efc612f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/001.webp",
+      "sourcePath": "public/products/contour-sage/frames/001.webp",
+      "sourceSHA256": "581ae6cd8d8756493752221063f59ea00bcdec36d3ed8e5920e71ca77586aaa5",
+      "copiedSHA256": "581ae6cd8d8756493752221063f59ea00bcdec36d3ed8e5920e71ca77586aaa5",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/002.webp",
+      "sourcePath": "public/products/contour-sage/frames/002.webp",
+      "sourceSHA256": "c60a91518262bb513e6d8ef2ca1bb411d96960bab00c6d2369ec16677ef05bfa",
+      "copiedSHA256": "c60a91518262bb513e6d8ef2ca1bb411d96960bab00c6d2369ec16677ef05bfa",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/003.webp",
+      "sourcePath": "public/products/contour-sage/frames/003.webp",
+      "sourceSHA256": "656d7f6056c9689831d7dfe21a5b42c762c227c54ba2798ee27317e5e9d94bdc",
+      "copiedSHA256": "656d7f6056c9689831d7dfe21a5b42c762c227c54ba2798ee27317e5e9d94bdc",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/004.webp",
+      "sourcePath": "public/products/contour-sage/frames/004.webp",
+      "sourceSHA256": "9164f05d2392d1309871ed6d81db6ccc9f78f6b2b6506f65bbc3c265b961abf8",
+      "copiedSHA256": "9164f05d2392d1309871ed6d81db6ccc9f78f6b2b6506f65bbc3c265b961abf8",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/005.webp",
+      "sourcePath": "public/products/contour-sage/frames/005.webp",
+      "sourceSHA256": "08e8bb29c69e83a0cbb4f8b3c88af97dd02d530d03e735930ab2649396d8f020",
+      "copiedSHA256": "08e8bb29c69e83a0cbb4f8b3c88af97dd02d530d03e735930ab2649396d8f020",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/006.webp",
+      "sourcePath": "public/products/contour-sage/frames/006.webp",
+      "sourceSHA256": "25debd50435ef2c944c039b82cd1fc6cff98764137405a8cd02972dba9bf397d",
+      "copiedSHA256": "25debd50435ef2c944c039b82cd1fc6cff98764137405a8cd02972dba9bf397d",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/007.webp",
+      "sourcePath": "public/products/contour-sage/frames/007.webp",
+      "sourceSHA256": "85e5312a7138e3872593f322c545a0c05d53fb162231bd76491f1d4ec17b55cd",
+      "copiedSHA256": "85e5312a7138e3872593f322c545a0c05d53fb162231bd76491f1d4ec17b55cd",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/008.webp",
+      "sourcePath": "public/products/contour-sage/frames/008.webp",
+      "sourceSHA256": "c3276414cfbad6ffb366e2c7e98e7b0faf536da86231ab9978b03af1d9bd6095",
+      "copiedSHA256": "c3276414cfbad6ffb366e2c7e98e7b0faf536da86231ab9978b03af1d9bd6095",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/009.webp",
+      "sourcePath": "public/products/contour-sage/frames/009.webp",
+      "sourceSHA256": "caad314c66f99ab3831bbab3bf0b1eb53acaba95a8a092b27bb03bd8bbe74401",
+      "copiedSHA256": "caad314c66f99ab3831bbab3bf0b1eb53acaba95a8a092b27bb03bd8bbe74401",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/010.webp",
+      "sourcePath": "public/products/contour-sage/frames/010.webp",
+      "sourceSHA256": "121b3d0df3cdab42763e3d6bc2a18d06e45529fc0f1d55de818b57a7659e8fc8",
+      "copiedSHA256": "121b3d0df3cdab42763e3d6bc2a18d06e45529fc0f1d55de818b57a7659e8fc8",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/011.webp",
+      "sourcePath": "public/products/contour-sage/frames/011.webp",
+      "sourceSHA256": "d05094389c1ba7dddb8bd0b334415b3a83f927d6078f11ad384ad554a9b5b69e",
+      "copiedSHA256": "d05094389c1ba7dddb8bd0b334415b3a83f927d6078f11ad384ad554a9b5b69e",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/012.webp",
+      "sourcePath": "public/products/contour-sage/frames/012.webp",
+      "sourceSHA256": "745580fefcf1069efd7c646c713f51eedf9d198bbffa01f1b1df247838346778",
+      "copiedSHA256": "745580fefcf1069efd7c646c713f51eedf9d198bbffa01f1b1df247838346778",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/013.webp",
+      "sourcePath": "public/products/contour-sage/frames/013.webp",
+      "sourceSHA256": "181e1020bc2fef6f221ad661190e6f721fac4ccc72d7c10ad4fa860366e05524",
+      "copiedSHA256": "181e1020bc2fef6f221ad661190e6f721fac4ccc72d7c10ad4fa860366e05524",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/014.webp",
+      "sourcePath": "public/products/contour-sage/frames/014.webp",
+      "sourceSHA256": "3a922ea50f4e66bbb11a891de4a73a6977e4546b65c873717a97f2793588d73c",
+      "copiedSHA256": "3a922ea50f4e66bbb11a891de4a73a6977e4546b65c873717a97f2793588d73c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/015.webp",
+      "sourcePath": "public/products/contour-sage/frames/015.webp",
+      "sourceSHA256": "a283b56e8783f888a20abf70cea7292cc03590b8e3b8945da0540d7aaff29dae",
+      "copiedSHA256": "a283b56e8783f888a20abf70cea7292cc03590b8e3b8945da0540d7aaff29dae",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/016.webp",
+      "sourcePath": "public/products/contour-sage/frames/016.webp",
+      "sourceSHA256": "3f4b6deaf06609d995e382ddba354fbb658e7efc9f8b4744adb0f20930ce1dc8",
+      "copiedSHA256": "3f4b6deaf06609d995e382ddba354fbb658e7efc9f8b4744adb0f20930ce1dc8",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/017.webp",
+      "sourcePath": "public/products/contour-sage/frames/017.webp",
+      "sourceSHA256": "5ec57941019ab5118c43cc10624e4b3ce99a64993a05fe3c056cd6ca5ad27299",
+      "copiedSHA256": "5ec57941019ab5118c43cc10624e4b3ce99a64993a05fe3c056cd6ca5ad27299",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/018.webp",
+      "sourcePath": "public/products/contour-sage/frames/018.webp",
+      "sourceSHA256": "d06b8f7fe667346b304efa53eef4897272e377cc93c5d0aaf1a1520708a1f653",
+      "copiedSHA256": "d06b8f7fe667346b304efa53eef4897272e377cc93c5d0aaf1a1520708a1f653",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/019.webp",
+      "sourcePath": "public/products/contour-sage/frames/019.webp",
+      "sourceSHA256": "1bf915706928a9b283a2c767443a603f7cd03bc0f5dc0f9708584d1a02fa97f7",
+      "copiedSHA256": "1bf915706928a9b283a2c767443a603f7cd03bc0f5dc0f9708584d1a02fa97f7",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/020.webp",
+      "sourcePath": "public/products/contour-sage/frames/020.webp",
+      "sourceSHA256": "8fb73bd19adb03ac25a6aff9e53c6de1d72949fabf6055240ffc2eb71cfb46dd",
+      "copiedSHA256": "8fb73bd19adb03ac25a6aff9e53c6de1d72949fabf6055240ffc2eb71cfb46dd",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/021.webp",
+      "sourcePath": "public/products/contour-sage/frames/021.webp",
+      "sourceSHA256": "f41f8537946adb98052def19cee04caa8be8cd708b273591efa9d164d04d6e8f",
+      "copiedSHA256": "f41f8537946adb98052def19cee04caa8be8cd708b273591efa9d164d04d6e8f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/022.webp",
+      "sourcePath": "public/products/contour-sage/frames/022.webp",
+      "sourceSHA256": "0a720249022140d3987376e2a7bb9cdfbbe2968d24c2f12316356f2c010ac566",
+      "copiedSHA256": "0a720249022140d3987376e2a7bb9cdfbbe2968d24c2f12316356f2c010ac566",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/023.webp",
+      "sourcePath": "public/products/contour-sage/frames/023.webp",
+      "sourceSHA256": "71fe0ece8edafaa2417b6061b7a80b25bd59bfec7abf45e2af53fdc584260649",
+      "copiedSHA256": "71fe0ece8edafaa2417b6061b7a80b25bd59bfec7abf45e2af53fdc584260649",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/024.webp",
+      "sourcePath": "public/products/contour-sage/frames/024.webp",
+      "sourceSHA256": "3f4df5d708999184044581507f58e1c84adca31a988499ea40f9f9ed6ebc629c",
+      "copiedSHA256": "3f4df5d708999184044581507f58e1c84adca31a988499ea40f9f9ed6ebc629c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/025.webp",
+      "sourcePath": "public/products/contour-sage/frames/025.webp",
+      "sourceSHA256": "e64505f5a5bdd091756172a0342cde4675e922e8e4a49ebb27f243b587f6b924",
+      "copiedSHA256": "e64505f5a5bdd091756172a0342cde4675e922e8e4a49ebb27f243b587f6b924",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/026.webp",
+      "sourcePath": "public/products/contour-sage/frames/026.webp",
+      "sourceSHA256": "8b2404b3f24704f4cdd1f20bafb93b261fc2a9d169c14040141a6bfd821fe1fe",
+      "copiedSHA256": "8b2404b3f24704f4cdd1f20bafb93b261fc2a9d169c14040141a6bfd821fe1fe",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/027.webp",
+      "sourcePath": "public/products/contour-sage/frames/027.webp",
+      "sourceSHA256": "3ea42de1f3d9255652b1920ee9e08dc6494ab9b38b63ce4d407c2f6e8bfb72c7",
+      "copiedSHA256": "3ea42de1f3d9255652b1920ee9e08dc6494ab9b38b63ce4d407c2f6e8bfb72c7",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/028.webp",
+      "sourcePath": "public/products/contour-sage/frames/028.webp",
+      "sourceSHA256": "b296d23a3cd81c0010866f6f3eda9dad4c17ef9dfdda34d0d233e4ccfbf79ce9",
+      "copiedSHA256": "b296d23a3cd81c0010866f6f3eda9dad4c17ef9dfdda34d0d233e4ccfbf79ce9",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/029.webp",
+      "sourcePath": "public/products/contour-sage/frames/029.webp",
+      "sourceSHA256": "9e287afa3370f65184cb775718d7c5c4331302c9bc361c4c6a52796464d4be2c",
+      "copiedSHA256": "9e287afa3370f65184cb775718d7c5c4331302c9bc361c4c6a52796464d4be2c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/030.webp",
+      "sourcePath": "public/products/contour-sage/frames/030.webp",
+      "sourceSHA256": "b5735dadee94cc0a3c91d7c123e473031fab814fa6eb5a76e181edb03eb6fc1d",
+      "copiedSHA256": "b5735dadee94cc0a3c91d7c123e473031fab814fa6eb5a76e181edb03eb6fc1d",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/031.webp",
+      "sourcePath": "public/products/contour-sage/frames/031.webp",
+      "sourceSHA256": "a19c69afb6b6217c3f56703ae869d7d5bdd381b8088db632d6bbd944539ec18a",
+      "copiedSHA256": "a19c69afb6b6217c3f56703ae869d7d5bdd381b8088db632d6bbd944539ec18a",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/032.webp",
+      "sourcePath": "public/products/contour-sage/frames/032.webp",
+      "sourceSHA256": "de6e177cee2c1e3486b61f68a44ce039964b4234b705771922b17713b1ac3217",
+      "copiedSHA256": "de6e177cee2c1e3486b61f68a44ce039964b4234b705771922b17713b1ac3217",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/033.webp",
+      "sourcePath": "public/products/contour-sage/frames/033.webp",
+      "sourceSHA256": "954f11c8b11bfce66bdca38eee7a5215ef833318cab650f69f324db9551f02e3",
+      "copiedSHA256": "954f11c8b11bfce66bdca38eee7a5215ef833318cab650f69f324db9551f02e3",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/034.webp",
+      "sourcePath": "public/products/contour-sage/frames/034.webp",
+      "sourceSHA256": "dd518a9e289e168a60c746769372b1f2429dcf071a97c1ac0a43b5750a42dfa3",
+      "copiedSHA256": "dd518a9e289e168a60c746769372b1f2429dcf071a97c1ac0a43b5750a42dfa3",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/035.webp",
+      "sourcePath": "public/products/contour-sage/frames/035.webp",
+      "sourceSHA256": "6f4feba52bcc602c0bb355445ccd9c1180b447c52736aba28869c9c7d5c690cb",
+      "copiedSHA256": "6f4feba52bcc602c0bb355445ccd9c1180b447c52736aba28869c9c7d5c690cb",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/036.webp",
+      "sourcePath": "public/products/contour-sage/frames/036.webp",
+      "sourceSHA256": "acbfedf791a7618387022b9682b13421f8e98f738f0bbf05ae5e08e568d297a4",
+      "copiedSHA256": "acbfedf791a7618387022b9682b13421f8e98f738f0bbf05ae5e08e568d297a4",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/037.webp",
+      "sourcePath": "public/products/contour-sage/frames/037.webp",
+      "sourceSHA256": "16cc5dd2b0a0357d755267664a7cf7886fed12e10322035421752536eabd6420",
+      "copiedSHA256": "16cc5dd2b0a0357d755267664a7cf7886fed12e10322035421752536eabd6420",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/038.webp",
+      "sourcePath": "public/products/contour-sage/frames/038.webp",
+      "sourceSHA256": "d7c41fb19a7c13864176e03ca112f6399f639c81e684d78c0eb043a0c5a30f49",
+      "copiedSHA256": "d7c41fb19a7c13864176e03ca112f6399f639c81e684d78c0eb043a0c5a30f49",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/039.webp",
+      "sourcePath": "public/products/contour-sage/frames/039.webp",
+      "sourceSHA256": "05bf8cc903bcf2453c7e1e93f0eb364670f1b205a7b9f3e80e3fc5203a67b1e9",
+      "copiedSHA256": "05bf8cc903bcf2453c7e1e93f0eb364670f1b205a7b9f3e80e3fc5203a67b1e9",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/040.webp",
+      "sourcePath": "public/products/contour-sage/frames/040.webp",
+      "sourceSHA256": "866a0634a55480df3e78e523a1e07c0abf580c4c182aa81f5a2a0971a67af39a",
+      "copiedSHA256": "866a0634a55480df3e78e523a1e07c0abf580c4c182aa81f5a2a0971a67af39a",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/041.webp",
+      "sourcePath": "public/products/contour-sage/frames/041.webp",
+      "sourceSHA256": "cf1a6c6eab50672008c0137b8254f6bff495a29bac5bd45608d722eb47f41e59",
+      "copiedSHA256": "cf1a6c6eab50672008c0137b8254f6bff495a29bac5bd45608d722eb47f41e59",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/042.webp",
+      "sourcePath": "public/products/contour-sage/frames/042.webp",
+      "sourceSHA256": "691fc11aec4e1fd306195eb5dee483ce42978e6730dc7f7168c88d8a7f31586f",
+      "copiedSHA256": "691fc11aec4e1fd306195eb5dee483ce42978e6730dc7f7168c88d8a7f31586f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/043.webp",
+      "sourcePath": "public/products/contour-sage/frames/043.webp",
+      "sourceSHA256": "9f5573f9c2857e63a5a12a220064c1be6673c9fd0caa5f1312d05470ad2e16a0",
+      "copiedSHA256": "9f5573f9c2857e63a5a12a220064c1be6673c9fd0caa5f1312d05470ad2e16a0",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/044.webp",
+      "sourcePath": "public/products/contour-sage/frames/044.webp",
+      "sourceSHA256": "191f0475ad0407b0308c6bd9ce664e0c8fa281d03e044154f27f7aa5177fa7a2",
+      "copiedSHA256": "191f0475ad0407b0308c6bd9ce664e0c8fa281d03e044154f27f7aa5177fa7a2",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/045.webp",
+      "sourcePath": "public/products/contour-sage/frames/045.webp",
+      "sourceSHA256": "2c0d17be537f4574aaf8ccf8e87e5441c591cb436f20fb58edef47bc9059d374",
+      "copiedSHA256": "2c0d17be537f4574aaf8ccf8e87e5441c591cb436f20fb58edef47bc9059d374",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/046.webp",
+      "sourcePath": "public/products/contour-sage/frames/046.webp",
+      "sourceSHA256": "55871310c7b37b93d71cb5e6d2f8236f2ef9df674fee7c222db39ed384effb57",
+      "copiedSHA256": "55871310c7b37b93d71cb5e6d2f8236f2ef9df674fee7c222db39ed384effb57",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/047.webp",
+      "sourcePath": "public/products/contour-sage/frames/047.webp",
+      "sourceSHA256": "d0f5cf09b42e0f7e92efb6bc738a66b414c2c8893091f59d1092fe8819c9fe15",
+      "copiedSHA256": "d0f5cf09b42e0f7e92efb6bc738a66b414c2c8893091f59d1092fe8819c9fe15",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/048.webp",
+      "sourcePath": "public/products/contour-sage/frames/048.webp",
+      "sourceSHA256": "c7df7ba2041fc92e6dcd92142eb3c1a1d3e626bf4298358efe78d220f963a7ff",
+      "copiedSHA256": "c7df7ba2041fc92e6dcd92142eb3c1a1d3e626bf4298358efe78d220f963a7ff",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/049.webp",
+      "sourcePath": "public/products/contour-sage/frames/049.webp",
+      "sourceSHA256": "d6e9c985cbdca40493017f5a9a8b680bb778bb6fea89168c749b121cf93b4982",
+      "copiedSHA256": "d6e9c985cbdca40493017f5a9a8b680bb778bb6fea89168c749b121cf93b4982",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/050.webp",
+      "sourcePath": "public/products/contour-sage/frames/050.webp",
+      "sourceSHA256": "e86f7460596a8a4018071613f49827ac6f4f3c226780c0858013536d1b0cf043",
+      "copiedSHA256": "e86f7460596a8a4018071613f49827ac6f4f3c226780c0858013536d1b0cf043",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/051.webp",
+      "sourcePath": "public/products/contour-sage/frames/051.webp",
+      "sourceSHA256": "c8529e5a0043c2f821d552a75f2fb8a22a9d708a8436cdf049776f263de0ee03",
+      "copiedSHA256": "c8529e5a0043c2f821d552a75f2fb8a22a9d708a8436cdf049776f263de0ee03",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/052.webp",
+      "sourcePath": "public/products/contour-sage/frames/052.webp",
+      "sourceSHA256": "8a5f9b28460b00c50abc40a4dc85514e2366cc2fdd980b301843e2575c424fd4",
+      "copiedSHA256": "8a5f9b28460b00c50abc40a4dc85514e2366cc2fdd980b301843e2575c424fd4",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/053.webp",
+      "sourcePath": "public/products/contour-sage/frames/053.webp",
+      "sourceSHA256": "d32850da39dcc33e8aabfd9ad8e4b9ebc2cefa66d512accfc6bdc8fbeb233e9f",
+      "copiedSHA256": "d32850da39dcc33e8aabfd9ad8e4b9ebc2cefa66d512accfc6bdc8fbeb233e9f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/054.webp",
+      "sourcePath": "public/products/contour-sage/frames/054.webp",
+      "sourceSHA256": "a203b840e921486d44fc4f86444404da1ee89d9be953930dc8d27941a106e7e7",
+      "copiedSHA256": "a203b840e921486d44fc4f86444404da1ee89d9be953930dc8d27941a106e7e7",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/055.webp",
+      "sourcePath": "public/products/contour-sage/frames/055.webp",
+      "sourceSHA256": "98161025f3b14e26c7c40c044cc669af3b806745f697d1ce2200a4baa581683e",
+      "copiedSHA256": "98161025f3b14e26c7c40c044cc669af3b806745f697d1ce2200a4baa581683e",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/056.webp",
+      "sourcePath": "public/products/contour-sage/frames/056.webp",
+      "sourceSHA256": "4576a86c32f924e10cb2da31c097eba604d236dadfc443f91b33e9f89b785dd9",
+      "copiedSHA256": "4576a86c32f924e10cb2da31c097eba604d236dadfc443f91b33e9f89b785dd9",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/057.webp",
+      "sourcePath": "public/products/contour-sage/frames/057.webp",
+      "sourceSHA256": "e8ddc33fc375764e5b3b6489ac2a21502f6c235754c1e9d7f1d414534df8abc5",
+      "copiedSHA256": "e8ddc33fc375764e5b3b6489ac2a21502f6c235754c1e9d7f1d414534df8abc5",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/058.webp",
+      "sourcePath": "public/products/contour-sage/frames/058.webp",
+      "sourceSHA256": "d58f8f094b196f7791387b8220fef37de3468e7e6bbdff79a37c3310121ea79d",
+      "copiedSHA256": "d58f8f094b196f7791387b8220fef37de3468e7e6bbdff79a37c3310121ea79d",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/059.webp",
+      "sourcePath": "public/products/contour-sage/frames/059.webp",
+      "sourceSHA256": "ff1d7d1f553bd5c37f40b8a1c4db601cf25457393e7e408c5adb92ad5e0017ca",
+      "copiedSHA256": "ff1d7d1f553bd5c37f40b8a1c4db601cf25457393e7e408c5adb92ad5e0017ca",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/060.webp",
+      "sourcePath": "public/products/contour-sage/frames/060.webp",
+      "sourceSHA256": "bf2bf00ec2c3376cf586cb7dc19ba475a5972ee92f88343a4c56ff94b1fec303",
+      "copiedSHA256": "bf2bf00ec2c3376cf586cb7dc19ba475a5972ee92f88343a4c56ff94b1fec303",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/061.webp",
+      "sourcePath": "public/products/contour-sage/frames/061.webp",
+      "sourceSHA256": "70eee3bfb5ff5e06bcd2935e13f57e0edf589db3bc275c6ea730357f302377cb",
+      "copiedSHA256": "70eee3bfb5ff5e06bcd2935e13f57e0edf589db3bc275c6ea730357f302377cb",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/062.webp",
+      "sourcePath": "public/products/contour-sage/frames/062.webp",
+      "sourceSHA256": "3f76b14905483842ae4f5220f24fb468282fe25c36efe56b025898ee517bad52",
+      "copiedSHA256": "3f76b14905483842ae4f5220f24fb468282fe25c36efe56b025898ee517bad52",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/063.webp",
+      "sourcePath": "public/products/contour-sage/frames/063.webp",
+      "sourceSHA256": "fe1cd5cd383464b5768676b282edc82306fb76b2534954fd94e0b77f47aab0f4",
+      "copiedSHA256": "fe1cd5cd383464b5768676b282edc82306fb76b2534954fd94e0b77f47aab0f4",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/064.webp",
+      "sourcePath": "public/products/contour-sage/frames/064.webp",
+      "sourceSHA256": "ce11b2c837f48f2ce573438be3e1c4654fe78ac01e675cda8694e6dedd486dbc",
+      "copiedSHA256": "ce11b2c837f48f2ce573438be3e1c4654fe78ac01e675cda8694e6dedd486dbc",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/065.webp",
+      "sourcePath": "public/products/contour-sage/frames/065.webp",
+      "sourceSHA256": "2416f7121abd0ed041ef2ec9ab7d3d50acf083b27d741725bb7eca73b465a9f2",
+      "copiedSHA256": "2416f7121abd0ed041ef2ec9ab7d3d50acf083b27d741725bb7eca73b465a9f2",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/066.webp",
+      "sourcePath": "public/products/contour-sage/frames/066.webp",
+      "sourceSHA256": "bf8acce161e3445fad68168c3152123eaf9a1f4e961d9174f22f24261fa4dafb",
+      "copiedSHA256": "bf8acce161e3445fad68168c3152123eaf9a1f4e961d9174f22f24261fa4dafb",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/067.webp",
+      "sourcePath": "public/products/contour-sage/frames/067.webp",
+      "sourceSHA256": "3f0e3e3d6bf6240d622ca5417e59268c90858b65c4c24dc70ee1c2a1ea7c4aa1",
+      "copiedSHA256": "3f0e3e3d6bf6240d622ca5417e59268c90858b65c4c24dc70ee1c2a1ea7c4aa1",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/068.webp",
+      "sourcePath": "public/products/contour-sage/frames/068.webp",
+      "sourceSHA256": "b2088c14b91f8c8c4e0d2ebcad1c89174c97f43efa39a748c6c3e7f83c628168",
+      "copiedSHA256": "b2088c14b91f8c8c4e0d2ebcad1c89174c97f43efa39a748c6c3e7f83c628168",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/069.webp",
+      "sourcePath": "public/products/contour-sage/frames/069.webp",
+      "sourceSHA256": "9412cbcb536eb81cea430e0504d7dc7b73c1c69fabc7e6c5c1314d8cc9a64ef8",
+      "copiedSHA256": "9412cbcb536eb81cea430e0504d7dc7b73c1c69fabc7e6c5c1314d8cc9a64ef8",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/070.webp",
+      "sourcePath": "public/products/contour-sage/frames/070.webp",
+      "sourceSHA256": "f275d12cf7e0f9c576ad946eec6401b80c60db3a8af54ec171defa9d091c3fae",
+      "copiedSHA256": "f275d12cf7e0f9c576ad946eec6401b80c60db3a8af54ec171defa9d091c3fae",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/071.webp",
+      "sourcePath": "public/products/contour-sage/frames/071.webp",
+      "sourceSHA256": "73ec36f295748eb927690d28d8788cbea3b99defa56ea78725604deffbdeaf70",
+      "copiedSHA256": "73ec36f295748eb927690d28d8788cbea3b99defa56ea78725604deffbdeaf70",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/072.webp",
+      "sourcePath": "public/products/contour-sage/frames/072.webp",
+      "sourceSHA256": "262f2834e22cc69c0f5579c86a97fd9d990319380c34cf716cea32245cea5a91",
+      "copiedSHA256": "262f2834e22cc69c0f5579c86a97fd9d990319380c34cf716cea32245cea5a91",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/073.webp",
+      "sourcePath": "public/products/contour-sage/frames/073.webp",
+      "sourceSHA256": "65064caafb6d90290c36011f0b795a8e6ec7f305be13404458f5960c8f15aad2",
+      "copiedSHA256": "65064caafb6d90290c36011f0b795a8e6ec7f305be13404458f5960c8f15aad2",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/074.webp",
+      "sourcePath": "public/products/contour-sage/frames/074.webp",
+      "sourceSHA256": "404551f2854c568473e44f3db44e446b1165047c93f9808ec12a416712cbe81a",
+      "copiedSHA256": "404551f2854c568473e44f3db44e446b1165047c93f9808ec12a416712cbe81a",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/075.webp",
+      "sourcePath": "public/products/contour-sage/frames/075.webp",
+      "sourceSHA256": "79006dfa77be431a8f743471022b59372725ca1a8dec23416165ba75e1da0021",
+      "copiedSHA256": "79006dfa77be431a8f743471022b59372725ca1a8dec23416165ba75e1da0021",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/076.webp",
+      "sourcePath": "public/products/contour-sage/frames/076.webp",
+      "sourceSHA256": "0a6f0db40c740306f100dfd6cbf9696f51ef187c0f61a147ea07d36b781bcf7c",
+      "copiedSHA256": "0a6f0db40c740306f100dfd6cbf9696f51ef187c0f61a147ea07d36b781bcf7c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/077.webp",
+      "sourcePath": "public/products/contour-sage/frames/077.webp",
+      "sourceSHA256": "7f9cec0dbe1265f353408e72a9812a4b253d26e8f9b40efc4915794d14864848",
+      "copiedSHA256": "7f9cec0dbe1265f353408e72a9812a4b253d26e8f9b40efc4915794d14864848",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/078.webp",
+      "sourcePath": "public/products/contour-sage/frames/078.webp",
+      "sourceSHA256": "a6806150c0f7dc43676ce65e2c7522115e1801d372c4eca807aec8eff9299204",
+      "copiedSHA256": "a6806150c0f7dc43676ce65e2c7522115e1801d372c4eca807aec8eff9299204",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/079.webp",
+      "sourcePath": "public/products/contour-sage/frames/079.webp",
+      "sourceSHA256": "c32c1418d387296a59057dfbfc594ac2f31ce33a0d0f25520d72300239742326",
+      "copiedSHA256": "c32c1418d387296a59057dfbfc594ac2f31ce33a0d0f25520d72300239742326",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/080.webp",
+      "sourcePath": "public/products/contour-sage/frames/080.webp",
+      "sourceSHA256": "d5b64269634e8c877a5cc6fbff670448748af094d834aa6b91041330c7e9bb0b",
+      "copiedSHA256": "d5b64269634e8c877a5cc6fbff670448748af094d834aa6b91041330c7e9bb0b",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/081.webp",
+      "sourcePath": "public/products/contour-sage/frames/081.webp",
+      "sourceSHA256": "a720b1c051b3f4a6072bba22fbe25e1cb58aa69b6a9cc5f09af6014e2396de5c",
+      "copiedSHA256": "a720b1c051b3f4a6072bba22fbe25e1cb58aa69b6a9cc5f09af6014e2396de5c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/082.webp",
+      "sourcePath": "public/products/contour-sage/frames/082.webp",
+      "sourceSHA256": "fdc791f3301ff1b939f8b7a9388b006289b8ec9b7d11b911939efc65d94b3480",
+      "copiedSHA256": "fdc791f3301ff1b939f8b7a9388b006289b8ec9b7d11b911939efc65d94b3480",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/083.webp",
+      "sourcePath": "public/products/contour-sage/frames/083.webp",
+      "sourceSHA256": "4ac3d78bc130fc3688384747a757a4a242fefc86cd3d80dc69837a03e06fc8ac",
+      "copiedSHA256": "4ac3d78bc130fc3688384747a757a4a242fefc86cd3d80dc69837a03e06fc8ac",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/084.webp",
+      "sourcePath": "public/products/contour-sage/frames/084.webp",
+      "sourceSHA256": "8f578f8b32462adccc866779da2f5c2f17977f22845ff8cc7268627ae612751b",
+      "copiedSHA256": "8f578f8b32462adccc866779da2f5c2f17977f22845ff8cc7268627ae612751b",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/085.webp",
+      "sourcePath": "public/products/contour-sage/frames/085.webp",
+      "sourceSHA256": "2ef1584adae2ddccac069ef6786f4d32f61af7f5c3de2f1ce5d737e37a49487f",
+      "copiedSHA256": "2ef1584adae2ddccac069ef6786f4d32f61af7f5c3de2f1ce5d737e37a49487f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/086.webp",
+      "sourcePath": "public/products/contour-sage/frames/086.webp",
+      "sourceSHA256": "c4cda4ef61c3eaa848305ec65e3544c5ebf63bcf06c8ee76cfb159bb3e9204e2",
+      "copiedSHA256": "c4cda4ef61c3eaa848305ec65e3544c5ebf63bcf06c8ee76cfb159bb3e9204e2",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/087.webp",
+      "sourcePath": "public/products/contour-sage/frames/087.webp",
+      "sourceSHA256": "668169750deb676759ed2af5d596ff00faba897763c2d82f0fcdd537735bf0c0",
+      "copiedSHA256": "668169750deb676759ed2af5d596ff00faba897763c2d82f0fcdd537735bf0c0",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/088.webp",
+      "sourcePath": "public/products/contour-sage/frames/088.webp",
+      "sourceSHA256": "e73e780aab72da254231ab5c1651fe900ba957f0841a40386f80251c030a02d8",
+      "copiedSHA256": "e73e780aab72da254231ab5c1651fe900ba957f0841a40386f80251c030a02d8",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/089.webp",
+      "sourcePath": "public/products/contour-sage/frames/089.webp",
+      "sourceSHA256": "50e7a48fe39cbb57c8ab640693cd15c82843fbbd146e29a45575a96f57afda40",
+      "copiedSHA256": "50e7a48fe39cbb57c8ab640693cd15c82843fbbd146e29a45575a96f57afda40",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/090.webp",
+      "sourcePath": "public/products/contour-sage/frames/090.webp",
+      "sourceSHA256": "01c81c8a6f5ff613fed9843e30928600c82f914ee4a9b5c4049deafb6362cde5",
+      "copiedSHA256": "01c81c8a6f5ff613fed9843e30928600c82f914ee4a9b5c4049deafb6362cde5",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/091.webp",
+      "sourcePath": "public/products/contour-sage/frames/091.webp",
+      "sourceSHA256": "1e298ade2ff8ab70fcf5a3f730c175089ade617261e672a642309283e7c435a6",
+      "copiedSHA256": "1e298ade2ff8ab70fcf5a3f730c175089ade617261e672a642309283e7c435a6",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/092.webp",
+      "sourcePath": "public/products/contour-sage/frames/092.webp",
+      "sourceSHA256": "59c466fcb8d7e812b9dcb295bfa5369dd9cedd421b2aa805cb95ae3e97cc6f9f",
+      "copiedSHA256": "59c466fcb8d7e812b9dcb295bfa5369dd9cedd421b2aa805cb95ae3e97cc6f9f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/093.webp",
+      "sourcePath": "public/products/contour-sage/frames/093.webp",
+      "sourceSHA256": "f21bc818ddf13674c708c7e7685a7af79e711ed1f651d48d323e999c5e5b4cae",
+      "copiedSHA256": "f21bc818ddf13674c708c7e7685a7af79e711ed1f651d48d323e999c5e5b4cae",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/094.webp",
+      "sourcePath": "public/products/contour-sage/frames/094.webp",
+      "sourceSHA256": "7910ad1e41b386a9c87a3af093a2e58df83f5beb608f38475fc02087db1f14df",
+      "copiedSHA256": "7910ad1e41b386a9c87a3af093a2e58df83f5beb608f38475fc02087db1f14df",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/095.webp",
+      "sourcePath": "public/products/contour-sage/frames/095.webp",
+      "sourceSHA256": "ed0b791abd244a883e23288f0a3a1a1812cc718ad5125d23cb19c4e610b31c52",
+      "copiedSHA256": "ed0b791abd244a883e23288f0a3a1a1812cc718ad5125d23cb19c4e610b31c52",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/096.webp",
+      "sourcePath": "public/products/contour-sage/frames/096.webp",
+      "sourceSHA256": "08b315016faa2579fb25d317df05a753ecf5a75a192e3984c97fe5e71b8ed8d9",
+      "copiedSHA256": "08b315016faa2579fb25d317df05a753ecf5a75a192e3984c97fe5e71b8ed8d9",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/097.webp",
+      "sourcePath": "public/products/contour-sage/frames/097.webp",
+      "sourceSHA256": "fe8a406f492d78a2ff4fdbacee721ba4c323b4721b405c125ae102ad74cec678",
+      "copiedSHA256": "fe8a406f492d78a2ff4fdbacee721ba4c323b4721b405c125ae102ad74cec678",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/098.webp",
+      "sourcePath": "public/products/contour-sage/frames/098.webp",
+      "sourceSHA256": "abff79e27e718e939215cd19fbf5c1b6d63f3d1b8e181add44d570c979808ba0",
+      "copiedSHA256": "abff79e27e718e939215cd19fbf5c1b6d63f3d1b8e181add44d570c979808ba0",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/099.webp",
+      "sourcePath": "public/products/contour-sage/frames/099.webp",
+      "sourceSHA256": "b9ed0d9602e1ba06bce87e92cd2afdcb545623d2a56e4173e8f412128e26a832",
+      "copiedSHA256": "b9ed0d9602e1ba06bce87e92cd2afdcb545623d2a56e4173e8f412128e26a832",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/100.webp",
+      "sourcePath": "public/products/contour-sage/frames/100.webp",
+      "sourceSHA256": "0e6673e64248b43f93b229361d8fc0cfab67da5319ca412b374a32ced276c654",
+      "copiedSHA256": "0e6673e64248b43f93b229361d8fc0cfab67da5319ca412b374a32ced276c654",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/101.webp",
+      "sourcePath": "public/products/contour-sage/frames/101.webp",
+      "sourceSHA256": "39d7fee198ec7ebd7264a977a35dc256614333f129fdcf0c09adf63af6a72d48",
+      "copiedSHA256": "39d7fee198ec7ebd7264a977a35dc256614333f129fdcf0c09adf63af6a72d48",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/102.webp",
+      "sourcePath": "public/products/contour-sage/frames/102.webp",
+      "sourceSHA256": "56311fca1789ad37e975edabd137decd28794533c599957f8502488d72508019",
+      "copiedSHA256": "56311fca1789ad37e975edabd137decd28794533c599957f8502488d72508019",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/103.webp",
+      "sourcePath": "public/products/contour-sage/frames/103.webp",
+      "sourceSHA256": "fecdea4389335fe981169d293092e1fd835073b12512226755719e4d13b61124",
+      "copiedSHA256": "fecdea4389335fe981169d293092e1fd835073b12512226755719e4d13b61124",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/104.webp",
+      "sourcePath": "public/products/contour-sage/frames/104.webp",
+      "sourceSHA256": "c42f51b5e84ed4b67f58ff3331e9b4915fa08bf84d5f9929b21b4a921ed00f6a",
+      "copiedSHA256": "c42f51b5e84ed4b67f58ff3331e9b4915fa08bf84d5f9929b21b4a921ed00f6a",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/105.webp",
+      "sourcePath": "public/products/contour-sage/frames/105.webp",
+      "sourceSHA256": "b0541e159b3f27b617b5a15c410dfc351273b127d36d9c50044d2316da8ab97c",
+      "copiedSHA256": "b0541e159b3f27b617b5a15c410dfc351273b127d36d9c50044d2316da8ab97c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/106.webp",
+      "sourcePath": "public/products/contour-sage/frames/106.webp",
+      "sourceSHA256": "601092c5b16b5e96b0ae0ccfafa9bd1fbdd1851fdb5b75aadfcae093784bd08f",
+      "copiedSHA256": "601092c5b16b5e96b0ae0ccfafa9bd1fbdd1851fdb5b75aadfcae093784bd08f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/107.webp",
+      "sourcePath": "public/products/contour-sage/frames/107.webp",
+      "sourceSHA256": "48b2e784b786c9f92d50ed2d57637a72fe27f8fa71193929c300f98888fd6c56",
+      "copiedSHA256": "48b2e784b786c9f92d50ed2d57637a72fe27f8fa71193929c300f98888fd6c56",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/108.webp",
+      "sourcePath": "public/products/contour-sage/frames/108.webp",
+      "sourceSHA256": "c71850367893f66b3a18065c894cd57219a7f1ed5e843c7fffede0a46768d8ba",
+      "copiedSHA256": "c71850367893f66b3a18065c894cd57219a7f1ed5e843c7fffede0a46768d8ba",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/109.webp",
+      "sourcePath": "public/products/contour-sage/frames/109.webp",
+      "sourceSHA256": "0dcc12173f2b1f8d84434699d9ec309fd14314e7389501026c76a260ae0d5396",
+      "copiedSHA256": "0dcc12173f2b1f8d84434699d9ec309fd14314e7389501026c76a260ae0d5396",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/110.webp",
+      "sourcePath": "public/products/contour-sage/frames/110.webp",
+      "sourceSHA256": "372193c6ab088f1610b237fea3fdfea63f11fd0db80590a2c553992c65977f45",
+      "copiedSHA256": "372193c6ab088f1610b237fea3fdfea63f11fd0db80590a2c553992c65977f45",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/111.webp",
+      "sourcePath": "public/products/contour-sage/frames/111.webp",
+      "sourceSHA256": "e5ad2832bebdf8081c30e58e286e53d75a66e96a6ed9acc599c5ee688a51f356",
+      "copiedSHA256": "e5ad2832bebdf8081c30e58e286e53d75a66e96a6ed9acc599c5ee688a51f356",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/112.webp",
+      "sourcePath": "public/products/contour-sage/frames/112.webp",
+      "sourceSHA256": "232e79d10137edcd579f03723cc809ec545d59aa3c238379c2e3904fdcb103b1",
+      "copiedSHA256": "232e79d10137edcd579f03723cc809ec545d59aa3c238379c2e3904fdcb103b1",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/113.webp",
+      "sourcePath": "public/products/contour-sage/frames/113.webp",
+      "sourceSHA256": "a7a918ed0adbc190a0d70eef308ca9c9917e1ffbe10f7c28760360ebcecdb573",
+      "copiedSHA256": "a7a918ed0adbc190a0d70eef308ca9c9917e1ffbe10f7c28760360ebcecdb573",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/114.webp",
+      "sourcePath": "public/products/contour-sage/frames/114.webp",
+      "sourceSHA256": "921402ba69d7f2c6700dbf108d3d61c6d5541e7791452287b5999a996296e7ee",
+      "copiedSHA256": "921402ba69d7f2c6700dbf108d3d61c6d5541e7791452287b5999a996296e7ee",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/115.webp",
+      "sourcePath": "public/products/contour-sage/frames/115.webp",
+      "sourceSHA256": "4fa6a3cf28b592d6382714599a43812fe89787e5b339b40280d46a0c6b4eb6e8",
+      "copiedSHA256": "4fa6a3cf28b592d6382714599a43812fe89787e5b339b40280d46a0c6b4eb6e8",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/116.webp",
+      "sourcePath": "public/products/contour-sage/frames/116.webp",
+      "sourceSHA256": "39f83ad735bfcdf3de04f185dab5443610f42ea9f8b9a6a19f58d7ad17f2f56c",
+      "copiedSHA256": "39f83ad735bfcdf3de04f185dab5443610f42ea9f8b9a6a19f58d7ad17f2f56c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/117.webp",
+      "sourcePath": "public/products/contour-sage/frames/117.webp",
+      "sourceSHA256": "0ef18fa90cdd8ada75a5f1d7475434fa22958f273c504580a2b9ab6f7397ab3e",
+      "copiedSHA256": "0ef18fa90cdd8ada75a5f1d7475434fa22958f273c504580a2b9ab6f7397ab3e",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/118.webp",
+      "sourcePath": "public/products/contour-sage/frames/118.webp",
+      "sourceSHA256": "6784fb3ba2437f1ca86bf10b9f8594cdfdfb0d5e744ef15795e35468cb2fadcb",
+      "copiedSHA256": "6784fb3ba2437f1ca86bf10b9f8594cdfdfb0d5e744ef15795e35468cb2fadcb",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/119.webp",
+      "sourcePath": "public/products/contour-sage/frames/119.webp",
+      "sourceSHA256": "48db7517104c7424c31e2c80cfb19d9b693ba30e2067cc9115042c79544b28e9",
+      "copiedSHA256": "48db7517104c7424c31e2c80cfb19d9b693ba30e2067cc9115042c79544b28e9",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/120.webp",
+      "sourcePath": "public/products/contour-sage/frames/120.webp",
+      "sourceSHA256": "01caee0bb93878fcb1c7b06f8b137cd5d0ca31165a32fdb5cc5d859d9a507463",
+      "copiedSHA256": "01caee0bb93878fcb1c7b06f8b137cd5d0ca31165a32fdb5cc5d859d9a507463",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/121.webp",
+      "sourcePath": "public/products/contour-sage/frames/121.webp",
+      "sourceSHA256": "6bbbdfd5a2afbf7714ba99ffe0f7d7a3b9c6ebac6187cdf715b4366580e7037d",
+      "copiedSHA256": "6bbbdfd5a2afbf7714ba99ffe0f7d7a3b9c6ebac6187cdf715b4366580e7037d",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/122.webp",
+      "sourcePath": "public/products/contour-sage/frames/122.webp",
+      "sourceSHA256": "cfefd7ef75b884e4708acc1555a7d138e5c5358db8d7068b389fd1255ede035d",
+      "copiedSHA256": "cfefd7ef75b884e4708acc1555a7d138e5c5358db8d7068b389fd1255ede035d",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/123.webp",
+      "sourcePath": "public/products/contour-sage/frames/123.webp",
+      "sourceSHA256": "e0ad9d3f01dc1891e40f6f9e2334f82fdf714178f49a940ae699b86cb70207a4",
+      "copiedSHA256": "e0ad9d3f01dc1891e40f6f9e2334f82fdf714178f49a940ae699b86cb70207a4",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/124.webp",
+      "sourcePath": "public/products/contour-sage/frames/124.webp",
+      "sourceSHA256": "14da5e85458175e0f08476b90702f2ed842ec647e4195149fa58807197c829a4",
+      "copiedSHA256": "14da5e85458175e0f08476b90702f2ed842ec647e4195149fa58807197c829a4",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/125.webp",
+      "sourcePath": "public/products/contour-sage/frames/125.webp",
+      "sourceSHA256": "5d2109ccd9b2119a80970b11a7dfb98550825f25229568fcfb3fa6c79727dc6f",
+      "copiedSHA256": "5d2109ccd9b2119a80970b11a7dfb98550825f25229568fcfb3fa6c79727dc6f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/126.webp",
+      "sourcePath": "public/products/contour-sage/frames/126.webp",
+      "sourceSHA256": "1c46bb7405f802fceed7db6b6fe8ca763ce45408e80652bda53c891767ee37aa",
+      "copiedSHA256": "1c46bb7405f802fceed7db6b6fe8ca763ce45408e80652bda53c891767ee37aa",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/127.webp",
+      "sourcePath": "public/products/contour-sage/frames/127.webp",
+      "sourceSHA256": "832dcb315b1975c79ec7f7360e6a49346cfe7c8889c488462c529cb292e95d36",
+      "copiedSHA256": "832dcb315b1975c79ec7f7360e6a49346cfe7c8889c488462c529cb292e95d36",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/128.webp",
+      "sourcePath": "public/products/contour-sage/frames/128.webp",
+      "sourceSHA256": "d4afb4ec3bedcfeda853258985d05b557efa9d99953dd44d29275e432ade5699",
+      "copiedSHA256": "d4afb4ec3bedcfeda853258985d05b557efa9d99953dd44d29275e432ade5699",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/129.webp",
+      "sourcePath": "public/products/contour-sage/frames/129.webp",
+      "sourceSHA256": "0e72947386678f6c02de3240546942f91c033e6b95ac65e6c5bc011a19a1a04e",
+      "copiedSHA256": "0e72947386678f6c02de3240546942f91c033e6b95ac65e6c5bc011a19a1a04e",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/130.webp",
+      "sourcePath": "public/products/contour-sage/frames/130.webp",
+      "sourceSHA256": "0e96b941f30c143361ec2b19d6a48bdde232619dcede767cac80c3254f6661f8",
+      "copiedSHA256": "0e96b941f30c143361ec2b19d6a48bdde232619dcede767cac80c3254f6661f8",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/131.webp",
+      "sourcePath": "public/products/contour-sage/frames/131.webp",
+      "sourceSHA256": "bd5fd7644904798f9c66f4c0de1f38f4ef34e712bf648503eb1600e4118d6129",
+      "copiedSHA256": "bd5fd7644904798f9c66f4c0de1f38f4ef34e712bf648503eb1600e4118d6129",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/132.webp",
+      "sourcePath": "public/products/contour-sage/frames/132.webp",
+      "sourceSHA256": "1fb0c20a8804386f692e06e0ef6f3bac5c025e52ac665dfe58b278f6d415a57c",
+      "copiedSHA256": "1fb0c20a8804386f692e06e0ef6f3bac5c025e52ac665dfe58b278f6d415a57c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/133.webp",
+      "sourcePath": "public/products/contour-sage/frames/133.webp",
+      "sourceSHA256": "b28639097fcbb46da2737d988a8ce1b1940d3cec1112551604b4460ae5ace055",
+      "copiedSHA256": "b28639097fcbb46da2737d988a8ce1b1940d3cec1112551604b4460ae5ace055",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/134.webp",
+      "sourcePath": "public/products/contour-sage/frames/134.webp",
+      "sourceSHA256": "df5a0a43fbb368e69a1603aeef31fdadfa256c5b9a69c35f4c37d392ced2a9f1",
+      "copiedSHA256": "df5a0a43fbb368e69a1603aeef31fdadfa256c5b9a69c35f4c37d392ced2a9f1",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/135.webp",
+      "sourcePath": "public/products/contour-sage/frames/135.webp",
+      "sourceSHA256": "feb1ead023768f67eaf1b3710c68373461bb7b083dcba6784ea328ac6148a5e1",
+      "copiedSHA256": "feb1ead023768f67eaf1b3710c68373461bb7b083dcba6784ea328ac6148a5e1",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/136.webp",
+      "sourcePath": "public/products/contour-sage/frames/136.webp",
+      "sourceSHA256": "7bb56410613160c7007b623016d09a73760ac29473c27dde2fcde3f48a15ed25",
+      "copiedSHA256": "7bb56410613160c7007b623016d09a73760ac29473c27dde2fcde3f48a15ed25",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/137.webp",
+      "sourcePath": "public/products/contour-sage/frames/137.webp",
+      "sourceSHA256": "fdc49bbe110831e264abbfb69cd486b542cc3e33679198e1ac041a8f0ed17d11",
+      "copiedSHA256": "fdc49bbe110831e264abbfb69cd486b542cc3e33679198e1ac041a8f0ed17d11",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/138.webp",
+      "sourcePath": "public/products/contour-sage/frames/138.webp",
+      "sourceSHA256": "2353e106f2decd62e41ad993a8a0048e0f2d3f26dcca3d4108e79484e63abe2e",
+      "copiedSHA256": "2353e106f2decd62e41ad993a8a0048e0f2d3f26dcca3d4108e79484e63abe2e",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/139.webp",
+      "sourcePath": "public/products/contour-sage/frames/139.webp",
+      "sourceSHA256": "9020de413e0a23d3de9f4b76d5b3efcea2ae702eab544d150756a85e03133e5e",
+      "copiedSHA256": "9020de413e0a23d3de9f4b76d5b3efcea2ae702eab544d150756a85e03133e5e",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/140.webp",
+      "sourcePath": "public/products/contour-sage/frames/140.webp",
+      "sourceSHA256": "6d021440311ac5c8c88634c004ff7de6c76d0f1293dceae174e54570f2ed671f",
+      "copiedSHA256": "6d021440311ac5c8c88634c004ff7de6c76d0f1293dceae174e54570f2ed671f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/141.webp",
+      "sourcePath": "public/products/contour-sage/frames/141.webp",
+      "sourceSHA256": "4c5472bcd207db3d161ba521834f22eb89afffe07d29fd4430d25c6591672ce6",
+      "copiedSHA256": "4c5472bcd207db3d161ba521834f22eb89afffe07d29fd4430d25c6591672ce6",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/142.webp",
+      "sourcePath": "public/products/contour-sage/frames/142.webp",
+      "sourceSHA256": "26f496689b02e9a9579bc26100635b35242eaa92f0a55d89db857b6210900a5f",
+      "copiedSHA256": "26f496689b02e9a9579bc26100635b35242eaa92f0a55d89db857b6210900a5f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/143.webp",
+      "sourcePath": "public/products/contour-sage/frames/143.webp",
+      "sourceSHA256": "e9aaf24dfcc4addb3469207330baaaa510eb996c28194e56b8630bac26f3bcd1",
+      "copiedSHA256": "e9aaf24dfcc4addb3469207330baaaa510eb996c28194e56b8630bac26f3bcd1",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/144.webp",
+      "sourcePath": "public/products/contour-sage/frames/144.webp",
+      "sourceSHA256": "e89733e89abdf4f32e6be1121fd2e70127451e0c2f23f391273e07c12a0fa00a",
+      "copiedSHA256": "e89733e89abdf4f32e6be1121fd2e70127451e0c2f23f391273e07c12a0fa00a",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/145.webp",
+      "sourcePath": "public/products/contour-sage/frames/145.webp",
+      "sourceSHA256": "db0fab4056c6023f95bd43cd71b0b989a26792f1d54da4e93b07f614c644eb4f",
+      "copiedSHA256": "db0fab4056c6023f95bd43cd71b0b989a26792f1d54da4e93b07f614c644eb4f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/146.webp",
+      "sourcePath": "public/products/contour-sage/frames/146.webp",
+      "sourceSHA256": "6f15e9f4c6a2c994c43a9d1025152ea24f27551f0d479ee8cb40aa87f5f1dab1",
+      "copiedSHA256": "6f15e9f4c6a2c994c43a9d1025152ea24f27551f0d479ee8cb40aa87f5f1dab1",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/147.webp",
+      "sourcePath": "public/products/contour-sage/frames/147.webp",
+      "sourceSHA256": "c38e3aa8262a47a64546916abb042b0bcd6d2e0c79b14d5c37db033e9da7ca12",
+      "copiedSHA256": "c38e3aa8262a47a64546916abb042b0bcd6d2e0c79b14d5c37db033e9da7ca12",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/148.webp",
+      "sourcePath": "public/products/contour-sage/frames/148.webp",
+      "sourceSHA256": "2dbf4a00e2c936065030678e9c171d29a586b52a477c05cfd3c1c172d4c5ef1a",
+      "copiedSHA256": "2dbf4a00e2c936065030678e9c171d29a586b52a477c05cfd3c1c172d4c5ef1a",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/149.webp",
+      "sourcePath": "public/products/contour-sage/frames/149.webp",
+      "sourceSHA256": "a45cf9c709b1251d880f57b837d5f52816f57634eae5fa6463e71e48b53089f8",
+      "copiedSHA256": "a45cf9c709b1251d880f57b837d5f52816f57634eae5fa6463e71e48b53089f8",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/150.webp",
+      "sourcePath": "public/products/contour-sage/frames/150.webp",
+      "sourceSHA256": "8f5a65f1bae1f2f284db34cd318ef41382b8d2a396d3602fac08cf2a2672b5a1",
+      "copiedSHA256": "8f5a65f1bae1f2f284db34cd318ef41382b8d2a396d3602fac08cf2a2672b5a1",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/151.webp",
+      "sourcePath": "public/products/contour-sage/frames/151.webp",
+      "sourceSHA256": "d9cfbc16457ebb71976d7cc9f95c9c79cd8022796a3271f6832b1628b638d3f4",
+      "copiedSHA256": "d9cfbc16457ebb71976d7cc9f95c9c79cd8022796a3271f6832b1628b638d3f4",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/152.webp",
+      "sourcePath": "public/products/contour-sage/frames/152.webp",
+      "sourceSHA256": "34ae021c0639576ae56d45f8828d8df3feac4b2f33843fdcff9f929ef922410c",
+      "copiedSHA256": "34ae021c0639576ae56d45f8828d8df3feac4b2f33843fdcff9f929ef922410c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/153.webp",
+      "sourcePath": "public/products/contour-sage/frames/153.webp",
+      "sourceSHA256": "fb2365ffd6f5037dcc133565f9b770d7d07f7592476788daf1af48197b2b4e8b",
+      "copiedSHA256": "fb2365ffd6f5037dcc133565f9b770d7d07f7592476788daf1af48197b2b4e8b",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/154.webp",
+      "sourcePath": "public/products/contour-sage/frames/154.webp",
+      "sourceSHA256": "0e17d74ca6ee57077a3b07a8768f7513345272176293e231c13117e2a7e7893d",
+      "copiedSHA256": "0e17d74ca6ee57077a3b07a8768f7513345272176293e231c13117e2a7e7893d",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/155.webp",
+      "sourcePath": "public/products/contour-sage/frames/155.webp",
+      "sourceSHA256": "46aca6ada4ddd7bd289dd4e827841ad9cf05f071636072ebd2b41c0c7edf38e4",
+      "copiedSHA256": "46aca6ada4ddd7bd289dd4e827841ad9cf05f071636072ebd2b41c0c7edf38e4",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/156.webp",
+      "sourcePath": "public/products/contour-sage/frames/156.webp",
+      "sourceSHA256": "24d7560edb253a37fb09631a29fba63da195402602690d1d246a6b9a0f30901a",
+      "copiedSHA256": "24d7560edb253a37fb09631a29fba63da195402602690d1d246a6b9a0f30901a",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/157.webp",
+      "sourcePath": "public/products/contour-sage/frames/157.webp",
+      "sourceSHA256": "4f2f26c27a86fca71191a8d4b786250c4ec7644f3ae53810064b9264092b43ef",
+      "copiedSHA256": "4f2f26c27a86fca71191a8d4b786250c4ec7644f3ae53810064b9264092b43ef",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/158.webp",
+      "sourcePath": "public/products/contour-sage/frames/158.webp",
+      "sourceSHA256": "64aa824bddfa3fc18b30297b7c9ef77388476832c2a178ecbb575c2421868386",
+      "copiedSHA256": "64aa824bddfa3fc18b30297b7c9ef77388476832c2a178ecbb575c2421868386",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/159.webp",
+      "sourcePath": "public/products/contour-sage/frames/159.webp",
+      "sourceSHA256": "9ff95bc0a67e5c93e0de5ca25fe417b841ce1fd1d5c22a4448b23d9e96532542",
+      "copiedSHA256": "9ff95bc0a67e5c93e0de5ca25fe417b841ce1fd1d5c22a4448b23d9e96532542",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/160.webp",
+      "sourcePath": "public/products/contour-sage/frames/160.webp",
+      "sourceSHA256": "c530cc807cebbc4f70648d5ade178d89a0edf21a4336685d8f56dc669c3e19cc",
+      "copiedSHA256": "c530cc807cebbc4f70648d5ade178d89a0edf21a4336685d8f56dc669c3e19cc",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/161.webp",
+      "sourcePath": "public/products/contour-sage/frames/161.webp",
+      "sourceSHA256": "6e087d5d4b3aab2e557d4a14529ee7d67fe697cfe733960b0fac3d3b682abfbb",
+      "copiedSHA256": "6e087d5d4b3aab2e557d4a14529ee7d67fe697cfe733960b0fac3d3b682abfbb",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/162.webp",
+      "sourcePath": "public/products/contour-sage/frames/162.webp",
+      "sourceSHA256": "ca76ad4c16f33c25cd7e9aaa0d18078ea7e75a78566725c44331967048826dab",
+      "copiedSHA256": "ca76ad4c16f33c25cd7e9aaa0d18078ea7e75a78566725c44331967048826dab",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/163.webp",
+      "sourcePath": "public/products/contour-sage/frames/163.webp",
+      "sourceSHA256": "dad8ffb61e61557e6dae04cdba01597bdc19b299afffbd629a6ea9a37e40db29",
+      "copiedSHA256": "dad8ffb61e61557e6dae04cdba01597bdc19b299afffbd629a6ea9a37e40db29",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/164.webp",
+      "sourcePath": "public/products/contour-sage/frames/164.webp",
+      "sourceSHA256": "7f68968b8c370ee45eb7b1a296cea2975a0c7620e5ba98511666b9c1063e33c4",
+      "copiedSHA256": "7f68968b8c370ee45eb7b1a296cea2975a0c7620e5ba98511666b9c1063e33c4",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/165.webp",
+      "sourcePath": "public/products/contour-sage/frames/165.webp",
+      "sourceSHA256": "fbe0fb396e798d26f82151db21afdfbb94b2dbc2c59a6afed263d3fed3b57a97",
+      "copiedSHA256": "fbe0fb396e798d26f82151db21afdfbb94b2dbc2c59a6afed263d3fed3b57a97",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/166.webp",
+      "sourcePath": "public/products/contour-sage/frames/166.webp",
+      "sourceSHA256": "b14d9ba18ddb7c97827c61baa5a446afe7e1fa7f7813567942bce2fdbe32b371",
+      "copiedSHA256": "b14d9ba18ddb7c97827c61baa5a446afe7e1fa7f7813567942bce2fdbe32b371",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/167.webp",
+      "sourcePath": "public/products/contour-sage/frames/167.webp",
+      "sourceSHA256": "8c7ef9cd8c76a60f8ba976768d618060def58202b2bde4b5b8a0f306c68ce1b3",
+      "copiedSHA256": "8c7ef9cd8c76a60f8ba976768d618060def58202b2bde4b5b8a0f306c68ce1b3",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/168.webp",
+      "sourcePath": "public/products/contour-sage/frames/168.webp",
+      "sourceSHA256": "4b468e029d7345e2ddb3ca0372757e2d2458598396ff24782ee39c9094e4ae75",
+      "copiedSHA256": "4b468e029d7345e2ddb3ca0372757e2d2458598396ff24782ee39c9094e4ae75",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/169.webp",
+      "sourcePath": "public/products/contour-sage/frames/169.webp",
+      "sourceSHA256": "152bd1319c38347d8d61fd93e7f70cba6e99ed163518afc74f3efede17995d50",
+      "copiedSHA256": "152bd1319c38347d8d61fd93e7f70cba6e99ed163518afc74f3efede17995d50",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/170.webp",
+      "sourcePath": "public/products/contour-sage/frames/170.webp",
+      "sourceSHA256": "b0cc49df3858b546cc53f096ce3e68f8b5907ce64db1dca112bf47f3929d2219",
+      "copiedSHA256": "b0cc49df3858b546cc53f096ce3e68f8b5907ce64db1dca112bf47f3929d2219",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/171.webp",
+      "sourcePath": "public/products/contour-sage/frames/171.webp",
+      "sourceSHA256": "1f9ff2fb401baca22c403b161a6625557ae873d42235abf5c961a8bc6ee6b08f",
+      "copiedSHA256": "1f9ff2fb401baca22c403b161a6625557ae873d42235abf5c961a8bc6ee6b08f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/172.webp",
+      "sourcePath": "public/products/contour-sage/frames/172.webp",
+      "sourceSHA256": "6ca6eba7a8e2f3ab5cf97769c624e1877bd33aa34a8584ef7ba863f3ec59a07e",
+      "copiedSHA256": "6ca6eba7a8e2f3ab5cf97769c624e1877bd33aa34a8584ef7ba863f3ec59a07e",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/173.webp",
+      "sourcePath": "public/products/contour-sage/frames/173.webp",
+      "sourceSHA256": "41577194c36b909084bfa59e45a0f26358f32d743b1cb96ca3360622042d3979",
+      "copiedSHA256": "41577194c36b909084bfa59e45a0f26358f32d743b1cb96ca3360622042d3979",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/174.webp",
+      "sourcePath": "public/products/contour-sage/frames/174.webp",
+      "sourceSHA256": "960bd13b2585635f2cc26ba6440de3ca18f4a07ed062cfa2e8bb4a12e67071d1",
+      "copiedSHA256": "960bd13b2585635f2cc26ba6440de3ca18f4a07ed062cfa2e8bb4a12e67071d1",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/175.webp",
+      "sourcePath": "public/products/contour-sage/frames/175.webp",
+      "sourceSHA256": "a28336b7bd7010b98ff9f342dd57e337bab41d2dd5a9cb6ce3f1c0763405a5a5",
+      "copiedSHA256": "a28336b7bd7010b98ff9f342dd57e337bab41d2dd5a9cb6ce3f1c0763405a5a5",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/176.webp",
+      "sourcePath": "public/products/contour-sage/frames/176.webp",
+      "sourceSHA256": "7889e2a57790b1847c58ca63c920dc34ff2c54b01ebba7c527c5970a7e836c80",
+      "copiedSHA256": "7889e2a57790b1847c58ca63c920dc34ff2c54b01ebba7c527c5970a7e836c80",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/177.webp",
+      "sourcePath": "public/products/contour-sage/frames/177.webp",
+      "sourceSHA256": "bc2904ac28cdbbe8724c5d6ca59c6b831baba50280f894744cfa93115641f422",
+      "copiedSHA256": "bc2904ac28cdbbe8724c5d6ca59c6b831baba50280f894744cfa93115641f422",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/178.webp",
+      "sourcePath": "public/products/contour-sage/frames/178.webp",
+      "sourceSHA256": "c8790089c734a9c435167caf1780184e26f2fc27ea748c8d9e139a856141c0ff",
+      "copiedSHA256": "c8790089c734a9c435167caf1780184e26f2fc27ea748c8d9e139a856141c0ff",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/179.webp",
+      "sourcePath": "public/products/contour-sage/frames/179.webp",
+      "sourceSHA256": "23a523ba86d3f8a58083d8dde531ff7fb251d2078c5b49ae12e0f8501432081e",
+      "copiedSHA256": "23a523ba86d3f8a58083d8dde531ff7fb251d2078c5b49ae12e0f8501432081e",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/180.webp",
+      "sourcePath": "public/products/contour-sage/frames/180.webp",
+      "sourceSHA256": "788e42b28c7eec45e49c444e6615cd64db84359a067feb18c72aab588f434ee8",
+      "copiedSHA256": "788e42b28c7eec45e49c444e6615cd64db84359a067feb18c72aab588f434ee8",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/181.webp",
+      "sourcePath": "public/products/contour-sage/frames/181.webp",
+      "sourceSHA256": "1eb27a7a9828a4fe759839bc963b811445b4a88e63ae75379f826b0340941a10",
+      "copiedSHA256": "1eb27a7a9828a4fe759839bc963b811445b4a88e63ae75379f826b0340941a10",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/182.webp",
+      "sourcePath": "public/products/contour-sage/frames/182.webp",
+      "sourceSHA256": "b585d538dadc7201bc950ff71a7108cd63e6de443d622de18dcad1b3a7dbdff8",
+      "copiedSHA256": "b585d538dadc7201bc950ff71a7108cd63e6de443d622de18dcad1b3a7dbdff8",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/183.webp",
+      "sourcePath": "public/products/contour-sage/frames/183.webp",
+      "sourceSHA256": "f9575817a9b36625150b2eb7e363da6eb8bc5d06b60751979f883100c5e0800e",
+      "copiedSHA256": "f9575817a9b36625150b2eb7e363da6eb8bc5d06b60751979f883100c5e0800e",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/184.webp",
+      "sourcePath": "public/products/contour-sage/frames/184.webp",
+      "sourceSHA256": "5077c92a701a833553c6d213c7bcff20288f288f378a127e78bbd48e6a08f942",
+      "copiedSHA256": "5077c92a701a833553c6d213c7bcff20288f288f378a127e78bbd48e6a08f942",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/185.webp",
+      "sourcePath": "public/products/contour-sage/frames/185.webp",
+      "sourceSHA256": "59bcde56d37668cab98c76884b30803c06513be1f17a7ac781561b1cf340ad0c",
+      "copiedSHA256": "59bcde56d37668cab98c76884b30803c06513be1f17a7ac781561b1cf340ad0c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/186.webp",
+      "sourcePath": "public/products/contour-sage/frames/186.webp",
+      "sourceSHA256": "e768fda551f9b4f4c44fbe2cdb4ce1d0695c29f504aa9e136906199d4b5b6df2",
+      "copiedSHA256": "e768fda551f9b4f4c44fbe2cdb4ce1d0695c29f504aa9e136906199d4b5b6df2",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/187.webp",
+      "sourcePath": "public/products/contour-sage/frames/187.webp",
+      "sourceSHA256": "9b3d82d1695e7229dba6b2c3701c4ade208487a882e3ef4631b5714c857b7c2f",
+      "copiedSHA256": "9b3d82d1695e7229dba6b2c3701c4ade208487a882e3ef4631b5714c857b7c2f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/188.webp",
+      "sourcePath": "public/products/contour-sage/frames/188.webp",
+      "sourceSHA256": "193d108264ab75e018223a3b233a9d283b90b209098a08be66d009f0034befc4",
+      "copiedSHA256": "193d108264ab75e018223a3b233a9d283b90b209098a08be66d009f0034befc4",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/189.webp",
+      "sourcePath": "public/products/contour-sage/frames/189.webp",
+      "sourceSHA256": "04889404acd19b64b5465f2bd1ef442dd7c3f31a10ce57932690fc2aa1753083",
+      "copiedSHA256": "04889404acd19b64b5465f2bd1ef442dd7c3f31a10ce57932690fc2aa1753083",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/190.webp",
+      "sourcePath": "public/products/contour-sage/frames/190.webp",
+      "sourceSHA256": "7443b94ca68de8cda93125e9ce1932ae7e6145b07e0629391c1df42246893a1c",
+      "copiedSHA256": "7443b94ca68de8cda93125e9ce1932ae7e6145b07e0629391c1df42246893a1c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/191.webp",
+      "sourcePath": "public/products/contour-sage/frames/191.webp",
+      "sourceSHA256": "142300324076d4f65c44a2c713c71cf5bf68a7ae3e215e490fda19ad84ca1b71",
+      "copiedSHA256": "142300324076d4f65c44a2c713c71cf5bf68a7ae3e215e490fda19ad84ca1b71",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/192.webp",
+      "sourcePath": "public/products/contour-sage/frames/192.webp",
+      "sourceSHA256": "cc5fc5e29e8a80277465861ff9ba22144e27402c757441ebe0ccaeefcbd83481",
+      "copiedSHA256": "cc5fc5e29e8a80277465861ff9ba22144e27402c757441ebe0ccaeefcbd83481",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/193.webp",
+      "sourcePath": "public/products/contour-sage/frames/193.webp",
+      "sourceSHA256": "3dd07a2333a52a9cb8cc68630cfe95d709555557b212730e0ff6901a3149e43c",
+      "copiedSHA256": "3dd07a2333a52a9cb8cc68630cfe95d709555557b212730e0ff6901a3149e43c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/194.webp",
+      "sourcePath": "public/products/contour-sage/frames/194.webp",
+      "sourceSHA256": "1635e5f1eacb6023a3b18c7c7de6524195098e6aa2584b0b25ef1b5704db2f94",
+      "copiedSHA256": "1635e5f1eacb6023a3b18c7c7de6524195098e6aa2584b0b25ef1b5704db2f94",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/195.webp",
+      "sourcePath": "public/products/contour-sage/frames/195.webp",
+      "sourceSHA256": "187a4b1990c34de2b95d18e6b0a0ddb977af5494d76c3ed01267cbb6df6bfbb9",
+      "copiedSHA256": "187a4b1990c34de2b95d18e6b0a0ddb977af5494d76c3ed01267cbb6df6bfbb9",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/196.webp",
+      "sourcePath": "public/products/contour-sage/frames/196.webp",
+      "sourceSHA256": "c44ad3619a3609a4d13788973a2211de8ba460c753aac9bf57fd8ebb4514779c",
+      "copiedSHA256": "c44ad3619a3609a4d13788973a2211de8ba460c753aac9bf57fd8ebb4514779c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/197.webp",
+      "sourcePath": "public/products/contour-sage/frames/197.webp",
+      "sourceSHA256": "80135f3f87cf0f3e079b003813afcc5d3262aa5b6b836380833814bc33abcf76",
+      "copiedSHA256": "80135f3f87cf0f3e079b003813afcc5d3262aa5b6b836380833814bc33abcf76",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/198.webp",
+      "sourcePath": "public/products/contour-sage/frames/198.webp",
+      "sourceSHA256": "9d2a0cb1a14c8994668e7e4b8854342b0a336ce86379253d3bc21f6b70732b9a",
+      "copiedSHA256": "9d2a0cb1a14c8994668e7e4b8854342b0a336ce86379253d3bc21f6b70732b9a",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/199.webp",
+      "sourcePath": "public/products/contour-sage/frames/199.webp",
+      "sourceSHA256": "ac60964f0bc98b8f9c6cada2c268e3e67b863280aed98aefbe131424465a4e88",
+      "copiedSHA256": "ac60964f0bc98b8f9c6cada2c268e3e67b863280aed98aefbe131424465a4e88",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/200.webp",
+      "sourcePath": "public/products/contour-sage/frames/200.webp",
+      "sourceSHA256": "03196cd9ee3f9ab0034e597438cfa80cf28b6598968e4f356477917e52e33ca3",
+      "copiedSHA256": "03196cd9ee3f9ab0034e597438cfa80cf28b6598968e4f356477917e52e33ca3",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/201.webp",
+      "sourcePath": "public/products/contour-sage/frames/201.webp",
+      "sourceSHA256": "65b73da88ccc136f303d07d368deea8be34c0a4c82234abaaeb575bc14e6920f",
+      "copiedSHA256": "65b73da88ccc136f303d07d368deea8be34c0a4c82234abaaeb575bc14e6920f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/202.webp",
+      "sourcePath": "public/products/contour-sage/frames/202.webp",
+      "sourceSHA256": "0ff70497c8eae7eaaeb53f8863a578d2a27cf675a620aa24660f438ae84b0597",
+      "copiedSHA256": "0ff70497c8eae7eaaeb53f8863a578d2a27cf675a620aa24660f438ae84b0597",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/203.webp",
+      "sourcePath": "public/products/contour-sage/frames/203.webp",
+      "sourceSHA256": "9d83e11f7d004fae969a7ae6559c021c2392be939585f1eccb7fb3b0c77b03b9",
+      "copiedSHA256": "9d83e11f7d004fae969a7ae6559c021c2392be939585f1eccb7fb3b0c77b03b9",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/204.webp",
+      "sourcePath": "public/products/contour-sage/frames/204.webp",
+      "sourceSHA256": "b161f4091f094a5e3cd2a00628e7d780f53bfff4f1db8443f29feef261be55ad",
+      "copiedSHA256": "b161f4091f094a5e3cd2a00628e7d780f53bfff4f1db8443f29feef261be55ad",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/205.webp",
+      "sourcePath": "public/products/contour-sage/frames/205.webp",
+      "sourceSHA256": "fd5ed03264c86e2ad7368a03b22a3fbbd96c99b0ea9ddfaaad413a9232b08cef",
+      "copiedSHA256": "fd5ed03264c86e2ad7368a03b22a3fbbd96c99b0ea9ddfaaad413a9232b08cef",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/206.webp",
+      "sourcePath": "public/products/contour-sage/frames/206.webp",
+      "sourceSHA256": "2fbdd36734cc673011732d1edeaa7d655ec32e0d2d2be49ef9ee2c909f07fa8f",
+      "copiedSHA256": "2fbdd36734cc673011732d1edeaa7d655ec32e0d2d2be49ef9ee2c909f07fa8f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/207.webp",
+      "sourcePath": "public/products/contour-sage/frames/207.webp",
+      "sourceSHA256": "d3210d3cfb13a780a010ca7547a2d5c87a484dd9f863a67fa91603c8defd981e",
+      "copiedSHA256": "d3210d3cfb13a780a010ca7547a2d5c87a484dd9f863a67fa91603c8defd981e",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/208.webp",
+      "sourcePath": "public/products/contour-sage/frames/208.webp",
+      "sourceSHA256": "ada5ae54fb59857a9b132784a8aae9d180bdbeac8a2b58b909be0aa51cfbe9d9",
+      "copiedSHA256": "ada5ae54fb59857a9b132784a8aae9d180bdbeac8a2b58b909be0aa51cfbe9d9",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/209.webp",
+      "sourcePath": "public/products/contour-sage/frames/209.webp",
+      "sourceSHA256": "6cb0f4a12d2e43ce9e7596a8b35f206e8c77722de5fbe87e264f95c9095d1b50",
+      "copiedSHA256": "6cb0f4a12d2e43ce9e7596a8b35f206e8c77722de5fbe87e264f95c9095d1b50",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/210.webp",
+      "sourcePath": "public/products/contour-sage/frames/210.webp",
+      "sourceSHA256": "55df0394a8a77f6a3e80bb58412faa78aae2f7dc556b83a4f5790accbefb144c",
+      "copiedSHA256": "55df0394a8a77f6a3e80bb58412faa78aae2f7dc556b83a4f5790accbefb144c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/211.webp",
+      "sourcePath": "public/products/contour-sage/frames/211.webp",
+      "sourceSHA256": "c9c176f5963f14872920766e10ade78171afd9cd9e9190a586418cd4a13b3085",
+      "copiedSHA256": "c9c176f5963f14872920766e10ade78171afd9cd9e9190a586418cd4a13b3085",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/212.webp",
+      "sourcePath": "public/products/contour-sage/frames/212.webp",
+      "sourceSHA256": "918960d00c17929bb23f31a1984d7fd2733dde1de08e420081c6059cfeb2c5e4",
+      "copiedSHA256": "918960d00c17929bb23f31a1984d7fd2733dde1de08e420081c6059cfeb2c5e4",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/213.webp",
+      "sourcePath": "public/products/contour-sage/frames/213.webp",
+      "sourceSHA256": "15e8ac5ad96a36460719dc8d9f05efdfdb6f0b0a3acece4f5c72e202dc154a1f",
+      "copiedSHA256": "15e8ac5ad96a36460719dc8d9f05efdfdb6f0b0a3acece4f5c72e202dc154a1f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/214.webp",
+      "sourcePath": "public/products/contour-sage/frames/214.webp",
+      "sourceSHA256": "5a5b02c2dbd2998398bfec3c7e70649495518d1f12a7d975adf150d8b043680b",
+      "copiedSHA256": "5a5b02c2dbd2998398bfec3c7e70649495518d1f12a7d975adf150d8b043680b",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/215.webp",
+      "sourcePath": "public/products/contour-sage/frames/215.webp",
+      "sourceSHA256": "e5887b0a596da6e5674109f8047669772fc15bfb4bea30fd9a57ecbdf9a5fca7",
+      "copiedSHA256": "e5887b0a596da6e5674109f8047669772fc15bfb4bea30fd9a57ecbdf9a5fca7",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/216.webp",
+      "sourcePath": "public/products/contour-sage/frames/216.webp",
+      "sourceSHA256": "0e4e55f7bfd9d5491d17e23eea94ae196b10ca2e946ba9531d6971958957133b",
+      "copiedSHA256": "0e4e55f7bfd9d5491d17e23eea94ae196b10ca2e946ba9531d6971958957133b",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/217.webp",
+      "sourcePath": "public/products/contour-sage/frames/217.webp",
+      "sourceSHA256": "cc31a49975b5174082f271f0ef933698100c2caa9cfeb7701a40712936dda410",
+      "copiedSHA256": "cc31a49975b5174082f271f0ef933698100c2caa9cfeb7701a40712936dda410",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/218.webp",
+      "sourcePath": "public/products/contour-sage/frames/218.webp",
+      "sourceSHA256": "78df543f1a93800a3320b5642333f033c7f1f8d3c2171f07344c4e3bac6d3db6",
+      "copiedSHA256": "78df543f1a93800a3320b5642333f033c7f1f8d3c2171f07344c4e3bac6d3db6",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/219.webp",
+      "sourcePath": "public/products/contour-sage/frames/219.webp",
+      "sourceSHA256": "2a1cd31910dc6e96051b72b74912f4b3110f4b9b4c13afd100dbc59c1d51760d",
+      "copiedSHA256": "2a1cd31910dc6e96051b72b74912f4b3110f4b9b4c13afd100dbc59c1d51760d",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/220.webp",
+      "sourcePath": "public/products/contour-sage/frames/220.webp",
+      "sourceSHA256": "4bf7f019b00499f3385964a37fa5d50c2a7991bace51d46da72b7101ec82d1c6",
+      "copiedSHA256": "4bf7f019b00499f3385964a37fa5d50c2a7991bace51d46da72b7101ec82d1c6",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/221.webp",
+      "sourcePath": "public/products/contour-sage/frames/221.webp",
+      "sourceSHA256": "ac3e35bd146a44ab22ddc6a31b8a42d7880c8970611b07b54ed5b0e0259a2a6f",
+      "copiedSHA256": "ac3e35bd146a44ab22ddc6a31b8a42d7880c8970611b07b54ed5b0e0259a2a6f",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/222.webp",
+      "sourcePath": "public/products/contour-sage/frames/222.webp",
+      "sourceSHA256": "b7f3205aaa136b84ff8072aa3d9ffae739e4b5c114f909b35288ad0b946b2845",
+      "copiedSHA256": "b7f3205aaa136b84ff8072aa3d9ffae739e4b5c114f909b35288ad0b946b2845",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/223.webp",
+      "sourcePath": "public/products/contour-sage/frames/223.webp",
+      "sourceSHA256": "266f569950b7e810f1d0e328657a8f71f3e77b1d9d0495a109b59a8c486aed3c",
+      "copiedSHA256": "266f569950b7e810f1d0e328657a8f71f3e77b1d9d0495a109b59a8c486aed3c",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/224.webp",
+      "sourcePath": "public/products/contour-sage/frames/224.webp",
+      "sourceSHA256": "5f0cd8ba93de704d4252efda4bda1e9fc8556db4f8747c0254fcaf18886ef6a1",
+      "copiedSHA256": "5f0cd8ba93de704d4252efda4bda1e9fc8556db4f8747c0254fcaf18886ef6a1",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/225.webp",
+      "sourcePath": "public/products/contour-sage/frames/225.webp",
+      "sourceSHA256": "d8d2a530c6cc6d892a7a73110b84a4888578ae36fd3c2c36fb4f788ec0f8e231",
+      "copiedSHA256": "d8d2a530c6cc6d892a7a73110b84a4888578ae36fd3c2c36fb4f788ec0f8e231",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/226.webp",
+      "sourcePath": "public/products/contour-sage/frames/226.webp",
+      "sourceSHA256": "086e6b9ac765644e0738dfb594817a2797d408476b038d6764214b0a502d1727",
+      "copiedSHA256": "086e6b9ac765644e0738dfb594817a2797d408476b038d6764214b0a502d1727",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/227.webp",
+      "sourcePath": "public/products/contour-sage/frames/227.webp",
+      "sourceSHA256": "689478184090d885245f1f9aec80da8c2ffd9454022681d6b7d8823cb626f95b",
+      "copiedSHA256": "689478184090d885245f1f9aec80da8c2ffd9454022681d6b7d8823cb626f95b",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/228.webp",
+      "sourcePath": "public/products/contour-sage/frames/228.webp",
+      "sourceSHA256": "2ed4202018ebce8dd8ea9d20459e8fdb3f0e9cfd4698ff8eb69d563afcafc8ac",
+      "copiedSHA256": "2ed4202018ebce8dd8ea9d20459e8fdb3f0e9cfd4698ff8eb69d563afcafc8ac",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/229.webp",
+      "sourcePath": "public/products/contour-sage/frames/229.webp",
+      "sourceSHA256": "1815b7ac33a2a255c6f37972572c827468244976df6d50e45b176d8b89f15874",
+      "copiedSHA256": "1815b7ac33a2a255c6f37972572c827468244976df6d50e45b176d8b89f15874",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/230.webp",
+      "sourcePath": "public/products/contour-sage/frames/230.webp",
+      "sourceSHA256": "82717b83db5c6264484c1beea36dda4f734624ddcfb9eb99a973a369cf376d24",
+      "copiedSHA256": "82717b83db5c6264484c1beea36dda4f734624ddcfb9eb99a973a369cf376d24",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/231.webp",
+      "sourcePath": "public/products/contour-sage/frames/231.webp",
+      "sourceSHA256": "d523f6d270293660a7fc9dc47af0c155c0c926dde268c7805b6fe469aec768fd",
+      "copiedSHA256": "d523f6d270293660a7fc9dc47af0c155c0c926dde268c7805b6fe469aec768fd",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/232.webp",
+      "sourcePath": "public/products/contour-sage/frames/232.webp",
+      "sourceSHA256": "22585f6132d8ac3b688b1fed1f2600fb63bcf04455a5ef1caa8ca0bb86f8dbdc",
+      "copiedSHA256": "22585f6132d8ac3b688b1fed1f2600fb63bcf04455a5ef1caa8ca0bb86f8dbdc",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/233.webp",
+      "sourcePath": "public/products/contour-sage/frames/233.webp",
+      "sourceSHA256": "cb61964eec77ecb8389c685265d91a50a82ef164bfbc23da5faad3d98bda6782",
+      "copiedSHA256": "cb61964eec77ecb8389c685265d91a50a82ef164bfbc23da5faad3d98bda6782",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/234.webp",
+      "sourcePath": "public/products/contour-sage/frames/234.webp",
+      "sourceSHA256": "3244eff3884b1136d418515377f51dd270f74d4db0ef08be4f7ba2a4897a8694",
+      "copiedSHA256": "3244eff3884b1136d418515377f51dd270f74d4db0ef08be4f7ba2a4897a8694",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/235.webp",
+      "sourcePath": "public/products/contour-sage/frames/235.webp",
+      "sourceSHA256": "88c4652d1901d72c0065445d8deba3ec1957d187d169d08175a1fd8d873237e6",
+      "copiedSHA256": "88c4652d1901d72c0065445d8deba3ec1957d187d169d08175a1fd8d873237e6",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/236.webp",
+      "sourcePath": "public/products/contour-sage/frames/236.webp",
+      "sourceSHA256": "6fa49e74be77f4f48295ab2aff07b002838a8b398fdd733d1dd1948799dc2b53",
+      "copiedSHA256": "6fa49e74be77f4f48295ab2aff07b002838a8b398fdd733d1dd1948799dc2b53",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/237.webp",
+      "sourcePath": "public/products/contour-sage/frames/237.webp",
+      "sourceSHA256": "f1936188bcc3beaa47e530438491772d0680767c3f9fd7486b8de57a7780a498",
+      "copiedSHA256": "f1936188bcc3beaa47e530438491772d0680767c3f9fd7486b8de57a7780a498",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/238.webp",
+      "sourcePath": "public/products/contour-sage/frames/238.webp",
+      "sourceSHA256": "9d45a5f1bea6420302be64fb327a6e03024785e6eed447169fda362c6ce807b3",
+      "copiedSHA256": "9d45a5f1bea6420302be64fb327a6e03024785e6eed447169fda362c6ce807b3",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/239.webp",
+      "sourcePath": "public/products/contour-sage/frames/239.webp",
+      "sourceSHA256": "9592807a4100993a6efa6cab0131bc427d346bf115172c70d5de6a545d423493",
+      "copiedSHA256": "9592807a4100993a6efa6cab0131bc427d346bf115172c70d5de6a545d423493",
+      "adapted": false
+    },
+    {
+      "path": "public/products/contour-sage/frames/240.webp",
+      "sourcePath": "public/products/contour-sage/frames/240.webp",
+      "sourceSHA256": "ab584ab15f965d4814df9cdd90198212e827c9d2fda121a029ddc5fd15bcb3b7",
+      "copiedSHA256": "ab584ab15f965d4814df9cdd90198212e827c9d2fda121a029ddc5fd15bcb3b7",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/manifest.json",
+      "sourcePath": "public/render-study/manifest.json",
+      "sourceSHA256": "d6aa0236114e3314d31d8e2a682c5d5b08ed54453ab2ed5b52faa237af360a09",
+      "copiedSHA256": "d6aa0236114e3314d31d8e2a682c5d5b08ed54453ab2ed5b52faa237af360a09",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/001.webp",
+      "sourcePath": "public/render-study/frames/001.webp",
+      "sourceSHA256": "beb8e2b6a4bd30b4e3621c2c3ba11f0c82232d33319e4d8a02405d20ff8f187e",
+      "copiedSHA256": "beb8e2b6a4bd30b4e3621c2c3ba11f0c82232d33319e4d8a02405d20ff8f187e",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/002.webp",
+      "sourcePath": "public/render-study/frames/002.webp",
+      "sourceSHA256": "c15b59f0c58ce4554be1f2b84023574e11b9e36b80d75d9228e29c896a60691b",
+      "copiedSHA256": "c15b59f0c58ce4554be1f2b84023574e11b9e36b80d75d9228e29c896a60691b",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/003.webp",
+      "sourcePath": "public/render-study/frames/003.webp",
+      "sourceSHA256": "278e71fceebbc4c8f506ce05cfcbfdaada8c2e60911f70b41a8ecfb905eba645",
+      "copiedSHA256": "278e71fceebbc4c8f506ce05cfcbfdaada8c2e60911f70b41a8ecfb905eba645",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/004.webp",
+      "sourcePath": "public/render-study/frames/004.webp",
+      "sourceSHA256": "4f07155180a5fe32db6afe25905bfc862679982df6b4754c0a2a92f974d25861",
+      "copiedSHA256": "4f07155180a5fe32db6afe25905bfc862679982df6b4754c0a2a92f974d25861",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/005.webp",
+      "sourcePath": "public/render-study/frames/005.webp",
+      "sourceSHA256": "d825030e2ad9c84ac1698367227654fc84ba73c4ada1c52d1ce6b71a95e8b167",
+      "copiedSHA256": "d825030e2ad9c84ac1698367227654fc84ba73c4ada1c52d1ce6b71a95e8b167",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/006.webp",
+      "sourcePath": "public/render-study/frames/006.webp",
+      "sourceSHA256": "036378e4e37d793da9c8d06fb0e654e5cfa7f4d81e3a1dee29c139e97eedfe04",
+      "copiedSHA256": "036378e4e37d793da9c8d06fb0e654e5cfa7f4d81e3a1dee29c139e97eedfe04",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/007.webp",
+      "sourcePath": "public/render-study/frames/007.webp",
+      "sourceSHA256": "bf1534bf3a0c4da82622e6c1e3e5aae8ccced8f2af601381d979b23389493e0c",
+      "copiedSHA256": "bf1534bf3a0c4da82622e6c1e3e5aae8ccced8f2af601381d979b23389493e0c",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/008.webp",
+      "sourcePath": "public/render-study/frames/008.webp",
+      "sourceSHA256": "edf79f26c2d258b144f8301a9ab3a724c6b833e5ca1fea89a370182d7d6eb88a",
+      "copiedSHA256": "edf79f26c2d258b144f8301a9ab3a724c6b833e5ca1fea89a370182d7d6eb88a",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/009.webp",
+      "sourcePath": "public/render-study/frames/009.webp",
+      "sourceSHA256": "2bf4d30418441086c5b4b9205b8d835d575d9456921b96e30802f8f0c9730d2f",
+      "copiedSHA256": "2bf4d30418441086c5b4b9205b8d835d575d9456921b96e30802f8f0c9730d2f",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/010.webp",
+      "sourcePath": "public/render-study/frames/010.webp",
+      "sourceSHA256": "48054e14de1509f02d2faba0f9d34dd76dfc9e2a2c19f10015d074d614058d50",
+      "copiedSHA256": "48054e14de1509f02d2faba0f9d34dd76dfc9e2a2c19f10015d074d614058d50",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/011.webp",
+      "sourcePath": "public/render-study/frames/011.webp",
+      "sourceSHA256": "c9ad24b35d8a1adc72dfc255fff3e19fb4ef4f0179a7eb9301c12c3997edc1ad",
+      "copiedSHA256": "c9ad24b35d8a1adc72dfc255fff3e19fb4ef4f0179a7eb9301c12c3997edc1ad",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/012.webp",
+      "sourcePath": "public/render-study/frames/012.webp",
+      "sourceSHA256": "13eec5c365762bcb426fa1ac2afcf1cd1c6fd6757ab238aa0accff2f49e4a2c5",
+      "copiedSHA256": "13eec5c365762bcb426fa1ac2afcf1cd1c6fd6757ab238aa0accff2f49e4a2c5",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/013.webp",
+      "sourcePath": "public/render-study/frames/013.webp",
+      "sourceSHA256": "70787f4c064ed0020496ef56a8f204be002a102fc160f5fa7527b7c65581dccf",
+      "copiedSHA256": "70787f4c064ed0020496ef56a8f204be002a102fc160f5fa7527b7c65581dccf",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/014.webp",
+      "sourcePath": "public/render-study/frames/014.webp",
+      "sourceSHA256": "8320c6d48bb62cf738092523c048a781b2c088e7d191e09377477fa9162b9e29",
+      "copiedSHA256": "8320c6d48bb62cf738092523c048a781b2c088e7d191e09377477fa9162b9e29",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/015.webp",
+      "sourcePath": "public/render-study/frames/015.webp",
+      "sourceSHA256": "e54d856000bb76dd8158f99f05c5d0aef2897270757e7a6ccc42253883aaa981",
+      "copiedSHA256": "e54d856000bb76dd8158f99f05c5d0aef2897270757e7a6ccc42253883aaa981",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/016.webp",
+      "sourcePath": "public/render-study/frames/016.webp",
+      "sourceSHA256": "115b3e4412cb4060ebf3e90bf7cd15834e21aab0a056c1f0aac06d4ab6fb5090",
+      "copiedSHA256": "115b3e4412cb4060ebf3e90bf7cd15834e21aab0a056c1f0aac06d4ab6fb5090",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/017.webp",
+      "sourcePath": "public/render-study/frames/017.webp",
+      "sourceSHA256": "9acf6b7cafce293bb3d770f30c4937f030d6de9828d6a5181aa968d1e6b42667",
+      "copiedSHA256": "9acf6b7cafce293bb3d770f30c4937f030d6de9828d6a5181aa968d1e6b42667",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/018.webp",
+      "sourcePath": "public/render-study/frames/018.webp",
+      "sourceSHA256": "4b53a98d897036587c1d4938eebedb2928ef0036fd5edc318ae8bb3e70eb7cf5",
+      "copiedSHA256": "4b53a98d897036587c1d4938eebedb2928ef0036fd5edc318ae8bb3e70eb7cf5",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/019.webp",
+      "sourcePath": "public/render-study/frames/019.webp",
+      "sourceSHA256": "641a2bf95d648522d880b28ab482442639d6bd293ad2da50efe8deabadc54e02",
+      "copiedSHA256": "641a2bf95d648522d880b28ab482442639d6bd293ad2da50efe8deabadc54e02",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/020.webp",
+      "sourcePath": "public/render-study/frames/020.webp",
+      "sourceSHA256": "82bf9aefd9039addccfaeed9a39f1771a7f07cf920825633c18b2f8571d0d748",
+      "copiedSHA256": "82bf9aefd9039addccfaeed9a39f1771a7f07cf920825633c18b2f8571d0d748",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/021.webp",
+      "sourcePath": "public/render-study/frames/021.webp",
+      "sourceSHA256": "940e3b802183fc79fd1875bc5bde78d49f1d7847fe4543182d68b197a1eb3e4c",
+      "copiedSHA256": "940e3b802183fc79fd1875bc5bde78d49f1d7847fe4543182d68b197a1eb3e4c",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/022.webp",
+      "sourcePath": "public/render-study/frames/022.webp",
+      "sourceSHA256": "26d72d51d77f607aaa957a2bd7960614745986fed83082ef73faaf782c867ef9",
+      "copiedSHA256": "26d72d51d77f607aaa957a2bd7960614745986fed83082ef73faaf782c867ef9",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/023.webp",
+      "sourcePath": "public/render-study/frames/023.webp",
+      "sourceSHA256": "79e6f4860791fcfe76eac22ea78db144e3c3d96d1f59f98e2cc5ba0aad8f02bf",
+      "copiedSHA256": "79e6f4860791fcfe76eac22ea78db144e3c3d96d1f59f98e2cc5ba0aad8f02bf",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/024.webp",
+      "sourcePath": "public/render-study/frames/024.webp",
+      "sourceSHA256": "f050f37e7321abf67b24965e7f29eb5b51599fce0d101ce46255e06100b3cd20",
+      "copiedSHA256": "f050f37e7321abf67b24965e7f29eb5b51599fce0d101ce46255e06100b3cd20",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/025.webp",
+      "sourcePath": "public/render-study/frames/025.webp",
+      "sourceSHA256": "8a371607d9b6068d7fdd52f62100f9e6898a6257f5995702f4122e79219c99da",
+      "copiedSHA256": "8a371607d9b6068d7fdd52f62100f9e6898a6257f5995702f4122e79219c99da",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/026.webp",
+      "sourcePath": "public/render-study/frames/026.webp",
+      "sourceSHA256": "df0af419df20930cabd8d6675817230c07a637625e928e2b4c4974e5ea1c48d2",
+      "copiedSHA256": "df0af419df20930cabd8d6675817230c07a637625e928e2b4c4974e5ea1c48d2",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/027.webp",
+      "sourcePath": "public/render-study/frames/027.webp",
+      "sourceSHA256": "65e3187599f6c7c22e73babe3d7c0232e9ebb9bb3c70ca8f4471d6e77d9307bd",
+      "copiedSHA256": "65e3187599f6c7c22e73babe3d7c0232e9ebb9bb3c70ca8f4471d6e77d9307bd",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/028.webp",
+      "sourcePath": "public/render-study/frames/028.webp",
+      "sourceSHA256": "179f037523b4be57298a76d554812b1f9a65d15f0abb15197d197d7287daffdd",
+      "copiedSHA256": "179f037523b4be57298a76d554812b1f9a65d15f0abb15197d197d7287daffdd",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/029.webp",
+      "sourcePath": "public/render-study/frames/029.webp",
+      "sourceSHA256": "e2961e382f0f5aebb01c87c189704490d7d181a39d8ea5ed2445e8db8bc7dedd",
+      "copiedSHA256": "e2961e382f0f5aebb01c87c189704490d7d181a39d8ea5ed2445e8db8bc7dedd",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/030.webp",
+      "sourcePath": "public/render-study/frames/030.webp",
+      "sourceSHA256": "42d686ec281c2333bbbc3cbf55048a883223bfc5fed473b9e9fd055b68860065",
+      "copiedSHA256": "42d686ec281c2333bbbc3cbf55048a883223bfc5fed473b9e9fd055b68860065",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/031.webp",
+      "sourcePath": "public/render-study/frames/031.webp",
+      "sourceSHA256": "beffc8be39fa71040c7877632878187f5ef460f6c3670ca93ea03fec1438fce8",
+      "copiedSHA256": "beffc8be39fa71040c7877632878187f5ef460f6c3670ca93ea03fec1438fce8",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/032.webp",
+      "sourcePath": "public/render-study/frames/032.webp",
+      "sourceSHA256": "1bee3eb4964b3f0c64f792d1715cb6f11d8fc5d40d0bb5759b04320b832a1590",
+      "copiedSHA256": "1bee3eb4964b3f0c64f792d1715cb6f11d8fc5d40d0bb5759b04320b832a1590",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/033.webp",
+      "sourcePath": "public/render-study/frames/033.webp",
+      "sourceSHA256": "2bfc712090b5e6c7c0fc48c53e7d7f9e6770f54773cd246c5b5ea7d2f0000dc8",
+      "copiedSHA256": "2bfc712090b5e6c7c0fc48c53e7d7f9e6770f54773cd246c5b5ea7d2f0000dc8",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/034.webp",
+      "sourcePath": "public/render-study/frames/034.webp",
+      "sourceSHA256": "1d554c4da4b645d8b613f68a2d7b06ecadf42f4c2298b13412a50b461834cbea",
+      "copiedSHA256": "1d554c4da4b645d8b613f68a2d7b06ecadf42f4c2298b13412a50b461834cbea",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/035.webp",
+      "sourcePath": "public/render-study/frames/035.webp",
+      "sourceSHA256": "83b59fddd5f252fc632450509a5cee07373c5233848ec929d2af2a3919213803",
+      "copiedSHA256": "83b59fddd5f252fc632450509a5cee07373c5233848ec929d2af2a3919213803",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/036.webp",
+      "sourcePath": "public/render-study/frames/036.webp",
+      "sourceSHA256": "13c067a82f36d0926e6b313bae39084b4cdfc5b92a9305718a5fa6351939e761",
+      "copiedSHA256": "13c067a82f36d0926e6b313bae39084b4cdfc5b92a9305718a5fa6351939e761",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/037.webp",
+      "sourcePath": "public/render-study/frames/037.webp",
+      "sourceSHA256": "5571f4d421abe106c199dfa50b9db5be0bf5227f57e9c8ea67bce2d9fee18366",
+      "copiedSHA256": "5571f4d421abe106c199dfa50b9db5be0bf5227f57e9c8ea67bce2d9fee18366",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/038.webp",
+      "sourcePath": "public/render-study/frames/038.webp",
+      "sourceSHA256": "5399bfba931de965693d4dc7cc8d609d9245fa1d9bb3d4ecce37e66c764cec9b",
+      "copiedSHA256": "5399bfba931de965693d4dc7cc8d609d9245fa1d9bb3d4ecce37e66c764cec9b",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/039.webp",
+      "sourcePath": "public/render-study/frames/039.webp",
+      "sourceSHA256": "c82e7fed64ff61bfe6f65bcca09b328473feaef146426928c4dbacbe7af2f064",
+      "copiedSHA256": "c82e7fed64ff61bfe6f65bcca09b328473feaef146426928c4dbacbe7af2f064",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/040.webp",
+      "sourcePath": "public/render-study/frames/040.webp",
+      "sourceSHA256": "94270256e69d620d13604830e3c41bc6e6a33600684e16a7da832a35cbcaf5e6",
+      "copiedSHA256": "94270256e69d620d13604830e3c41bc6e6a33600684e16a7da832a35cbcaf5e6",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/041.webp",
+      "sourcePath": "public/render-study/frames/041.webp",
+      "sourceSHA256": "b21a8b7ddcc0fae1fb65721054f29054353c074878fdae5a6e7e47b560e48b54",
+      "copiedSHA256": "b21a8b7ddcc0fae1fb65721054f29054353c074878fdae5a6e7e47b560e48b54",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/042.webp",
+      "sourcePath": "public/render-study/frames/042.webp",
+      "sourceSHA256": "59106d84614a2583876034511ffdf7443df862cd14942e7d858b2f9ad1fac734",
+      "copiedSHA256": "59106d84614a2583876034511ffdf7443df862cd14942e7d858b2f9ad1fac734",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/043.webp",
+      "sourcePath": "public/render-study/frames/043.webp",
+      "sourceSHA256": "44e062cc2049ddec9499b3a659c775c87b6172b540717ba70da17ca1b9d57efe",
+      "copiedSHA256": "44e062cc2049ddec9499b3a659c775c87b6172b540717ba70da17ca1b9d57efe",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/044.webp",
+      "sourcePath": "public/render-study/frames/044.webp",
+      "sourceSHA256": "ce1d2de15e9f204208c81fab29d5f082c8e18b0fbf7cdf76934f4aa063dd7135",
+      "copiedSHA256": "ce1d2de15e9f204208c81fab29d5f082c8e18b0fbf7cdf76934f4aa063dd7135",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/045.webp",
+      "sourcePath": "public/render-study/frames/045.webp",
+      "sourceSHA256": "323e80ceb51dc0367e0b0d7e07c7aece1ebf2591dc3c4120ad5856e0f1b13055",
+      "copiedSHA256": "323e80ceb51dc0367e0b0d7e07c7aece1ebf2591dc3c4120ad5856e0f1b13055",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/046.webp",
+      "sourcePath": "public/render-study/frames/046.webp",
+      "sourceSHA256": "dc4994ecb814755fa86d5e43a133d3c5b4f5597f029b4bc5a6423acc8755f3f7",
+      "copiedSHA256": "dc4994ecb814755fa86d5e43a133d3c5b4f5597f029b4bc5a6423acc8755f3f7",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/047.webp",
+      "sourcePath": "public/render-study/frames/047.webp",
+      "sourceSHA256": "13d0225e158b8b7ac0cfbb5e4f497cda4ec0413c5d09064fbe09373ca1285ea7",
+      "copiedSHA256": "13d0225e158b8b7ac0cfbb5e4f497cda4ec0413c5d09064fbe09373ca1285ea7",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/048.webp",
+      "sourcePath": "public/render-study/frames/048.webp",
+      "sourceSHA256": "9d8a878d958743b7ab42560b43f421159ed8945fb0a34ce7a1b69386af47cdf2",
+      "copiedSHA256": "9d8a878d958743b7ab42560b43f421159ed8945fb0a34ce7a1b69386af47cdf2",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/049.webp",
+      "sourcePath": "public/render-study/frames/049.webp",
+      "sourceSHA256": "9621101f1e522b0da803540335611bb985e95fdd9b3daf0bc3996abb2d336b5c",
+      "copiedSHA256": "9621101f1e522b0da803540335611bb985e95fdd9b3daf0bc3996abb2d336b5c",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/050.webp",
+      "sourcePath": "public/render-study/frames/050.webp",
+      "sourceSHA256": "fffc4158e5a320aa4f65b5b7e13117638a20a53468e30f800c36593500b9c5de",
+      "copiedSHA256": "fffc4158e5a320aa4f65b5b7e13117638a20a53468e30f800c36593500b9c5de",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/051.webp",
+      "sourcePath": "public/render-study/frames/051.webp",
+      "sourceSHA256": "97ce8d1470ba6a832d29bfbb0f0c26cc231442d90254fbc3db36896d32fe09c1",
+      "copiedSHA256": "97ce8d1470ba6a832d29bfbb0f0c26cc231442d90254fbc3db36896d32fe09c1",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/052.webp",
+      "sourcePath": "public/render-study/frames/052.webp",
+      "sourceSHA256": "9fbe9c6d00ee3ebb85552db72a1d37642e44a7a4d065479d69910965c79ea384",
+      "copiedSHA256": "9fbe9c6d00ee3ebb85552db72a1d37642e44a7a4d065479d69910965c79ea384",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/053.webp",
+      "sourcePath": "public/render-study/frames/053.webp",
+      "sourceSHA256": "11d3de7b650d2a9c799e88d667847a993a1642e42fd23bb38bd624d424f5b9dc",
+      "copiedSHA256": "11d3de7b650d2a9c799e88d667847a993a1642e42fd23bb38bd624d424f5b9dc",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/054.webp",
+      "sourcePath": "public/render-study/frames/054.webp",
+      "sourceSHA256": "1169d58098e4d5022c50605d67981bdfaa47d1988586208ebf07e0b6b4270f07",
+      "copiedSHA256": "1169d58098e4d5022c50605d67981bdfaa47d1988586208ebf07e0b6b4270f07",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/055.webp",
+      "sourcePath": "public/render-study/frames/055.webp",
+      "sourceSHA256": "8e2dfda0ec1a625831e4a09f147caedabc615a573a7f08167e03066c9740d32b",
+      "copiedSHA256": "8e2dfda0ec1a625831e4a09f147caedabc615a573a7f08167e03066c9740d32b",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/056.webp",
+      "sourcePath": "public/render-study/frames/056.webp",
+      "sourceSHA256": "e218c2ffc18e4c3105f153e9c6cdac1432c644f22c68057b3fa78efc1ca9fd5b",
+      "copiedSHA256": "e218c2ffc18e4c3105f153e9c6cdac1432c644f22c68057b3fa78efc1ca9fd5b",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/057.webp",
+      "sourcePath": "public/render-study/frames/057.webp",
+      "sourceSHA256": "5bfb95a8bb1199e3046334d2b24d200ed6027d4840564665ea29dbdeeb9356cf",
+      "copiedSHA256": "5bfb95a8bb1199e3046334d2b24d200ed6027d4840564665ea29dbdeeb9356cf",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/058.webp",
+      "sourcePath": "public/render-study/frames/058.webp",
+      "sourceSHA256": "e047a224cdaf3918becdce3de8e6c3c47c35e56b5b5eea9c59d1b6a427bf0359",
+      "copiedSHA256": "e047a224cdaf3918becdce3de8e6c3c47c35e56b5b5eea9c59d1b6a427bf0359",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/059.webp",
+      "sourcePath": "public/render-study/frames/059.webp",
+      "sourceSHA256": "a9b3eccf2033b774b4476fb08ab4f6acb1e39cbbf7e981776fdf3f71d37ee990",
+      "copiedSHA256": "a9b3eccf2033b774b4476fb08ab4f6acb1e39cbbf7e981776fdf3f71d37ee990",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/060.webp",
+      "sourcePath": "public/render-study/frames/060.webp",
+      "sourceSHA256": "dccaad2af144a37fbc588858684a56f49cf5e1521cb478a694de5dc470fbbd64",
+      "copiedSHA256": "dccaad2af144a37fbc588858684a56f49cf5e1521cb478a694de5dc470fbbd64",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/061.webp",
+      "sourcePath": "public/render-study/frames/061.webp",
+      "sourceSHA256": "b0199664382bb1f0d3ad9ee7badd19b52097f6411d4e576eb93e07762ead15fc",
+      "copiedSHA256": "b0199664382bb1f0d3ad9ee7badd19b52097f6411d4e576eb93e07762ead15fc",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/062.webp",
+      "sourcePath": "public/render-study/frames/062.webp",
+      "sourceSHA256": "9ea0f0ff6bc316ba2e05a87f1ad3f914d04a8e2e19978422960e32d24f6fb764",
+      "copiedSHA256": "9ea0f0ff6bc316ba2e05a87f1ad3f914d04a8e2e19978422960e32d24f6fb764",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/063.webp",
+      "sourcePath": "public/render-study/frames/063.webp",
+      "sourceSHA256": "449e6f26edff325b11175858dc1d09786bf5d78359db525171189c15dd30a7b0",
+      "copiedSHA256": "449e6f26edff325b11175858dc1d09786bf5d78359db525171189c15dd30a7b0",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/064.webp",
+      "sourcePath": "public/render-study/frames/064.webp",
+      "sourceSHA256": "6614789b2a8c0ff10788636c77588e136f938a2c0c727333e3de116bdc60afcd",
+      "copiedSHA256": "6614789b2a8c0ff10788636c77588e136f938a2c0c727333e3de116bdc60afcd",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/065.webp",
+      "sourcePath": "public/render-study/frames/065.webp",
+      "sourceSHA256": "2a287e368c22c8a021f08877fd4301542edd1bda35e8f5796126eace373ae3c4",
+      "copiedSHA256": "2a287e368c22c8a021f08877fd4301542edd1bda35e8f5796126eace373ae3c4",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/066.webp",
+      "sourcePath": "public/render-study/frames/066.webp",
+      "sourceSHA256": "34abff8167163b9dadd0d02379af703e35c0403fba04a7b5770ca3aeb3d80713",
+      "copiedSHA256": "34abff8167163b9dadd0d02379af703e35c0403fba04a7b5770ca3aeb3d80713",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/067.webp",
+      "sourcePath": "public/render-study/frames/067.webp",
+      "sourceSHA256": "52e8d85bc34a45af07bcb0caf43cafbb273f48efc172003ef81c4b21ecb969b1",
+      "copiedSHA256": "52e8d85bc34a45af07bcb0caf43cafbb273f48efc172003ef81c4b21ecb969b1",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/068.webp",
+      "sourcePath": "public/render-study/frames/068.webp",
+      "sourceSHA256": "adf8fda93da8301c26f7c9dbc351f6839a9c6c77f56ca3ef9fc389e0294575dd",
+      "copiedSHA256": "adf8fda93da8301c26f7c9dbc351f6839a9c6c77f56ca3ef9fc389e0294575dd",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/069.webp",
+      "sourcePath": "public/render-study/frames/069.webp",
+      "sourceSHA256": "a120abbff55def84743efb11171cf1ba40b1421c3259852427642e02862c9054",
+      "copiedSHA256": "a120abbff55def84743efb11171cf1ba40b1421c3259852427642e02862c9054",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/070.webp",
+      "sourcePath": "public/render-study/frames/070.webp",
+      "sourceSHA256": "5dff94edb2125afc4b52d59c069ce7b8e93bec10340de58196d0885e84fd6d67",
+      "copiedSHA256": "5dff94edb2125afc4b52d59c069ce7b8e93bec10340de58196d0885e84fd6d67",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/071.webp",
+      "sourcePath": "public/render-study/frames/071.webp",
+      "sourceSHA256": "87a696d29e30246a8dd67494073f55382bfe6dca055cb6d4eaf1c2cf7797454e",
+      "copiedSHA256": "87a696d29e30246a8dd67494073f55382bfe6dca055cb6d4eaf1c2cf7797454e",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/072.webp",
+      "sourcePath": "public/render-study/frames/072.webp",
+      "sourceSHA256": "c383877035dc7008cc5dfda2264a13665030147ed79d87092136d52819bbd531",
+      "copiedSHA256": "c383877035dc7008cc5dfda2264a13665030147ed79d87092136d52819bbd531",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/073.webp",
+      "sourcePath": "public/render-study/frames/073.webp",
+      "sourceSHA256": "8cecaebafdae40fb22d9e0908550ccfe38ff4ede124f8fcb7ae084c2aa25a18c",
+      "copiedSHA256": "8cecaebafdae40fb22d9e0908550ccfe38ff4ede124f8fcb7ae084c2aa25a18c",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/074.webp",
+      "sourcePath": "public/render-study/frames/074.webp",
+      "sourceSHA256": "cb8eed090cea19726e6032fa86fac77be59eece7d9bb16b3f5d53d29335a73ef",
+      "copiedSHA256": "cb8eed090cea19726e6032fa86fac77be59eece7d9bb16b3f5d53d29335a73ef",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/075.webp",
+      "sourcePath": "public/render-study/frames/075.webp",
+      "sourceSHA256": "c94a1a2566a9771771e00353e8b93d2169f174303dfbe4be8253974cdd707cf9",
+      "copiedSHA256": "c94a1a2566a9771771e00353e8b93d2169f174303dfbe4be8253974cdd707cf9",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/076.webp",
+      "sourcePath": "public/render-study/frames/076.webp",
+      "sourceSHA256": "3992c6ca4a805c1bee4a34f4cf3bf1fdb7111086a9b756da1f6fde6d11b7d853",
+      "copiedSHA256": "3992c6ca4a805c1bee4a34f4cf3bf1fdb7111086a9b756da1f6fde6d11b7d853",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/077.webp",
+      "sourcePath": "public/render-study/frames/077.webp",
+      "sourceSHA256": "a2e059dc27c3ea9b389e53b04aa49da2eecb468670fefcbcf53d0b76c6fb0f89",
+      "copiedSHA256": "a2e059dc27c3ea9b389e53b04aa49da2eecb468670fefcbcf53d0b76c6fb0f89",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/078.webp",
+      "sourcePath": "public/render-study/frames/078.webp",
+      "sourceSHA256": "665fca0b22124d71024007bca6925f6c86da0bb2c40a2f1e9986e6279229ced5",
+      "copiedSHA256": "665fca0b22124d71024007bca6925f6c86da0bb2c40a2f1e9986e6279229ced5",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/079.webp",
+      "sourcePath": "public/render-study/frames/079.webp",
+      "sourceSHA256": "90f8f36f081f73079d58fa43cdc72dd68d3c06916184da2584a2b92215c04cbc",
+      "copiedSHA256": "90f8f36f081f73079d58fa43cdc72dd68d3c06916184da2584a2b92215c04cbc",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/080.webp",
+      "sourcePath": "public/render-study/frames/080.webp",
+      "sourceSHA256": "33df894dd2dec8609c8900cc78827878152e8ac7941987275e96242e4b60799c",
+      "copiedSHA256": "33df894dd2dec8609c8900cc78827878152e8ac7941987275e96242e4b60799c",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/081.webp",
+      "sourcePath": "public/render-study/frames/081.webp",
+      "sourceSHA256": "213e00a8f3b9f58a81c39bdf4d83fcb1837174b1a5a38c076e8e32eee7e4b181",
+      "copiedSHA256": "213e00a8f3b9f58a81c39bdf4d83fcb1837174b1a5a38c076e8e32eee7e4b181",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/082.webp",
+      "sourcePath": "public/render-study/frames/082.webp",
+      "sourceSHA256": "9d3b346053935c7e7b437bc2c6290c6d45cbf234b8f6040189d2c4f782efc403",
+      "copiedSHA256": "9d3b346053935c7e7b437bc2c6290c6d45cbf234b8f6040189d2c4f782efc403",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/083.webp",
+      "sourcePath": "public/render-study/frames/083.webp",
+      "sourceSHA256": "23e4a070b9a50d412885cbf45217e30010e22da92ecab09ccd9732d20447fbac",
+      "copiedSHA256": "23e4a070b9a50d412885cbf45217e30010e22da92ecab09ccd9732d20447fbac",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/084.webp",
+      "sourcePath": "public/render-study/frames/084.webp",
+      "sourceSHA256": "21c3c7fa147eef6464664ca4e8fdc0b9bd362f887ef72a5a63535b1145bd0491",
+      "copiedSHA256": "21c3c7fa147eef6464664ca4e8fdc0b9bd362f887ef72a5a63535b1145bd0491",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/085.webp",
+      "sourcePath": "public/render-study/frames/085.webp",
+      "sourceSHA256": "20395de50035908a7811a6859b688363f28069648442444870950d5b2c587814",
+      "copiedSHA256": "20395de50035908a7811a6859b688363f28069648442444870950d5b2c587814",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/086.webp",
+      "sourcePath": "public/render-study/frames/086.webp",
+      "sourceSHA256": "9ae453784caaf907e642e441ee9fbd26a5cdce1708f9f36912f89c2cb55d87b0",
+      "copiedSHA256": "9ae453784caaf907e642e441ee9fbd26a5cdce1708f9f36912f89c2cb55d87b0",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/087.webp",
+      "sourcePath": "public/render-study/frames/087.webp",
+      "sourceSHA256": "fdec6a05ccba6636d484cd5fbf9e96c705f37fd3d5ccc2b20d361f6e927d0a63",
+      "copiedSHA256": "fdec6a05ccba6636d484cd5fbf9e96c705f37fd3d5ccc2b20d361f6e927d0a63",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/088.webp",
+      "sourcePath": "public/render-study/frames/088.webp",
+      "sourceSHA256": "3888ba0ec99e3286a0de52c175b70e8ea54cd8eb39cccf983b934849f927279a",
+      "copiedSHA256": "3888ba0ec99e3286a0de52c175b70e8ea54cd8eb39cccf983b934849f927279a",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/089.webp",
+      "sourcePath": "public/render-study/frames/089.webp",
+      "sourceSHA256": "a75a23d1b8233eced13d11956c8269040e858903d35a571bcbc4b05a1ad7ea4c",
+      "copiedSHA256": "a75a23d1b8233eced13d11956c8269040e858903d35a571bcbc4b05a1ad7ea4c",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/090.webp",
+      "sourcePath": "public/render-study/frames/090.webp",
+      "sourceSHA256": "be26b80402a418f2caf56a38b4a8597e045989997db22f37950172ff23942425",
+      "copiedSHA256": "be26b80402a418f2caf56a38b4a8597e045989997db22f37950172ff23942425",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/091.webp",
+      "sourcePath": "public/render-study/frames/091.webp",
+      "sourceSHA256": "7183da1c377f500a10f7473d9ad86e5fb97af9e4461b61c1522cae0721b3a349",
+      "copiedSHA256": "7183da1c377f500a10f7473d9ad86e5fb97af9e4461b61c1522cae0721b3a349",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/092.webp",
+      "sourcePath": "public/render-study/frames/092.webp",
+      "sourceSHA256": "c603724c5ee332032c060c75c56a05ca75f48673b51595393790ba1de2532701",
+      "copiedSHA256": "c603724c5ee332032c060c75c56a05ca75f48673b51595393790ba1de2532701",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/093.webp",
+      "sourcePath": "public/render-study/frames/093.webp",
+      "sourceSHA256": "e59e667d86858b888011460bcdf5a94e46053fcd56e1aa04a3b02b2df7bc4709",
+      "copiedSHA256": "e59e667d86858b888011460bcdf5a94e46053fcd56e1aa04a3b02b2df7bc4709",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/094.webp",
+      "sourcePath": "public/render-study/frames/094.webp",
+      "sourceSHA256": "1eda24c11ebb017fa9635b6287fa742e6f6a4750945e829377204eef543b447d",
+      "copiedSHA256": "1eda24c11ebb017fa9635b6287fa742e6f6a4750945e829377204eef543b447d",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/095.webp",
+      "sourcePath": "public/render-study/frames/095.webp",
+      "sourceSHA256": "6e408a61bb3e1c1178422317b10e45230f866956207551e84aea00d60ce7ecd9",
+      "copiedSHA256": "6e408a61bb3e1c1178422317b10e45230f866956207551e84aea00d60ce7ecd9",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/096.webp",
+      "sourcePath": "public/render-study/frames/096.webp",
+      "sourceSHA256": "42706c9664637706f0557255ad77acd28d275e6a258ba3433676efb2276c4f40",
+      "copiedSHA256": "42706c9664637706f0557255ad77acd28d275e6a258ba3433676efb2276c4f40",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/097.webp",
+      "sourcePath": "public/render-study/frames/097.webp",
+      "sourceSHA256": "7cfc61d4fd8b0e67260ba8a0e08abb2fec73f900b88e9a4709b1090be7bdaa1a",
+      "copiedSHA256": "7cfc61d4fd8b0e67260ba8a0e08abb2fec73f900b88e9a4709b1090be7bdaa1a",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/098.webp",
+      "sourcePath": "public/render-study/frames/098.webp",
+      "sourceSHA256": "24c36bf7d00efeda5af87a8cd7b636d0d064e0d2115c20f3f29b6f977b43656b",
+      "copiedSHA256": "24c36bf7d00efeda5af87a8cd7b636d0d064e0d2115c20f3f29b6f977b43656b",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/099.webp",
+      "sourcePath": "public/render-study/frames/099.webp",
+      "sourceSHA256": "6741cecb38740753d5dadaf3c4222046bca86cee026ab31085e4bbed0c95edab",
+      "copiedSHA256": "6741cecb38740753d5dadaf3c4222046bca86cee026ab31085e4bbed0c95edab",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/100.webp",
+      "sourcePath": "public/render-study/frames/100.webp",
+      "sourceSHA256": "5ef87aa9d872771773496d8c968b1fe01274f3042ae29be0278b3f2ee87f7805",
+      "copiedSHA256": "5ef87aa9d872771773496d8c968b1fe01274f3042ae29be0278b3f2ee87f7805",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/101.webp",
+      "sourcePath": "public/render-study/frames/101.webp",
+      "sourceSHA256": "55679d8d1ee9affcabead8683bf65a878a1e2bacc2e7ebefec425132d6bf6311",
+      "copiedSHA256": "55679d8d1ee9affcabead8683bf65a878a1e2bacc2e7ebefec425132d6bf6311",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/102.webp",
+      "sourcePath": "public/render-study/frames/102.webp",
+      "sourceSHA256": "6a03f3d391bf84a55ed65da9cd574a6554f55ed4950f70d8e4f92e622b66b58b",
+      "copiedSHA256": "6a03f3d391bf84a55ed65da9cd574a6554f55ed4950f70d8e4f92e622b66b58b",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/103.webp",
+      "sourcePath": "public/render-study/frames/103.webp",
+      "sourceSHA256": "2052379681742b01e5914db92174f23050c9b74f9925feb6e267006148a6302b",
+      "copiedSHA256": "2052379681742b01e5914db92174f23050c9b74f9925feb6e267006148a6302b",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/104.webp",
+      "sourcePath": "public/render-study/frames/104.webp",
+      "sourceSHA256": "1c8466f30a9cb20e85ef445901da777f29c3cc53192ceb381f1e184cfdada2c8",
+      "copiedSHA256": "1c8466f30a9cb20e85ef445901da777f29c3cc53192ceb381f1e184cfdada2c8",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/105.webp",
+      "sourcePath": "public/render-study/frames/105.webp",
+      "sourceSHA256": "52cf9114f256df61d1a69db61f996ad3da37fbd9aa330a6c9d5adcb734065a70",
+      "copiedSHA256": "52cf9114f256df61d1a69db61f996ad3da37fbd9aa330a6c9d5adcb734065a70",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/106.webp",
+      "sourcePath": "public/render-study/frames/106.webp",
+      "sourceSHA256": "01b7417fa9a0d941335b6705e6baad425087902e1fb06ac21733d4081f1f83b7",
+      "copiedSHA256": "01b7417fa9a0d941335b6705e6baad425087902e1fb06ac21733d4081f1f83b7",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/107.webp",
+      "sourcePath": "public/render-study/frames/107.webp",
+      "sourceSHA256": "b970a98708e5efee52860cb61f3df4523e90244b1cce011b349d6c8160a341b2",
+      "copiedSHA256": "b970a98708e5efee52860cb61f3df4523e90244b1cce011b349d6c8160a341b2",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/108.webp",
+      "sourcePath": "public/render-study/frames/108.webp",
+      "sourceSHA256": "c52b9826c70342b90c4aa2ddc1bd32ab668764ea033540b7b313f6f6ae261721",
+      "copiedSHA256": "c52b9826c70342b90c4aa2ddc1bd32ab668764ea033540b7b313f6f6ae261721",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/109.webp",
+      "sourcePath": "public/render-study/frames/109.webp",
+      "sourceSHA256": "b8ba213b94c52836b206505b0c13cb744a3878c5ffdf7e7de393c8bdea5f94c4",
+      "copiedSHA256": "b8ba213b94c52836b206505b0c13cb744a3878c5ffdf7e7de393c8bdea5f94c4",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/110.webp",
+      "sourcePath": "public/render-study/frames/110.webp",
+      "sourceSHA256": "be95d97af6da506ebde7d48fb475a505f1f20befce5b96efeb87faaafba45eb5",
+      "copiedSHA256": "be95d97af6da506ebde7d48fb475a505f1f20befce5b96efeb87faaafba45eb5",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/111.webp",
+      "sourcePath": "public/render-study/frames/111.webp",
+      "sourceSHA256": "5d210d30f249ef73dafb430936806b662b76c238b93042b09871bcfc0533d131",
+      "copiedSHA256": "5d210d30f249ef73dafb430936806b662b76c238b93042b09871bcfc0533d131",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/112.webp",
+      "sourcePath": "public/render-study/frames/112.webp",
+      "sourceSHA256": "13f6001146fed67e45068b110587a0d15e078f47e63f5c70c2b1e75ce9f91070",
+      "copiedSHA256": "13f6001146fed67e45068b110587a0d15e078f47e63f5c70c2b1e75ce9f91070",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/113.webp",
+      "sourcePath": "public/render-study/frames/113.webp",
+      "sourceSHA256": "bdfa2f3e6080924defd1adff9ad3a2c1820d606557eacbfce4bfdbb1a381bf32",
+      "copiedSHA256": "bdfa2f3e6080924defd1adff9ad3a2c1820d606557eacbfce4bfdbb1a381bf32",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/114.webp",
+      "sourcePath": "public/render-study/frames/114.webp",
+      "sourceSHA256": "0d188168b10fec21e4f511afb87242cc2699f19fee2ddeabf6fa9a03cab0cd75",
+      "copiedSHA256": "0d188168b10fec21e4f511afb87242cc2699f19fee2ddeabf6fa9a03cab0cd75",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/115.webp",
+      "sourcePath": "public/render-study/frames/115.webp",
+      "sourceSHA256": "1e079209fbbbda827dd1783827854b0c081ab39aa939862ed3dd831095b5cd41",
+      "copiedSHA256": "1e079209fbbbda827dd1783827854b0c081ab39aa939862ed3dd831095b5cd41",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/116.webp",
+      "sourcePath": "public/render-study/frames/116.webp",
+      "sourceSHA256": "d021afc9441fe7e906549275794e225e76cc362cfd8a1b7d346f04c893926d12",
+      "copiedSHA256": "d021afc9441fe7e906549275794e225e76cc362cfd8a1b7d346f04c893926d12",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/117.webp",
+      "sourcePath": "public/render-study/frames/117.webp",
+      "sourceSHA256": "f599f9663577738eed7f199030705ab0c24b2ce7042e299a62b34e42a02e71f4",
+      "copiedSHA256": "f599f9663577738eed7f199030705ab0c24b2ce7042e299a62b34e42a02e71f4",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/118.webp",
+      "sourcePath": "public/render-study/frames/118.webp",
+      "sourceSHA256": "8a695c4a904aad285055ac5373ceab553d927cae261574088baf3b21d1d41d9c",
+      "copiedSHA256": "8a695c4a904aad285055ac5373ceab553d927cae261574088baf3b21d1d41d9c",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/119.webp",
+      "sourcePath": "public/render-study/frames/119.webp",
+      "sourceSHA256": "d181d9ed2059ba5a60eebc71eabda025a33c731106d530d89c9df28c490f9e3a",
+      "copiedSHA256": "d181d9ed2059ba5a60eebc71eabda025a33c731106d530d89c9df28c490f9e3a",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/120.webp",
+      "sourcePath": "public/render-study/frames/120.webp",
+      "sourceSHA256": "03707874e0a224de45fcc9255f1fd53fe8be970abc8c34f6b2c12af6cc63aa6d",
+      "copiedSHA256": "03707874e0a224de45fcc9255f1fd53fe8be970abc8c34f6b2c12af6cc63aa6d",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/121.webp",
+      "sourcePath": "public/render-study/frames/121.webp",
+      "sourceSHA256": "0611fb6a56aad34c27d0bd965621aee9df96cbe6707c6dc95a7be20b83b8c626",
+      "copiedSHA256": "0611fb6a56aad34c27d0bd965621aee9df96cbe6707c6dc95a7be20b83b8c626",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/122.webp",
+      "sourcePath": "public/render-study/frames/122.webp",
+      "sourceSHA256": "d440d69dca08b4b17a13e15d83060c72ad884c2c2d736b01b81ae39743006a3f",
+      "copiedSHA256": "d440d69dca08b4b17a13e15d83060c72ad884c2c2d736b01b81ae39743006a3f",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/123.webp",
+      "sourcePath": "public/render-study/frames/123.webp",
+      "sourceSHA256": "4c1c23827740844bbb86736bf0331a70702a22022d1872c147e7f8584fd0b8b7",
+      "copiedSHA256": "4c1c23827740844bbb86736bf0331a70702a22022d1872c147e7f8584fd0b8b7",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/124.webp",
+      "sourcePath": "public/render-study/frames/124.webp",
+      "sourceSHA256": "7e508c62426a78e1bdd0da5ea0f1b6c2ef0ed36085e17022f87d405410fc11b1",
+      "copiedSHA256": "7e508c62426a78e1bdd0da5ea0f1b6c2ef0ed36085e17022f87d405410fc11b1",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/125.webp",
+      "sourcePath": "public/render-study/frames/125.webp",
+      "sourceSHA256": "80104f0716f1f3278bd4fac6770c0c6b6529c002885421dab5dcd7e9320b1ae5",
+      "copiedSHA256": "80104f0716f1f3278bd4fac6770c0c6b6529c002885421dab5dcd7e9320b1ae5",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/126.webp",
+      "sourcePath": "public/render-study/frames/126.webp",
+      "sourceSHA256": "3b0ebcd7b2c7d4b79cd6267062c7814994978a91b57bd0743eb9f569f0961b69",
+      "copiedSHA256": "3b0ebcd7b2c7d4b79cd6267062c7814994978a91b57bd0743eb9f569f0961b69",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/127.webp",
+      "sourcePath": "public/render-study/frames/127.webp",
+      "sourceSHA256": "de0f45ad47455c886d833a34fcbc7d199e63984423c5a5fa165f0e3c43c9aa55",
+      "copiedSHA256": "de0f45ad47455c886d833a34fcbc7d199e63984423c5a5fa165f0e3c43c9aa55",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/128.webp",
+      "sourcePath": "public/render-study/frames/128.webp",
+      "sourceSHA256": "7ad8dc59a9883335b07a37d4f53edaf788ffda70d38bd8b061aae03addb5ab70",
+      "copiedSHA256": "7ad8dc59a9883335b07a37d4f53edaf788ffda70d38bd8b061aae03addb5ab70",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/129.webp",
+      "sourcePath": "public/render-study/frames/129.webp",
+      "sourceSHA256": "f2c466d58d29ebb455944d5a00c8845b3a1c1ebe2ff9dc7927b47d8edac37754",
+      "copiedSHA256": "f2c466d58d29ebb455944d5a00c8845b3a1c1ebe2ff9dc7927b47d8edac37754",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/130.webp",
+      "sourcePath": "public/render-study/frames/130.webp",
+      "sourceSHA256": "0ef3e0e996d2359e2fcee59b6f81caa1b18b8b14191ba87fc7a1b309fd030022",
+      "copiedSHA256": "0ef3e0e996d2359e2fcee59b6f81caa1b18b8b14191ba87fc7a1b309fd030022",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/131.webp",
+      "sourcePath": "public/render-study/frames/131.webp",
+      "sourceSHA256": "a1f1813999cf241aae9470a66b9ee52f9087fdfb2d9af0c2666983be679f363e",
+      "copiedSHA256": "a1f1813999cf241aae9470a66b9ee52f9087fdfb2d9af0c2666983be679f363e",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/132.webp",
+      "sourcePath": "public/render-study/frames/132.webp",
+      "sourceSHA256": "f203669faa070a4b057d12be96cb5840c937360e88ff373d84f3998f69758d19",
+      "copiedSHA256": "f203669faa070a4b057d12be96cb5840c937360e88ff373d84f3998f69758d19",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/133.webp",
+      "sourcePath": "public/render-study/frames/133.webp",
+      "sourceSHA256": "70621c12f303f92bc824484d174ca1731c083e4af849ba008b72e7dc3c8eaa95",
+      "copiedSHA256": "70621c12f303f92bc824484d174ca1731c083e4af849ba008b72e7dc3c8eaa95",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/134.webp",
+      "sourcePath": "public/render-study/frames/134.webp",
+      "sourceSHA256": "a4113ea0d264f6852025a552fe1e75712af41a3e03f8e4312b6aad03312f7195",
+      "copiedSHA256": "a4113ea0d264f6852025a552fe1e75712af41a3e03f8e4312b6aad03312f7195",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/135.webp",
+      "sourcePath": "public/render-study/frames/135.webp",
+      "sourceSHA256": "a5deb70ca9597152ced74b1bb7516abf0c6ff0eab24e09e4615db7943dd75a7c",
+      "copiedSHA256": "a5deb70ca9597152ced74b1bb7516abf0c6ff0eab24e09e4615db7943dd75a7c",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/136.webp",
+      "sourcePath": "public/render-study/frames/136.webp",
+      "sourceSHA256": "3513fff58470dab12a0271fb165364a017eb5e29309b844d56e9e2e1c69e0008",
+      "copiedSHA256": "3513fff58470dab12a0271fb165364a017eb5e29309b844d56e9e2e1c69e0008",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/137.webp",
+      "sourcePath": "public/render-study/frames/137.webp",
+      "sourceSHA256": "2fcd9423fdd724e807a61dc28518d91776f254f4e2be2b033b9d680bf21b09e2",
+      "copiedSHA256": "2fcd9423fdd724e807a61dc28518d91776f254f4e2be2b033b9d680bf21b09e2",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/138.webp",
+      "sourcePath": "public/render-study/frames/138.webp",
+      "sourceSHA256": "e0e151056bc19cfc69443d06a2cf8dc56c1b9b6f8135454b5d9953ba8bf12a1a",
+      "copiedSHA256": "e0e151056bc19cfc69443d06a2cf8dc56c1b9b6f8135454b5d9953ba8bf12a1a",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/139.webp",
+      "sourcePath": "public/render-study/frames/139.webp",
+      "sourceSHA256": "3fd47ad59a1a804b5032f2abd6f7f082849ec851280e06314c731574611195c5",
+      "copiedSHA256": "3fd47ad59a1a804b5032f2abd6f7f082849ec851280e06314c731574611195c5",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/140.webp",
+      "sourcePath": "public/render-study/frames/140.webp",
+      "sourceSHA256": "6b66a0375e7c841d84d7ab07ea901a08a304ec7d3407c4f952974a67feda718f",
+      "copiedSHA256": "6b66a0375e7c841d84d7ab07ea901a08a304ec7d3407c4f952974a67feda718f",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/141.webp",
+      "sourcePath": "public/render-study/frames/141.webp",
+      "sourceSHA256": "5b8a3962c55514ca4887cf20c3780487fc39ea07abcde90e9e42f1c1751e5403",
+      "copiedSHA256": "5b8a3962c55514ca4887cf20c3780487fc39ea07abcde90e9e42f1c1751e5403",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/142.webp",
+      "sourcePath": "public/render-study/frames/142.webp",
+      "sourceSHA256": "5730b718afe412e867ecc4b2df71f2914b5de5551aa4c6f26e090b6246a692e7",
+      "copiedSHA256": "5730b718afe412e867ecc4b2df71f2914b5de5551aa4c6f26e090b6246a692e7",
+      "adapted": false
+    },
+    {
+      "path": "public/render-study/frames/143.webp",
+      "sourcePath": "public/render-study/frames/143.webp",
+      "sourceSHA256": "b3f1ed7614d42b0cf7136d27b2b63872680d925c61c4f18546911e9b56ed0b8d",
+      "copiedSHA256": "b3f1ed7614d42b0cf7136d27b2b63872680d925c61c4f18546911e9b56ed0b8d",
+      "adapted": false
+    },
+    {
+      "path": "public/review/concept.png",
+      "sourcePath": "public/review/concept.png",
+      "sourceSHA256": "2805eb028e1b3d9d3d789e2f2a13581e379ffdc0d600b7b92886b847a5210977",
+      "copiedSHA256": "2805eb028e1b3d9d3d789e2f2a13581e379ffdc0d600b7b92886b847a5210977",
+      "adapted": false
+    },
+    {
+      "path": "public/review/index.html",
+      "sourcePath": "public/review/index.html",
+      "sourceSHA256": "a3d67f1fdf6caebb7a521f489d898cecf770aa38c56159885bd1774276820bd5",
+      "copiedSHA256": "a3d67f1fdf6caebb7a521f489d898cecf770aa38c56159885bd1774276820bd5",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-01-baseline.png",
+      "sourcePath": "public/review/reference-01-baseline.png",
+      "sourceSHA256": "5ff7e747393851d516a010cc31a141428be343fe9b7c86ec8881681f4f459364",
+      "copiedSHA256": "5ff7e747393851d516a010cc31a141428be343fe9b7c86ec8881681f4f459364",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-02-camera.png",
+      "sourcePath": "public/review/reference-02-camera.png",
+      "sourceSHA256": "bc8e0df9dd1ba92199e654769dfcb06a16aee5e3d0a5dca90b39f8c660b31d35",
+      "copiedSHA256": "bc8e0df9dd1ba92199e654769dfcb06a16aee5e3d0a5dca90b39f8c660b31d35",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-04-camera-lock.png",
+      "sourcePath": "public/review/reference-04-camera-lock.png",
+      "sourceSHA256": "768bb6f704d73a3c5fd64fd66b78466a7722914e7245e0e4f6a55b17c3cd07a1",
+      "copiedSHA256": "768bb6f704d73a3c5fd64fd66b78466a7722914e7245e0e4f6a55b17c3cd07a1",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-10-base.png",
+      "sourcePath": "public/review/reference-10-base.png",
+      "sourceSHA256": "d760afdbccc86fb2183840dcbfcab20164b9a08eb7c17e58fecbd4e809d6453a",
+      "copiedSHA256": "d760afdbccc86fb2183840dcbfcab20164b9a08eb7c17e58fecbd4e809d6453a",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-11-seat-volume.png",
+      "sourcePath": "public/review/reference-11-seat-volume.png",
+      "sourceSHA256": "a88c9a22e62fc718fee90dc970c2f1475c8def7cec130dea3281910889397be3",
+      "copiedSHA256": "a88c9a22e62fc718fee90dc970c2f1475c8def7cec130dea3281910889397be3",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-12-arm-wrap.png",
+      "sourcePath": "public/review/reference-12-arm-wrap.png",
+      "sourceSHA256": "e7e00602e3d78448393b2dc3dd85a6182ba052cb354f6ca3bff7862c6f0a8161",
+      "copiedSHA256": "e7e00602e3d78448393b2dc3dd85a6182ba052cb354f6ca3bff7862c6f0a8161",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-13-back-volume.png",
+      "sourcePath": "public/review/reference-13-back-volume.png",
+      "sourceSHA256": "591a0b93fbf4d71502266a78f1d87801be804ba2fc7de669201900057f065967",
+      "copiedSHA256": "591a0b93fbf4d71502266a78f1d87801be804ba2fc7de669201900057f065967",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-14-color.png",
+      "sourcePath": "public/review/reference-14-color.png",
+      "sourceSHA256": "fe7dbabfe7498bc876120517a632c0fe88dd30e37e56a41ed00e8f581d6c3d71",
+      "copiedSHA256": "fe7dbabfe7498bc876120517a632c0fe88dd30e37e56a41ed00e8f581d6c3d71",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-15-tailoring.png",
+      "sourcePath": "public/review/reference-15-tailoring.png",
+      "sourceSHA256": "efe20ffcd53883acdcdf6e678fdcf5b0933f2abc6f70a144ae8ec4d27f0f1783",
+      "copiedSHA256": "efe20ffcd53883acdcdf6e678fdcf5b0933f2abc6f70a144ae8ec4d27f0f1783",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-16-proportions.png",
+      "sourcePath": "public/review/reference-16-proportions.png",
+      "sourceSHA256": "f7e9c24cb077da46ec65adced48b091622dac0cdbc0ee0a2d577c5d33473993c",
+      "copiedSHA256": "f7e9c24cb077da46ec65adced48b091622dac0cdbc0ee0a2d577c5d33473993c",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-17-contour.png",
+      "sourcePath": "public/review/reference-17-contour.png",
+      "sourceSHA256": "042279846c7a42304605406da6f2328e1384d6a062cc817c0feda36352d1ac62",
+      "copiedSHA256": "042279846c7a42304605406da6f2328e1384d6a062cc817c0feda36352d1ac62",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-18-arm-tailoring.png",
+      "sourcePath": "public/review/reference-18-arm-tailoring.png",
+      "sourceSHA256": "3a3c764669f25209952ddecd35a87b188659dd08e49a3e13ffe0dd19bec8e488",
+      "copiedSHA256": "3a3c764669f25209952ddecd35a87b188659dd08e49a3e13ffe0dd19bec8e488",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-19-final-study.png",
+      "sourcePath": "public/review/reference-19-final-study.png",
+      "sourceSHA256": "18fa50159ed320ed7d5c71c9a22779c7d1bccf824a98676b7632d0279efc0d5c",
+      "copiedSHA256": "18fa50159ed320ed7d5c71c9a22779c7d1bccf824a98676b7632d0279efc0d5c",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-20-wrap-profile.png",
+      "sourcePath": "public/review/reference-20-wrap-profile.png",
+      "sourceSHA256": "cc4c49c4d294041e122599affa5796b78222eb1b873e44ab99c56a0e8bcdbf08",
+      "copiedSHA256": "cc4c49c4d294041e122599affa5796b78222eb1b873e44ab99c56a0e8bcdbf08",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-21-integrated-arm.png",
+      "sourcePath": "public/review/reference-21-integrated-arm.png",
+      "sourceSHA256": "6d197649962299d2a886c74e1c89438433be6d5ddb44e16c93f2c49ccc544d75",
+      "copiedSHA256": "6d197649962299d2a886c74e1c89438433be6d5ddb44e16c93f2c49ccc544d75",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-22-seam-gpu.png",
+      "sourcePath": "public/review/reference-22-seam-gpu.png",
+      "sourceSHA256": "1be5de73ee85e1ddeae0a8d743290fe2ca2e7bdb6cd15f32654983fd11965d3d",
+      "copiedSHA256": "1be5de73ee85e1ddeae0a8d743290fe2ca2e7bdb6cd15f32654983fd11965d3d",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-23-textile-light.png",
+      "sourcePath": "public/review/reference-23-textile-light.png",
+      "sourceSHA256": "ffc3b6bdafe52e84f9c4eee231ab282cae8e20b51d927301b03c804e5ce9cb72",
+      "copiedSHA256": "ffc3b6bdafe52e84f9c4eee231ab282cae8e20b51d927301b03c804e5ce9cb72",
+      "adapted": false
+    },
+    {
+      "path": "public/review/reference-24-defined-weave.png",
+      "sourcePath": "public/review/reference-24-defined-weave.png",
+      "sourceSHA256": "5507369961e52ed7797eaeabf55c6c1face369d3e1e21534cc4d792d32164697",
+      "copiedSHA256": "5507369961e52ed7797eaeabf55c6c1face369d3e1e21534cc4d792d32164697",
+      "adapted": false
+    },
+    {
+      "path": "references/aeron-reference.jpg",
+      "sourcePath": "references/aeron-reference.jpg",
+      "sourceSHA256": "92077f8e64307979af3a443c9e993836daf785d1ee4841bbed801636d67ce30c",
+      "copiedSHA256": "92077f8e64307979af3a443c9e993836daf785d1ee4841bbed801636d67ce30c",
+      "adapted": false
+    },
+    {
+      "path": "references/contour-sage.md",
+      "sourcePath": "references/contour-sage.md",
+      "sourceSHA256": "4aeec06dce781a4924b2366d54d75f9b4fd7e9146adfd14652ae882a243d4aac",
+      "copiedSHA256": "4aeec06dce781a4924b2366d54d75f9b4fd7e9146adfd14652ae882a243d4aac",
+      "adapted": false
+    },
+    {
+      "path": "references/floating-chair-assets.md",
+      "sourcePath": "references/floating-chair-assets.md",
+      "sourceSHA256": "9e2f93ed26a321265bc35dba75e0c767b1672d9b96adddb27233c4337979c67d",
+      "copiedSHA256": "9e2f93ed26a321265bc35dba75e0c767b1672d9b96adddb27233c4337979c67d",
+      "adapted": false
+    },
+    {
+      "path": "references/floating-desk-assets.md",
+      "sourcePath": "references/floating-desk-assets.md",
+      "sourceSHA256": "7895820c60bb3393e633850688dc216de98bc989839e03f319db1fdb06437b93",
+      "copiedSHA256": "7895820c60bb3393e633850688dc216de98bc989839e03f319db1fdb06437b93",
+      "adapted": false
+    },
+    {
+      "path": "references/floating-sofa-assets.md",
+      "sourcePath": "references/floating-sofa-assets.md",
+      "sourceSHA256": "90eb441979fe004172d072a0be472950d78f05066edac3289a1c32310eee74b6",
+      "copiedSHA256": "90eb441979fe004172d072a0be472950d78f05066edac3289a1c32310eee74b6",
+      "adapted": false
+    },
+    {
+      "path": "references/主页图像提示词.json",
+      "sourcePath": "references/主页图像提示词.json",
+      "sourceSHA256": "7d63d2b06d0c614c6314b714237c6a8947b794b874778eba654e038455a876d2",
+      "copiedSHA256": "7d63d2b06d0c614c6314b714237c6a8947b794b874778eba654e038455a876d2",
+      "adapted": false
+    },
+    {
+      "path": "references/公司主页v4素材说明.md",
+      "sourcePath": "references/公司主页v4素材说明.md",
+      "sourceSHA256": "0cbcd7d3d099c804b84afe3543e6228fbe626fc9bcea57b6178a8d5b349a0b16",
+      "copiedSHA256": "7e09902d8dd1f4ce788d7719e55b47a26ca4c097f1bb9428d41f89c5540282fa",
+      "adapted": true
+    },
+    {
+      "path": "references/结构与素材来源.md",
+      "sourcePath": "references/结构与素材来源.md",
+      "sourceSHA256": "e8726f6b4c6e0591b5e287cb9fb6b49bff58aed2bac37c907a5dd6f3c63e1f22",
+      "copiedSHA256": "e8726f6b4c6e0591b5e287cb9fb6b49bff58aed2bac37c907a5dd6f3c63e1f22",
+      "adapted": false
+    },
+    {
+      "path": "render-study/index.html",
+      "sourcePath": "render-study/index.html",
+      "sourceSHA256": "9b9e40477a5f03e219d39eaeb4833f16af4897f5f77431151b648de6fb4bbe01",
+      "copiedSHA256": "9b9e40477a5f03e219d39eaeb4833f16af4897f5f77431151b648de6fb4bbe01",
+      "adapted": false
+    },
+    {
+      "path": "scripts/sync-pages.mjs",
+      "sourcePath": "scripts/sync-pages.mjs",
+      "sourceSHA256": "ac1384b23ea3641f95492800e2169c4d8a35b8ba63a59d9d9916fd7c56ae6ac2",
+      "copiedSHA256": "ac1384b23ea3641f95492800e2169c4d8a35b8ba63a59d9d9916fd7c56ae6ac2",
+      "adapted": false
+    },
+    {
+      "path": "src/brand.css",
+      "sourcePath": "src/brand.css",
+      "sourceSHA256": "0c2bcb4f731209ffa8fd1572eb38bb95ae6aa045973fc166a3028c8f1856fe19",
+      "copiedSHA256": "0c2bcb4f731209ffa8fd1572eb38bb95ae6aa045973fc166a3028c8f1856fe19",
+      "adapted": false
+    },
+    {
+      "path": "src/brand.js",
+      "sourcePath": "src/brand.js",
+      "sourceSHA256": "47ecf3d557860068b8f04b4c3354a75df0b2628c3002910e0d9278a13307fe2b",
+      "copiedSHA256": "47ecf3d557860068b8f04b4c3354a75df0b2628c3002910e0d9278a13307fe2b",
+      "adapted": false
+    },
+    {
+      "path": "src/chair-sequence.js",
+      "sourcePath": "src/chair-sequence.js",
+      "sourceSHA256": "21d0e9400d8e63c818757e703a24b3f452f0a580920ef00744a49b7d716d3886",
+      "copiedSHA256": "21d0e9400d8e63c818757e703a24b3f452f0a580920ef00744a49b7d716d3886",
+      "adapted": false
+    },
+    {
+      "path": "src/company-home.css",
+      "sourcePath": "src/company-home.css",
+      "sourceSHA256": "841488ffa7cb422d81cf6fda048840964e6d30ff960651eae63025e2c076d998",
+      "copiedSHA256": "841488ffa7cb422d81cf6fda048840964e6d30ff960651eae63025e2c076d998",
+      "adapted": false
+    },
+    {
+      "path": "src/company-home.js",
+      "sourcePath": "src/company-home.js",
+      "sourceSHA256": "d85131eba89ec1c0aa5ffa88786b4c3391c643a7f74e9fb39dbfa86de291c6d3",
+      "copiedSHA256": "d85131eba89ec1c0aa5ffa88786b4c3391c643a7f74e9fb39dbfa86de291c6d3",
+      "adapted": false
+    },
+    {
+      "path": "src/floating-home.css",
+      "sourcePath": "src/floating-home.css",
+      "sourceSHA256": "011e45701a4165213daaa4732e894da1cb95ec847e7551b85f30955ac7292c7e",
+      "copiedSHA256": "011e45701a4165213daaa4732e894da1cb95ec847e7551b85f30955ac7292c7e",
+      "adapted": false
+    },
+    {
+      "path": "src/floating-home.js",
+      "sourcePath": "src/floating-home.js",
+      "sourceSHA256": "a5075f2a979eeabb23e3c9c83f238141522d076dca348de889d95043a278bcf5",
+      "copiedSHA256": "a5075f2a979eeabb23e3c9c83f238141522d076dca348de889d95043a278bcf5",
+      "adapted": false
+    },
+    {
+      "path": "src/furniture-scene.js",
+      "sourcePath": "src/furniture-scene.js",
+      "sourceSHA256": "415ec3e73d6ab12990f88f732ece7c2ff004e46d92f448095c431516346752f2",
+      "copiedSHA256": "415ec3e73d6ab12990f88f732ece7c2ff004e46d92f448095c431516346752f2",
+      "adapted": false
+    },
+    {
+      "path": "src/home-contact.js",
+      "sourcePath": "src/home-contact.js",
+      "sourceSHA256": "686a197bd26563ebec66564617c2fe41978d8a3565ec34a6548ee8ffdfc036ef",
+      "copiedSHA256": "686a197bd26563ebec66564617c2fe41978d8a3565ec34a6548ee8ffdfc036ef",
+      "adapted": false
+    },
+    {
+      "path": "src/home.css",
+      "sourcePath": "src/home.css",
+      "sourceSHA256": "7fb3c1ac1de7c2f0a273e3e2c0c70114f31d2ef0a3e45cdf401d8e19e90b40af",
+      "copiedSHA256": "7fb3c1ac1de7c2f0a273e3e2c0c70114f31d2ef0a3e45cdf401d8e19e90b40af",
+      "adapted": false
+    },
+    {
+      "path": "src/home.js",
+      "sourcePath": "src/home.js",
+      "sourceSHA256": "5d5b219a0dce4e4e3bd120088a29e673dce13216c873e0bbcc503e839dba60a3",
+      "copiedSHA256": "5d5b219a0dce4e4e3bd120088a29e673dce13216c873e0bbcc503e839dba60a3",
+      "adapted": false
+    },
+    {
+      "path": "src/main.js",
+      "sourcePath": "src/main.js",
+      "sourceSHA256": "17c0f88e9bd50c4649a070987ccf385c855e6cb9d0846c3e088ec84b111123d5",
+      "copiedSHA256": "17c0f88e9bd50c4649a070987ccf385c855e6cb9d0846c3e088ec84b111123d5",
+      "adapted": false
+    },
+    {
+      "path": "src/render-study.css",
+      "sourcePath": "src/render-study.css",
+      "sourceSHA256": "342726d41bf1c2011945e48f7c53f69bff6ba5484b662426947fcbec1bf2b790",
+      "copiedSHA256": "342726d41bf1c2011945e48f7c53f69bff6ba5484b662426947fcbec1bf2b790",
+      "adapted": false
+    },
+    {
+      "path": "src/render-study.js",
+      "sourcePath": "src/render-study.js",
+      "sourceSHA256": "8d1160909809dc38be7a24b9c24a0e0e6b9152215ec70c4d5942b62770d94456",
+      "copiedSHA256": "8d1160909809dc38be7a24b9c24a0e0e6b9152215ec70c4d5942b62770d94456",
+      "adapted": false
+    },
+    {
+      "path": "src/room-scene.js",
+      "sourcePath": "src/room-scene.js",
+      "sourceSHA256": "6ded1ce61ab78c10468fede259c0b228209a59d514c480f2b89b495b64b7c0d9",
+      "copiedSHA256": "6ded1ce61ab78c10468fede259c0b228209a59d514c480f2b89b495b64b7c0d9",
+      "adapted": false
+    },
+    {
+      "path": "src/scene.js",
+      "sourcePath": "src/scene.js",
+      "sourceSHA256": "4a3483316d1b8737c986951a4409d575a6f01c631fb22251b33c79c52eff6344",
+      "copiedSHA256": "4a3483316d1b8737c986951a4409d575a6f01c631fb22251b33c79c52eff6344",
+      "adapted": false
+    },
+    {
+      "path": "src/style.css",
+      "sourcePath": "src/style.css",
+      "sourceSHA256": "5233ce40a93e3a24e9b0c9588829c54757c31f9e6aff683a91a1dcdc2423cb2d",
+      "copiedSHA256": "5233ce40a93e3a24e9b0c9588829c54757c31f9e6aff683a91a1dcdc2423cb2d",
+      "adapted": false
+    }
+  ],
+  "textNormalization": "Some trailing spaces/blank EOF lines normalized; CMD/PS1 checkout uses CRLF. Published binary assets remain byte-identical."
+}

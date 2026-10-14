@@ -1,0 +1,20 @@
+{
+  "design": "Contour 01 / Sage Textile, original study based on approved concept A",
+  "renderer": "Blender 5.1 Cycles OptiX",
+  "parts": [
+    "back",
+    "seat",
+    "arm_left",
+    "arm_right",
+    "mechanism",
+    "base"
+  ],
+  "source": "concepts/contour-directions.png",
+  "count": 241,
+  "width": 2560,
+  "height": 1600,
+  "format": "webp",
+  "freeCamera": false,
+  "bytes": 34365790,
+  "version": "sage-reference-a-v4-iteration24-detail"
+}

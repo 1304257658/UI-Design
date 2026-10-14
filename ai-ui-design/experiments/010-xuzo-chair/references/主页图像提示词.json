@@ -1,0 +1,11 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    "public/images/xuzo-space.webp",
+    "public/images/xuzo-materials.webp"
+  ],
+  "prompts": [
+    "Use case: photorealistic-natural. Create a premium architectural editorial photograph for a Chinese furniture and workspace design brand's desktop company homepage. Ultra wide landscape 16:9. A serene warm modern workspace in a beautifully detailed concrete and pale oak architectural interior, expansive double height room, morning sunlight from tall windows on the right casting precise long soft shadows on warm travertine floor. A sculptural pale oak shared worktable, understated graphite ergonomic chair, linen lounge seating in the distance, large indoor tree, sheer natural curtain, small ceramic vessel. Furniture is subordinate to SPACE, light and atmosphere. Composition: left 40 percent mostly quiet warm plaster wall with architectural shadow and floor as negative space; the main workspace and windows are in center-right. Architectural Digest photography, physically plausible joinery, tactile natural materials, realistic lens, sophisticated warm ivory and muted olive palette, no plastic CGI look. No people, no text, no logos, no graphic overlays. Output as beautiful finished photo.",
+    "Use case: photorealistic-natural. Premium architectural editorial photograph for furniture design company, landscape 16:9. A sunlit design studio table seen in close oblique overhead view, beautifully tactile small selection of materials arranged with care: pale oak block with rounded corner, folded oatmeal woven upholstery fabric, warm grey wool felt, sheet of hand drawn pencil furniture construction sketches (no legible text), graphite pencil, calipers, matte graphite curved armrest sample. Background soft warm plaster wall. Gentle raking late afternoon light reveals pores of wood and woven fibers. Calm, elegant, real craft and design process. Restrained warm ivory, sand, charcoal. Materials occupy right two thirds, quiet desk on left. Extremely realistic photographed textures, natural imperfect arrangement not e-commerce flatlay. No people, logos, typography, generated writing, no glossy plastic, no collage."
+  ]
+}

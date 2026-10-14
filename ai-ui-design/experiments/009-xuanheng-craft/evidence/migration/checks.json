@@ -1,0 +1,33 @@
+{
+  "sourceFilesChecked": 73,
+  "adaptedFiles": [
+    "启动零件制作.cmd",
+    "检查运行环境.cmd",
+    "部署说明.md",
+    "预览官网.cmd",
+    "design/storyboard-v1/分镜说明与提示词.md",
+    "design/storyboard-v2/修订说明与提示词.md",
+    "src/scene.js",
+    "src/style.css"
+  ],
+  "publicAssetsUnchanged": true,
+  "httpPathsChecked": 2,
+  "browserViewport": [
+    1280,
+    720
+  ],
+  "build": "passed",
+  "environmentCheck": "passed",
+  "originalSourceModified": false,
+  "browser": "Codex in-app Chromium",
+  "warnings": [
+    "Three.js chunk >500kB"
+  ],
+  "notRetested": [
+    "mobile",
+    "full prior multi-viewport matrix",
+    "GPU rerender",
+    "resource-failure paths",
+    "offline runtime package"
+  ]
+}

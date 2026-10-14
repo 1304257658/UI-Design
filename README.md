@@ -21,3 +21,11 @@
 
 
 "# UI-Design" 
+
+## 滚动叙事与品牌官网案例
+
+- [玄衡：零件加工与企业介绍](ai-ui-design/experiments/009-xuanheng-craft/README.md)：实时 Three.js、金属质感、设备退场与公司文案。
+- [序作：家具公司主页与人体工学椅](ai-ui-design/experiments/010-xuzo-chair/README.md)：持续悬浮、品牌叙事、离线渲染与滚动序列。
+- [两案设计与开发经验](ai-ui-design/docs/xuzo-xuanheng-design-lessons.md)：失败原因、迭代方法、代码阅读路线与验收边界。
+
+两个案例各自安装和启动，不影响已有实验。迁移版保留桌面设计，不包含公网部署。

@@ -1,0 +1,10 @@
+{
+  "id": "xuzo-chair",
+  "title": "序作 XUZO · 家具与人体工学椅",
+  "port": 3199,
+  "required": [
+    "dist/products/contour-01/index.html",
+    "dist/products/contour-sage/manifest.json",
+    "dist/images/floating/chair-sage.webp"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "sourceFilesChecked": 532,
+  "adaptedFiles": [
+    "package.json",
+    "启动人体工学椅.cmd",
+    "启动家具官网.cmd",
+    "检查运行环境.cmd",
+    "部署说明.md",
+    "预览产品页.cmd",
+    "预览公司主页.cmd",
+    "evidence/detail-v7/changes.md",
+    "model-source/contour-sage/build.py",
+    "references/公司主页v4素材说明.md"
+  ],
+  "publicAssetsUnchanged": true,
+  "httpPathsChecked": 246,
+  "browserViewport": [
+    1280,
+    720
+  ],
+  "build": "passed",
+  "environmentCheck": "passed",
+  "originalSourceModified": false,
+  "browser": "Codex in-app Chromium",
+  "warnings": [],
+  "notRetested": [
+    "mobile",
+    "full prior multi-viewport matrix",
+    "GPU rerender",
+    "resource-failure paths",
+    "offline runtime package"
+  ]
+}

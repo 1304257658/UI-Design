@@ -1,0 +1,518 @@
+{
+  "sourceRepository": "AI-Office-Case",
+  "sourceCase": "17-xuanheng-craft",
+  "files": [
+    {
+      "path": "index.html",
+      "sourcePath": "index.html",
+      "sourceSHA256": "218c3bb1e22d3e44c5e572882e5380c29d9e59ad91309949b75ec7438a4bb5e1",
+      "copiedSHA256": "218c3bb1e22d3e44c5e572882e5380c29d9e59ad91309949b75ec7438a4bb5e1",
+      "adapted": false
+    },
+    {
+      "path": "package-lock.json",
+      "sourcePath": "package-lock.json",
+      "sourceSHA256": "a84624093401f2e5dba22be8dcf6ad22f1f48c9f392a3a9eb7f3bf872ef5a5b5",
+      "copiedSHA256": "a84624093401f2e5dba22be8dcf6ad22f1f48c9f392a3a9eb7f3bf872ef5a5b5",
+      "adapted": false
+    },
+    {
+      "path": "package-site.ps1",
+      "sourcePath": "package-site.ps1",
+      "sourceSHA256": "799aa34dbacc1354862cf8546e470809897e6921b4be4ec12a7cafc9144d62f0",
+      "copiedSHA256": "799aa34dbacc1354862cf8546e470809897e6921b4be4ec12a7cafc9144d62f0",
+      "adapted": false
+    },
+    {
+      "path": "package.json",
+      "sourcePath": "package.json",
+      "sourceSHA256": "b83cdfecc096fc1fcdcc795f57c428a1b3a9d50a6e3712429f2b6e50be79f805",
+      "copiedSHA256": "b83cdfecc096fc1fcdcc795f57c428a1b3a9d50a6e3712429f2b6e50be79f805",
+      "adapted": false
+    },
+    {
+      "path": "preview.config.json",
+      "sourcePath": "preview.config.json",
+      "sourceSHA256": "05227a85bf7ee3a6525334943548a7a5b30d4605068ab4c9e92ca2778652b01f",
+      "copiedSHA256": "05227a85bf7ee3a6525334943548a7a5b30d4605068ab4c9e92ca2778652b01f",
+      "adapted": false
+    },
+    {
+      "path": "preview.mjs",
+      "sourcePath": "preview.mjs",
+      "sourceSHA256": "51403ed6c2289e50944875f60158dcd494d4361415c4480a073698abf95287d1",
+      "copiedSHA256": "51403ed6c2289e50944875f60158dcd494d4361415c4480a073698abf95287d1",
+      "adapted": false
+    },
+    {
+      "path": "历史开发记录.md",
+      "sourcePath": "README.md",
+      "sourceSHA256": "d7dd00c49f36e137b48f89cab17fd8bd353583a2687af0694f2c1ed05b56b3b4",
+      "copiedSHA256": "d7dd00c49f36e137b48f89cab17fd8bd353583a2687af0694f2c1ed05b56b3b4",
+      "adapted": false
+    },
+    {
+      "path": "start-site.ps1",
+      "sourcePath": "start-site.ps1",
+      "sourceSHA256": "d97df845f3f29ec6dc48b75c30d092906b88e13b33180df97387f4428864d68c",
+      "copiedSHA256": "d97df845f3f29ec6dc48b75c30d092906b88e13b33180df97387f4428864d68c",
+      "adapted": false
+    },
+    {
+      "path": "vite.config.js",
+      "sourcePath": "vite.config.js",
+      "sourceSHA256": "a892a6fe2efa8c6a45c3acfd527ae2e3f5e72a0780eb188d8247eb8bdd5dc583",
+      "copiedSHA256": "a892a6fe2efa8c6a45c3acfd527ae2e3f5e72a0780eb188d8247eb8bdd5dc583",
+      "adapted": false
+    },
+    {
+      "path": "启动零件制作.cmd",
+      "sourcePath": "启动零件制作.cmd",
+      "sourceSHA256": "47db6ec6a2ea29029ff6a0e5f584d4b07e242aea572d9a33eff9560255bbf28d",
+      "copiedSHA256": "8aba2de6e19369188be0ea9880c19a4895a9390dbf27aff2fd7d900913719508",
+      "adapted": true
+    },
+    {
+      "path": "打包部署.cmd",
+      "sourcePath": "打包部署.cmd",
+      "sourceSHA256": "f2c2c1d84f76001e34eb83d77924aa473525458637afb8982b08f694a1f3356b",
+      "copiedSHA256": "f2c2c1d84f76001e34eb83d77924aa473525458637afb8982b08f694a1f3356b",
+      "adapted": false
+    },
+    {
+      "path": "检查运行环境.cmd",
+      "sourcePath": "检查运行环境.cmd",
+      "sourceSHA256": "d151447156df6e072b1de2006c22af56ae722886186235036dbead5b082ea5b0",
+      "copiedSHA256": "c1c69f6f402d505a6a4cba5a107e97938c5b904d853cbfc9906cef25fa118c0a",
+      "adapted": true
+    },
+    {
+      "path": "部署说明.md",
+      "sourcePath": "部署说明.md",
+      "sourceSHA256": "30db762d94864ee2f308104463b54682f4aa556563152b4d64b2a3940387e582",
+      "copiedSHA256": "70b45ff39c1179d2266970084357a50b8714e1dad1c248f3c79703e1c25424b4",
+      "adapted": true
+    },
+    {
+      "path": "预览官网.cmd",
+      "sourcePath": "预览官网.cmd",
+      "sourceSHA256": "47db6ec6a2ea29029ff6a0e5f584d4b07e242aea572d9a33eff9560255bbf28d",
+      "copiedSHA256": "8aba2de6e19369188be0ea9880c19a4895a9390dbf27aff2fd7d900913719508",
+      "adapted": true
+    },
+    {
+      "path": "design/storyboard-v1/01-机床全景.png",
+      "sourcePath": "design/storyboard-v1/01-机床全景.png",
+      "sourceSHA256": "b5a01e8e5793039f906f7b8a71f75fd4ea02faffeaa74c0bf283dbe4b3afb06f",
+      "copiedSHA256": "b5a01e8e5793039f906f7b8a71f75fd4ea02faffeaa74c0bf283dbe4b3afb06f",
+      "adapted": false
+    },
+    {
+      "path": "design/storyboard-v1/02-进入加工区.png",
+      "sourcePath": "design/storyboard-v1/02-进入加工区.png",
+      "sourceSHA256": "47f37956bb311b033edad2cc5ef251c1e2316e4d970ba1dcce108c4e78d9dd5f",
+      "copiedSHA256": "47f37956bb311b033edad2cc5ef251c1e2316e4d970ba1dcce108c4e78d9dd5f",
+      "adapted": false
+    },
+    {
+      "path": "design/storyboard-v1/03-多角度加工.png",
+      "sourcePath": "design/storyboard-v1/03-多角度加工.png",
+      "sourceSHA256": "b596492d73c4aec5d3b695ef4072614eda0faa27f92a530ea3a5a1a709db2707",
+      "copiedSHA256": "b596492d73c4aec5d3b695ef4072614eda0faa27f92a530ea3a5a1a709db2707",
+      "adapted": false
+    },
+    {
+      "path": "design/storyboard-v1/04-设备退场.png",
+      "sourcePath": "design/storyboard-v1/04-设备退场.png",
+      "sourceSHA256": "6e6e8c4047776677af917b83b25638ffafc26dba9101bfc76b3f6267869adae7",
+      "copiedSHA256": "6e6e8c4047776677af917b83b25638ffafc26dba9101bfc76b3f6267869adae7",
+      "adapted": false
+    },
+    {
+      "path": "design/storyboard-v1/05-成品细节.png",
+      "sourcePath": "design/storyboard-v1/05-成品细节.png",
+      "sourceSHA256": "4c450aa787a92cabb3983db548db5078add2cf320698bb3c2dab83a3dfec5a34",
+      "copiedSHA256": "4c450aa787a92cabb3983db548db5078add2cf320698bb3c2dab83a3dfec5a34",
+      "adapted": false
+    },
+    {
+      "path": "design/storyboard-v1/06-公司主页.png",
+      "sourcePath": "design/storyboard-v1/06-公司主页.png",
+      "sourceSHA256": "2d58c341f9cddfa6d76d91eb45c82e6798fa4779cf0714ff97f3ea9198cee3a8",
+      "copiedSHA256": "2d58c341f9cddfa6d76d91eb45c82e6798fa4779cf0714ff97f3ea9198cee3a8",
+      "adapted": false
+    },
+    {
+      "path": "design/storyboard-v1/分镜说明与提示词.md",
+      "sourcePath": "design/storyboard-v1/分镜说明与提示词.md",
+      "sourceSHA256": "939d866615d3a6da3867ad094d35e42e9b54d5658f327530488d70a63a7ab26e",
+      "copiedSHA256": "e9b23e8f8bef2e953661c9ae6aaf4ed08c2dd23d4e4d3767ba9647743b7728f1",
+      "adapted": true
+    },
+    {
+      "path": "design/storyboard-v2/04-实体退场.png",
+      "sourcePath": "design/storyboard-v2/04-实体退场.png",
+      "sourceSHA256": "edcb016c827582bbc081122bb2914e9a3ed22588b25ae63f9b1e47c8a03aa96d",
+      "copiedSHA256": "edcb016c827582bbc081122bb2914e9a3ed22588b25ae63f9b1e47c8a03aa96d",
+      "adapted": false
+    },
+    {
+      "path": "design/storyboard-v2/修订说明与提示词.md",
+      "sourcePath": "design/storyboard-v2/修订说明与提示词.md",
+      "sourceSHA256": "44efc0462516e30a0daf0c52032a30d280fbcd79e8871ae35dfcd773ba1a3e4b",
+      "copiedSHA256": "85774f55f2958e62005f9b14d432d6c3b42cc284176e9905f6a5cb4e3d698e48",
+      "adapted": true
+    },
+    {
+      "path": "evidence/验收说明.md",
+      "sourcePath": "evidence/验收说明.md",
+      "sourceSHA256": "3c890f670db38fd8d40bfacf43f483639a75b6d57f194694c93f42009d1d65b7",
+      "copiedSHA256": "3c890f670db38fd8d40bfacf43f483639a75b6d57f194694c93f42009d1d65b7",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/about.png",
+      "sourcePath": "evidence/company-v5/about.png",
+      "sourceSHA256": "96b9f5c70aa21c751d35a6fd40c6488daa23f8ebe23ddfb30e92daab627b47bc",
+      "copiedSHA256": "96b9f5c70aa21c751d35a6fd40c6488daa23f8ebe23ddfb30e92daab627b47bc",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/approach-1280.png",
+      "sourcePath": "evidence/company-v5/approach-1280.png",
+      "sourceSHA256": "8f93dce46270573afd9e2c904d6d9b5462198712f3eb91b88853a94d0b7640fe",
+      "copiedSHA256": "8f93dce46270573afd9e2c904d6d9b5462198712f3eb91b88853a94d0b7640fe",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/approach.png",
+      "sourcePath": "evidence/company-v5/approach.png",
+      "sourceSHA256": "f5cf680185d34303d1f2430bffb85f5c7e38b8c6da50030db98f0418e0bc1969",
+      "copiedSHA256": "f5cf680185d34303d1f2430bffb85f5c7e38b8c6da50030db98f0418e0bc1969",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/browser-qa.json",
+      "sourcePath": "evidence/company-v5/browser-qa.json",
+      "sourceSHA256": "cc1adf5db51078a42b65dbc3e5e2221d348e43b6a4933fb569c342e2fc76c1eb",
+      "copiedSHA256": "cc1adf5db51078a42b65dbc3e5e2221d348e43b6a4933fb569c342e2fc76c1eb",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/capabilities.png",
+      "sourcePath": "evidence/company-v5/capabilities.png",
+      "sourceSHA256": "a7c8f6ac236c8b2a7da7b891159fdf2f684164a20299cf1569b75af34c0fca52",
+      "copiedSHA256": "a7c8f6ac236c8b2a7da7b891159fdf2f684164a20299cf1569b75af34c0fca52",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/contact.png",
+      "sourcePath": "evidence/company-v5/contact.png",
+      "sourceSHA256": "ae4442e7e03ececea2f7f5f144a80fd336da5ee34bacbc301c5829129cecf162",
+      "copiedSHA256": "ae4442e7e03ececea2f7f5f144a80fd336da5ee34bacbc301c5829129cecf162",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/detail-1280-0.765.png",
+      "sourcePath": "evidence/company-v5/detail-1280-0.765.png",
+      "sourceSHA256": "fa2fe438558865b92c75875c74ed168ee356c7410c4b14b71f33b188f21bfdae",
+      "copiedSHA256": "fa2fe438558865b92c75875c74ed168ee356c7410c4b14b71f33b188f21bfdae",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/detail-1280-0.905.png",
+      "sourcePath": "evidence/company-v5/detail-1280-0.905.png",
+      "sourceSHA256": "1daf2fe45aca7f1fed5db7e68bb80db27b3a87038a6570b4637c4a41eca7d116",
+      "copiedSHA256": "1daf2fe45aca7f1fed5db7e68bb80db27b3a87038a6570b4637c4a41eca7d116",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/detail-1440-0.765.png",
+      "sourcePath": "evidence/company-v5/detail-1440-0.765.png",
+      "sourceSHA256": "e635a67a8446a3b54a36ae48cae99a1b1445e61abcb1b9926dea050fc147dee3",
+      "copiedSHA256": "e635a67a8446a3b54a36ae48cae99a1b1445e61abcb1b9926dea050fc147dee3",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/detail-1440-0.905.png",
+      "sourcePath": "evidence/company-v5/detail-1440-0.905.png",
+      "sourceSHA256": "9b08347180ca4ad459d6e557866d376072048d0c440d7b3d787a5e6463b61efa",
+      "copiedSHA256": "9b08347180ca4ad459d6e557866d376072048d0c440d7b3d787a5e6463b61efa",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/detail-1920-0.765.png",
+      "sourcePath": "evidence/company-v5/detail-1920-0.765.png",
+      "sourceSHA256": "dd52377cb8517b3b40df671081153d30ac915954d7e031c9341909b50b3d2ece",
+      "copiedSHA256": "dd52377cb8517b3b40df671081153d30ac915954d7e031c9341909b50b3d2ece",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/detail-1920-0.905.png",
+      "sourcePath": "evidence/company-v5/detail-1920-0.905.png",
+      "sourceSHA256": "a89177441b00a394840587b984f59812094c6f4c91c473862940022ee31ff6b8",
+      "copiedSHA256": "a89177441b00a394840587b984f59812094c6f4c91c473862940022ee31ff6b8",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/detail-2560-0.765.png",
+      "sourcePath": "evidence/company-v5/detail-2560-0.765.png",
+      "sourceSHA256": "d6b3755f470001d0c6edc01801a44fd872d8d3bf0d181d62ddf73eddd7139d01",
+      "copiedSHA256": "d6b3755f470001d0c6edc01801a44fd872d8d3bf0d181d62ddf73eddd7139d01",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/detail-2560-0.905.png",
+      "sourcePath": "evidence/company-v5/detail-2560-0.905.png",
+      "sourceSHA256": "d7256c0fbd6521ada15cf8609f53a80eab1356634bbd4903090f898b54def9ad",
+      "copiedSHA256": "d7256c0fbd6521ada15cf8609f53a80eab1356634bbd4903090f898b54def9ad",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/engineering.png",
+      "sourcePath": "evidence/company-v5/engineering.png",
+      "sourceSHA256": "1e147f193da595daf26820ee02da8f87fa0dfc74b081440a337be8c6b9d7f9c8",
+      "copiedSHA256": "1e147f193da595daf26820ee02da8f87fa0dfc74b081440a337be8c6b9d7f9c8",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/hero-1280.png",
+      "sourcePath": "evidence/company-v5/hero-1280.png",
+      "sourceSHA256": "076aa280ed88f1b289cbfd50843f71a2432c11b9de767563fe64e03e033aefa9",
+      "copiedSHA256": "076aa280ed88f1b289cbfd50843f71a2432c11b9de767563fe64e03e033aefa9",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/hero-1440.png",
+      "sourcePath": "evidence/company-v5/hero-1440.png",
+      "sourceSHA256": "7ec79c6b18082e1c412ead7155f4b743dd27cccbbf87717e7078d10a91d03a93",
+      "copiedSHA256": "7ec79c6b18082e1c412ead7155f4b743dd27cccbbf87717e7078d10a91d03a93",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/hero-1920.png",
+      "sourcePath": "evidence/company-v5/hero-1920.png",
+      "sourceSHA256": "288ea79c969391d1318d293697a7df98dca8f9515a8be014fbfb5ad8a730e35d",
+      "copiedSHA256": "288ea79c969391d1318d293697a7df98dca8f9515a8be014fbfb5ad8a730e35d",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/hero-2560.png",
+      "sourcePath": "evidence/company-v5/hero-2560.png",
+      "sourceSHA256": "6e1694140c7c504c6e47893ce5f20c0a5ab7fe529e2cf58ea72baca9a4f517b1",
+      "copiedSHA256": "6e1694140c7c504c6e47893ce5f20c0a5ab7fe529e2cf58ea72baca9a4f517b1",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/service-layout-qa.json",
+      "sourcePath": "evidence/company-v5/service-layout-qa.json",
+      "sourceSHA256": "d5030b07a3d345787926ed0f1730867e18a4089227194df295eb978e26972aad",
+      "copiedSHA256": "d5030b07a3d345787926ed0f1730867e18a4089227194df295eb978e26972aad",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/story-company-transition.png",
+      "sourcePath": "evidence/company-v5/story-company-transition.png",
+      "sourceSHA256": "4738f23455e7f1b5d3062f1b38d11c534140ee2db84131553f306cf2e7a0e07f",
+      "copiedSHA256": "4738f23455e7f1b5d3062f1b38d11c534140ee2db84131553f306cf2e7a0e07f",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/story-control.png",
+      "sourcePath": "evidence/company-v5/story-control.png",
+      "sourceSHA256": "8eb689634f759b384d8de4f561392d94b6b03de78f5c8e07da3c21d3a6fb49f9",
+      "copiedSHA256": "8eb689634f759b384d8de4f561392d94b6b03de78f5c8e07da3c21d3a6fb49f9",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/story-release.png",
+      "sourcePath": "evidence/company-v5/story-release.png",
+      "sourceSHA256": "134c132ce3876f9088f7a55532f99e536e43fb176aa2a44bff0359786152a1bf",
+      "copiedSHA256": "134c132ce3876f9088f7a55532f99e536e43fb176aa2a44bff0359786152a1bf",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/story-tooling.png",
+      "sourcePath": "evidence/company-v5/story-tooling.png",
+      "sourceSHA256": "844f22fc81b7d0950a186ac85e372eb0b4ca21b4bd80881a848ec78f13bc4fce",
+      "copiedSHA256": "844f22fc81b7d0950a186ac85e372eb0b4ca21b4bd80881a848ec78f13bc4fce",
+      "adapted": false
+    },
+    {
+      "path": "evidence/company-v5/需求摘要.txt",
+      "sourcePath": "evidence/company-v5/需求摘要.txt",
+      "sourceSHA256": "3709cc3486a6a18440c8d657a9a50d8f9c52a0b5e0217353ac0a501f093ba50c",
+      "copiedSHA256": "3709cc3486a6a18440c8d657a9a50d8f9c52a0b5e0217353ac0a501f093ba50c",
+      "adapted": false
+    },
+    {
+      "path": "public/favicon.svg",
+      "sourcePath": "public/favicon.svg",
+      "sourceSHA256": "f07ff3eacca23a315157380c7315cc77d9ec09ab011bef5ac4b67cc064fbd64e",
+      "copiedSHA256": "f07ff3eacca23a315157380c7315cc77d9ec09ab011bef5ac4b67cc064fbd64e",
+      "adapted": false
+    },
+    {
+      "path": "public/environments/studio_small_09_2k.hdr",
+      "sourcePath": "public/environments/studio_small_09_2k.hdr",
+      "sourceSHA256": "36724313c0fc66dab126ff90f081b85a0b1ef47be65eda1417bd20b033f0573f",
+      "copiedSHA256": "36724313c0fc66dab126ff90f081b85a0b1ef47be65eda1417bd20b033f0573f",
+      "adapted": false
+    },
+    {
+      "path": "public/fonts/manrope-semibold.woff2",
+      "sourcePath": "public/fonts/manrope-semibold.woff2",
+      "sourceSHA256": "f7ac6258da20ab7541939b59851155753d1d24f1b30cbcb949077a3faa3d1593",
+      "copiedSHA256": "f7ac6258da20ab7541939b59851155753d1d24f1b30cbcb949077a3faa3d1593",
+      "adapted": false
+    },
+    {
+      "path": "public/fonts/manrope.woff2",
+      "sourcePath": "public/fonts/manrope.woff2",
+      "sourceSHA256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "copiedSHA256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3",
+      "adapted": false
+    },
+    {
+      "path": "public/fonts/noto-sc-light.woff2",
+      "sourcePath": "public/fonts/noto-sc-light.woff2",
+      "sourceSHA256": "a8cff79fbb18b24b6e52d8cd2e9294f9060363ec4a1c54c9e1f968a92f3286eb",
+      "copiedSHA256": "a8cff79fbb18b24b6e52d8cd2e9294f9060363ec4a1c54c9e1f968a92f3286eb",
+      "adapted": false
+    },
+    {
+      "path": "public/fonts/noto-sc.woff2",
+      "sourcePath": "public/fonts/noto-sc.woff2",
+      "sourceSHA256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
+      "copiedSHA256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
+      "adapted": false
+    },
+    {
+      "path": "public/images/fallback-mobile.png",
+      "sourcePath": "public/images/fallback-mobile.png",
+      "sourceSHA256": "e1a80efea548050ee12ed361da5687a6772ab3fbc8614abcc1ad2f3149a9b889",
+      "copiedSHA256": "e1a80efea548050ee12ed361da5687a6772ab3fbc8614abcc1ad2f3149a9b889",
+      "adapted": false
+    },
+    {
+      "path": "public/images/fallback.png",
+      "sourcePath": "public/images/fallback.png",
+      "sourceSHA256": "ec82cb53abd4bbc131587f04ac66c1573a3ba041993f3a838b847e7e5e96f6e1",
+      "copiedSHA256": "ec82cb53abd4bbc131587f04ac66c1573a3ba041993f3a838b847e7e5e96f6e1",
+      "adapted": false
+    },
+    {
+      "path": "public/licenses/Manrope-OFL.txt",
+      "sourcePath": "public/licenses/Manrope-OFL.txt",
+      "sourceSHA256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "copiedSHA256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "adapted": false
+    },
+    {
+      "path": "public/licenses/Noto-Sans-SC-OFL.txt",
+      "sourcePath": "public/licenses/Noto-Sans-SC-OFL.txt",
+      "sourceSHA256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "copiedSHA256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "adapted": false
+    },
+    {
+      "path": "public/licenses/Poly-Haven.txt",
+      "sourcePath": "public/licenses/Poly-Haven.txt",
+      "sourceSHA256": "afc05f46e7b30759fc484aacca21590d7daa061b1986d51b2efd95907bbfa718",
+      "copiedSHA256": "afc05f46e7b30759fc484aacca21590d7daa061b1986d51b2efd95907bbfa718",
+      "adapted": false
+    },
+    {
+      "path": "public/licenses/Three-MIT.txt",
+      "sourcePath": "public/licenses/Three-MIT.txt",
+      "sourceSHA256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "copiedSHA256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "adapted": false
+    },
+    {
+      "path": "references/aluminum-hub-back.jpg",
+      "sourcePath": "references/aluminum-hub-back.jpg",
+      "sourceSHA256": "ef23b0463435f34fcf2ba96ad26ed4a51ff30cdd794b01bd0b54b30dd3a0bc6f",
+      "copiedSHA256": "ef23b0463435f34fcf2ba96ad26ed4a51ff30cdd794b01bd0b54b30dd3a0bc6f",
+      "adapted": false
+    },
+    {
+      "path": "references/aluminum-hub-side.jpg",
+      "sourcePath": "references/aluminum-hub-side.jpg",
+      "sourceSHA256": "37d2f04a3c36c9582c6a20cbf3354246888620165db9c8402e22fef8f20abf0d",
+      "copiedSHA256": "37d2f04a3c36c9582c6a20cbf3354246888620165db9c8402e22fef8f20abf0d",
+      "adapted": false
+    },
+    {
+      "path": "references/aluminum-hub.jpg",
+      "sourcePath": "references/aluminum-hub.jpg",
+      "sourceSHA256": "5854ee456324846799c5333a499c7cde6037ba7eb8f42513737bfd098c9c39c2",
+      "copiedSHA256": "5854ee456324846799c5333a499c7cde6037ba7eb8f42513737bfd098c9c39c2",
+      "adapted": false
+    },
+    {
+      "path": "references/公司主页内容调研.md",
+      "sourcePath": "references/公司主页内容调研.md",
+      "sourceSHA256": "ac881402cd0211e7986dcde33dbde56990b35712d7ff3baf7a937f797b68f6aa",
+      "copiedSHA256": "ac881402cd0211e7986dcde33dbde56990b35712d7ff3baf7a937f797b68f6aa",
+      "adapted": false
+    },
+    {
+      "path": "references/参考记录.md",
+      "sourcePath": "references/参考记录.md",
+      "sourceSHA256": "2fa112a25d220b4d694c48227aabc3aab61eaeffc20d1f583f07c0ca8e604684",
+      "copiedSHA256": "2fa112a25d220b4d694c48227aabc3aab61eaeffc20d1f583f07c0ca8e604684",
+      "adapted": false
+    },
+    {
+      "path": "src/assembly.js",
+      "sourcePath": "src/assembly.js",
+      "sourceSHA256": "0e5d5ad5e7434920ed056d1a24ed486eedd8b52599d0197e445da406145b1d99",
+      "copiedSHA256": "0e5d5ad5e7434920ed056d1a24ed486eedd8b52599d0197e445da406145b1d99",
+      "adapted": false
+    },
+    {
+      "path": "src/industrial-materials.js",
+      "sourcePath": "src/industrial-materials.js",
+      "sourceSHA256": "c5e901d7b0f7e49c72b0761eac44bf156c5b02f3aeea3605966571e03583eb96",
+      "copiedSHA256": "c5e901d7b0f7e49c72b0761eac44bf156c5b02f3aeea3605966571e03583eb96",
+      "adapted": false
+    },
+    {
+      "path": "src/machine.js",
+      "sourcePath": "src/machine.js",
+      "sourceSHA256": "ed28262e2aada67b4dae287eae6a9a202e2df0b683e5123606abb2ed6435d226",
+      "copiedSHA256": "ed28262e2aada67b4dae287eae6a9a202e2df0b683e5123606abb2ed6435d226",
+      "adapted": false
+    },
+    {
+      "path": "src/main.js",
+      "sourcePath": "src/main.js",
+      "sourceSHA256": "f0e039988f193802063a2306925699cdb3a886c98cabc34f4b077d0dd052074f",
+      "copiedSHA256": "f0e039988f193802063a2306925699cdb3a886c98cabc34f4b077d0dd052074f",
+      "adapted": false
+    },
+    {
+      "path": "src/scene.js",
+      "sourcePath": "src/scene.js",
+      "sourceSHA256": "5f3499d9815454d4ed9c2f5998d88995c8b1e5f6153c688929592db67a966c9a",
+      "copiedSHA256": "0208c12aba0c8339bfe08cb3d1f9c87e2cb196e4a710c969e8783a151c276e1e",
+      "adapted": true
+    },
+    {
+      "path": "src/style.css",
+      "sourcePath": "src/style.css",
+      "sourceSHA256": "0f6f7d13f5f1d0e1c70360d45d4c6a98b3e24446b3a0dd35d59a20e0d5a6e35b",
+      "copiedSHA256": "f9c911ce262e1f8ac47bc64312acc474f78ea0465e5803b8a3fc1b0a7ca045e1",
+      "adapted": true
+    },
+    {
+      "path": "src/timeline.js",
+      "sourcePath": "src/timeline.js",
+      "sourceSHA256": "fc176e8ac573419700fb958116ba5b39e37cb005466db5967324daba8c1fe7cf",
+      "copiedSHA256": "fc176e8ac573419700fb958116ba5b39e37cb005466db5967324daba8c1fe7cf",
+      "adapted": false
+    }
+  ],
+  "textNormalization": "Some trailing spaces/blank EOF lines normalized; CMD/PS1 checkout uses CRLF. Published binary assets remain byte-identical."
+}

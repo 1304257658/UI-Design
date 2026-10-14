@@ -1,0 +1,9 @@
+Modern Coffee Table 01
+Author: Amin
+Source: https://polyhaven.com/a/modern_coffee_table_01
+License: CC0 1.0 Universal
+https://creativecommons.org/publicdomain/zero/1.0/
+Policy: https://docs.polyhaven.com/en/faq
+Retrieved: 2026-10-09
+Files: public/models/modern-table/ (glTF, binary, 2K diffuse / normal / roughness maps)
+Original geometry and maps; runtime uniform scale, placement and rotation only.

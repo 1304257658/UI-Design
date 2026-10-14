@@ -1,0 +1,80 @@
+{
+  "observationSeconds": 72.417,
+  "before": [
+    {
+      "duration": "15s",
+      "iterations": "infinite",
+      "name": "desk",
+      "state": "running",
+      "transform": "matrix(0.999917, -0.0128861, 0.0128861, 0.999917, 2.90881, -5.57254)"
+    },
+    {
+      "duration": "17s",
+      "iterations": "infinite",
+      "name": "cabinet",
+      "state": "running",
+      "transform": "matrix(0.999998, 0.00205216, -0.00205216, 0.999998, -5.65196, -1.9175)"
+    },
+    {
+      "duration": "12s",
+      "iterations": "infinite",
+      "name": "lamp",
+      "state": "running",
+      "transform": "matrix(0.999977, -0.00671215, 0.00671215, 0.999977, 8.96531, -4.08307)"
+    },
+    {
+      "duration": "19s",
+      "iterations": "infinite",
+      "name": "sofa",
+      "state": "running",
+      "transform": "matrix(0.999884, 0.015226, -0.015226, 0.999884, -0.227619, 7.93107)"
+    },
+    {
+      "duration": "16s",
+      "iterations": "infinite",
+      "name": "coffee",
+      "state": "running",
+      "transform": "matrix(0.999605, -0.0281139, 0.0281139, 0.999605, 3.61995, 11.5214)"
+    },
+    {
+      "duration": "14s",
+      "iterations": "infinite",
+      "name": "chair",
+      "state": "running",
+      "transform": "matrix(0.999996, -0.00287194, 0.00287194, 0.999996, 5.7291, -2.4261)"
+    }
+  ],
+  "after": [
+    {
+      "name": "desk",
+      "state": "running",
+      "transform": "matrix(0.999678, -0.0253865, 0.0253865, 0.999678, -4.27047, -8.71307)"
+    },
+    {
+      "name": "cabinet",
+      "state": "running",
+      "transform": "matrix(0.999762, -0.0218349, 0.0218349, 0.999762, -1.28359, 9.83043)"
+    },
+    {
+      "name": "lamp",
+      "state": "running",
+      "transform": "matrix(0.999993, -0.0038203, 0.0038203, 0.999993, 8.5925, -2.82656)"
+    },
+    {
+      "name": "sofa",
+      "state": "running",
+      "transform": "matrix(0.999935, 0.0113767, -0.0113767, 0.999935, -3.62222, 5.58644)"
+    },
+    {
+      "name": "coffee",
+      "state": "running",
+      "transform": "matrix(0.999532, 0.0305795, -0.0305795, 0.999532, -4.8706, -9.47754)"
+    },
+    {
+      "name": "chair",
+      "state": "running",
+      "transform": "matrix(0.999681, 0.0252667, -0.0252667, 0.999681, 2.50434, 11.5479)"
+    }
+  ],
+  "allSixStillMoving": true
+}

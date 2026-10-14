@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "width": 1280,
+      "height": 720,
+      "overflow": false,
+      "paragraphs": [
+        {
+          "width": 420,
+          "lineHeight": "28px"
+        },
+        {
+          "width": 420,
+          "lineHeight": "28px"
+        },
+        {
+          "width": 420,
+          "lineHeight": "28px"
+        },
+        {
+          "width": 420,
+          "lineHeight": "28px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "paragraphs": [
+        {
+          "width": 420,
+          "lineHeight": "28px"
+        },
+        {
+          "width": 420,
+          "lineHeight": "28px"
+        },
+        {
+          "width": 420,
+          "lineHeight": "28px"
+        },
+        {
+          "width": 420,
+          "lineHeight": "28px"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,8 @@
+Poly Haven — Studio Small 09
+Author: Sergej Majboroda
+Source: https://polyhaven.com/a/studio_small_09
+License: CC0 1.0 Universal — https://creativecommons.org/publicdomain/zero/1.0/
+Asset: studio_small_09_2k.hdr
+Downloaded: 2026-10-08
+Original MD5: b056fea247bc84b81d2e0987d44c87d8
+Used as lighting and reflection environment; not as page background imagery.

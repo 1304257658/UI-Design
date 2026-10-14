@@ -1,0 +1,8 @@
+{
+  "id": "xuanheng-craft",
+  "title": "玄衡自动化 · 零件制作",
+  "port": 3197,
+  "required": [
+    "dist/assets"
+  ]
+}

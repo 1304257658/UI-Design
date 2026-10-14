@@ -1,0 +1,10 @@
+node_modules/
+dist/
+runtime/
+部署包/
+*.log
+*.blend1
+**/render-cache/
+**/__pycache__/
+public/products/contour-sage/frames/*.png
+public/images/floating/chair-sage.png

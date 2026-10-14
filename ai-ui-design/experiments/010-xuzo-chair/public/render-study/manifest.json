@@ -1,0 +1,16 @@
+{
+  "renderer": "Blender 5.1 / Cycles / OptiX RTX 4090 D",
+  "resolution": [
+    1600,
+    1000
+  ],
+  "samples": 64,
+  "fps": 48,
+  "frames": 143,
+  "duration": 2.9791666666666665,
+  "format": "WebP",
+  "quality": 95,
+  "bytes": 6015638,
+  "camera": "fixed orthographic",
+  "decodeCacheFrames": 12
+}
