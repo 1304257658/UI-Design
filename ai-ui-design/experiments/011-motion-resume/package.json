@@ -1,0 +1,25 @@
+{
+  "name": "011-motion-resume",
+  "version": "1.0.0",
+  "description": "M/15 — A Résumé in Motion. A 15-second frame-driven motion-graphics film with an original synthesized score.",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "audio": "python audio.py",
+    "stills": "node render.mjs --mode=stills",
+    "render": "node render.mjs --mode=video --workers=4",
+    "encode": "node render.mjs --mode=encode"
+  },
+  "keywords": [
+    "motion-design",
+    "generative-video",
+    "canvas",
+    "playwright",
+    "ffmpeg"
+  ],
+  "author": "M/15",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "playwright-core": "^1.55.0"
+  }
+}

@@ -4,6 +4,8 @@
 
 ## 当前课题
 
+- [M/15 — A Résumé in Motion](./ai-ui-design/experiments/011-motion-resume/README.md)：15 秒、1920×1080、60fps 动态图形短片；纸张 / 油墨 / 朱红视觉系统，帧驱动 Canvas 与原创合成配乐。[成片](./ai-ui-design/experiments/011-motion-resume/out/m15-resume.mp4) / [封面](./ai-ui-design/experiments/011-motion-resume/out/poster.png)。
+
 - [DeepSeek Harness 架构拆解页](http://127.0.0.1:8770/)：面板侧转、插件展开、工具往返、粒子回流与回答回显；[实现、来源与验收](./ai-ui-design/experiments/004-deepseek-harness/README.md)。
 
 - [Anime.js 首页复刻](http://127.0.0.1:8769/) 与 [时间轴教学实验](http://127.0.0.1:8769/study/)：机械拆解、滚动叙事与引擎机制；[踩坑、源码和验收记录](./ai-ui-design/experiments/003-anime-homepage/README.md)。
